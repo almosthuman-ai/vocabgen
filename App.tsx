@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { CrosswordGenerator } from './utils/crosswordGenerator';
 import { drawCrossword, downloadSinglePage, download2UpPage, CrosswordMode } from './components/CrosswordCanvas';
 import { DGAGenerator } from './utils/dgaGenerator';
@@ -44,6 +44,11 @@ const App: React.FC = () => {
   // Curriculum Selector State
   const [selectedBook, setSelectedBook] = useState<BookKey>(Object.keys(CURRICULUM)[0] as BookKey);
   const [selectedWeeks, setSelectedWeeks] = useState<string[]>(['']);
+
+  const availableWeeks = useMemo(() => {
+    const bookWeeks = CURRICULUM[selectedBook];
+    return bookWeeks ? Object.keys(bookWeeks) : [];
+  }, [selectedBook]);
 
   // Crossword State
   const [result, setResultState] = useState<GenerationResult | null>(null);
@@ -274,7 +279,24 @@ const App: React.FC = () => {
   };
 
   const addWeekRow = () => {
-      setSelectedWeeks([...selectedWeeks, '']);
+      const lastSelectedWeek = [...selectedWeeks].reverse().find(week => week !== '');
+      const usedWeeks = new Set(selectedWeeks.filter(week => week !== ''));
+      let nextWeek = '';
+
+      if (lastSelectedWeek) {
+          const lastIndex = availableWeeks.indexOf(lastSelectedWeek);
+          if (lastIndex !== -1) {
+              for (let i = lastIndex + 1; i < availableWeeks.length; i++) {
+                  const candidate = availableWeeks[i];
+                  if (!usedWeeks.has(candidate)) {
+                      nextWeek = candidate;
+                      break;
+                  }
+              }
+          }
+      }
+
+      setSelectedWeeks([...selectedWeeks, nextWeek]);
   };
 
   const removeWeekRow = (index: number) => {
@@ -421,9 +443,6 @@ const App: React.FC = () => {
     if (activeTab === 'tictac') return !hasTicTac;
     return true;
   };
-
-  // Get available weeks for current book
-  const availableWeeks = CURRICULUM[selectedBook] ? Object.keys(CURRICULUM[selectedBook]) : [];
 
   return (
     <div className="min-h-screen p-4 md:p-8 max-w-7xl mx-auto notranslate" data-notranslate>
