@@ -426,7 +426,7 @@ const App: React.FC = () => {
   const availableWeeks = CURRICULUM[selectedBook] ? Object.keys(CURRICULUM[selectedBook]) : [];
 
   return (
-    <div className="min-h-screen p-4 md:p-8 max-w-7xl mx-auto">
+    <div className="min-h-screen p-4 md:p-8 max-w-7xl mx-auto notranslate" data-notranslate>
       <header className="mb-8 border-b pb-4 border-gray-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
             <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">VocabGen</h1>
@@ -435,7 +435,7 @@ const App: React.FC = () => {
                 <p>專為台灣 ESL 師生設計的高密度教學拼字遊戲生成器。</p>
             </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 notranslate" data-notranslate>
             <button
                 onClick={() => setActiveTab('crossword')}
                 className={`px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors ${activeTab === 'crossword' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'}`}
@@ -462,10 +462,10 @@ const App: React.FC = () => {
 
       <main className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* LEFT COLUMN: Inputs */}
-        <div className="lg:col-span-4 space-y-6">
+        <div className="lg:col-span-4 space-y-6 notranslate" data-notranslate>
             
             {/* Title Input */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 notranslate" data-notranslate>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Puzzle Title</label>
                 <input 
                     type="text" 
@@ -476,7 +476,7 @@ const App: React.FC = () => {
             </div>
 
             {/* CURRICULUM SELECTOR */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 border-l-4 border-l-purple-500">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 border-l-4 border-l-purple-500 notranslate" data-notranslate>
                 <h2 className="text-lg font-bold text-gray-900 flex items-center gap-2 mb-4">
                     <BookOpen size={20} className="text-purple-600"/>
                     Select Curriculum / 選擇課程
@@ -505,7 +505,7 @@ const App: React.FC = () => {
                     </label>
                     
                     {selectedWeeks.map((week, index) => (
-                        <div key={index} className="flex gap-2 items-center animate-in fade-in slide-in-from-top-2 duration-200">
+                        <div key={index} className="grid grid-flow-col auto-cols-max gap-2 items-center animate-in fade-in slide-in-from-top-2 duration-200 notranslate" data-notranslate>
                             <div className="grow relative">
                                 <Layers size={16} className="absolute left-3 top-3 text-gray-400" />
                                 <select 
@@ -552,7 +552,7 @@ const App: React.FC = () => {
             </div>
 
             {/* Content Inputs */}
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col gap-4">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col gap-4 notranslate" data-notranslate>
                 <div className="flex justify-between items-center">
                     <h2 className="text-lg font-bold text-gray-900 flex items-center gap-2">
                         <FileText size={20} className="text-blue-600"/>
@@ -588,7 +588,7 @@ const App: React.FC = () => {
 
             </div>
             
-            <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 text-blue-800 text-sm flex gap-3">
+             <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 text-blue-800 text-sm flex gap-3 notranslate" data-notranslate>
                 <AlertCircle className="shrink-0 mt-0.5" size={18} />
                 <p>
                     {activeTab === 'crossword' && "Tip: Use more words for a denser crossword."}
@@ -599,12 +599,12 @@ const App: React.FC = () => {
         </div>
 
         {/* RIGHT COLUMN: Preview & Actions */}
-        <div className="lg:col-span-8 space-y-6">
+        <div className="lg:col-span-8 space-y-6 notranslate" data-notranslate>
             
             {renderStatusCard()}
 
             {/* Toolbar */}
-            <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-wrap gap-4 justify-between items-center">
+            <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-wrap gap-4 justify-between items-center notranslate" data-notranslate>
                 
                 {activeTab === 'crossword' && (
                     <div className="flex items-center bg-gray-100 rounded-lg p-1">
@@ -676,7 +676,7 @@ const App: React.FC = () => {
             </div>
 
             {/* Canvas Preview */}
-            <div ref={containerRef} className="bg-gray-200 rounded-xl border border-gray-300 p-8 grid place-items-center min-h-125 overflow-hidden shadow-inner">
+             <div ref={containerRef} className="bg-gray-200 rounded-xl border border-gray-300 p-8 grid place-items-center min-h-125 overflow-hidden shadow-inner notranslate" data-notranslate>
                  {isWordListEmpty ? (
                     <div className="grid place-items-center text-center gap-6">
                         <Library size={72} className="text-gray-400" />

@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+:root,
+html,
+body,
+.notranslate,
+[data-notranslate] {
+  translate: no !important;
+  -webkit-translate: no !important;
+}
+
+body {
+  unicode-bidi: isolate;
+}
