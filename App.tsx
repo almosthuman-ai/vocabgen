@@ -8,77 +8,15 @@ import { TicTacGenerator } from './utils/tictacGenerator';
 import { drawTicTacCanvas, downloadTicTacCanvas } from './components/TicTacCanvas';
 import CluesList from './components/CluesList';
 import { GenerationResult, WordInput, DGAResult, TicTacResult, TicTacDifficulty } from './types';
-import { RefreshCw, AlertCircle, FileCheck, FileText, Scissors, LayoutGrid, BrainCircuit, Gamepad2, Download, RefreshCcw, BookOpen, Layers, Plus, Trash2, ArrowDownToLine } from 'lucide-react';
+import { RefreshCw, AlertCircle, FileCheck, FileText, Scissors, LayoutGrid, BrainCircuit, Gamepad2, RefreshCcw, BookOpen, Layers, Plus, Trash2, ArrowDownToLine, Library } from 'lucide-react';
 import { CURRICULUM } from './curriculumData';
-
-const DEFAULT_WORDS = `critical
-participate
-definition
-exchange
-caption
-length
-land
-skiing
-flip
-kitesurfing
-surfing
-crash
-strength
-Hang-gliding
-extreme
-serious
-accident
-injury
-equipment
-height
-helmet
-knee pads
-elbow pads
-brake
-life jacket
-protect
-quickly
-incredibly
-extremely
-super`;
-
-const DEFAULT_CLUES = `adj. : 非常關鍵且重要的，或是帶有批評意味的
-v. : 參加或參與某個活動
-n. : 解釋某個詞語意思的文字
-v. : 交換，把東西給別人並換回別的東西
-n. : 圖片下方的說明文字
-n. : 物體從一端到另一端的距離
-v. : 從空中降落到地面，或是指陸地
-n. : 穿著滑雪板在雪地上滑行的運動
-v. : 快速翻轉或翻跟斗
-n. : 拉著風箏在水面上滑行的極限運動
-n. : 站在衝浪板上乘風破浪的運動
-v. : 猛烈撞擊，或是發出巨大的撞擊聲
-n. : 力量，或是體力
-n. : 利用三角形滑翔翼在空中飛行的運動
-adj. : 極度的，或是指非常刺激危險的運動
-adj. : 嚴肅的，或是情況很嚴重的
-n. : 意想不到且通常會造成傷害的事件
-n. : 身體受到的傷害
-n. : 進行某項活動所需的裝備或器材
-n. : 從底部到頂部的距離，或是高度
-n. : 保護頭部的堅硬帽子
-n. : 戴在膝蓋上防止受傷的護具
-n. : 戴在手肘上防止受傷的護具
-n. : 讓車輛減速或停止的裝置
-n. : 在水上活動時穿著，能讓人浮在水面的救生衣
-v. : 保護，防止受到傷害
-adv. : 速度很快地
-adv. : 難以置信地，非常驚人地
-adv. : 極度地，非常地
-`;
 
 type Tab = 'crossword' | 'dga' | 'tictac';
 type BookKey = keyof typeof CURRICULUM;
 
 const App: React.FC = () => {
-  const [inputWords, setInputWords] = useState(DEFAULT_WORDS);
-  const [inputClues, setInputClues] = useState(DEFAULT_CLUES);
+  const [inputWords, setInputWords] = useState('');
+  const [inputClues, setInputClues] = useState('');
   const [gridSize, setGridSize] = useState(15);
   const [puzzleTitle, setPuzzleTitle] = useState('Crossword Puzzle');
   
@@ -102,6 +40,8 @@ const App: React.FC = () => {
   const [showSolution, setShowSolution] = useState(false);
   const [mode, setMode] = useState<CrosswordMode>('standard');
   const [activeTab, setActiveTab] = useState<Tab>('crossword');
+
+  const isWordListEmpty = inputWords.trim().length === 0;
 
   // Specific Generator Functions
   const generateCrossword = () => {
@@ -153,6 +93,14 @@ const App: React.FC = () => {
         generateTicTac();
     }
   };
+
+  useEffect(() => {
+    if (inputWords.trim().length === 0) {
+        setResult(null);
+        setDgaResult(null);
+        setTicTacResult(null);
+    }
+  }, [inputWords]);
 
   // --- Curriculum Logic ---
 
@@ -273,41 +221,7 @@ const App: React.FC = () => {
     return () => window.removeEventListener('resize', render);
   }, [result, dgaResult, ticTacResult, showSolution, mode, activeTab, puzzleTitle]);
 
-  // Generate on mount or tab change logic (First run only)
-  useEffect(() => {
-    if (activeTab === 'crossword' && !result) {
-        generateCrossword();
-    } else if (activeTab === 'dga' && !dgaResult) {
-        generateDGA();
-    } else if (activeTab === 'tictac' && !ticTacResult) {
-        generateTicTac();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeTab]); 
-  
-  // Re-generate TicTac when difficulty changes
-  useEffect(() => {
-    if (activeTab === 'tictac') {
-        generateTicTac();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ticTacDifficulty]);
-
-  // Re-generate DGA when word count changes
-  useEffect(() => {
-    if (activeTab === 'dga') {
-        generateDGA();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dgaWordCount]);
-
-  // Initial load
-  useEffect(() => {
-      handleGenerate();
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const getCleanFilename = (base: string, suffix: string) => {
+  const getCleanFilename = (suffix: string) => {
       const cleanTitle = puzzleTitle.replace(/[^a-z0-9-_]/gi, '_').replace(/_+/g, '_');
       return `${cleanTitle || 'Puzzle'}${suffix}.png`;
   };
@@ -315,15 +229,15 @@ const App: React.FC = () => {
   const handleDownloadSingle = (isKey: boolean) => {
     if (activeTab === 'crossword' && result) {
       const suffix = isKey ? '-Solution' : `-${mode === 'deduction' ? 'Deduction' : 'Standard'}`;
-      const filename = getCleanFilename(puzzleTitle, suffix);
+       const filename = getCleanFilename(suffix);
       downloadSinglePage(result.grid, result.placedWords, result.gridSize, filename, isKey, puzzleTitle, mode);
     } else if (activeTab === 'dga' && dgaResult && dgaResult.success) {
         const suffix = isKey ? '-DGA-Solution' : '-DGA-Logic';
-        const filename = getCleanFilename(puzzleTitle, suffix);
+         const filename = getCleanFilename(suffix);
         downloadDGACanvas(dgaResult, puzzleTitle, filename, isKey);
     } else if (activeTab === 'tictac' && ticTacResult && ticTacResult.success) {
         const suffix = isKey ? '-TicTac-Solution' : '-TicTac-Sheet';
-        const filename = getCleanFilename(puzzleTitle, suffix);
+         const filename = getCleanFilename(suffix);
         downloadTicTacCanvas(ticTacResult, puzzleTitle, filename, isKey);
     }
   };
@@ -331,11 +245,11 @@ const App: React.FC = () => {
   const handleDownload2Up = (isKey: boolean) => {
       if (activeTab === 'crossword' && result) {
           const suffix = isKey ? '-Solution-A4Sheet' : `-${mode === 'deduction' ? 'Deduction' : 'Standard'}-A4Sheet`;
-          const filename = getCleanFilename(puzzleTitle, suffix);
+           const filename = getCleanFilename(suffix);
           download2UpPage(result.grid, result.placedWords, result.gridSize, filename, isKey, puzzleTitle, mode);
       } else if (activeTab === 'dga' && dgaResult && dgaResult.success) {
           const suffix = isKey ? '-DGA-Solution-A4Sheet' : '-DGA-Logic-A4Sheet';
-          const filename = getCleanFilename(puzzleTitle, suffix);
+           const filename = getCleanFilename(suffix);
           downloadDGA2Up(dgaResult, puzzleTitle, filename, isKey);
       } else if (activeTab === 'tictac') {
           // Tic Tac is already 6-up on a sheet, so 2-up doesn't really apply or is redundant, 
@@ -346,6 +260,7 @@ const App: React.FC = () => {
   };
 
   const isDownloadDisabled = () => {
+    if (isWordListEmpty) return true;
     if (activeTab === 'dga' && dgaResult && !dgaResult.success) return true;
     if (activeTab === 'tictac' && ticTacResult && !ticTacResult.success) return true;
     return false;
@@ -435,7 +350,7 @@ const App: React.FC = () => {
                     
                     {selectedWeeks.map((week, index) => (
                         <div key={index} className="flex gap-2 items-center animate-in fade-in slide-in-from-top-2 duration-200">
-                            <div className="flex-grow relative">
+                            <div className="grow relative">
                                 <Layers size={16} className="absolute left-3 top-3 text-gray-400" />
                                 <select 
                                     value={week}
@@ -646,40 +561,54 @@ const App: React.FC = () => {
                 </div>
 
                 {/* Common Download Actions */}
-                <div className="flex gap-2 ml-auto">
-                    <button onClick={() => handleDownloadSingle(false)} disabled={isDownloadDisabled()} className={`px-3 py-2 bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors ${isDownloadDisabled() ? 'opacity-50 cursor-not-allowed' : ''}`}>
-                        <FileText size={16} />
-                        {activeTab === 'tictac' ? 'Print Sheet' : '1-Up'}
-                    </button>
-                    
-                    {activeTab !== 'tictac' && (
-                         <button onClick={() => handleDownload2Up(false)} disabled={isDownloadDisabled()} className={`px-3 py-2 bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors ${isDownloadDisabled() ? 'opacity-50 cursor-not-allowed' : ''}`}>
-                            <Scissors size={16} />
-                            2-Up
+                {!isWordListEmpty && (
+                    <div className="flex gap-2 ml-auto">
+                        <button onClick={() => handleDownloadSingle(false)} disabled={isDownloadDisabled()} className={`px-3 py-2 bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors ${isDownloadDisabled() ? 'opacity-50 cursor-not-allowed' : ''}`}>
+                            <FileText size={16} />
+                            {activeTab === 'tictac' ? 'Print Sheet' : '1-Up'}
                         </button>
-                    )}
-                    
-                    <button onClick={() => handleDownloadSingle(true)} disabled={isDownloadDisabled()} className={`px-3 py-2 bg-blue-50 border border-blue-100 hover:bg-blue-100 text-blue-700 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors ${isDownloadDisabled() ? 'opacity-50 cursor-not-allowed' : ''}`}>
-                        <FileCheck size={16} />
-                        Key
-                    </button>
-                </div>
+                        
+                        {activeTab !== 'tictac' && (
+                             <button onClick={() => handleDownload2Up(false)} disabled={isDownloadDisabled()} className={`px-3 py-2 bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors ${isDownloadDisabled() ? 'opacity-50 cursor-not-allowed' : ''}`}>
+                                 <Scissors size={16} />
+                                 2-Up
+                             </button>
+                        )}
+                        
+                        <button onClick={() => handleDownloadSingle(true)} disabled={isDownloadDisabled()} className={`px-3 py-2 bg-blue-50 border border-blue-100 hover:bg-blue-100 text-blue-700 rounded-lg text-sm font-medium flex items-center gap-2 transition-colors ${isDownloadDisabled() ? 'opacity-50 cursor-not-allowed' : ''}`}>
+                            <FileCheck size={16} />
+                            Key
+                        </button>
+                    </div>
+                )}
             </div>
 
             {/* Canvas Preview */}
-            <div ref={containerRef} className="bg-gray-200 rounded-xl border border-gray-300 p-8 flex justify-center items-center min-h-[500px] overflow-hidden shadow-inner">
-                 <canvas 
-                    ref={canvasRef} 
-                    className="shadow-2xl bg-white max-w-full"
-                    style={{ maxHeight: '80vh' }}
-                 />
-                 {((activeTab === 'crossword' && !result) || (activeTab === 'dga' && !dgaResult) || (activeTab === 'tictac' && !ticTacResult)) && (
-                    <p className="text-gray-500 font-medium">Click Generate to create puzzle</p>
+            <div ref={containerRef} className="bg-gray-200 rounded-xl border border-gray-300 p-8 grid place-items-center min-h-125 overflow-hidden shadow-inner">
+                 {isWordListEmpty ? (
+                    <div className="grid place-items-center text-center gap-6">
+                        <Library size={72} className="text-gray-400" />
+                        <div className="space-y-2">
+                            <p className="text-xl font-semibold text-gray-700">Select a Curriculum to Get Started / 請選擇課程以開始</p>
+                            <p className="text-sm text-gray-500">Choose a book and week from the sidebar.</p>
+                        </div>
+                    </div>
+                 ) : (
+                    <>
+                        <canvas 
+                            ref={canvasRef} 
+                            className="shadow-2xl bg-white max-w-full"
+                            style={{ maxHeight: '80vh' }}
+                        />
+                        {((activeTab === 'crossword' && !result) || (activeTab === 'dga' && !dgaResult) || (activeTab === 'tictac' && !ticTacResult)) && (
+                            <p className="text-gray-500 font-medium">Click Generate to create puzzle</p>
+                        )}
+                    </>
                  )}
             </div>
 
             {/* Clues Preview (Crossword Only) */}
-            {activeTab === 'crossword' && result && (
+            {activeTab === 'crossword' && result && !isWordListEmpty && (
                 <CluesList words={result.placedWords} mode={mode} />
             )}
         </div>
