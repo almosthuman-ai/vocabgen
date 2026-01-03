@@ -145,7 +145,7 @@ const App: React.FC = () => {
                 {hasDga ? (success ? 'Valid Logic Puzzle Generated' : 'Generation Failed') : 'No DGA puzzle generated yet'}
               </h3>
               <p className={`text-sm mt-1 ${hasDga ? (success ? 'text-green-700' : 'text-red-700') : 'text-gray-500'}`}>
-                {hasDga ? (success ? 'Shewforth-ready clue bank assembled.' : dgaResult!.message || 'Adjust the word pool and try again.') : 'Click Generate to construct the logic grid.'}
+                {hasDga ? (success ? 'Deductive clue stack is ready.' : dgaResult!.message || 'Adjust the word pool and try again.') : 'Click Generate to construct the logic grid.'}
               </p>
             </div>
             <button

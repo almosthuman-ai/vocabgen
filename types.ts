@@ -32,6 +32,11 @@ export interface DGAClue {
   id: number;
   word: string; // The target answer
   displayText: string;
+  anchorChar: string;
+  shortLeadingSlots: number;
+  shortTrailingSlots: number;
+  infiniteSide: 'leading' | 'trailing';
+  infiniteSlotCount: number;
   isAmbiguous: boolean; // True if this clue pattern initially matches >1 word
   matchingWords: string[]; // All words from the bank that fit this clue's constraint
 }

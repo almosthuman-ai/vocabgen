@@ -6,7 +6,14 @@ type ConstraintType = 'START_1' | 'START_2' | 'START_3' | 'END_1' | 'END_2' | 'E
 interface DGAConstraint {
   type: ConstraintType;
   char: string;
-  visual: string;
+  visual: {
+    display: string;
+    anchorChar: string;
+    shortLeadingSlots: number;
+    shortTrailingSlots: number;
+    infiniteSide: 'leading' | 'trailing';
+    infiniteSlotCount: number;
+  };
   targetWord: string;
   overlapScore: number; // How many words in the TOTAL bank match this constraint
 }
@@ -29,17 +36,72 @@ export class DGAGenerator {
   // Generates the visual syntax requested: "L ____________" or "____________ L"
   // Using a fixed long line to ensure length ambiguity is maintained visually where appropriate,
   // focusing the student on the revealed letter position relative to start/end.
-  private getVisual(type: ConstraintType, char: string): string {
+  private getVisual(type: ConstraintType, char: string): DGAConstraint['visual'] {
     const LINE = "________________"; 
     switch (type) {
-      case 'START_1': return `${char} ${LINE}`;
-      case 'START_2': return `_ ${char} ${LINE}`;
-      case 'START_3': return `_ _ ${char} ${LINE}`;
-      case 'END_1': return `${LINE} ${char}`;
-      case 'END_2': return `${LINE} ${char} _`;
-      case 'END_3': return `${LINE} ${char} _ _`;
+      case 'START_1':
+        return {
+          display: `${char} ${LINE}`,
+          anchorChar: char,
+          shortLeadingSlots: 0,
+          shortTrailingSlots: 0,
+          infiniteSide: 'trailing',
+          infiniteSlotCount: 12
+        };
+      case 'START_2':
+        return {
+          display: `_ ${char} ${LINE}`,
+          anchorChar: char,
+          shortLeadingSlots: 1,
+          shortTrailingSlots: 0,
+          infiniteSide: 'trailing',
+          infiniteSlotCount: 12
+        };
+      case 'START_3':
+        return {
+          display: `_ _ ${char} ${LINE}`,
+          anchorChar: char,
+          shortLeadingSlots: 2,
+          shortTrailingSlots: 0,
+          infiniteSide: 'trailing',
+          infiniteSlotCount: 12
+        };
+      case 'END_1':
+        return {
+          display: `${LINE} ${char}`,
+          anchorChar: char,
+          shortLeadingSlots: 0,
+          shortTrailingSlots: 0,
+          infiniteSide: 'leading',
+          infiniteSlotCount: 12
+        };
+      case 'END_2':
+        return {
+          display: `${LINE} ${char} _`,
+          anchorChar: char,
+          shortLeadingSlots: 0,
+          shortTrailingSlots: 1,
+          infiniteSide: 'leading',
+          infiniteSlotCount: 12
+        };
+      case 'END_3':
+        return {
+          display: `${LINE} ${char} _ _`,
+          anchorChar: char,
+          shortLeadingSlots: 0,
+          shortTrailingSlots: 2,
+          infiniteSide: 'leading',
+          infiniteSlotCount: 12
+        };
     }
-    return "";
+    return {
+      display: '',
+      anchorChar: char,
+      shortLeadingSlots: 0,
+      shortTrailingSlots: 0,
+      infiniteSide: 'trailing',
+      infiniteSlotCount: 0
+    };
   }
 
   // Does the candidate word satisfy the constraint?
@@ -206,13 +268,18 @@ export class DGAGenerator {
            // Find all matching words for this constraint to enable "Work" visualization
            const matches = uniqueWords.filter(w => this.matches(c, w)).sort();
            
-           return {
+            return {
                id: 0,
                word: c.targetWord,
-               displayText: c.visual,
+               displayText: c.visual.display,
+               anchorChar: c.visual.anchorChar,
+               shortLeadingSlots: c.visual.shortLeadingSlots,
+               shortTrailingSlots: c.visual.shortTrailingSlots,
+               infiniteSide: c.visual.infiniteSide,
+               infiniteSlotCount: c.visual.infiniteSlotCount,
                isAmbiguous: c.overlapScore > 1,
                matchingWords: matches
-           };
+            };
         });
 
         // Fisher-Yates Shuffle

@@ -1,6 +1,56 @@
 
 import { DGAResult } from '../types';
 
+const LINE_SLOT_WIDTH = 32;
+const LINE_THICKNESS = 8;
+
+const drawClueIndicator = (
+    ctx: CanvasRenderingContext2D,
+    textX: number,
+    y: number,
+    fontSize: number,
+    clue: DGAResult['clues'][number]
+) => {
+    const middleY = y;
+    const baselineOffset = fontSize * 0.12;
+    const segmentGap = fontSize * 0.2;
+    const slotWidth = LINE_SLOT_WIDTH;
+    let cursorX = textX;
+
+    const lineY = middleY + baselineOffset - (LINE_THICKNESS / 2);
+
+    const drawBar = (width: number) => {
+        ctx.fillRect(cursorX, lineY, width, LINE_THICKNESS);
+        cursorX += width + segmentGap;
+    };
+
+    const drawShortSlots = (count: number) => {
+        for (let i = 0; i < count; i++) {
+            drawBar(slotWidth);
+        }
+    };
+
+    const drawInfinite = () => {
+        const slotCount = Math.max(clue.infiniteSlotCount, 18);
+        const length = slotCount * slotWidth;
+        drawBar(length);
+    };
+
+    if (clue.infiniteSide === 'leading') {
+        drawInfinite();
+        drawShortSlots(clue.shortLeadingSlots);
+        ctx.fillText(clue.anchorChar, cursorX, middleY);
+        cursorX += ctx.measureText(clue.anchorChar).width + segmentGap;
+        drawShortSlots(clue.shortTrailingSlots);
+    } else {
+        drawShortSlots(clue.shortLeadingSlots);
+        ctx.fillText(clue.anchorChar, cursorX, middleY);
+        cursorX += ctx.measureText(clue.anchorChar).width + segmentGap;
+        drawShortSlots(clue.shortTrailingSlots);
+        drawInfinite();
+    }
+};
+
 // Internal generator for the DGA Canvas
 const createDGACanvas = (
     data: DGAResult,
@@ -84,13 +134,18 @@ const createDGACanvas = (
         const numStr = `${clue.id}.`;
         ctx.fillText(numStr, leftColX, y);
         
-        // Draw Visual String (The "Long Line" syntax)
+        // Draw Visual Indicator
         const numWidth = ctx.measureText(numStr).width;
-        // Switch back to Monospace for the clue pattern
-        ctx.font = `bold ${fontSize}px "Courier New", monospace`;
-        
-        // Format is like: "H ________________"
-        ctx.fillText(clue.displayText, leftColX + numWidth + 40, y);
+        ctx.font = `bold ${fontSize}px sans-serif`;
+        ctx.lineWidth = LINE_THICKNESS;
+        ctx.strokeStyle = '#000000';
+        drawClueIndicator(
+            ctx,
+            leftColX + numWidth + 40,
+            y,
+            fontSize,
+            clue
+        );
 
         // Note: We intentionally do NOT draw the solution on the Left Column
         // when showKey is true, per strict requirements to leave the puzzle "blank"
