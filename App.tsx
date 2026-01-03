@@ -42,6 +42,19 @@ const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<Tab>('crossword');
 
   const isWordListEmpty = inputWords.trim().length === 0;
+  const hasCrossword = !!result;
+  const hasDga = !!(dgaResult && dgaResult.success);
+  const hasTicTac = !!(ticTacResult && ticTacResult.success);
+  const activeTabHasRender =
+    (activeTab === 'crossword' && hasCrossword) ||
+    (activeTab === 'dga' && hasDga) ||
+    (activeTab === 'tictac' && hasTicTac);
+
+  const generatePrompts: Record<Tab, string> = {
+    crossword: 'Click Generate to build the crossword.',
+    dga: 'Click Generate to build the DGA logic grid.',
+    tictac: 'Click Generate to assemble the Tic-Tac-Word rounds.',
+  };
 
   // Specific Generator Functions
   const generateCrossword = () => {
@@ -171,7 +184,7 @@ const App: React.FC = () => {
 
         const containerWidth = containerRef.current.clientWidth;
         
-        if (activeTab === 'crossword' && result) {
+        if (activeTab === 'crossword' && hasCrossword && result) {
             const padding = 32; 
             const availableWidth = containerWidth - padding;
             const calculatedCellSize = Math.floor(availableWidth / result.gridSize);
@@ -201,25 +214,22 @@ const App: React.FC = () => {
                 }
             }
         } 
-        else if (activeTab === 'dga' && dgaResult && dgaResult.success) {
+        else if (activeTab === 'dga' && hasDga && dgaResult) {
             drawDGACanvas(canvasRef.current, dgaResult, puzzleTitle, showSolution);
         }
-        else if (activeTab === 'tictac' && ticTacResult && ticTacResult.success) {
+        else if (activeTab === 'tictac' && hasTicTac && ticTacResult) {
             drawTicTacCanvas(canvasRef.current, ticTacResult, puzzleTitle, showSolution);
         }
-        else if (
-            (activeTab === 'dga' && dgaResult && !dgaResult.success) || 
-            (activeTab === 'tictac' && ticTacResult && !ticTacResult.success)
-        ) {
+        else {
             const ctx = canvasRef.current.getContext('2d');
-            if(ctx) ctx.clearRect(0,0, canvasRef.current.width, canvasRef.current.height);
+            if (ctx) ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
         }
     };
 
     render();
     window.addEventListener('resize', render);
     return () => window.removeEventListener('resize', render);
-  }, [result, dgaResult, ticTacResult, showSolution, mode, activeTab, puzzleTitle]);
+  }, [result, dgaResult, ticTacResult, showSolution, mode, activeTab, puzzleTitle, hasCrossword, hasDga, hasTicTac]);
 
   const getCleanFilename = (suffix: string) => {
       const cleanTitle = puzzleTitle.replace(/[^a-z0-9-_]/gi, '_').replace(/_+/g, '_');
@@ -229,15 +239,15 @@ const App: React.FC = () => {
   const handleDownloadSingle = (isKey: boolean) => {
     if (activeTab === 'crossword' && result) {
       const suffix = isKey ? '-Solution' : `-${mode === 'deduction' ? 'Deduction' : 'Standard'}`;
-       const filename = getCleanFilename(suffix);
+      const filename = getCleanFilename(suffix);
       downloadSinglePage(result.grid, result.placedWords, result.gridSize, filename, isKey, puzzleTitle, mode);
     } else if (activeTab === 'dga' && dgaResult && dgaResult.success) {
         const suffix = isKey ? '-DGA-Solution' : '-DGA-Logic';
-         const filename = getCleanFilename(suffix);
+        const filename = getCleanFilename(suffix);
         downloadDGACanvas(dgaResult, puzzleTitle, filename, isKey);
     } else if (activeTab === 'tictac' && ticTacResult && ticTacResult.success) {
         const suffix = isKey ? '-TicTac-Solution' : '-TicTac-Sheet';
-         const filename = getCleanFilename(suffix);
+        const filename = getCleanFilename(suffix);
         downloadTicTacCanvas(ticTacResult, puzzleTitle, filename, isKey);
     }
   };
@@ -245,11 +255,11 @@ const App: React.FC = () => {
   const handleDownload2Up = (isKey: boolean) => {
       if (activeTab === 'crossword' && result) {
           const suffix = isKey ? '-Solution-A4Sheet' : `-${mode === 'deduction' ? 'Deduction' : 'Standard'}-A4Sheet`;
-           const filename = getCleanFilename(suffix);
+          const filename = getCleanFilename(suffix);
           download2UpPage(result.grid, result.placedWords, result.gridSize, filename, isKey, puzzleTitle, mode);
       } else if (activeTab === 'dga' && dgaResult && dgaResult.success) {
           const suffix = isKey ? '-DGA-Solution-A4Sheet' : '-DGA-Logic-A4Sheet';
-           const filename = getCleanFilename(suffix);
+          const filename = getCleanFilename(suffix);
           downloadDGA2Up(dgaResult, puzzleTitle, filename, isKey);
       } else if (activeTab === 'tictac') {
           // Tic Tac is already 6-up on a sheet, so 2-up doesn't really apply or is redundant, 
@@ -261,9 +271,10 @@ const App: React.FC = () => {
 
   const isDownloadDisabled = () => {
     if (isWordListEmpty) return true;
-    if (activeTab === 'dga' && dgaResult && !dgaResult.success) return true;
-    if (activeTab === 'tictac' && ticTacResult && !ticTacResult.success) return true;
-    return false;
+    if (activeTab === 'crossword') return !hasCrossword;
+    if (activeTab === 'dga') return !hasDga;
+    if (activeTab === 'tictac') return !hasTicTac;
+    return true;
   };
 
   // Get available weeks for current book
@@ -593,17 +604,17 @@ const App: React.FC = () => {
                             <p className="text-sm text-gray-500">Choose a book and week from the sidebar.</p>
                         </div>
                     </div>
+                 ) : activeTabHasRender ? (
+                    <canvas 
+                        ref={canvasRef} 
+                        className="shadow-2xl bg-white max-w-full"
+                        style={{ maxHeight: '80vh' }}
+                    />
                  ) : (
-                    <>
-                        <canvas 
-                            ref={canvasRef} 
-                            className="shadow-2xl bg-white max-w-full"
-                            style={{ maxHeight: '80vh' }}
-                        />
-                        {((activeTab === 'crossword' && !result) || (activeTab === 'dga' && !dgaResult) || (activeTab === 'tictac' && !ticTacResult)) && (
-                            <p className="text-gray-500 font-medium">Click Generate to create puzzle</p>
-                        )}
-                    </>
+                    <div className="grid place-items-center text-center gap-4">
+                        <RefreshCw size={48} className="text-gray-400" />
+                        <p className="text-base font-medium text-gray-600">{generatePrompts[activeTab]}</p>
+                    </div>
                  )}
             </div>
 
