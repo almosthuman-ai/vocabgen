@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css'; // <--- ADD THIS LINE HERE
 import App from './App';
 
 const rootElement = document.getElementById('root');
