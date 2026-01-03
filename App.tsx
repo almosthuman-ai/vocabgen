@@ -8,8 +8,29 @@ import { TicTacGenerator } from './utils/tictacGenerator';
 import { drawTicTacCanvas, downloadTicTacCanvas } from './components/TicTacCanvas';
 import CluesList from './components/CluesList';
 import { GenerationResult, WordInput, DGAResult, TicTacResult, TicTacDifficulty } from './types';
-import { RefreshCw, AlertCircle, FileCheck, FileText, Scissors, LayoutGrid, BrainCircuit, Gamepad2, RefreshCcw, BookOpen, Layers, Plus, Trash2, ArrowDownToLine, Library } from 'lucide-react';
+import { RefreshCw, AlertCircle, FileCheck, FileText, Scissors, LayoutGrid, BrainCircuit, Gamepad2, BookOpen, Layers, Plus, Trash2, ArrowDownToLine, Library } from 'lucide-react';
 import { CURRICULUM } from './curriculumData';
+
+const cloneCrosswordResult = (res: GenerationResult): GenerationResult => ({
+  grid: res.grid.map(row => row.map(cell => ({ ...cell }))),
+  placedWords: res.placedWords.map(word => ({ ...word })),
+  unusedWords: [...res.unusedWords],
+  gridSize: res.gridSize,
+});
+
+const cloneDgaResult = (res: DGAResult): DGAResult => ({
+  ...res,
+  clues: res.clues.map(clue => ({ ...clue, matchingWords: [...clue.matchingWords] })),
+  wordBank: [...res.wordBank],
+});
+
+const cloneTicTacResult = (res: TicTacResult): TicTacResult => ({
+  ...res,
+  grids: res.grids.map(grid => ({
+    ...grid,
+    cells: grid.cells.map(cell => ({ ...cell, matchingWords: [...cell.matchingWords] })),
+  })),
+});
 
 type Tab = 'crossword' | 'dga' | 'tictac';
 type BookKey = keyof typeof CURRICULUM;
@@ -25,14 +46,26 @@ const App: React.FC = () => {
   const [selectedWeeks, setSelectedWeeks] = useState<string[]>(['']);
 
   // Crossword State
-  const [result, setResult] = useState<GenerationResult | null>(null);
+  const [result, setResultState] = useState<GenerationResult | null>(null);
   
   // DGA State
-  const [dgaResult, setDgaResult] = useState<DGAResult | null>(null);
+  const [dgaResult, setDgaResultState] = useState<DGAResult | null>(null);
   const [dgaWordCount, setDgaWordCount] = useState<number>(10);
 
   // Tic Tac State
-  const [ticTacResult, setTicTacResult] = useState<TicTacResult | null>(null);
+  const [ticTacResult, setTicTacResultState] = useState<TicTacResult | null>(null);
+
+  const setResult = (value: GenerationResult | null) => {
+    setResultState(value ? cloneCrosswordResult(value) : null);
+  };
+
+  const setDgaResult = (value: DGAResult | null) => {
+    setDgaResultState(value ? cloneDgaResult(value) : null);
+  };
+
+  const setTicTacResult = (value: TicTacResult | null) => {
+    setTicTacResultState(value ? cloneTicTacResult(value) : null);
+  };
   const [ticTacDifficulty, setTicTacDifficulty] = useState<TicTacDifficulty>('medium');
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -49,6 +82,107 @@ const App: React.FC = () => {
     (activeTab === 'crossword' && hasCrossword) ||
     (activeTab === 'dga' && hasDga) ||
     (activeTab === 'tictac' && hasTicTac);
+
+  const renderStatusCard = () => {
+    if (isWordListEmpty) {
+      return (
+        <div className="p-4 rounded-lg border border-gray-200 bg-white text-sm text-gray-600">
+          Enter words or load curriculum to enable generation.
+        </div>
+      );
+    }
+
+    if (activeTab === 'crossword') {
+      return (
+        <div className={`p-4 rounded-lg border ${hasCrossword ? (result!.unusedWords.length > 0 ? 'bg-amber-50 border-amber-200' : 'bg-green-50 border-green-200') : 'bg-white border-gray-200'}`}>
+          <div className="flex justify-between items-start">
+            <div>
+              <h3 className={`font-bold flex items-center gap-2 ${hasCrossword ? (result!.unusedWords.length > 0 ? 'text-amber-800' : 'text-green-800') : 'text-gray-700'}`}>
+                {hasCrossword ? (
+                  result!.unusedWords.length > 0 ? <AlertCircle size={18} /> : <FileCheck size={18} />
+                ) : (
+                  <RefreshCw size={18} className="text-gray-500" />
+                )}
+                {hasCrossword ? (
+                  result!.unusedWords.length > 0 ? 'Some words could not be placed' : 'All words placed successfully!'
+                ) : (
+                  'No crossword generated yet'
+                )}
+              </h3>
+              <p className={`text-sm mt-1 ${hasCrossword ? (result!.unusedWords.length > 0 ? 'text-amber-700' : 'text-green-700') : 'text-gray-500'}`}>
+                {hasCrossword ? (
+                  <>Grid Usage: {result!.placedWords.length} of {result!.placedWords.length + result!.unusedWords.length} words.</>
+                ) : (
+                  'Click Generate to produce a grid.'
+                )}
+              </p>
+              {hasCrossword && result!.unusedWords.length > 0 && (
+                <p className="mt-3 text-xs font-medium text-red-600">
+                  Unused: {result!.unusedWords.join(', ')}
+                </p>
+              )}
+            </div>
+            <button
+              onClick={generateCrossword}
+              className="px-3 py-1.5 bg-gray-900 hover:bg-black text-white border border-transparent shadow-sm rounded text-sm font-medium grid grid-flow-col auto-cols-max items-center gap-2"
+            >
+              <RefreshCw size={16} />
+              Generate
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    if (activeTab === 'dga') {
+      const success = hasDga && dgaResult!.success;
+      return (
+        <div className={`p-4 rounded-lg border ${hasDga ? (success ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200') : 'bg-white border-gray-200'}`}>
+          <div className="flex justify-between items-start">
+            <div>
+              <h3 className={`font-bold flex items-center gap-2 ${hasDga ? (success ? 'text-green-800' : 'text-red-800') : 'text-gray-700'}`}>
+                {hasDga ? (success ? <FileCheck size={18} /> : <AlertCircle size={18} />) : <RefreshCw size={18} className="text-gray-500" />}
+                {hasDga ? (success ? 'Valid Logic Puzzle Generated' : 'Generation Failed') : 'No DGA puzzle generated yet'}
+              </h3>
+              <p className={`text-sm mt-1 ${hasDga ? (success ? 'text-green-700' : 'text-red-700') : 'text-gray-500'}`}>
+                {hasDga ? (success ? 'Shewforth-ready clue bank assembled.' : dgaResult!.message || 'Adjust the word pool and try again.') : 'Click Generate to construct the logic grid.'}
+              </p>
+            </div>
+            <button
+              onClick={generateDGA}
+              className="px-3 py-1.5 bg-gray-900 hover:bg-black text-white border border-transparent shadow-sm rounded text-sm font-medium grid grid-flow-col auto-cols-max items-center gap-2"
+            >
+              <RefreshCw size={16} />
+              Generate
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    const success = hasTicTac && ticTacResult!.success;
+    return (
+      <div className={`p-4 rounded-lg border ${hasTicTac ? (success ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200') : 'bg-white border-gray-200'}`}>
+        <div className="flex justify-between items-start">
+          <div>
+            <h3 className={`font-bold flex items-center gap-2 ${hasTicTac ? (success ? 'text-green-800' : 'text-red-800') : 'text-gray-700'}`}>
+              {hasTicTac ? (success ? 'Generated 4 Unique Rounds' : 'Generation Failed') : 'No Tic-Tac-Word rounds generated yet'}
+            </h3>
+            <p className={`text-sm mt-1 ${hasTicTac ? (success ? 'text-green-700' : 'text-red-700') : 'text-gray-500'}`}>
+              {hasTicTac ? (success ? 'Rounds balanced for synonym and POS diversity.' : 'Not enough matching words.') : 'Click Generate to assemble the rounds.'}
+            </p>
+          </div>
+          <button
+            onClick={generateTicTac}
+            className="px-3 py-1.5 bg-gray-900 hover:bg-black text-white border border-transparent shadow-sm rounded text-sm font-medium grid grid-flow-col auto-cols-max items-center gap-2"
+          >
+            <RefreshCw size={16} />
+            Generate
+          </button>
+        </div>
+      </div>
+    );
+  };
 
   const generatePrompts: Record<Tab, string> = {
     crossword: 'Click Generate to build the crossword.',
@@ -77,25 +211,25 @@ const App: React.FC = () => {
     const calculatedGridSize = Math.max(15, longestWordLength + 5);
     setGridSize(calculatedGridSize);
 
-    const generator = new CrosswordGenerator(calculatedGridSize);
-    const genResult = generator.generate(wordInputs);
-    setResult(genResult);
+     const generator = new CrosswordGenerator(calculatedGridSize);
+     const genResult = generator.generate(wordInputs);
+     setResult(genResult ? cloneCrosswordResult(genResult) : genResult);
   };
 
-  const generateDGA = () => {
-      const wordLines = inputWords.split('\n').map(s => s.trim()).filter(s => s.length > 0);
-      const dgaGen = new DGAGenerator();
-      const dgaRes = dgaGen.generate(wordLines, dgaWordCount);
-      setDgaResult(dgaRes);
-  };
+   const generateDGA = () => {
+       const wordLines = inputWords.split('\n').map(s => s.trim()).filter(s => s.length > 0);
+       const dgaGen = new DGAGenerator();
+       const dgaRes = dgaGen.generate(wordLines, dgaWordCount);
+       setDgaResult(dgaRes ? cloneDgaResult(dgaRes) : dgaRes);
+   };
 
-  const generateTicTac = () => {
-      const wordLines = inputWords.split('\n').map(s => s.trim()).filter(s => s.length > 0);
-      const clueLines = inputClues.split('\n').map(s => s.trim());
-      const generator = new TicTacGenerator();
-      const res = generator.generate(wordLines, clueLines, ticTacDifficulty);
-      setTicTacResult(res);
-  };
+   const generateTicTac = () => {
+       const wordLines = inputWords.split('\n').map(s => s.trim()).filter(s => s.length > 0);
+       const clueLines = inputClues.split('\n').map(s => s.trim());
+       const generator = new TicTacGenerator();
+       const res = generator.generate(wordLines, clueLines, ticTacDifficulty);
+       setTicTacResult(res ? cloneTicTacResult(res) : res);
+   };
 
   const handleGenerate = () => {
     if (activeTab === 'crossword') {
@@ -106,6 +240,17 @@ const App: React.FC = () => {
         generateTicTac();
     }
   };
+
+  useEffect(() => {
+    if (activeTab === 'crossword' && result) {
+        setResult(cloneCrosswordResult(result));
+    } else if (activeTab === 'dga' && dgaResult) {
+        setDgaResult(cloneDgaResult(dgaResult));
+    } else if (activeTab === 'tictac' && ticTacResult) {
+        setTicTacResult(cloneTicTacResult(ticTacResult));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeTab]);
 
   useEffect(() => {
     if (inputWords.trim().length === 0) {
@@ -441,13 +586,6 @@ const App: React.FC = () => {
                     </div>
                 )}
 
-                <button 
-                    onClick={handleGenerate}
-                    className="w-full py-3 bg-gray-900 hover:bg-black text-white rounded-lg font-bold shadow-lg shadow-gray-200 flex justify-center items-center gap-2 transition-all active:scale-[0.98]"
-                >
-                    <RefreshCw size={18} />
-                    Generate Puzzle
-                </button>
             </div>
             
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 text-blue-800 text-sm flex gap-3">
@@ -463,64 +601,7 @@ const App: React.FC = () => {
         {/* RIGHT COLUMN: Preview & Actions */}
         <div className="lg:col-span-8 space-y-6">
             
-            {/* CROSSWORD INFO */}
-            {activeTab === 'crossword' && result && (
-                <div className={`p-4 rounded-lg border ${result.unusedWords.length > 0 ? 'bg-amber-50 border-amber-200' : 'bg-green-50 border-green-200'}`}>
-                    <div className="flex justify-between items-start">
-                        <div>
-                            <h3 className={`font-bold flex items-center gap-2 ${result.unusedWords.length > 0 ? 'text-amber-800' : 'text-green-800'}`}>
-                                {result.unusedWords.length > 0 ? <AlertCircle size={18} /> : <FileCheck size={18} />}
-                                {result.unusedWords.length > 0 ? 'Some words could not be placed' : 'All words placed successfully!'}
-                            </h3>
-                            <p className={`text-sm mt-1 ${result.unusedWords.length > 0 ? 'text-amber-700' : 'text-green-700'}`}>
-                                Grid Usage: {result.placedWords.length} of {result.placedWords.length + result.unusedWords.length} words.
-                            </p>
-                        </div>
-                        <button 
-                            onClick={generateCrossword}
-                            className="px-3 py-1.5 bg-white border border-gray-300 shadow-sm rounded hover:bg-gray-50 text-sm font-medium text-gray-700 flex items-center gap-2"
-                        >
-                            <RefreshCcw size={14} />
-                            Regenerate
-                        </button>
-                    </div>
-                </div>
-            )}
-
-            {/* DGA INFO */}
-            {activeTab === 'dga' && dgaResult && (
-                 <div className={`p-4 rounded-lg border ${dgaResult.success ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`}>
-                    <div className="flex justify-between items-center">
-                        <div>
-                             <h3 className={`font-bold flex items-center gap-2 ${!dgaResult.success ? 'text-red-800' : 'text-green-800'}`}>
-                                {!dgaResult.success ? <AlertCircle size={18} /> : <FileCheck size={18} />}
-                                {dgaResult.success ? 'Valid Logic Puzzle Generated' : 'Generation Failed'}
-                            </h3>
-                            {!dgaResult.success && <p className="text-sm mt-1 text-red-700">{dgaResult.message}</p>}
-                        </div>
-                         <button onClick={generateDGA} className="px-3 py-1.5 bg-white border border-gray-300 shadow-sm rounded hover:bg-gray-50 text-sm font-medium text-gray-700 flex items-center gap-2">
-                            <RefreshCcw size={14} /> Regenerate
-                        </button>
-                    </div>
-                 </div>
-            )}
-
-            {/* TICTAC INFO */}
-            {activeTab === 'tictac' && ticTacResult && (
-                 <div className={`p-4 rounded-lg border ${ticTacResult.success ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`}>
-                    <div className="flex justify-between items-center">
-                        <div>
-                             <h3 className={`font-bold flex items-center gap-2 ${!ticTacResult.success ? 'text-red-800' : 'text-green-800'}`}>
-                                {ticTacResult.success ? 'Generated 4 Unique Rounds' : 'Generation Failed'}
-                            </h3>
-                            {!ticTacResult.success && <p className="text-sm mt-1 text-red-700">Not enough matching words.</p>}
-                        </div>
-                         <button onClick={generateTicTac} className="px-3 py-1.5 bg-white border border-gray-300 shadow-sm rounded hover:bg-gray-50 text-sm font-medium text-gray-700 flex items-center gap-2">
-                            <RefreshCcw size={14} /> Regenerate
-                        </button>
-                    </div>
-                 </div>
-            )}
+            {renderStatusCard()}
 
             {/* Toolbar */}
             <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-wrap gap-4 justify-between items-center">
