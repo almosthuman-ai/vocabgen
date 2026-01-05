@@ -52,9 +52,20 @@ export interface DGAResult {
 
 export type TicTacDifficulty = 'easy' | 'medium' | 'hard';
 
+export interface TicTacConstraintAttributes {
+  length?: number;
+  start?: string;
+  end?: string;
+  pos?: string;
+}
+
 export interface TicTacCell {
-  constraint: string; // The text shown to student (e.g. "n. + 5" or "e___")
-  matchingWords: string[]; // Solution words
+  key: string; // Deterministic constraint signature
+  label: string; // Human-readable composite label (e.g. "n. + Ends with T")
+  attributes: TicTacConstraintAttributes; // Exposed metadata for analytics / future render hooks
+  kind: string; // Constraint grouping identifier (length, pos_start, etc.)
+  ambiguity: number; // Matching word count for prioritising high-overlap clues
+  matchingWords: string[]; // Candidate solution words satisfying this constraint
 }
 
 export interface TicTacGrid {

@@ -92,7 +92,7 @@ const createTicTacCanvas = (
             
             // Draw constraint at top of cell to leave room for writing
             ctx.textBaseline = 'top';
-            ctx.fillText(cell.constraint, cx, y + (r * cellSize) + 15);
+            ctx.fillText(cell.label, cx, y + (r * cellSize) + 15);
 
             // Solution Text
             if (showKey) {

@@ -29,7 +29,11 @@ const cloneTicTacResult = (res: TicTacResult): TicTacResult => ({
   ...res,
   grids: res.grids.map(grid => ({
     ...grid,
-    cells: grid.cells.map(cell => ({ ...cell, matchingWords: [...cell.matchingWords] })),
+    cells: grid.cells.map(cell => ({
+      ...cell,
+      attributes: { ...cell.attributes },
+      matchingWords: [...cell.matchingWords],
+    })),
   })),
 });
 

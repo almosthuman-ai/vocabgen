@@ -181,29 +181,29 @@ graph TD
 #### Tic-Tac orchestration within [`App.tsx`](App.tsx)
 - **Purpose**: [`App.generateTicTac`](App.tsx:308) translates word/clue lists into three-by-three rounds, applying difficulty heuristics and surfacing user guidance when prerequisites are not met.
 - **Key Exports / Functions**:
-  - [`App.generateTicTac`](App.tsx:308) enforces the minimum nine-word requirement, pairs clues with words, and hands control to [`TicTacGenerator.generate`](utils/tictacGenerator.ts:1) with the selected [`ticTacDifficulty`](App.tsx:117).
+  - [`App.generateTicTac`](App.tsx:308) enforces the minimum nine-word requirement, pairs clues with words, and hands control to [`TicTacGenerator.generate`](utils/tictacGenerator.ts:410) with the selected [`ticTacDifficulty`](App.tsx:117).
   - Difficulty selector [`App` toolbar selector](App.tsx:767) updates state and influences status copy via [`TICTAC_DIFFICULTY_LABELS`](App.tsx:65).
   - Download actions reuse [`App.handleDownloadSingle`](App.tsx:521) while shielding `handleDownload2Up` for TicTac (falls back to single-sheet export) to reflect the six-up layout.
 - **State & Side Effects**:
-  - Results stored through [`setTicTacResult`](App.tsx:114) preserve grid metadata (`matchingWords`) for solution rendering.
-  - Status messaging highlights POS hint recommendations and success difficulty labels [`App.setTabStatus`](App.tsx:337).
+  - Results stored through [`setTicTacResult`](App.tsx:114) preserve grid metadata (`matchingWords`, `attributes`, `kind`, `ambiguity`) for solution rendering and future analytics.
+  - Status messaging highlights POS hint recommendations and success difficulty labels [`App.setTabStatus`](App.tsx:337); failure modes echo generator diagnostics when solvability cannot be guaranteed.
 - **Upstream/Downstream Links**:
   - Canvas draw effect [`useEffect`](App.tsx:454) injects `ticTacResult` into [`drawTicTacCanvas`](components/TicTacCanvas.ts:134) and respects `showSolution` toggles.
   - On-screen clue textarea copy derives from the same inputs driving generator calls, keeping teacher-editable text consistent across preview and print.
 - **Change Considerations**:
-  - If generator requirements shift (e.g., additional metadata for medium/hard), revise validation messaging and ensure `clueLines` parsing matches generator expectations.
+  - If generator requirements shift (e.g., new constraint metadata), revise validation messaging and ensure `clueLines` parsing matches generator expectations.
   - Differentiating round counts or board dimensions must be mirrored across `createTicTacCanvas` layout assumptions and the `download` pathway.
 
 #### Canvas rendering and exports [`components/TicTacCanvas.ts`](components/TicTacCanvas.ts)
 - **Purpose**: Produce printable Tic-Tac-Word sheets with four rounds per page, keeping constraint prompts readable and solution overlays reserved for teacher keys.
 - **Key Exports**:
   - [`drawTicTacCanvas`](components/TicTacCanvas.ts:134) renders a high-resolution portrait canvas into the shared preview element, clearing residual styles from other tabs.
-  - [`downloadTicTacCanvas`](components/TicTacCanvas.ts:154) triggers single-sheet exports; no dual-up variant is provided since each sheet already contains multiple rounds.
+  - [`downloadTicTacCanvas`](components/TicTacCanvas.ts:154) triggers single-sheet exports; each sheet already contains four rounds.
 - **State & Side Effects**:
   - [`createTicTacCanvas`](components/TicTacCanvas.ts:4) positions four grids in a 2×2 layout, annotates round headings, and conditionally shows solution examples (up to two per cell) when `showKey` is true.
-  - Constraint text and solution samples use fixed font sizing to balance readability with handwriting space inside each cell.
+  - Constraint text now reads from [`TicTacCell.label`](types.ts:63) so composite metadata (POS, start, end, length) remains human-friendly while underlying attributes stay machine-readable.
 - **Upstream/Downstream Links**:
-  - Consumes [`TicTacResult`](types.ts:65) data produced by the generator; each `TicTacGrid` should expose nine `cells` with `constraint` and `matchingWords` arrays.
+  - Consumes [`TicTacResult`](types.ts:65) data produced by the generator; each `TicTacGrid` exposes nine `cells` containing `label`, `attributes`, `kind`, `ambiguity`, and `matchingWords` arrays.
   - Works in tandem with the difficulty selector and generator heuristics; any new cell metadata must be reflected in canvas rendering to maintain alignment with classroom expectations.
 - **Change Considerations**:
   - Adjusting the number of grids per sheet requires updating the layout math (column/row gaps and `gridWidth`) and may cascade into download logic and teacher instructions.
@@ -248,19 +248,19 @@ graph TD
   - Any changes to solvability heuristics should be paired with updated messaging so Stage 2 documentation stays accurate.
 
 #### Tic-Tac generator [`utils/tictacGenerator.ts`](utils/tictacGenerator.ts)
-- **Purpose**: Produce sets of nine-cell grids populated with constraint text keyed off word attributes, delivering [`TicTacResult`](types.ts:65) data for rendering and export.
+- **Purpose**: Produce nine-cell grids that stay solvable while nudging toward ambiguity patterns aligned with difficulty.
 - **Key Exports**:
-  - [`TicTacGenerator`](utils/tictacGenerator.ts:12) exposes [`generate`](utils/tictacGenerator.ts:121), returning four `TicTacGrid` instances by default.
+  - [`TicTacGenerator`](utils/tictacGenerator.ts:73) exposes [`generate`](utils/tictacGenerator.ts:388), returning four `TicTacGrid` instances by default.
 - **Algorithm & Heuristics**:
-  - Preprocesses input words and clues to capture length, start/end letters, and optional POS tags (`processInput`](utils/tictacGenerator.ts:20)).
-  - Builds constraint pools tailored per difficulty (`getConstraintPool`](utils/tictacGenerator.ts:69))—length-based for easy, POS/letter hybrids for medium, layered combinations for hard (including redundancies to ensure volume).
-  - Constructs each grid by sampling constraints from the pool (`generateGrid`](utils/tictacGenerator.ts:35)); easy mode enforces the longest-length clue at center to heighten student focus.
-  - Returns `success: false` when fewer than nine processed words are available, signalling upstream controls to guard input volume.
-- **Randomness**: Uses `Math.random()` for shuffling constraint pools, introducing variety across grids. No seeding is configurable.
+  - Preprocesses words/clues to capture length, start/end letters, and optional POS tags (`processInput`](utils/tictacGenerator.ts:85)).
+  - Buckets constraints across length/start/end/POS combinations (`buildConstraintCandidates`](utils/tictacGenerator.ts:108)), computing ambiguity counts and classifying each candidate into high/medium/low bands.
+  - Difficulty profiles (`DIFFICULTY_PROFILES`](utils/tictacGenerator.ts:50)) apply soft band weights: easy boosts high ambiguity, medium balances, and hard favours low ambiguity, but quotas are no longer enforced. Selection falls back to any viable constraints so long as solvability holds.
+  - Grid assembly (`generateGrid`](utils/tictacGenerator.ts:347)) runs weighted selection (`pickConstraintSet`](utils/tictacGenerator.ts:246)), then validates via the perfect-game solver (`findDistinctAssignment`](utils/tictacGenerator.ts:275)). Easy mode still centers the longest-length clue (`enforceEasyCenter`](utils/tictacGenerator.ts:337)).
+- **Randomness**: `Math.random()` perturbs candidate ordering and solver choices; band weights influence but do not dictate final composition.
 - **Change Considerations**:
-  - Altering grid count per sheet or constraint selection strategy must be mirrored in Stage 3 rendering docs to maintain teacher expectations.
-  - Extending difficulty tiers requires additional branch logic in `getConstraintPool` and UI controls to expose new options.
-- **Documentation Deliverable**: Capture APIs, randomness characteristics, and failure modes so contributors understand how generator outputs align with presentation layers and status messaging.
+  - Updating emphasis requires tweaking `bandWeights`; ensure fallback logic remains solvability-first.
+  - When altering constraint kinds or labels, sync visual formatting expectations (shorter underscores, numeric length labels) with [`TicTacCanvas`](components/TicTacCanvas.ts:134).
+- **Documentation Deliverable**: Capture the soft-bias philosophy so educators know boards always generate even when the word bank lacks high-ambiguity overlap.
 
 ### Stage 5 · Shared Data Models and Types
 - **Objective**: Describe domain models and type contracts that bind UI components and generators.
