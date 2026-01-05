@@ -8,8 +8,9 @@ import { TicTacGenerator } from './utils/tictacGenerator';
 import { drawTicTacCanvas, downloadTicTacCanvas } from './components/TicTacCanvas';
 import CluesList from './components/CluesList';
 import { GenerationResult, WordInput, DGAResult, TicTacResult, TicTacDifficulty } from './types';
-import { RefreshCw, AlertCircle, FileCheck, FileText, Scissors, LayoutGrid, BrainCircuit, Gamepad2, BookOpen, Layers, Plus, Trash2, ArrowDownToLine, Library } from 'lucide-react';
+import { RefreshCw, AlertCircle, FileCheck, FileText, Scissors, LayoutGrid, BrainCircuit, Gamepad2, BookOpen, Layers, Plus, Trash2, ArrowDownToLine, Library, Lightbulb } from 'lucide-react';
 import { CURRICULUM } from './curriculumData';
+import PedagogyModal, { PedagogyLanguage } from './components/PedagogyModal';
 
 const cloneCrosswordResult = (res: GenerationResult): GenerationResult => ({
   grid: res.grid.map(row => row.map(cell => ({ ...cell }))),
@@ -115,6 +116,8 @@ const App: React.FC = () => {
   };
   const [ticTacDifficulty, setTicTacDifficulty] = useState<TicTacDifficulty>('medium');
   const [statusByTab, setStatusByTab] = useState<Record<Tab, TabStatus>>({ ...DEFAULT_STATUSES });
+  const [isPedagogyOpen, setPedagogyOpen] = useState(false);
+  const [pedagogyLanguage, setPedagogyLanguage] = useState<PedagogyLanguage>('zh');
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -557,27 +560,36 @@ const App: React.FC = () => {
                 <p>專為台灣 ESL 師生設計的高密度教學拼字遊戲生成器。</p>
             </div>
         </div>
-        <div className="flex gap-2 notranslate" data-notranslate>
+        <div className="flex flex-col items-stretch gap-2 md:items-end notranslate" data-notranslate>
+            <div className="flex flex-wrap gap-2 justify-end md:justify-start">
+                <button
+                    onClick={() => setActiveTab('crossword')}
+                    className={`px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors ${activeTab === 'crossword' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'}`}
+                >
+                    <LayoutGrid size={18} />
+                    Crossword
+                </button>
+                <button
+                    onClick={() => setActiveTab('dga')}
+                    className={`px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors ${activeTab === 'dga' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'}`}
+                >
+                    <BrainCircuit size={18} />
+                    DGA Logic
+                </button>
+                <button
+                    onClick={() => setActiveTab('tictac')}
+                    className={`px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors ${activeTab === 'tictac' ? 'bg-purple-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'}`}
+                >
+                    <Gamepad2 size={18} />
+                    Tic-Tac-Word
+                </button>
+            </div>
             <button
-                onClick={() => setActiveTab('crossword')}
-                className={`px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors ${activeTab === 'crossword' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'}`}
+                onClick={() => setPedagogyOpen(true)}
+                className="self-end md:self-auto px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors border border-blue-200 bg-white text-blue-700 hover:bg-blue-50 shadow-sm"
             >
-                <LayoutGrid size={18} />
-                Crossword
-            </button>
-            <button
-                onClick={() => setActiveTab('dga')}
-                className={`px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors ${activeTab === 'dga' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'}`}
-            >
-                <BrainCircuit size={18} />
-                DGA Logic
-            </button>
-            <button
-                onClick={() => setActiveTab('tictac')}
-                className={`px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors ${activeTab === 'tictac' ? 'bg-purple-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'}`}
-            >
-                <Gamepad2 size={18} />
-                Tic-Tac-Word
+                <Lightbulb size={18} className="text-blue-500" />
+                Why this works? / 設計理念 💡
             </button>
         </div>
       </header>
@@ -827,6 +839,13 @@ const App: React.FC = () => {
             )}
         </div>
       </main>
+      <PedagogyModal
+        isOpen={isPedagogyOpen}
+        onClose={() => setPedagogyOpen(false)}
+        activeTab={activeTab}
+        language={pedagogyLanguage}
+        onLanguageChange={setPedagogyLanguage}
+      />
     </div>
   );
 };
