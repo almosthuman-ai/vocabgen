@@ -36,67 +36,58 @@ export class DGAGenerator {
   // Generates the visual syntax requested: "L ____________" or "____________ L"
   // Using a fixed long line to ensure length ambiguity is maintained visually where appropriate,
   // focusing the student on the revealed letter position relative to start/end.
-  private getVisual(type: ConstraintType, char: string): DGAConstraint['visual'] {
-    const LINE = "________________"; 
+  private getVisual(word: string, type: ConstraintType): DGAConstraint['visual'] {
+    const len = word.length;
+
+    const buildIndeterminate = (gap: number) => {
+      if (gap >= 2) {
+        return { display: '________________', slotCount: 12 };
+      }
+      if (gap === 1) {
+        return { display: '_', slotCount: 1 };
+      }
+      return { display: '', slotCount: 0 };
+    };
+
+    const common = (anchorChar: string, shortLeadingSlots: number, shortTrailingSlots: number, infiniteSide: 'leading' | 'trailing', indeterminateGap: number) => {
+      const indeterminate = buildIndeterminate(indeterminateGap);
+      const pieces: string[] = [];
+
+      if (infiniteSide === 'leading' && indeterminate.display) pieces.push(indeterminate.display);
+      if (shortLeadingSlots > 0) pieces.push(Array(shortLeadingSlots).fill('_').join(' '));
+      pieces.push(anchorChar);
+      if (shortTrailingSlots > 0) pieces.push(Array(shortTrailingSlots).fill('_').join(' '));
+      if (infiniteSide === 'trailing' && indeterminate.display) pieces.push(indeterminate.display);
+
+      const display = pieces.join(' ');
+
+      return {
+        display,
+        anchorChar,
+        shortLeadingSlots,
+        shortTrailingSlots,
+        infiniteSide,
+        infiniteSlotCount: indeterminate.slotCount
+      };
+    };
+
     switch (type) {
       case 'START_1':
-        return {
-          display: `${char} ${LINE}`,
-          anchorChar: char,
-          shortLeadingSlots: 0,
-          shortTrailingSlots: 0,
-          infiniteSide: 'trailing',
-          infiniteSlotCount: 12
-        };
+        return common(word[0], 0, 0, 'trailing', Math.max(0, len - 1));
       case 'START_2':
-        return {
-          display: `_ ${char} ${LINE}`,
-          anchorChar: char,
-          shortLeadingSlots: 1,
-          shortTrailingSlots: 0,
-          infiniteSide: 'trailing',
-          infiniteSlotCount: 12
-        };
+        return common(word[1], 1, 0, 'trailing', Math.max(0, len - 2));
       case 'START_3':
-        return {
-          display: `_ _ ${char} ${LINE}`,
-          anchorChar: char,
-          shortLeadingSlots: 2,
-          shortTrailingSlots: 0,
-          infiniteSide: 'trailing',
-          infiniteSlotCount: 12
-        };
+        return common(word[2], 2, 0, 'trailing', Math.max(0, len - 3));
       case 'END_1':
-        return {
-          display: `${LINE} ${char}`,
-          anchorChar: char,
-          shortLeadingSlots: 0,
-          shortTrailingSlots: 0,
-          infiniteSide: 'leading',
-          infiniteSlotCount: 12
-        };
+        return common(word[len - 1], 0, 0, 'leading', Math.max(0, len - 1));
       case 'END_2':
-        return {
-          display: `${LINE} ${char} _`,
-          anchorChar: char,
-          shortLeadingSlots: 0,
-          shortTrailingSlots: 1,
-          infiniteSide: 'leading',
-          infiniteSlotCount: 12
-        };
+        return common(word[len - 2], 0, 1, 'leading', Math.max(0, len - 2));
       case 'END_3':
-        return {
-          display: `${LINE} ${char} _ _`,
-          anchorChar: char,
-          shortLeadingSlots: 0,
-          shortTrailingSlots: 2,
-          infiniteSide: 'leading',
-          infiniteSlotCount: 12
-        };
+        return common(word[len - 3], 0, 2, 'leading', Math.max(0, len - 3));
     }
     return {
-      display: '',
-      anchorChar: char,
+      display: word,
+      anchorChar: '',
       shortLeadingSlots: 0,
       shortTrailingSlots: 0,
       infiniteSide: 'trailing',
@@ -160,19 +151,48 @@ export class DGAGenerator {
         uniqueWords = uniqueWords.sort(() => Math.random() - 0.5).slice(0, limit);
     }
 
-    if (uniqueWords.length < 3) {
-      return { clues: [], wordBank: uniqueWords, success: false, message: "Please provide at least 3 words." };
+    if (uniqueWords.length < 6) {
+      return { clues: [], wordBank: uniqueWords, success: false, message: "Please provide at least 6 words." };
     }
 
     // 2. Map All Possible Constraints
     const allConstraints: DGAConstraint[] = [];
     const types: ConstraintType[] = ['START_1', 'START_2', 'START_3', 'END_1', 'END_2', 'END_3'];
 
+    const constraintsByWord = new Map<string, {
+      ambiguous: DGAConstraint[];
+      unique: DGAConstraint[];
+      all: DGAConstraint[];
+    }>();
+
+    uniqueWords.forEach(word => {
+      constraintsByWord.set(word, { ambiguous: [], unique: [], all: [] });
+    });
+
+    const ambiguousBuckets = new Map<string, DGAConstraint[]>();
+    const bucketWordMembers = new Map<string, Set<string>>();
+    const adjacency = new Map<string, Set<string>>();
+
+    uniqueWords.forEach(word => adjacency.set(word, new Set()));
+
+    const passesLengthRequirement = (type: ConstraintType, length: number): boolean => {
+      switch (type) {
+        case 'START_3':
+        case 'END_3':
+          return length >= 5;
+        case 'START_2':
+        case 'END_2':
+          return length >= 4;
+        default:
+          return true;
+      }
+    };
+
     // Pre-calculate every possible valid constraint for every word
     uniqueWords.forEach(word => {
       types.forEach(type => {
         const char = this.getChar(word, type);
-        if (char) {
+        if (char && passesLengthRequirement(type, word.length)) {
           // Calculate Overlap Score (Step 2)
           // How many words in the FULL list share this feature?
           let score = 0;
@@ -183,85 +203,216 @@ export class DGAGenerator {
           allConstraints.push({
             type,
             char,
-            visual: this.getVisual(type, char),
+            visual: this.getVisual(word, type),
             targetWord: word,
             overlapScore: score
           });
+
+          const bucket = constraintsByWord.get(word);
+          if (bucket) {
+            const constraintRef = allConstraints[allConstraints.length - 1];
+            if (score >= 2) {
+              bucket.ambiguous.push(constraintRef);
+              const bucketKey = `${constraintRef.type}:${constraintRef.char}`;
+              if (!ambiguousBuckets.has(bucketKey)) {
+                ambiguousBuckets.set(bucketKey, []);
+              }
+              ambiguousBuckets.get(bucketKey)!.push(constraintRef);
+            }
+            if (score === 1) bucket.unique.push(constraintRef);
+            bucket.all.push(constraintRef);
+          }
         }
       });
     });
 
-    // Calculate maximum possible ambiguity for this specific list
-    // (If the user provides words with NO overlap, we can't force 3 ambiguous clues)
-    const ambiguousConstraints = allConstraints.filter(c => c.overlapScore >= 2);
-    const maxAmbiguousAvailable = ambiguousConstraints.length;
-    const TARGET_AMBIGUOUS_COUNT = Math.min(3, maxAmbiguousAvailable);
+    ambiguousBuckets.forEach((constraints, key) => {
+      const members = new Set<string>(constraints.map(c => c.targetWord));
+      bucketWordMembers.set(key, members);
+    });
 
-    if (TARGET_AMBIGUOUS_COUNT < 3) {
-      // Just a warning in the console, but we proceed with best effort
+    bucketWordMembers.forEach(members => {
+      const wordsInBucket = Array.from(members);
+      for (let i = 0; i < wordsInBucket.length; i++) {
+        for (let j = i + 1; j < wordsInBucket.length; j++) {
+          const first = wordsInBucket[i];
+          const second = wordsInBucket[j];
+          adjacency.get(first)?.add(second);
+          adjacency.get(second)?.add(first);
+        }
+      }
+    });
+
+    const components: string[][] = [];
+    const visited = new Set<string>();
+
+    uniqueWords.forEach(word => {
+      if (visited.has(word)) return;
+      const stack = [word];
+      const component: string[] = [];
+
+      while (stack.length > 0) {
+        const current = stack.pop()!;
+        if (visited.has(current)) continue;
+        visited.add(current);
+        component.push(current);
+
+        adjacency.get(current)?.forEach(neighbor => {
+          if (!visited.has(neighbor)) stack.push(neighbor);
+        });
+      }
+
+      components.push(component);
+    });
+
+    const ambiguousComponents = components
+      .filter(component => component.length > 1 && component.some(word => (constraintsByWord.get(word)?.ambiguous.length ?? 0) > 0));
+
+    const componentPotentials = ambiguousComponents.map(component => Math.max(0, component.length - 1));
+    const totalAmbiguousPotential = componentPotentials.reduce((sum, val) => sum + val, 0);
+    const TARGET_AMBIGUOUS_COUNT = Math.min(3, totalAmbiguousPotential);
+
+    if (totalAmbiguousPotential < 3) {
       console.warn("Word list has low overlap; cannot generate 3 ambiguous clues.");
     }
+
+    const pickRandom = <T>(arr: T[]): T | undefined => {
+      if (arr.length === 0) return undefined;
+      const idx = Math.floor(Math.random() * arr.length);
+      return arr[idx];
+    };
+
+    const shuffle = <T>(arr: T[]): T[] => {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    };
+
+    const chooseFrom = <T>(arr: T[], randomize: boolean): T | undefined => {
+      if (arr.length === 0) return undefined;
+      if (!randomize) return arr[0];
+      return arr[Math.floor(Math.random() * arr.length)];
+    };
+
+    const computeForcedAmbiguousSet = (desiredCount: number, randomize: boolean): Set<string> => {
+      const forced = new Set<string>();
+      if (desiredCount <= 0) return forced;
+
+      const perComponentUsage = new Map<number, number>();
+      const candidates: { word: string; componentIndex: number }[] = [];
+
+      ambiguousComponents.forEach((words, index) => {
+        if (words.length <= 1) return;
+        const wordsCopy = randomize ? shuffle([...words]) : [...words];
+        const anchor = wordsCopy.pop();
+        if (anchor === undefined) return;
+        perComponentUsage.set(index, 0);
+        const candidateWords = randomize ? shuffle(wordsCopy) : wordsCopy;
+        candidateWords.forEach(word => {
+          candidates.push({ word, componentIndex: index });
+        });
+      });
+
+      const orderedCandidates = randomize ? shuffle(candidates) : candidates;
+
+      for (const entry of orderedCandidates) {
+        if (forced.size >= desiredCount) break;
+        const limit = (ambiguousComponents[entry.componentIndex]?.length ?? 0) - 1;
+        if (limit <= 0) continue;
+        const usage = perComponentUsage.get(entry.componentIndex) ?? 0;
+        if (usage >= limit) continue;
+        forced.add(entry.word);
+        perComponentUsage.set(entry.componentIndex, usage + 1);
+      }
+
+      return forced;
+    };
+
+    const attemptBuild = (forcedSet: Set<string>, requiredAmbiguous: number, randomize: boolean): DGAConstraint[] | null => {
+      const selection = new Map<string, DGAConstraint>();
+
+      const pickAmbiguousFor = (word: string): boolean => {
+        const bucketInfo = constraintsByWord.get(word);
+        if (!bucketInfo || bucketInfo.ambiguous.length === 0) return false;
+
+        const preferred = bucketInfo.ambiguous.filter(constraint => {
+          const members = bucketWordMembers.get(`${constraint.type}:${constraint.char}`) ?? new Set<string>();
+          for (const member of members) {
+            if (member === word) continue;
+            if (!forcedSet.has(member)) return true;
+          }
+          return false;
+        });
+
+        const options = preferred.length > 0 ? preferred : bucketInfo.ambiguous;
+        const choice = chooseFrom(options, randomize);
+        if (!choice) return false;
+        selection.set(word, choice);
+        return true;
+      };
+
+      for (const word of forcedSet) {
+        if (!pickAmbiguousFor(word)) return null;
+      }
+
+      const orderedWords = randomize ? shuffle([...uniqueWords]) : [...uniqueWords];
+      for (const word of orderedWords) {
+        if (selection.has(word)) continue;
+        const bucketInfo = constraintsByWord.get(word);
+        if (!bucketInfo) return null;
+
+        let choice: DGAConstraint | undefined;
+        if (bucketInfo.unique.length > 0) {
+          choice = chooseFrom(bucketInfo.unique, randomize);
+        } else {
+          const preferred = bucketInfo.ambiguous.filter(constraint => {
+            const members = bucketWordMembers.get(`${constraint.type}:${constraint.char}`) ?? new Set<string>();
+            for (const member of members) {
+              if (member === word) continue;
+              if (!forcedSet.has(member)) return true;
+            }
+            return false;
+          });
+
+          if (preferred.length > 0) {
+            choice = chooseFrom(preferred, randomize);
+          } else if (bucketInfo.ambiguous.length > 0) {
+            choice = chooseFrom(bucketInfo.ambiguous, randomize);
+          } else {
+            choice = chooseFrom(bucketInfo.all, randomize);
+          }
+        }
+
+        if (!choice) return null;
+        selection.set(word, choice);
+      }
+
+      if (selection.size !== uniqueWords.length) return null;
+
+      const selectedConstraints = Array.from(selection.values());
+      const ambiguousCount = selectedConstraints.filter(c => c.overlapScore >= 2).length;
+      const minimumRequired = Math.min(requiredAmbiguous, forcedSet.size);
+      if (ambiguousCount < minimumRequired) return null;
+
+      if (!this.validateSolvability(selectedConstraints, uniqueWords)) {
+        return null;
+      }
+
+      return selectedConstraints;
+    };
 
     // 3. Generator Loop (Quota System)
     const MAX_ATTEMPTS = 500;
 
     for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
-      const selectedConstraints: DGAConstraint[] = [];
-      const usedWords = new Set<string>();
-      
-      // Shuffle words to randomize which word gets which clue type
-      const shuffledWords = [...uniqueWords].sort(() => Math.random() - 0.5);
+      const forcedSet = computeForcedAmbiguousSet(TARGET_AMBIGUOUS_COUNT, true);
+      const selectedConstraints = attemptBuild(forcedSet, TARGET_AMBIGUOUS_COUNT, true);
 
-      // To track our ambiguity quota
-      let currentAmbiguousCount = 0;
+      if (selectedConstraints) {
 
-      // Selection Pass
-      for (const word of shuffledWords) {
-        // Get all valid constraints for this specific word
-        const options = allConstraints.filter(c => c.targetWord === word);
-        
-        if (options.length === 0) continue; // Should not happen for valid words
-
-        let chosen: DGAConstraint | null = null;
-
-        // Phase A: Force Ambiguity
-        // We prioritize high-score clues if we haven't met the quota
-        if (currentAmbiguousCount < TARGET_AMBIGUOUS_COUNT) {
-          const highOverlap = options.filter(c => c.overlapScore >= 2);
-          if (highOverlap.length > 0) {
-            chosen = highOverlap[Math.floor(Math.random() * highOverlap.length)];
-          }
-        }
-
-        // Phase B: Fill Remainder (Solvability)
-        // If we have met quota (or couldn't find high overlap), prefer Unique Constraints (Score 1)
-        // to act as anchors.
-        if (!chosen) {
-          const uniqueOptions = options.filter(c => c.overlapScore === 1);
-          if (uniqueOptions.length > 0) {
-            chosen = uniqueOptions[Math.floor(Math.random() * uniqueOptions.length)];
-          } else {
-            // Fallback: Pick any if no unique ones exist (rare, but happens in dense lists)
-            chosen = options[Math.floor(Math.random() * options.length)];
-          }
-        }
-
-        if (chosen) {
-          selectedConstraints.push(chosen);
-          if (chosen.overlapScore >= 2) currentAmbiguousCount++;
-          usedWords.add(word);
-        }
-      }
-
-      // Check if we missed any words (rare safety check)
-      if (usedWords.size !== uniqueWords.length) continue;
-
-      // Check Quota Final
-      if (currentAmbiguousCount < TARGET_AMBIGUOUS_COUNT) continue;
-
-      // 4. Validator (Deadlock Prevention)
-      if (this.validateSolvability(selectedConstraints, uniqueWords)) {
-        
         // Success! Format Output
         // Shuffle clues so ID doesn't reveal order
         const shuffledClues = selectedConstraints.map((c, i) => {
@@ -297,6 +448,44 @@ export class DGAGenerator {
           success: true
         };
       }
+    }
+
+    // Fallback safety mode: degrade overlap requirement until solvable configuration found
+    for (let required = TARGET_AMBIGUOUS_COUNT; required >= 0; required--) {
+      const forcedSet = computeForcedAmbiguousSet(required, false);
+      const fallbackSelection = attemptBuild(forcedSet, required, false);
+
+      if (!fallbackSelection) continue;
+
+      const shuffledClues = fallbackSelection.map((c, i) => {
+        const matches = uniqueWords.filter(w => this.matches(c, w)).sort();
+
+        return {
+          id: 0,
+          word: c.targetWord,
+          displayText: c.visual.display,
+          anchorChar: c.visual.anchorChar,
+          shortLeadingSlots: c.visual.shortLeadingSlots,
+          shortTrailingSlots: c.visual.shortTrailingSlots,
+          infiniteSide: c.visual.infiniteSide,
+          infiniteSlotCount: c.visual.infiniteSlotCount,
+          isAmbiguous: c.overlapScore > 1,
+          matchingWords: matches
+        };
+      });
+
+      for (let i = shuffledClues.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledClues[i], shuffledClues[j]] = [shuffledClues[j], shuffledClues[i]];
+      }
+
+      shuffledClues.forEach((c, i) => c.id = i + 1);
+
+      return {
+        clues: shuffledClues,
+        wordBank: [...uniqueWords].sort(),
+        success: true
+      };
     }
 
     return {

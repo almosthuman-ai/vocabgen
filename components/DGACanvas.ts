@@ -30,14 +30,23 @@ const drawClueIndicator = (
         }
     };
 
-    const drawInfinite = () => {
-        const slotCount = Math.max(clue.infiniteSlotCount, 18);
+    const drawIndeterminate = () => {
+        if (clue.infiniteSlotCount <= 0) {
+            return;
+        }
+
+        if (clue.infiniteSlotCount === 1) {
+            drawShortSlots(1);
+            return;
+        }
+
+        const slotCount = Math.max(clue.infiniteSlotCount, 12);
         const length = slotCount * slotWidth;
         drawBar(length);
     };
 
     if (clue.infiniteSide === 'leading') {
-        drawInfinite();
+        drawIndeterminate();
         drawShortSlots(clue.shortLeadingSlots);
         ctx.fillText(clue.anchorChar, cursorX, middleY);
         cursorX += ctx.measureText(clue.anchorChar).width + segmentGap;
@@ -47,7 +56,7 @@ const drawClueIndicator = (
         ctx.fillText(clue.anchorChar, cursorX, middleY);
         cursorX += ctx.measureText(clue.anchorChar).width + segmentGap;
         drawShortSlots(clue.shortTrailingSlots);
-        drawInfinite();
+        drawIndeterminate();
     }
 };
 
