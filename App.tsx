@@ -35,6 +35,48 @@ const cloneTicTacResult = (res: TicTacResult): TicTacResult => ({
 type Tab = 'crossword' | 'dga' | 'tictac';
 type BookKey = keyof typeof CURRICULUM;
 
+type StatusTone = 'neutral' | 'success' | 'warning' | 'error';
+
+interface TabStatus {
+  tone: StatusTone;
+  en: string;
+  zh: string;
+}
+
+const DEFAULT_STATUSES: Record<Tab, TabStatus> = {
+  crossword: {
+    tone: 'neutral',
+    en: 'No crossword generated yet. Add more words and press Generate.',
+    zh: '尚未產生填字遊戲。請先輸入更多單字後再按「產生」。',
+  },
+  dga: {
+    tone: 'neutral',
+    en: 'No DGA puzzle generated yet. Prepare your word list and press Generate.',
+    zh: '尚未產生 DGA 邏輯題。請整理單字列表後按「產生」。',
+  },
+  tictac: {
+    tone: 'neutral',
+    en: 'No Tic-Tac-Word rounds generated yet. Add clue-ready words and press Generate.',
+    zh: '尚未產生井字動詞遊戲輪。請輸入含提示的單字後按「產生」。',
+  },
+};
+
+const TICTAC_DIFFICULTY_LABELS: Record<TicTacDifficulty, { en: string; zh: string }> = {
+  easy: { en: 'Easy', zh: '初階' },
+  medium: { en: 'Medium', zh: '中階' },
+  hard: { en: 'Hard', zh: '高階' },
+};
+
+const summarizeList = (items: string[], limit = 4): string => {
+  if (items.length === 0) return '';
+  if (items.length <= limit) return items.join(', ');
+  return `${items.slice(0, limit).join(', ')} … (+${items.length - limit})`;
+};
+
+const buildStatus = (tone: StatusTone, en: string, zh: string): TabStatus => ({ tone, en, zh });
+
+
+
 const App: React.FC = () => {
   const [inputWords, setInputWords] = useState('');
   const [inputClues, setInputClues] = useState('');
@@ -72,6 +114,7 @@ const App: React.FC = () => {
     setTicTacResultState(value ? cloneTicTacResult(value) : null);
   };
   const [ticTacDifficulty, setTicTacDifficulty] = useState<TicTacDifficulty>('medium');
+  const [statusByTab, setStatusByTab] = useState<Record<Tab, TabStatus>>({ ...DEFAULT_STATUSES });
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -88,6 +131,14 @@ const App: React.FC = () => {
     (activeTab === 'dga' && hasDga) ||
     (activeTab === 'tictac' && hasTicTac);
 
+  const setTabStatus = (tab: Tab, status: TabStatus) => {
+    setStatusByTab(prev => ({ ...prev, [tab]: status }));
+  };
+
+  const getActiveStatus = (): TabStatus => {
+    return statusByTab[activeTab];
+  };
+
   const renderStatusCard = () => {
     if (isWordListEmpty) {
       return (
@@ -97,88 +148,45 @@ const App: React.FC = () => {
       );
     }
 
-    if (activeTab === 'crossword') {
-      return (
-        <div className={`p-4 rounded-lg border ${hasCrossword ? (result!.unusedWords.length > 0 ? 'bg-amber-50 border-amber-200' : 'bg-green-50 border-green-200') : 'bg-white border-gray-200'}`}>
-          <div className="flex justify-between items-start">
-            <div>
-              <h3 className={`font-bold flex items-center gap-2 ${hasCrossword ? (result!.unusedWords.length > 0 ? 'text-amber-800' : 'text-green-800') : 'text-gray-700'}`}>
-                {hasCrossword ? (
-                  result!.unusedWords.length > 0 ? <AlertCircle size={18} /> : <FileCheck size={18} />
-                ) : (
-                  <RefreshCw size={18} className="text-gray-500" />
-                )}
-                {hasCrossword ? (
-                  result!.unusedWords.length > 0 ? 'Some words could not be placed' : 'All words placed successfully!'
-                ) : (
-                  'No crossword generated yet'
-                )}
-              </h3>
-              <p className={`text-sm mt-1 ${hasCrossword ? (result!.unusedWords.length > 0 ? 'text-amber-700' : 'text-green-700') : 'text-gray-500'}`}>
-                {hasCrossword ? (
-                  <>Grid Usage: {result!.placedWords.length} of {result!.placedWords.length + result!.unusedWords.length} words.</>
-                ) : (
-                  'Click Generate to produce a grid.'
-                )}
-              </p>
-              {hasCrossword && result!.unusedWords.length > 0 && (
-                <p className="mt-3 text-xs font-medium text-red-600">
-                  Unused: {result!.unusedWords.join(', ')}
-                </p>
-              )}
-            </div>
-            <button
-              onClick={generateCrossword}
-              className="px-3 py-1.5 bg-gray-900 hover:bg-black text-white border border-transparent shadow-sm rounded text-sm font-medium grid grid-flow-col auto-cols-max items-center gap-2"
-            >
-              <RefreshCw size={16} />
-              Generate
-            </button>
-          </div>
-        </div>
-      );
-    }
+    const status = getActiveStatus();
 
-    if (activeTab === 'dga') {
-      const success = hasDga && dgaResult!.success;
-      return (
-        <div className={`p-4 rounded-lg border ${hasDga ? (success ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200') : 'bg-white border-gray-200'}`}>
-          <div className="flex justify-between items-start">
-            <div>
-              <h3 className={`font-bold flex items-center gap-2 ${hasDga ? (success ? 'text-green-800' : 'text-red-800') : 'text-gray-700'}`}>
-                {hasDga ? (success ? <FileCheck size={18} /> : <AlertCircle size={18} />) : <RefreshCw size={18} className="text-gray-500" />}
-                {hasDga ? (success ? 'Valid Logic Puzzle Generated' : 'Generation Failed') : 'No DGA puzzle generated yet'}
-              </h3>
-              <p className={`text-sm mt-1 ${hasDga ? (success ? 'text-green-700' : 'text-red-700') : 'text-gray-500'}`}>
-                {hasDga ? (success ? 'Deductive clue stack is ready.' : dgaResult!.message || 'Adjust the word pool and try again.') : 'Click Generate to construct the logic grid.'}
-              </p>
-            </div>
-            <button
-              onClick={generateDGA}
-              className="px-3 py-1.5 bg-gray-900 hover:bg-black text-white border border-transparent shadow-sm rounded text-sm font-medium grid grid-flow-col auto-cols-max items-center gap-2"
-            >
-              <RefreshCw size={16} />
-              Generate
-            </button>
-          </div>
-        </div>
-      );
-    }
+    const iconByTone: Record<StatusTone, React.ReactNode> = {
+      neutral: <RefreshCw size={18} className="text-gray-500" />,
+      success: <FileCheck size={18} />, 
+      warning: <AlertCircle size={18} />, 
+      error: <AlertCircle size={18} />,
+    };
 
-    const success = hasTicTac && ticTacResult!.success;
+    const borderTone: Record<StatusTone, string> = {
+      neutral: 'border-gray-200',
+      success: 'border-green-200',
+      warning: 'border-amber-200',
+      error: 'border-red-200',
+    };
+
+    const bgTone: Record<StatusTone, string> = {
+      neutral: 'bg-white',
+      success: 'bg-green-50',
+      warning: 'bg-amber-50',
+      error: 'bg-red-50',
+    };
+
     return (
-      <div className={`p-4 rounded-lg border ${hasTicTac ? (success ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200') : 'bg-white border-gray-200'}`}>
-        <div className="flex justify-between items-start">
-          <div>
-            <h3 className={`font-bold flex items-center gap-2 ${hasTicTac ? (success ? 'text-green-800' : 'text-red-800') : 'text-gray-700'}`}>
-              {hasTicTac ? (success ? 'Generated 4 Unique Rounds' : 'Generation Failed') : 'No Tic-Tac-Word rounds generated yet'}
-            </h3>
-            <p className={`text-sm mt-1 ${hasTicTac ? (success ? 'text-green-700' : 'text-red-700') : 'text-gray-500'}`}>
-              {hasTicTac ? (success ? 'Rounds balanced for synonym and POS diversity.' : 'Not enough matching words.') : 'Click Generate to assemble the rounds.'}
-            </p>
+      <div className={`p-4 rounded-lg border ${bgTone[status.tone]} ${borderTone[status.tone]}`}>
+        <div className="flex justify-between items-start gap-6">
+          <div className="flex items-start gap-3">
+            <span className={`${status.tone === 'neutral' ? 'text-gray-500' : status.tone === 'success' ? 'text-green-700' : status.tone === 'warning' ? 'text-amber-700' : 'text-red-700'} mt-0.5`}>{iconByTone[status.tone]}</span>
+            <div className="flex flex-col gap-1">
+              <p className={`font-semibold text-sm whitespace-pre-line leading-tight ${status.tone === 'neutral' ? 'text-gray-700' : status.tone === 'success' ? 'text-green-800' : status.tone === 'warning' ? 'text-amber-800' : 'text-red-800'}`}>
+                {status.en}
+              </p>
+              <p className={`text-sm whitespace-pre-line leading-tight ${status.tone === 'neutral' ? 'text-gray-500' : status.tone === 'success' ? 'text-green-700' : status.tone === 'warning' ? 'text-amber-700' : 'text-red-700'}`}>
+                {status.zh}
+              </p>
+            </div>
           </div>
           <button
-            onClick={generateTicTac}
+            onClick={handleGenerate}
             className="px-3 py-1.5 bg-gray-900 hover:bg-black text-white border border-transparent shadow-sm rounded text-sm font-medium grid grid-flow-col auto-cols-max items-center gap-2"
           >
             <RefreshCw size={16} />
@@ -210,7 +218,15 @@ const App: React.FC = () => {
         }
     });
 
-    if (wordInputs.length === 0) return;
+    if (wordInputs.length === 0) {
+      setResult(null);
+      setTabStatus('crossword', buildStatus(
+        'error',
+        'Need at least one alphabetic word before generating. Add more entries to the word list.',
+        '請先輸入至少一個英文字，再按「產生」完成填字遊戲。'
+      ));
+      return;
+    }
 
     const longestWordLength = wordInputs.reduce((max, w) => Math.max(max, w.word.length), 0);
     const calculatedGridSize = Math.max(15, longestWordLength + 5);
@@ -218,22 +234,108 @@ const App: React.FC = () => {
 
      const generator = new CrosswordGenerator(calculatedGridSize);
      const genResult = generator.generate(wordInputs);
-     setResult(genResult ? cloneCrosswordResult(genResult) : genResult);
-  };
+     if (!genResult || genResult.placedWords.length === 0) {
+       setResult(null);
+        setTabStatus('crossword', buildStatus(
+          'error',
+          'Could not assemble a valid crossword. Try generating again for a different anchor word, or add more intersecting letters.',
+          '無法排出有效的填字方格。請重新產生以換不同起始單字，或加入更多能交叉的字母。'
+        ));
+       return;
+     }
+
+     setResult(cloneCrosswordResult(genResult));
+
+     if (genResult.unusedWords.length > 0) {
+       const unusedSummary = summarizeList(genResult.unusedWords);
+      const unusedLine = unusedSummary ? `Unused: ${unusedSummary}` : '';
+      setTabStatus('crossword', buildStatus(
+        'warning',
+        ['Crossword built, but some words could not be placed. Try generating again for a different layout, or add more shared letters or trim duplicates.', unusedLine].filter(Boolean).join('\n'),
+        ['已產生填字遊戲，但仍有單字無法放入。可再按「產生」換新配置，或增加可交叉的字母、精簡重複字。', unusedLine ? `未放入：${unusedSummary}` : ''].filter(Boolean).join('\n')
+      ));
+     } else {
+       setTabStatus('crossword', buildStatus(
+         'success',
+         'Crossword ready. All words placed successfully.',
+         '填字遊戲已完成，所有單字都成功放入。'
+       ));
+     }
+   };
 
    const generateDGA = () => {
        const wordLines = inputWords.split('\n').map(s => s.trim()).filter(s => s.length > 0);
+
+       const uniqueWords = Array.from(new Set(wordLines.map(w => w.toUpperCase()))) as string[];
+
+       if (uniqueWords.length < 6) {
+         setDgaResult(null);
+         setTabStatus('dga', buildStatus(
+           'error',
+           `DGA logic puzzle needs at least 6 unique words. Current list has ${uniqueWords.length}. Add more overlapped words and try again.`,
+           `DGA 邏輯題至少需要 6 個不重複的單字，目前只有 ${uniqueWords.length} 個。請加入更多可共享字母的單字後再試。`
+         ));
+         return;
+       }
+
        const dgaGen = new DGAGenerator();
-       const dgaRes = dgaGen.generate(wordLines, dgaWordCount);
-       setDgaResult(dgaRes ? cloneDgaResult(dgaRes) : dgaRes);
+       const dgaRes = dgaGen.generate(uniqueWords, dgaWordCount);
+
+       if (!dgaRes || !dgaRes.success) {
+         setDgaResult(null);
+         const baseMessage = dgaRes?.message ?? 'Could not generate a solvable deduction path.';
+         setTabStatus('dga', buildStatus(
+           'error',
+           `DGA generation failed. ${baseMessage} Add words that share starting and ending letters, then retry.`,
+           dgaRes?.message === 'Please provide at least 6 words.'
+             ? 'DGA 生成失敗。請至少準備 6 個單字。'
+             : 'DGA 生成失敗。請加入有共同開頭或結尾的單字，再度嘗試。'
+         ));
+         return;
+       }
+
+       setDgaResult(cloneDgaResult(dgaRes));
+       setTabStatus('dga', buildStatus(
+         'success',
+         `DGA logic puzzle ready. Clue stack is solvable. Word bank size: ${dgaRes.wordBank.length}.`,
+         `DGA 邏輯題已完成，線索堆疊可推理。詞庫數量：${dgaRes.wordBank.length}。`
+       ));
    };
 
    const generateTicTac = () => {
        const wordLines = inputWords.split('\n').map(s => s.trim()).filter(s => s.length > 0);
        const clueLines = inputClues.split('\n').map(s => s.trim());
+
+       if (wordLines.length < 9) {
+         setTicTacResult(null);
+         setTabStatus('tictac', buildStatus(
+           'error',
+           `Tic-Tac-Word needs at least nine words with matching clues. Current list has ${wordLines.length}. Add more entries with POS hints.`,
+           `井字動詞遊戲至少需要九個對應提示的單字，目前只有 ${wordLines.length} 個。請再加入含詞性提示的條目後重試。`
+         ));
+         return;
+       }
+
        const generator = new TicTacGenerator();
        const res = generator.generate(wordLines, clueLines, ticTacDifficulty);
-       setTicTacResult(res ? cloneTicTacResult(res) : res);
+
+       if (!res || !res.success) {
+         setTicTacResult(null);
+         setTabStatus('tictac', buildStatus(
+           'error',
+           'Tic-Tac-Word generation failed. Add more varied words (with POS tags for medium/hard) and retry.',
+           '井字動詞遊戲生成失敗。請增加更多多樣的單字（中、高階建議附詞性標記），再重新產生。'
+         ));
+         return;
+       }
+
+       setTicTacResult(cloneTicTacResult(res));
+       const difficultyLabel = TICTAC_DIFFICULTY_LABELS[ticTacDifficulty];
+       setTabStatus('tictac', buildStatus(
+         'success',
+         `Tic-Tac-Word rounds ready. Difficulty: ${difficultyLabel.en}.`,
+         `井字動詞遊戲已完成。難度：${difficultyLabel.zh}。`
+       ));
    };
 
   const handleGenerate = () => {
@@ -262,6 +364,7 @@ const App: React.FC = () => {
         setResult(null);
         setDgaResult(null);
         setTicTacResult(null);
+        setStatusByTab({ ...DEFAULT_STATUSES });
     }
   }, [inputWords]);
 
