@@ -9,7 +9,7 @@ import { drawTicTacCanvas, downloadTicTacCanvas } from './components/TicTacCanva
 import CluesList from './components/CluesList';
 import { GenerationResult, WordInput, DGAResult, TicTacResult, TicTacDifficulty } from './types';
 import { RefreshCw, AlertCircle, FileCheck, FileText, Scissors, LayoutGrid, BrainCircuit, Gamepad2, BookOpen, Layers, Plus, Trash2, ArrowDownToLine, Library, Lightbulb } from 'lucide-react';
-import { CURRICULUM } from './curriculumData';
+import { CURRICULUM, getCurriculumBooks } from './utils/curriculumLoader';
 import PedagogyModal, { PedagogyLanguage } from './components/PedagogyModal';
 
 const cloneCrosswordResult = (res: GenerationResult): GenerationResult => ({
@@ -38,7 +38,8 @@ const cloneTicTacResult = (res: TicTacResult): TicTacResult => ({
 });
 
 type Tab = 'crossword' | 'dga' | 'tictac';
-type BookKey = keyof typeof CURRICULUM;
+
+const CURRICULUM_BOOKS = getCurriculumBooks();
 
 type StatusTone = 'neutral' | 'success' | 'warning' | 'error';
 
@@ -89,10 +90,11 @@ const App: React.FC = () => {
   const [puzzleTitle, setPuzzleTitle] = useState('Crossword Puzzle');
   
   // Curriculum Selector State
-  const [selectedBook, setSelectedBook] = useState<BookKey>(Object.keys(CURRICULUM)[0] as BookKey);
+  const [selectedBook, setSelectedBook] = useState<string>(() => CURRICULUM_BOOKS[0] ?? '');
   const [selectedWeeks, setSelectedWeeks] = useState<string[]>(['']);
 
   const availableWeeks = useMemo(() => {
+    if (!selectedBook) return [];
     const bookWeeks = CURRICULUM[selectedBook];
     return bookWeeks ? Object.keys(bookWeeks) : [];
   }, [selectedBook]);
@@ -378,7 +380,7 @@ const App: React.FC = () => {
   // --- Curriculum Logic ---
 
   const handleBookChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-      setSelectedBook(e.target.value as BookKey);
+      setSelectedBook(e.target.value);
       setSelectedWeeks(['']); // Reset selection on book change
   };
 
@@ -415,20 +417,28 @@ const App: React.FC = () => {
   };
 
   const handleLoadCurriculum = () => {
-      const bookData = CURRICULUM[selectedBook];
+        if (!selectedBook) {
+            alert('No curriculum available.');
+            return;
+        }
+
+        const bookData = CURRICULUM[selectedBook];
+        if (!bookData) {
+            alert('Selected curriculum is unavailable.');
+            return;
+        }
       let allWords: string[] = [];
       let allClues: string[] = [];
       let loadedCount = 0;
       const validWeeks = selectedWeeks.filter(w => w !== '');
 
       validWeeks.forEach(weekKey => {
-          // @ts-ignore
-          const weekData = bookData[weekKey];
-          if (weekData) {
-              allWords = [...allWords, ...weekData.words];
-              allClues = [...allClues, ...weekData.clues];
-              loadedCount++;
-          }
+           const weekData = bookData[weekKey];
+           if (weekData) {
+               allWords = [...allWords, ...weekData.words];
+               allClues = [...allClues, ...weekData.clues];
+               loadedCount++;
+           }
       });
 
       if (loadedCount === 0) {
@@ -451,7 +461,7 @@ const App: React.FC = () => {
           titleSuffix = validWeeks.join(', ');
       }
       
-      setPuzzleTitle(`${selectedBook} - ${titleSuffix}`);
+        setPuzzleTitle(`${selectedBook} - ${titleSuffix}`);
   };
 
   // --- Effect to draw canvas ---
