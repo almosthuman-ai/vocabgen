@@ -15,7 +15,8 @@ interface CsvRow {
 }
 
 const csvModules = import.meta.glob('/src/assets/curricula/*.csv', {
-  as: 'raw',
+  query: '?raw',
+  import: 'default',
   eager: true,
 }) as Record<string, string>;
 
