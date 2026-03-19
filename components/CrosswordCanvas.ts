@@ -88,7 +88,7 @@ export const drawCrossword = (
         // Show bounding rectangle: white for letter cells, gray for dead space
         const inBounds = r >= minR && r <= maxR && c >= minC && c <= maxC;
         if (inBounds) {
-          ctx.fillStyle = cell.isActive ? '#FFFFFF' : '#E5E7EB';
+          ctx.fillStyle = cell.isActive ? '#FFFFFF' : '#333333';
           ctx.fillRect(x, y, cellSize, cellSize);
           ctx.strokeStyle = '#000000';
           ctx.strokeRect(x, y, cellSize, cellSize);
@@ -428,7 +428,7 @@ const createHighResCanvas = (
                 const cell = grid[minRow + r][minCol + c2];
                 const x = nonoGridLeft + c2 * nonoCellSize;
                 const y = nonoGridTop  + r  * nonoCellSize;
-                ctx.fillStyle = cell.isActive ? '#FFFFFF' : '#EBEBEB';
+                ctx.fillStyle = cell.isActive ? '#FFFFFF' : '#333333';
                 ctx.fillRect(x, y, nonoCellSize, nonoCellSize);
                 ctx.strokeStyle = '#000000';
                 ctx.strokeRect(x, y, nonoCellSize, nonoCellSize);
