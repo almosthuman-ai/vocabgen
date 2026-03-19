@@ -1,6 +1,6 @@
 import { Grid, PlacedWord } from '../types';
 
-export type CrosswordMode = 'standard' | 'deduction';
+export type CrosswordMode = 'standard' | 'deduction' | 'nonogram';
 
 // Helper to find intersecting cells
 const getIntersections = (placedWords: PlacedWord[]) => {
@@ -62,6 +62,21 @@ export const drawCrossword = (
 
   ctx.lineWidth = 1;
 
+  // Compute bounding rect for nonogram preview
+  let minR = size, maxR = -1, minC = size, maxC = -1;
+  if (mode === 'nonogram') {
+    for (let r = 0; r < size; r++) {
+      for (let c = 0; c < size; c++) {
+        if (grid[r][c].isActive) {
+          if (r < minR) minR = r;
+          if (r > maxR) maxR = r;
+          if (c < minC) minC = c;
+          if (c > maxC) maxC = c;
+        }
+      }
+    }
+  }
+
   for (let r = 0; r < size; r++) {
     for (let c = 0; c < size; c++) {
       const cell = grid[r][c];
@@ -69,11 +84,20 @@ export const drawCrossword = (
       const y = r * cellSize;
       const key = `${r},${c}`;
 
-      if (cell.isActive) {
+      if (mode === 'nonogram') {
+        // Show bounding rectangle: white for letter cells, gray for dead space
+        const inBounds = r >= minR && r <= maxR && c >= minC && c <= maxC;
+        if (inBounds) {
+          ctx.fillStyle = cell.isActive ? '#FFFFFF' : '#E5E7EB';
+          ctx.fillRect(x, y, cellSize, cellSize);
+          ctx.strokeStyle = '#000000';
+          ctx.strokeRect(x, y, cellSize, cellSize);
+        }
+      } else if (cell.isActive) {
         // Active cell is white
         ctx.fillStyle = '#FFFFFF';
         ctx.fillRect(x, y, cellSize, cellSize);
-        
+
         // Border
         ctx.strokeStyle = '#000000';
         ctx.strokeRect(x, y, cellSize, cellSize);
@@ -98,8 +122,6 @@ export const drawCrossword = (
                 ctx.fillText(cell.char, x + cellSize/2, y + cellSize/2 + 2);
             }
         }
-      } else {
-        // Empty cell (White background)
       }
     }
   }
@@ -234,48 +256,219 @@ const createHighResCanvas = (
     ctx.textAlign = 'left';
     ctx.textBaseline = 'top';
 
-    for (let r = 0; r < gridSize; r++) {
-        for (let c = 0; c < gridSize; c++) {
-            const cell = grid[r][c];
-            const x = PADDING + c * cellSize;
-            const y = gridStartY + r * cellSize;
-            const key = `${r},${c}`;
+    if (mode !== 'nonogram') {
+        for (let r = 0; r < gridSize; r++) {
+            for (let c = 0; c < gridSize; c++) {
+                const cell = grid[r][c];
+                const x = PADDING + c * cellSize;
+                const y = gridStartY + r * cellSize;
+                const key = `${r},${c}`;
 
-            if (cell.isActive) {
-                ctx.fillStyle = '#FFFFFF';
-                ctx.fillRect(x, y, cellSize, cellSize);
-                ctx.strokeStyle = '#000000';
-                ctx.strokeRect(x, y, cellSize, cellSize);
+                if (cell.isActive) {
+                    ctx.fillStyle = '#FFFFFF';
+                    ctx.fillRect(x, y, cellSize, cellSize);
+                    ctx.strokeStyle = '#000000';
+                    ctx.strokeRect(x, y, cellSize, cellSize);
 
-                if (mode === 'standard') {
-                    if (cell.number) {
-                        ctx.fillStyle = '#000000';
-                        ctx.font = `bold ${Math.floor(cellSize * 0.38)}px sans-serif`;
-                        ctx.textAlign = 'left';
-                        ctx.textBaseline = 'top';
-                        ctx.fillText(`${cell.number}`, x + 5, y + 5);
+                    if (mode === 'standard') {
+                        if (cell.number) {
+                            ctx.fillStyle = '#000000';
+                            ctx.font = `bold ${Math.floor(cellSize * 0.38)}px sans-serif`;
+                            ctx.textAlign = 'left';
+                            ctx.textBaseline = 'top';
+                            ctx.fillText(`${cell.number}`, x + 5, y + 5);
+                        }
+                    } else {
+                         if (!showSolution && intersections.has(key)) {
+                            ctx.fillStyle = '#000000';
+                            ctx.font = `bold ${Math.floor(cellSize * 0.65)}px sans-serif`;
+                            ctx.textAlign = 'center';
+                            ctx.textBaseline = 'middle';
+                            ctx.fillText(cell.char, x + cellSize/2, y + cellSize/2 + 5);
+                         }
                     }
-                } else {
-                     if (!showSolution && intersections.has(key)) {
-                        ctx.fillStyle = '#000000';
+
+                    if (showSolution) {
+                        ctx.fillStyle = '#2563EB';
                         ctx.font = `bold ${Math.floor(cellSize * 0.65)}px sans-serif`;
                         ctx.textAlign = 'center';
                         ctx.textBaseline = 'middle';
                         ctx.fillText(cell.char, x + cellSize/2, y + cellSize/2 + 5);
-                     }
-                }
-
-                if (showSolution) {
-                    ctx.fillStyle = '#2563EB';
-                    ctx.font = `bold ${Math.floor(cellSize * 0.65)}px sans-serif`;
-                    ctx.textAlign = 'center';
-                    ctx.textBaseline = 'middle';
-                    ctx.fillText(cell.char, x + cellSize/2, y + cellSize/2 + 5);
-                    ctx.textAlign = 'left';
-                    ctx.textBaseline = 'top';
+                        ctx.textAlign = 'left';
+                        ctx.textBaseline = 'top';
+                    }
                 }
             }
         }
+    }
+
+    // --- NONOGRAM: Grid + Row/Column Clues ---
+    if (mode === 'nonogram') {
+        const VOWELS = new Set(['A', 'E', 'I', 'O', 'U', 'Y']);
+
+        // Bounding rectangle of all placed words
+        let minRow = gridSize, maxRow = -1, minCol = gridSize, maxCol = -1;
+        for (let r = 0; r < gridSize; r++) {
+            for (let c = 0; c < gridSize; c++) {
+                if (grid[r][c].isActive) {
+                    if (r < minRow) minRow = r;
+                    if (r > maxRow) maxRow = r;
+                    if (c < minCol) minCol = c;
+                    if (c > maxCol) maxCol = c;
+                }
+            }
+        }
+        const boundRows = maxRow - minRow + 1;
+        const boundCols = maxCol - minCol + 1;
+
+        // Consonant / vowel counts per row
+        const rowCounts: Array<{ c: number; v: number }> = [];
+        for (let r = 0; r < boundRows; r++) {
+            let vc = 0, vv = 0;
+            for (let c2 = 0; c2 < boundCols; c2++) {
+                const cell = grid[minRow + r][minCol + c2];
+                if (cell.isActive) { VOWELS.has(cell.char) ? vv++ : vc++; }
+            }
+            rowCounts.push({ c: vc, v: vv });
+        }
+
+        // Consonant / vowel counts per column
+        const colCounts: Array<{ c: number; v: number }> = [];
+        for (let c2 = 0; c2 < boundCols; c2++) {
+            let vc = 0, vv = 0;
+            for (let r = 0; r < boundRows; r++) {
+                const cell = grid[minRow + r][minCol + c2];
+                if (cell.isActive) { VOWELS.has(cell.char) ? vv++ : vc++; }
+            }
+            colCounts.push({ c: vc, v: vv });
+        }
+
+        // Layout: reserve top of content area for the legend (3 lines: title, English note, Mandarin note)
+        const LEGEND_H = 260;
+        const LEGEND_GAP = 40;
+        const nonoContentTop = contentTop + LEGEND_H + LEGEND_GAP;
+        const nonoAvailH = contentBottom - nonoContentTop;
+
+        // Cell size that fits bounding rect + clue margins
+        // Row clue zone = 1.5 cell widths left of grid
+        // Column clue zone = 1.9 cell heights above grid (2 rows × 0.95)
+        const nonoCellSize = Math.min(
+            gridAreaWidth / (boundCols + 1.5),
+            nonoAvailH / (boundRows + 1.9)
+        );
+
+        const rowClueW   = nonoCellSize * 1.5;
+        const colClueH   = nonoCellSize * 0.95;
+        const DIVIDER_GAP = 20;
+
+        const nonoGridLeft = PADDING + rowClueW;
+        const nonoGridTop  = nonoContentTop + 2 * colClueH + DIVIDER_GAP;
+        const halfRowClue  = rowClueW / 2;
+
+        const clueNumSize   = Math.floor(nonoCellSize * 0.58);
+        const clueLabelSize = Math.floor(nonoCellSize * 0.52);
+        const legendSize    = Math.floor(nonoCellSize * 0.54);
+        const noteSize      = Math.floor(nonoCellSize * 0.44);
+
+        // --- Legend: line 1 ---
+        ctx.fillStyle = '#000000';
+        ctx.font = `bold ${legendSize}px sans-serif`;
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
+        ctx.fillText('V = Vowel / 母音          C = Consonant / 子音', PADDING, contentTop);
+
+        // --- Legend: line 2 + 3 — Y disclaimer (English then Mandarin) ---
+        ctx.font = `italic ${noteSize}px sans-serif`;
+        ctx.fillStyle = '#444444';
+        ctx.fillText('Note: Y is always counted as a vowel in this puzzle.', PADDING, contentTop + legendSize * 1.4);
+        ctx.fillText('注意：本題中 Y 視為母音。', PADDING, contentTop + legendSize * 1.4 + noteSize * 1.4);
+
+        // --- Column clue rows (above the grid) ---
+        const colC_Y = nonoContentTop + colClueH * 0.5;
+        const colV_Y = nonoContentTop + colClueH * 1.5;
+
+        // Row 1: "C:" only — labels the column-C clue row (reads right)
+        // Row 2: "C" over the consonant row-clue column (reads down) +
+        //        "V" at the right edge — labels both the column-V clue row (right) and the V row-clue column (down)
+        ctx.fillStyle = '#000000';
+        ctx.font = `bold ${clueLabelSize}px sans-serif`;
+        ctx.textBaseline = 'middle';
+
+        ctx.textAlign = 'right';
+        ctx.fillText('C:', nonoGridLeft - 18, colC_Y);
+
+        ctx.textAlign = 'center';
+        ctx.fillText('C', PADDING + halfRowClue * 0.5, colV_Y);
+
+        ctx.textAlign = 'right';
+        ctx.fillText('V', nonoGridLeft - 18, colV_Y);
+
+        // Column count numbers
+        ctx.font = `bold ${clueNumSize}px sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        for (let c2 = 0; c2 < boundCols; c2++) {
+            const cx = nonoGridLeft + c2 * nonoCellSize + nonoCellSize / 2;
+            ctx.fillText(`${colCounts[c2].c}`, cx, colC_Y);
+            ctx.fillText(`${colCounts[c2].v}`, cx, colV_Y);
+        }
+
+        // Divider line above the grid
+        ctx.strokeStyle = '#AAAAAA';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(nonoGridLeft, nonoGridTop - DIVIDER_GAP / 2);
+        ctx.lineTo(nonoGridLeft + boundCols * nonoCellSize, nonoGridTop - DIVIDER_GAP / 2);
+        ctx.stroke();
+
+        // --- Grid cells (bounding rectangle) ---
+        ctx.lineWidth = 4;
+        for (let r = 0; r < boundRows; r++) {
+            for (let c2 = 0; c2 < boundCols; c2++) {
+                const cell = grid[minRow + r][minCol + c2];
+                const x = nonoGridLeft + c2 * nonoCellSize;
+                const y = nonoGridTop  + r  * nonoCellSize;
+                ctx.fillStyle = cell.isActive ? '#FFFFFF' : '#EBEBEB';
+                ctx.fillRect(x, y, nonoCellSize, nonoCellSize);
+                ctx.strokeStyle = '#000000';
+                ctx.strokeRect(x, y, nonoCellSize, nonoCellSize);
+            }
+        }
+
+        // --- Solution letters ---
+        if (showSolution) {
+            ctx.font = `bold ${Math.floor(nonoCellSize * 0.65)}px sans-serif`;
+            ctx.fillStyle = '#2563EB';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            for (let r = 0; r < boundRows; r++) {
+                for (let c2 = 0; c2 < boundCols; c2++) {
+                    const cell = grid[minRow + r][minCol + c2];
+                    if (cell.isActive) {
+                        ctx.fillText(
+                            cell.char,
+                            nonoGridLeft + c2 * nonoCellSize + nonoCellSize / 2,
+                            nonoGridTop  + r  * nonoCellSize + nonoCellSize / 2 + 5
+                        );
+                    }
+                }
+            }
+            ctx.textAlign = 'left';
+            ctx.textBaseline = 'top';
+        }
+
+        // --- Row clue numbers (left of grid) ---
+        ctx.fillStyle = '#000000';
+        ctx.font = `bold ${clueNumSize}px sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        for (let r = 0; r < boundRows; r++) {
+            const cy = nonoGridTop + r * nonoCellSize + nonoCellSize / 2;
+            ctx.fillText(`${rowCounts[r].c}`, PADDING + halfRowClue * 0.5, cy);
+            ctx.fillText(`${rowCounts[r].v}`, PADDING + halfRowClue * 1.5, cy);
+        }
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
     }
 
     // --- Right Column Content (Clues or Word Bank) ---
@@ -464,8 +657,13 @@ const createHighResCanvas = (
         }
     } 
     
-    // --- MODE 2: DEDUCTION (Word Bank) ---
+    // --- MODE 2: DEDUCTION / NONOGRAM (Word Bank) ---
+    // Right-anchored: text is right-aligned to the right margin.
+    // Column left edge is capped at page center (WIDTH / 2) so it never bleeds into the grid area.
     else {
+        const wordBankX        = ABSOLUTE_CLUE_RIGHT_LIMIT;
+        const wordBankMaxWidth = ABSOLUTE_CLUE_RIGHT_LIMIT - WIDTH / 2;
+
         // Group words by length
         const byLength: Record<number, string[]> = {};
         placedWords.forEach(w => {
@@ -488,14 +686,14 @@ const createHighResCanvas = (
             const lineHeight = size * 1.5;
             const headerHeight = size * 2.0;
             const sectionSpacing = size * 1.5;
-            
-            ctx.font = `${size}px sans-serif`; 
+
+            ctx.font = `${size}px sans-serif`;
             let currentH = 0;
-            
+
             for (const len of lengths) {
                 currentH += headerHeight;
                 const wordsText = byLength[len].join(', ');
-                const lines = getWrappedLines(ctx, wordsText, MAX_CLUE_WIDTH);
+                const lines = getWrappedLines(ctx, wordsText, wordBankMaxWidth);
                 currentH += (lines.length * lineHeight);
                 currentH += sectionSpacing;
             }
@@ -512,24 +710,26 @@ const createHighResCanvas = (
             }
         }
 
+        ctx.textAlign = 'right';
         let currentY = contentTop;
-        
+
         for (const len of lengths) {
             ctx.font = optimalConfig.headerFont;
-            ctx.fillText(`${len} LETTERS`, cluesStartX, currentY);
+            ctx.fillText(`${len} LETTERS`, wordBankX, currentY);
             currentY += optimalConfig.headerHeight;
 
             ctx.font = optimalConfig.wordFont;
             const wordsText = byLength[len].join(', ');
-            const lines = getWrappedLines(ctx, wordsText, MAX_CLUE_WIDTH);
-            
+            const lines = getWrappedLines(ctx, wordsText, wordBankMaxWidth);
+
             for (const line of lines) {
-                ctx.fillText(line, cluesStartX, currentY);
+                ctx.fillText(line, wordBankX, currentY);
                 currentY += optimalConfig.lineHeight;
             }
-            
+
             currentY += optimalConfig.sectionSpacing;
         }
+        ctx.textAlign = 'left';
     }
     
     return canvas;

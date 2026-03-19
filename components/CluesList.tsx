@@ -20,7 +20,7 @@ export const parseClue = (fullClue: string) => {
 
 const CluesList: React.FC<CluesListProps> = ({ words, mode }) => {
   
-  if (mode === 'deduction') {
+  if (mode === 'deduction' || mode === 'nonogram') {
     // Group words by length
     const byLength: Record<number, string[]> = {};
     words.forEach(w => {

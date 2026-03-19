@@ -525,7 +525,7 @@ const App: React.FC = () => {
 
   const handleDownloadSingle = (isKey: boolean) => {
     if (activeTab === 'crossword' && result) {
-      const suffix = isKey ? '-Solution' : `-${mode === 'deduction' ? 'Deduction' : 'Standard'}`;
+      const suffix = isKey ? '-Solution' : `-${mode === 'deduction' ? 'Deduction' : mode === 'nonogram' ? 'Nonogram' : 'Standard'}`;
       const filename = getCleanFilename(suffix);
       downloadSinglePage(result.grid, result.placedWords, result.gridSize, filename, isKey, puzzleTitle, mode);
     } else if (activeTab === 'dga' && dgaResult && dgaResult.success) {
@@ -541,7 +541,7 @@ const App: React.FC = () => {
 
   const handleDownload2Up = (isKey: boolean) => {
       if (activeTab === 'crossword' && result) {
-          const suffix = isKey ? '-Solution-A4Sheet' : `-${mode === 'deduction' ? 'Deduction' : 'Standard'}-A4Sheet`;
+          const suffix = isKey ? '-Solution-A4Sheet' : `-${mode === 'deduction' ? 'Deduction' : mode === 'nonogram' ? 'Nonogram' : 'Standard'}-A4Sheet`;
           const filename = getCleanFilename(suffix);
           download2UpPage(result.grid, result.placedWords, result.gridSize, filename, isKey, puzzleTitle, mode);
       } else if (activeTab === 'dga' && dgaResult && dgaResult.success) {
@@ -758,6 +758,7 @@ const App: React.FC = () => {
                     <div className="flex items-center bg-gray-100 rounded-lg p-1">
                         <button onClick={() => setMode('standard')} className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${mode === 'standard' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>Standard</button>
                         <button onClick={() => setMode('deduction')} className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${mode === 'deduction' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>Deduction</button>
+                        <button onClick={() => setMode('nonogram')} className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${mode === 'nonogram' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>Nonogram</button>
                     </div>
                 )}
 
