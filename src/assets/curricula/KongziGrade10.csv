@@ -1,0 +1,489 @@
+week,word,pos,clue
+Week 1,crotch,noun,胯部 / 胯下 / 褲襠 / 叉狀分岔處
+Week 1,flunk,verb,不及格 / 考不及格 / 被當 / 當掉
+Week 1,forestall,verb,預先阻止 / 預防 / 先發制人 / 拖延
+Week 1,malleable,adjective,可塑的 / 可鍛的 / 易塑形的 / 易受影響的 / 容易塑造的
+Week 1,unspoken,adjective,未說出口的 / 沒有說出來的 / 不言而喻的 / 心照不宣的
+Week 1,waiver,noun,棄權書 / 棄權聲明 / 豁免書 / 豁免
+Week 1,fantastic,adjective,太棒了的 / 極好的 / 非常棒的 / 了不起的 / 幻想的 / 奇幻的 / 不真實的
+Week 1,laser,noun,雷射 / 雷射光 / 雷射器 / 雷射光束
+Week 1,make-believe,adjective,假裝的 / 假想的 / 虛構的 / 扮家家酒的
+Week 1,adore,verb,非常喜愛 / 熱愛 / 喜愛極了 / 愛慕
+Week 2,ambiguous,adjective,有歧義的 / 模稜兩可的 / 模糊不清的 / 含糊的
+Week 2,ancestry,noun,祖先血統 / 祖先世系 / 家世淵源 / 血統
+Week 2,assimilation,noun,同化 / 同化作用 / 吸收 / 吸收作用
+Week 2,circumvent,verb,規避 / 繞過 / 避開 / 鑽漏洞
+Week 2,cowardice,noun,怯懦 / 懦弱 / 膽怯 / 膽小怕事
+Week 2,disk,noun,磁碟 / 磁片 / 硬碟 / 光碟 / 圓盤 / 圓片
+Week 2,disruption,noun,擾亂 / 干擾 / 中斷 / 混亂 / 破壞
+Week 2,fodder,noun,飼料 / 草料 / 素材 / 話題材料 / 炮灰
+Week 2,gravity,noun,重力 / 地心引力 / 嚴重性 / 重大性
+Week 2,incredulous,adjective,不敢相信的 / 懷疑的 / 難以置信的反應
+Week 3,interplanetary,adjective,行星間的 / 星際的 / 行星際的
+Week 3,mankind,noun,人類 / 全人類 / 男性
+Week 3,mathematics,noun,數學
+Week 3,military,noun,軍方 / 軍隊 / 武裝部隊
+Week 3,outnumber,verb,數量超過 / 比多 / 在數量上勝過
+Week 3,requisition,noun,申請 / 請購 / 請購單 / 申請單 / 徵用
+Week 3,sanction,noun,制裁 / 處罰 / 懲戒 / 批准 / 認可 / 許可
+Week 3,scathing,adjective,嚴厲批評的 / 尖刻的 / 辛辣的
+Week 3,shameful,adjective,可恥的 / 丟臉的 / 不光彩的 / 卑鄙的
+Week 3,solar,adjective,太陽的 / 太陽能的
+Week 4,starship,noun,星際飛船 / 太空船 / 宇宙飛船
+Week 4,administrator,noun,管理員 / 行政人員 / 行政主管 / 主管人員
+Week 4,backside,noun,背面 / 後面 / 屁股 / 臀部
+Week 4,bulkhead,noun,隔艙板 / 隔板 / 艙壁
+Week 4,censorship,noun,審查制度 / 審查 / 言論審查 / 新聞審查
+Week 4,commander,noun,指揮官 / 司令官 / 指揮者
+Week 4,conceive,verb,想像 / 設想 / 構想出 / 懷孕 / 受孕
+Week 4,decelerate,verb,減速 / 放慢速度 / 使減速
+Week 4,evolution,noun,演化 / 進化 / 演變 / 發展
+Week 4,shuttle,noun,接駁車 / 接駁巴士 / 接駁服務 / 往返班車 / 梭子 / 太空梭
+Week 5,splint,noun,夾板 / 固定板 / 薄木片 / 木刺
+Week 5,subordinate,adjective,下級的 / 次要的 / 從屬的
+Week 5,vid,noun,影片 / 短片 / 影片片段
+Week 5,weightlessness,noun,失重 / 無重力狀態 / 失重狀態
+Week 5,adrift,adjective,漂流的 / 漂浮著的 / 迷失方向的 / 漫無目的的 / 無所依靠的
+Week 5,amplify,verb,放大 / 增強 / 擴大 / 詳述 / 闡述
+Week 5,ass,noun,驢子 / 屁股 / 臀部 / 笨蛋 / 混蛋
+Week 5,clumsy,adjective,笨手笨腳的 / 笨拙的 / 拙劣的 / 不得體的
+Week 5,creamy,adjective,含奶油的 / 奶油味濃的 / 綿密的 / 濃滑的 / 乳白色的 / 滑順濃郁的
+Week 6,crony,noun,死黨 / 親信 / 狐群狗黨 / 裙帶關係者自己人
+Week 6,fairyland,noun,仙境 / 童話世界 / 精靈世界 / 理想世界
+Week 6,infancy,noun,嬰兒期 / 幼年時期 / 初期 / 萌芽階段
+Week 6,landslide,noun,山崩 / 土石流 / 山體滑坡
+Week 6,mosquito,noun,蚊子 / 蚊蟲
+Week 6,rebound,verb,反彈 / 彈回 / 回升 / 恢復
+Week 6,recorder,noun,直笛 / 錄音機 / 錄音筆 / 記錄器
+Week 6,ulcer,noun,潰瘍 / 胃潰瘍 / 口腔潰瘍
+Week 6,bastard,noun,混蛋 / 王八蛋 / 討厭鬼 / 私生子 / 非婚生子女
+Week 6,salamander,noun,蠑螈 / 火爐
+Week 7,abjectly,adverb,卑微地 / 淒慘地 / 可憐地 / 狼狽地
+Week 7,barrack,noun,兵營 / 營房
+Week 7,brook,noun,小溪 / 溪流 / 容忍 / 忍受
+Week 7,contention,noun,爭論 / 爭執 / 主張 / 論點
+Week 7,cope,verb,應付 / 處理 / 熬過 / 承受
+Week 7,devour,verb,狼吞虎嚥地吃 / 大口吞食 / 吞噬 / 如飢似渴地讀 / 吸收 / 沉迷於
+Week 7,efficiency,noun,效率 / 效能 / 工作效率
+Week 7,forcefield,noun,力場 / 防護罩 / 能量場
+Week 7,leadership,noun,領導能力 / 領導力 / 領導地位 / 領導職位 / 領導階層
+Week 7,levy,noun,徵稅 / 稅款 / 費用 / 徵費
+Week 8,obscurity,noun,默默無聞 / 無名 / 晦澀 / 模糊 / 昏暗 / 朦朧不清
+Week 8,orient,verb,使熟悉 / 使適應 / 熟悉環境 / 調整方向 / 定位
+Week 8,rotation,noun,旋轉 / 轉動 / 輪替 / 輪班 / 輪流
+Week 8,schoolwork,noun,功課 / 課業 / 作業
+Week 8,tally,noun,計數 / 記錄表 / 記號 / 總數
+Week 8,toon,noun,卡通 / 卡通角色 / 漫畫角色
+Week 8,untrained,adjective,未經訓練的 / 沒有受過訓練的 / 未受訓的 / 生手的
+Week 8,animosity,noun,敵意 / 憎惡 / 仇視
+Week 8,brilliance,noun,才華 / 才華出眾 / 卓越 / 聰穎 / 光輝 / 燦爛光芒
+Week 8,centimeter,noun,公分 / 厘米 / 公分長
+Week 9,centipede,noun,蜈蚣
+Week 9,coincide,verb,同時發生 / 碰巧同時出現 / 吻合 / 一致
+Week 9,enemy-held,adjective,敵軍控制的 / 敵軍占領的 / 敵占的
+Week 9,feet-first,adverb,腳先地 / 腳朝前地 / 腳先著地地 / 腳朝下地
+Week 9,framework,noun,架構 / 骨架 / 框架 / 理論架構 / 制度架構
+Week 9,friction,noun,摩擦力 / 摩擦 / 衝突
+Week 9,jibe,verb,嘲弄 / 嘲諷 / 挖苦
+Week 9,programmer,noun,程式設計師 / 程式員 / 節目編排人員 / 節目策劃人員
+Week 9,progression,noun,進展 / 發展過程 / 演變 / 和弦進行
+Week 10,roster,noun,名單 / 名冊 / 班表 / 值班表 / 球員名單
+Week 10,simulation,noun,模擬 / 模擬系統 / 模擬情境 / 仿真 / 模擬實驗
+Week 10,skirmish,noun,小規模衝突 / 小衝突 / 小規模交戰 / 小爭執 / 口角
+Week 10,trigonometry,noun,三角學 / 三角函數
+Week 10,trivial,adjective,瑣碎的 / 不重要的 / 微不足道的
+Week 10,unequal,adjective,不相等的 / 不均等的 / 不平等的 / 不公平的
+Week 10,annihilation,noun,毀滅 / 殲滅 / 徹底消滅 / 慘敗
+Week 10,childish,adjective,幼稚的 / 孩子氣的 / 不成熟的 / 像小孩的
+Week 10,corpse,noun,屍體 / 遺體 / 死屍
+Week 10,creativity,noun,創造力 / 創意 / 想像力
+Week 11,dialogue,noun,對話 / 對白 / 交談 / 交流 / 協商對話
+Week 11,domination,noun,統治 / 支配 / 主宰 / 壓倒性優勢 / 統治支配
+Week 11,entrench,verb,使根深蒂固 / 使牢固確立 / 使固守陣地 / 挖壕溝 / 築壕固守
+Week 11,full-fledged,adjective,羽翼已豐的 / 成熟的 / 正式的 / 完整的 / 完全的
+Week 11,genuine,adjective,真正的 / 真品的 / 貨真價實的 / 真誠的 / 誠懇的 / 真品真正的 / 真誠的誠懇的
+Week 11,incognito,adjective,隱姓埋名的 / 微服的 / 匿名的 / 不公開身分地
+Week 11,influential,adjective,有影響力的 / 有影響的 / 具影響力的 / 舉足輕重的
+Week 11,intellectual,adjective,知識性的 / 智力的 / 理智的 / 思想性的 / 知識分子
+Week 11,lively,adjective,活潑的 / 充滿活力的 / 熱鬧的 / 生動有趣的
+Week 11,marshal,noun,元帥 / 法警 / 警長 / 典禮官 / 司儀場務指揮 / 統籌 / 整頓調集
+Week 12,multitude,noun,大量 / 眾多 / 許多 / 群眾 / 人群
+Week 12,sincerity,noun,真誠 / 誠意 / 誠懇
+Week 12,syndicate,noun,企業聯盟 / 辛迪加 / 聯合企業集團 / 聯合發行機構 / 犯罪集團
+Week 12,uncharted,adjective,圖上未標示的 / 地圖未標明的 / 未知的 / 未開發的 / 未探明的
+Week 12,unify,verb,統一 / 使一致 / 團結
+Week 12,val,noun,小薇 / 瓦兒
+Week 12,competitive,adjective,好勝的 / 有競爭心的 / 競爭性的 / 有競爭力的
+Week 12,discontinue,verb,停止 / 中止 / 停產 / 停售 / 停用 / 中斷
+Week 12,graduation,noun,畢業 / 畢業典禮 / 畢業式
+Week 12,insubordinate,adjective,不服從的 / 不聽從命令的 / 抗命的 / 忤逆的
+Week 13,jackknife,noun,折刀 / 折疊刀 / 屈體跳水 / 字形打滑 / 急劇折轉
+Week 13,learner,noun,學習者 / 學習的人 / 初學者
+Week 13,objective,adjective,客觀的 / 公正的 / 不帶主觀偏見的 / 目標
+Week 13,prestigious,adjective,有聲望的 / 享有盛名的 / 名聲顯赫的 / 聲譽卓著的
+Week 13,resentment,noun,怨恨 / 憤恨 / 積怨 / 不滿
+Week 13,scum,noun,浮渣 / 污垢 / 人渣 / 敗類
+Week 13,significance,noun,重要性 / 意義 / 重大意義 / 含義 / 意義含義
+Week 13,superstition,noun,迷信 / 迷信觀念 / 禁忌說法
+Week 13,thaw,verb,融化 / 解凍 / 回暖
+Week 14,unfairly,adverb,不公平地 / 不公正地 / 偏心地 / 冤枉地
+Week 14,all-time,adjective,空前的 / 歷來的 / 史上 / 歷史性的最高最低
+Week 14,brutal,adjective,殘暴的 / 殘忍的 / 粗暴的 / 嚴酷的 / 艱難的
+Week 14,censor,noun,審查員 / 檢查官員 / 審查 / 刪改 / 查禁
+Week 14,commend,verb,稱讚 / 表揚 / 嘉許 / 推薦
+Week 14,conscience,noun,良心 / 良知 / 道德道德感
+Week 14,dignify,verb,使有尊嚴 / 使更莊重 / 抬高的身分 / 看重 / 認為值得
+Week 14,endurance,noun,耐力 / 持久力 / 忍耐力
+Week 14,fantasy,noun,幻想 / 白日夢 / 想像 / 奇幻作品 / 奇幻小說 / 奇幻類型
+Week 14,ferret,noun,雪貂 / 貂鼠 / 搜出 / 查出 / 挖出
+Week 15,flexible,adjective,有彈性的 / 可彎曲的 / 柔軟的 / 靈活的 / 適應力強的
+Week 15,harshness,noun,嚴厲 / 嚴酷 / 刺耳 / 刺眼 / 粗 / 苛刻
+Week 15,initiative,noun,主動性 / 主動精神 / 積極性 / 倡議 / 新方案 / 計畫
+Week 15,intelligently,adverb,聰明地 / 明智地 / 理智地 / 有智慧地
+Week 15,leniency,noun,寬大 / 寬容 / 從寬處理
+Week 15,marksmanship,noun,射擊技術 / 射擊能力 / 槍法 / 準頭
+Week 15,mobility,noun,移動能力 / 行動能力 / 機動性 / 流動性 / 社會流動
+Week 15,reconstruct,verb,重建 / 重新建造 / 重建推演 / 還原 / 重組 / 推演重建
+Week 15,scoreboard,noun,記分板 / 計分板 / 比分板
+Week 15,slang,noun,俚語 / 俗語 / 口語用法
+Week 16,tactical,adjective,戰術的 / 策略上的 / 講求策略的 / 權宜的
+Week 16,thrower,noun,投擲者 / 投手 / 擲的人 / 陶輪
+Week 16,unusually,adverb,異常地 / 不尋常地 / 特別地 / 反常地
+Week 16,appal,verb,使震驚 / 使駭然 / 使毛骨悚然 / 使反感
+Week 16,certify,verb,證明 / 認證 / 證實 / 核證 / 發給合格證明
+Week 16,conspiracy,noun,陰謀 / 共謀 / 共謀罪
+Week 16,court-martial,noun,軍事法庭 / 軍事審判 / 軍法審判
+Week 16,deploy,verb,部署 / 調派 / 展開 / 運用 / 調度運用 / 發揮
+Week 16,full-sized,adjective,實物大小的 / 成人尺寸的 / 標準尺寸的
+Week 16,gravitational,adjective,重力的 / 引力的 / 萬有引力的
+Week 17,griffin,noun,獅鷲獸 / 獅鷲
+Week 17,grueling,adjective,艱苦的 / 極為辛苦的 / 耗費體力的 / 折磨人的
+Week 17,insignia,noun,徽章 / 標誌 / 徽記
+Week 17,long-range,adjective,長程的 / 遠距離的 / 長距的 / 長期的 / 長遠的
+Week 17,provocation,noun,挑釁 / 刺激 / 激怒行為
+Week 17,puzzlement,noun,困惑 / 疑惑 / 不解
+Week 17,reassign,verb,重新分派 / 改派 / 重新指派 / 另行分配
+Week 17,rebuke,verb,斥責 / 責備 / 訓斥 / 指責
+Week 17,recon,noun,偵察 / 勘察 / 探查
+Week 18,regardless,adverb,不管怎樣 / 不顧 / 無論如何 / 不論 / 不管
+Week 18,submission,noun,屈服 / 服從 / 順從 / 提交 / 交件 / 投稿作品
+Week 18,troublemaker,noun,惹麻煩的人 / 搗蛋鬼 / 麻煩製造者
+Week 18,twine,noun,細繩 / 麻繩 / 線繩 / 纏繞 / 盤繞
+Week 18,uninterested,adjective,不感興趣的 / 沒興趣的 / 不感興味的 / 冷淡的 / 公正無私的
+Week 18,unnecessary,adjective,不必要的 / 多餘的 / 沒必要的
+Week 18,weariness,noun,疲憊 / 疲倦 / 倦意
+Week 18,abide,verb,遵守 / 依照行事 / 容忍 / 忍受 / 停留 / 居住
+Week 18,blindness,noun,失明 / 盲 / 盲目 / 視而不見
+Week 18,civilian,noun,平民 / 老百姓 / 非軍人 / 文職人員
+Week 19,cusp,noun,尖端 / 尖點 / 關鍵點 / 轉折點 / 交界處
+Week 19,instantaneous,adjective,瞬間的 / 即時的 / 立刻的 / 即刻的
+Week 19,jackal,noun,胡狼 / 豺狼 / 走狗 / 爪牙
+Week 19,lightspeed,noun,光速 / 像光速一樣快
+Week 19,persona,noun,人物形象 / 外在形象 / 公眾形象 / 人設
+Week 19,persuasion,noun,說服 / 勸說 / 說服力 / 信念體系 / 主張 / 說服、勸說 / 信念體系、主張、派別
+Week 19,temperament,noun,性情 / 脾氣 / 氣質
+Week 19,adolescence,noun,青春期 / 青少年時期 / 青春期階段
+Week 19,armada,noun,艦隊 / 大規模艦隊 / 無敵艦隊 / 大批 / 大群
+Week 19,astrophysics,noun,天體物理學 / 天文物理學
+Week 20,attrition,noun,耗損 / 消耗 / 逐步減少 / 流失 / 人員流失 / 學生流失
+Week 20,cube,noun,立方體 / 正方體 / 三次方 / 冰塊 / 小方塊
+Week 20,decisive,adjective,果斷的 / 決斷的 / 決定性的 / 關鍵的
+Week 20,detachment,noun,分離 / 脫離 / 拆離 / 超然 / 冷靜 / 抽離感 / 分隊 / 支隊
+Week 20,disadvantage,noun,缺點 / 不利條件 / 劣勢 / 不利之處
+Week 20,disconcert,verb,使不安 / 使困惑 / 使尷尬 / 使慌亂
+Week 20,distaste,noun,反感 / 厭惡 / 不喜歡 / 討厭之處 / 反感厭惡 / 令人反感之處
+Week 20,dreamlike,adjective,如夢似幻的 / 夢一般的 / 朦朧的 / 不真實的
+Week 20,effectively,adverb,有效地 / 有效率地 / 實際上 / 等於
+Week 20,empathy,noun,同理心 / 設身處地的理解能力 / 感同身受的能力
+Week 21,emperor,noun,皇帝
+Week 21,erode,verb,侵蝕 / 沖蝕 / 磨損 / 逐漸削弱 / 損害
+Week 21,evaluate,verb,評估 / 評價 / 判定 / 衡量
+Week 21,fairness,noun,公平 / 公正 / 白皙
+Week 21,fraction,noun,分數 / 分式 / 一小部分 / 少量
+Week 21,headset,noun,耳麥 / 頭戴式耳機 / 耳機麥克風組
+Week 21,hive,noun,蜂巢 / 蜂箱 / 熱鬧中心 / 忙碌的地方
+Week 21,holographic,adjective,全像的 / 全息的 / 立體投影的
+Week 21,honeycomb,noun,蜂巢 / 蜂房 / 蜂巢狀花紋 / 蜂巢狀結構
+Week 22,infinite,adjective,無限的 / 無窮的
+Week 22,innovation,noun,創新 / 革新 / 新發明
+Week 22,intensity,noun,強度 / 烈度 / 強烈程度 / 激烈程度
+Week 22,interstellar,adjective,星際的 / 恆星際的 / 星際空間的
+Week 22,magnitude,noun,大小 / 規模 / 重大程度 / 強度 / 絕對值
+Week 22,mechanically,adverb,機械式地 / 機械地 / 呆板地 / 以機械方式 / 用機器地用機械方式地
+Week 22,merchandise,noun,商品 / 貨品 / 周邊商品 / 貨物
+Week 22,needless,adjective,不必要的 / 無謂的 / 多餘的 / 不用說
+Week 22,oblivion,noun,遺忘 / 湮沒 / 被遺忘的狀態 / 失去知覺 / 無意識狀態 / 虛無湮滅
+Week 22,organism,noun,生物體 / 生物 / 有機體
+Week 23,outpost,noun,前哨站 / 據點 / 前哨基地 / 偏遠據點
+Week 23,oversleep,verb,睡過頭 / 睡太晚 / 賴床太久
+Week 23,pact,noun,協議 / 約定 / 公約 / 盟約
+Week 23,phase,noun,階段 / 時期 / 時期性的階段 / 月相
+Week 23,physic,noun,醫術 / 醫學 / 藥
+Week 23,priesthood,noun,神職 / 祭司身分 / 祭司職分 / 神職人員 / 司鐸職 / 司祭職
+Week 23,projectile,noun,拋射物 / 飛射物 / 彈射物 / 投擲物
+Week 23,proportion,noun,比例 / 占比 / 比重
+Week 23,relativity,noun,相對性 / 相對論
+Week 23,reprisal,noun,報復 / 報復行動 / 報復措施
+Week 24,responsive,adjective,反應靈敏的 / 反應快的 / 有回應的 / 積極回應的 / 體貼的 / 敏感的
+Week 24,restful,adjective,讓人放鬆的 / 寧靜的 / 安的 / 安詳的 / 舒適的
+Week 24,self-pity,noun,自憐 / 自艾自憐
+Week 24,shipboard,adjective,船上的 / 船內的 / 艦上的
+Week 24,shrub,noun,灌木 / 灌木叢
+Week 24,simulate,verb,模擬 / 仿真 / 模擬出 / 假裝 / 佯裝 / 冒充 / 偽裝
+Week 24,simulator,noun,模擬器 / 模擬程式
+Week 24,skim,verb,略讀 / 瀏覽 / 撇去 / 撇掉 / 掠過 / 擦過表面
+Week 24,slavic,adjective,斯拉夫的 / 斯拉夫民族的 / 斯拉夫語族的 / 樸實粗獷的
+Week 24,sluggish,adjective,緩慢的 / 遲鈍的 / 沒精神的 / 不景氣的 / 低迷的
+Week 25,stationary,adjective,固定不動的 / 靜止的 / 停著不動的
+Week 25,strategic,adjective,策略性的 / 戰略性的 / 關鍵的
+Week 25,tutorial,noun,教學課程 / 教學影片 / 教學指南 / 教學程式 / 小班教學 / 輔導課
+Week 25,unpleasantly,adverb,令人不舒服地 / 令人不愉快地 / 刺耳地 / 討厭地
+Week 25,waken,verb,醒來 / 醒了 / 叫醒 / 喚醒 / 喚起
+Week 25,whisker,noun,鬍鬚 / 觸鬚 / 鬚毛 / 些微差距 / 一丁點
+Week 25,accrue,verb,累積 / 積累 / 增加 / 產生 / 應計 / 歸於
+Week 25,adulation,noun,吹捧 / 奉承 / 阿諛 / 過度崇拜
+Week 25,airlock,noun,氣閘艙 / 氣密艙 / 氣閘室
+Week 26,amply,adverb,充分地 / 充裕地 / 足足地
+Week 26,astonishingly,adverb,驚人地 / 令人驚訝地 / 出奇地 / 非常驚奇地
+Week 26,believer,noun,信徒 / 信者 / 相信者 / 支持者
+Week 26,cocoon,noun,繭 / 蠶繭 / 保護殼 / 封閉保護狀態
+Week 26,colonist,noun,殖民者 / 殖民地定居者 / 開拓者
+Week 26,copter,noun,直升機 / 直升機口語簡稱
+Week 26,demagogue,noun,煽動民粹的政客 / 煽動群眾的政客 / 民粹煽動者
+Week 26,fourteen-year-old,noun,十四歲的人 / 十四歲的孩子 / 十四歲少年十四歲少女
+Week 26,historian,noun,歷史學家 / 史學家
+Week 26,homecoming,noun,返家 / 返鄉 / 返校節 / 返校日
+Week 27,inconvenient,adjective,不方便的 / 麻煩的 / 不合適的 / 不合時宜的
+Week 27,industry,noun,工業 / 產業 / 業界 / 勤奮 / 勤勞
+Week 27,itinerant,adjective,巡迴的 / 流動的 / 四處奔波的 / 漂泊的
+Week 27,lightyear,noun,光年 / 非常遙遠的距離 / 差得很遠 / 漫長得多
+Week 27,limitation,noun,限制 / 局限 / 缺點 / 限制因素 / 不足
+Week 27,martial,adjective,軍事的 / 戰爭的 / 尚武的 / 好戰的
+Week 27,presidency,noun,總統職位 / 總統任期 / 總統職權 / 總統統治時期
+Week 27,prosperity,noun,繁榮 / 興旺 / 富裕
+Week 27,retirement,noun,退休 / 退休生活 / 引退 / 隱居 / 幽居
+Week 27,second-guess,verb,事後批評 / 事後質疑 / 馬後炮地批評 / 揣測別人的想法 / 猜測對方下一步
+Week 28,self-sustaining,adjective,自給自足的 / 可自我維持的 / 能自行運作的
+Week 28,churchyard,noun,教堂庭院 / 教堂墓地 / 教堂周圍空地
+Week 28,devotion,noun,奉獻 / 投入 / 忠誠 / 摯愛 / 虔敬 / 虔誠
+Week 28,moderately,adverb,適度地 / 中等程度地 / 還算 / 相當地
+Week 28,rundown,noun,摘要 / 概述 / 重點說明 / 簡報式整理
+Week 28,stubbornly,adverb,固執地 / 倔強地 / 頑固地
+Week 28,suitable,adjective,合適的 / 適合的 / 恰當的 / 相稱的
+Week 28,affliction,noun,苦難 / 痛苦 / 折磨 / 病痛 / 疾病
+Week 28,jumpy,adjective,神經緊張的 / 緊張不安的 / 一驚一乍的 / 神經兮兮的 / 一跳一跳的 / 跳動不順的
+Week 28,symptom,noun,症狀 / 病徵 / 徵兆 / 表徵
+Week 29,twinge,noun,一陣刺痛 / 一陣疼痛 / 一陣心痛 / 一絲愧疚 / 一陣不安 / 一絲一陣感覺
+Week 29,big-boned,adjective,骨架大的 / 骨頭架子大的 / 體格壯的
+Week 29,cog,noun,齒輪 / 輪齒 / 齒牙 / 小角色 / 小螺絲釘
+Week 29,regime,noun,政權 / 統治體制 / 制度 / 管理體制 / 作息療程訓練計畫
+Week 29,assortment,noun,各式各樣的一批 / 各種混合品 / 什錦組合 / 各類各色
+Week 29,boarded-up,adjective,用木板封住的 / 釘上木板的 / 以木板封死的
+Week 29,engorgement,noun,腫脹 / 充血腫脹 / 脹滿 / 乳房脹奶
+Week 29,irritable,adjective,易怒的 / 煩躁的 / 暴躁的 / 敏感易受刺激的 / 腸躁的
+Week 29,panic-stricken,adjective,驚慌失措的 / 驚恐萬分的 / 嚇壞了的 / 陷入恐慌的
+Week 29,sideboard,noun,餐具櫃 / 餐邊櫃 / 邊櫃 / 邊板
+Week 30,toffee,noun,太妃糖 / 牛奶糖
+Week 30,uptight,adjective,緊張不安的 / 緊張拘謹的 / 放不開的 / 拘謹的 / 過於拘謹的 / 死板的 / 太在意規矩的
+Week 30,grandchild,noun,孫子女 / 孫輩 / 孫子 / 孫女
+Week 30,manky,adjective,又髒又爛的 / 骯髒破爛的 / 噁心兮兮的 / 病懨懨的 / 破破舊舊的
+Week 30,moldy-looking,adjective,看起來發霉的 / 像發霉一樣的 / 霉斑斑的
+Week 30,navel,noun,肚臍 / 臍 / 中心 / 核心
+Week 30,obtrusive,adjective,惹人注意的 / 過於顯眼的 / 打擾人的 / 唐突的
+Week 30,prearrange,verb,預先安排 / 事先安排 / 預作安排
+Week 30,acre,noun,英畝 / 畝
+Week 31,bloke,noun,傢伙 / 男人 / 小子 / 老兄
+Week 31,campsite,noun,營地 / 露營地 / 營位
+Week 31,commentate,verb,做現場解說 / 實況解說 / 擔任播報講評
+Week 31,confection,noun,糖果 / 甜點 / 糖果點心 / 甜食製品 / 精巧製品 / 精緻作品 / 花俏的組合
+Week 31,curtly,adverb,簡短無禮地 / 冷淡地 / 不客氣地 / 簡短地
+Week 31,erect,adjective,直立的 / 豎立的 / 挺直的 / 勃起的
+Week 31,export,verb,出口 / 外銷 / 輸出
+Week 31,fireside,noun,爐邊 / 火爐邊 / 爐火旁 / 爐邊談話 / 親切閒談
+Week 31,idolize,verb,崇拜 / 把當偶像 / 過度崇拜
+Week 31,irish,adjective,愛爾蘭的 / 愛爾蘭人的 / 愛爾蘭語的 / 愛爾蘭語
+Week 32,outdoors,adverb,在戶外 / 在外面 / 戶外地 / 戶外活動
+Week 32,saucepan,noun,小湯鍋 / 有柄深鍋 / 單柄鍋 / 醬汁鍋
+Week 32,time-out,noun,暫停 / 短暫休息 / 冷靜時間 / 暫停時間
+Week 32,ado,noun,麻煩 / 大驚小怪 / 喧鬧 / 紛擾
+Week 32,batlike,adjective,像蝙蝠的 / 蝙蝠般的
+Week 32,cathedral,noun,大教堂 / 主教座堂
+Week 32,comprise,verb,包含 / 由組成 / 包括 / 構成
+Week 32,daresay,verb,想必 / 我想大概 / 我敢說 / 大概吧
+Week 32,leprechaun,noun,小妖精 / 愛爾蘭小妖精 / 小精靈
+Week 32,lynch,verb,私刑處死 / 處以私刑 / 嚴厲抨擊
+Week 33,malady,noun,疾病 / 毛病 / 病痛 / 弊病
+Week 33,mascot,noun,吉祥物 / 代表物
+Week 33,revival,noun,復興 / 復甦 / 再興 / 佈道會 / 奮興會
+Week 33,rosette,noun,玫瑰花結 / 玫瑰結 / 玫瑰狀圖案 / 花形徽章
+Week 33,springboard,noun,跳板 / 起點
+Week 33,clause,noun,子句 / 從句 / 條款 / 條文
+Week 33,eater,noun,吃的人 / 食客 / 肉食者 / 素食者 / 挑食的人 / 食量大的人
+Week 33,prostrate,adjective,俯伏的 / 俯臥的 / 倒臥的 / 筋疲力盡的 / 虛脫的
+Week 33,stunner,noun,大美女大帥哥 / 美人帥哥 / 令人驚豔的人 / 令人震驚的事物 / 驚人之舉驚人消息
+Week 33,wraith,noun,幽靈 / 幽魂 / 幽靈般的身影 / 瘦得像鬼的人 / 形銷骨立的人
+Week 34,disorientate,verb,使迷失方向 / 使失去方向感 / 使迷惘 / 使困惑
+Week 34,merry,adjective,快樂的 / 歡樂的 / 愉快的 / 喜氣洋洋的 / 微醺的 / 酒酣耳熱的
+Week 34,delegation,noun,代表團 / 代表團隊 / 委派 / 授權
+Week 34,European,adjective,歐洲的 / 歐式的 / 歐洲人
+Week 34,impartial,adjective,公正的 / 公平的 / 不偏不倚的
+Week 34,pension,noun,退休金 / 養老金 / 年金 / 退休制度 / 退休計畫
+Week 34,ripe,adjective,成熟的 / 熟了的 / 時機成熟的 / 適合的
+Week 34,sausage,noun,香腸 / 臘腸 / 德式香腸
+Week 34,skeptical,adjective,懷疑的 / 抱持懷疑態度的 / 半信半疑的 / 存疑的
+Week 35,tournament,noun,錦標賽 / 聯賽 / 比賽 / 大賽
+Week 35,acne,noun,青春痘 / 痘痘 / 痤瘡
+Week 35,antic,adjective,滑稽的 / 古怪可笑的 / 搞怪的 / 荒唐古怪的
+Week 35,baleful,adjective,兇惡的 / 陰森可怕的 / 不祥的 / 憂傷的
+Week 35,distinguishable,adjective,可區分的 / 可分辨的 / 看得出差別的 / 可辨識的
+Week 35,dustbin,noun,垃圾桶 / 垃圾箱 / 垃圾筒
+Week 35,eagle,noun,老鷹 / 鷹 / 老鷹球
+Week 35,gloomy,adjective,昏暗的 / 陰沉的 / 陰鬱的 / 憂鬱的 / 悲觀的
+Week 35,gravelly,adjective,沙啞的 / 粗啞的 / 鋪滿碎石的
+Week 35,liver,noun,肝臟 / 肝 / 居住者 / 生活方式的人
+Week 36,moodily,adverb,鬱悶地 / 悶悶不樂地 / 情緒低落地 / 陰鬱地 / 沒好氣地
+Week 36,pimple,noun,痘痘 / 青春痘 / 粉刺 / 丘疹
+Week 36,planetary,adjective,行星的 / 星球的 / 全球的
+Week 36,undignified,adjective,不得體的 / 有失身分的 / 不莊重的 / 失態的
+Week 36,vector,noun,向量 / 病媒 / 媒介
+Week 36,wither,verb,枯萎 / 凋萎 / 乾癟 / 衰弱 / 消退 / 萎縮
+Week 36,enslavement,noun,奴役 / 使為奴隸 / 奴隸制度下的控制 / 束縛
+Week 36,leaflet,noun,傳單 / 宣傳單 / 小冊子 / 摺頁
+Week 36,long-term,adjective,長期的 / 長遠的 / 持久的
+Week 36,manifesto,noun,宣言 / 政綱 / 綱領 / 聲明書
+Week 37,mismatch,noun,不相配 / 不匹配 / 不搭配 / 配對錯誤
+Week 37,nosebleed,noun,流鼻血 / 鼻血 / 高到不行的座位區 / 超高的座位區
+Week 37,recruit,verb,招募 / 招收 / 徵募 / 吸收新成員
+Week 37,short-term,adjective,短期的 / 暫時的 / 短暫的
+Week 37,tarantula,noun,狼蛛
+Week 37,vigilance,noun,警覺 / 警戒 / 戒備
+Week 37,alleviate,verb,減輕 / 緩和 / 舒緩 / 緩解
+Week 37,headlong,adverb,頭朝前地 / 一頭栽下去地 / 猛然地 / 莽撞地 / 貿然地
+Week 37,horse-drawn,adjective,馬拉的 / 由馬拖的 / 馬車式的
+Week 37,whirlpool,noun,漩渦 / 渦流 / 急流漩渦 / 混亂局面 / 旋渦般的處境
+Week 38,whiskey,noun,威士忌
+Week 38,aspire,verb,渴望 / 立志 / 有志於 / 追求
+Week 38,casket,noun,小盒子 / 首飾盒 / 匣子 / 棺木 / 棺材
+Week 38,constitute,verb,構成 / 組成 / 形成 / 設立 / 成立
+Week 38,selector,noun,選擇者 / 選擇器 / 選取器 / 選擇開關
+Week 38,ave,interjection,萬歲 / 向致敬 / 敬禮
+Week 38,irregular,adjective,不規則的 / 不固定的 / 不正常的 / 不合規則的
+Week 38,resubmit,verb,重新提交 / 再次送交 / 重交
+Week 38,dam,noun,水壩 / 壩 / 母獸 / 母畜
+Week 39,exceed,verb,超過 / 超出 / 高於 / 勝過
+Week 39,noisy,adjective,吵鬧的 / 很吵的 / 嘈雜的 / 喧鬧的
+Week 39,ricochet,verb,彈開 / 反彈 / 彈回 / 亂竄
+Week 39,shunt,verb,使轉向 / 移開 / 轉軌調車 / 分流 / 旁路
+Week 39,fallout,noun,後果 / 餘波 / 連帶影響 / 輻射落塵 / 放射性落塵
+Week 39,hungarian,adjective,匈牙利的 / 匈牙利人的 / 匈牙利語的
+Week 39,straggler,noun,掉隊者 / 落後者 / 遲到者 / 零零落落到來的人
+Week 39,cubicle,noun,小隔間 / 辦公隔間 / 隔間 / 廁間
+Week 39,detector,noun,探測器 / 偵測器 / 感測器 / 警報器
+Week 39,elate,verb,使欣喜若狂 / 使欣喜 / 使振奮
+Week 40,inky,adjective,墨黑的 / 漆黑的 / 烏黑的 / 沾滿墨水的 / 墨水染污的
+Week 40,reconcile,verb,和解 / 言歸於好 / 使和好 / 使一致 / 調和 / 對帳
+Week 40,hibernate,verb,冬眠 / 蟄伏過冬 / 休眠 / 暫時停止活動
+Week 40,takin,noun,羚牛 / 不丹羚牛
+Week 40,abroad,adverb,在國外 / 到國外 / 出國 / 廣泛地 / 四處
+Week 40,complacent,adjective,自滿的 / 自以為是的 / 安於現狀的 / 掉以輕心的
+Week 40,continually,adverb,不斷地 / 持續地 / 接連不斷地 / 老是
+Week 40,dispute,verb,爭論 / 爭執 / 質疑 / 反駁 / 否認 / 抗辯
+Week 40,fraternize,verb,交際 / 交好 / 過從甚密 / 私下來往
+Week 40,goatee,noun,山羊鬍 / 山羊鬍子
+Week 41,maternal,adjective,母親的 / 母性的 / 母方的 / 母系的 / 母親般的
+Week 41,rebuttal,noun,反駁 / 駁斥 / 答辯 / 反駁意見
+Week 41,bigotry,noun,偏執 / 歧視態度 / 偏見與歧視 / 排外心態
+Week 41,bloodthirsty,adjective,嗜血的 / 殘暴嗜殺的 / 殺氣騰騰的
+Week 41,blotchy,adjective,有斑塊的 / 斑駁的 / 一塊一塊的 / 紅一塊白一塊的
+Week 41,bozo,noun,笨蛋 / 蠢蛋 / 傻瓜 / 小丑
+Week 41,deceit,noun,欺騙 / 欺詐 / 詭詐 / 奸計
+Week 41,exclude,verb,排除 / 不包括 / 把排除在外 / 拒絕加入
+Week 41,explicit,adjective,明確的 / 清楚明白的 / 明白表示的 / 露骨的 / 色情露骨的
+Week 41,extinction,noun,滅絕 / 絕種 / 熄滅 / 撲滅
+Week 42,gleeful,adjective,興高采烈的 / 喜滋滋的 / 眉開眼笑的
+Week 42,interpreter,noun,口譯員 / 口譯者 / 傳譯員 / 解釋者 / 詮釋者
+Week 42,retaliation,noun,報復 / 報復行動 / 反擊 / 以牙還牙
+Week 42,temporarily,adverb,暫時地 / 暫時 / 臨時
+Week 42,unaware,adjective,不知道的 / 沒察覺的 / 不知情的
+Week 42,unearth,verb,挖出 / 發掘 / 掘出 / 發現 / 揭露 / 查出
+Week 42,watery,adjective,水水的 / 水汪汪的 / 含水很多的 / 稀薄的 / 稀稀的
+Week 42,excursion,noun,短途旅行 / 短程出遊 / 校外教學 / 離題 / 岔開話題
+Week 42,foamy,adjective,泡沫很多的 / 多泡沫的 / 起泡的 / 泡泡滿滿的
+Week 43,incomprehensible,adjective,難以理解的 / 無法理解的 / 莫名其妙的
+Week 43,marauder,noun,掠奪者 / 劫掠者 / 強盜 / 侵略者
+Week 43,minuscule,adjective,極小的 / 微小的 / 極微小的
+Week 43,submarine,noun,潛水艇 / 海底的
+Week 43,corruption,noun,腐敗 / 貪污 / 舞弊 / 腐化 / 敗壞 / 損毀
+Week 43,sadly,adverb,傷心地 / 難過地 / 悲傷地 / 遺憾地 / 可惜地
+Week 43,subscription,noun,訂閱 / 訂購 / 訂閱方案 / 訂閱費 / 會費 / 連署支持 / 捐款認購
+Week 43,tawny,adjective,黃褐色的 / 棕黃色的 / 金褐色的
+Week 43,sherbet,noun,雪酪 / 果汁冰砂 / 冰凍果子甜點 / 甜粉糖
+Week 43,immovable,adjective,不能移動的 / 不可移動的 / 固定的 / 堅定不移的
+Week 44,impediment,noun,障礙 / 阻礙 / 妨礙 / 語言障礙 / 言語障礙 / 口吃
+Week 44,premonition,noun,預感 / 不祥的預感 / 預兆感
+Week 44,vivid,adjective,生動的 / 鮮明的 / 逼真的 / 栩栩如生的
+Week 44,exile,noun,流放 / 流亡 / 放逐 / 流亡者 / 被放逐者
+Week 44,gaunt,adjective,瘦削的 / 憔悴的 / 消瘦的 / 枯槁的
+Week 44,leisure,noun,休閒 / 空閒 / 閒暇 / 餘暇 / 悠閒 / 從容
+Week 44,lime-green,adjective,黃綠色的 / 萊姆綠的 / 亮黃綠色的
+Week 44,mountainside,noun,山坡 / 山腰 / 山坡面 / 山邊斜坡
+Week 44,poorly,adverb,不好地 / 差勁地 / 做得不好地 / 不佳地 / 不舒服 / 身體不適 / 生病
+Week 44,probable,adjective,很可能的 / 可能的 / 有可能的
+Week 45,recoil,verb,猛然後退 / 退縮 / 畏縮 / 彈回 / 產生後座力
+Week 45,silver-haired,adjective,銀髮的 / 白髮的 / 灰白頭髮的
+Week 45,coldness,noun,寒冷 / 冰冷 / 冷淡 / 冷漠
+Week 45,deep-seated,adjective,根深蒂固的 / 根深柢固的 / 深層的
+Week 45,dutifully,adverb,順從地 / 盡責地 / 忠實地 / 乖乖地
+Week 45,instability,noun,不穩定 / 不穩定性 / 動盪 / 情緒不穩
+Week 45,ludicrous,adjective,荒謬的 / 可笑的 / 離譜的 / 荒唐的
+Week 45,plinth,noun,基座 / 底座 / 柱基 / 台座
+Week 45,sphinx,noun,獅身人面像 / 獅身人面獸 / 斯芬克斯 / 神祕莫測的人
+Week 45,unclench,verb,鬆開 / 放鬆 / 張開 / 鬆開緊握的
+Week 46,forcefully,adverb,強而有力地 / 有力地 / 強力地 / 強勢地
+Week 46,headstone,noun,墓碑 / 墓石 / 碑石
+Week 46,obliterate,verb,徹底摧毀 / 消滅 / 殲滅 / 抹去 / 擦掉 / 消除殆盡
+Week 46,resurrect,verb,使復活 / 復活 / 使重新出現 / 重新振興 / 重振
+Week 46,vapor,noun,蒸氣 / 水氣 / 氣體 / 煙霧 / 空話 / 空談 / 虛無飄渺的東西
+Week 46,adapt,verb,適應 / 調整 / 改編 / 改裝
+Week 46,affinity,noun,親近感 / 投緣 / 喜愛 / 相似性 / 親和力 / 關聯性
+Week 46,caress,verb,撫摸 / 愛撫 / 輕拂
+Week 46,entomb,verb,埋葬 / 安葬於墓中 / 埋入封入
+Week 47,exploit,verb,利用 / 運用 / 剝削 / 占便宜
+Week 47,immortality,noun,永生 / 不朽 / 不死之身
+Week 47,mighty,adjective,強大的 / 有力的 / 巨大的
+Week 47,mortality,noun,死亡率 / 致死率 / 必死性 / 人皆有一死 / 凡人之身 / 凡人的脆弱
+Week 47,regeneration,noun,再生 / 重生 / 重建 / 復育 / 能量回收
+Week 47,renounce,verb,放棄 / 正式放棄 / 宣布放棄 / 聲明放棄 / 公開譴責 / 斷絕
+Week 47,replica,noun,複製品 / 仿製品 / 複刻版 / 模型 / 複製模型
+Week 47,rudimentary,adjective,基本的 / 初步的 / 粗淺的 / 未完善的 / 原始的
+Week 47,thwart,verb,阻撓 / 挫敗 / 阻止 / 妨礙
+Week 47,vanquish,verb,擊敗 / 戰勝 / 征服
+Week 48,encouragement,noun,鼓勵 / 激勵 / 打氣 / 支持 / 提倡
+Week 48,nicety,noun,細節 / 細微差別 / 講究 / 禮節 / 客套話
+Week 48,white-hot,adjective,熾熱的 / 白熱的 / 白熱化的 / 極度激烈的 / 狂熱的 / 極高溫、熾熱 / 白熱化、極度激烈、情緒高張
+Week 48,cavort,verb,嬉鬧 / 歡鬧跳躍 / 嬉戲 / 歡蹦亂跳
+Week 48,detectable,adjective,可察覺的 / 可檢測到的 / 可偵測的 / 看得出來的 / 聽得出來的
+Week 48,faithless,adjective,不忠的 / 不忠實的 / 背信的 / 沒有信仰的 / 不信神的
+Week 48,idiocy,noun,愚蠢 / 愚笨 / 蠢事 / 荒唐
+Week 48,imposter,noun,冒名頂替者 / 冒充者 / 騙子
+Week 48,indignity,noun,侮辱 / 羞辱 / 羞辱待遇 / 有損尊嚴的事 / 屈辱
+Week 48,preferably,adverb,最好 / 較好 / 以為佳
+Week 49,regenerate,verb,再生 / 重生 / 再生長 / 使恢復生機 / 更新、恢復 / 生物上的重新長出 / 抽象或社會層面的恢復活力
+Week 49,stupefy,verb,使發呆 / 使驚呆 / 使昏昏沉沉 / 使麻木 / 使目瞪口呆
+Week 49,acquit,verb,宣判無罪 / 判定無罪 / 判無罪 / 表現尚可 / 表現得體
+Week 49,addle,verb,使糊塗 / 使混亂 / 使昏頭 / 腐壞 / 變質
+Week 49,by-product,noun,副產品 / 附帶產品 / 附帶結果 / 副作用
+Week 49,fletcher,noun,製箭師 / 造箭匠 / 箭匠
+Week 49,hackle,noun,頸羽 / 頸毛 / 豎起的頸毛 / 亞麻長纖維 / 讓人火大 / 激怒 / 寒毛直豎
+Week 49,poppy,noun,罌粟花 / 虞美人 / 鮮紅色
+Week 49,priori,adverb,先驗地 / 事先地 / 先天地 / 預先地
+Week 49,purity,noun,純淨 / 純潔 / 純度 / 清白 / 貞潔
+Week 50,regurgitate,verb,吐回來 / 反芻 / 回吐 / 照本宣科 / 生吞活剝地重述 / 死背硬背後照說
+Week 50,undoubtedly,adverb,毫無疑問地 / 無疑地 / 毫無疑問 / 無疑 / 一定
+Week 50,antenna,noun,天線 / 觸角
+Week 50,badger,noun,獾 / 糾纏 / 纏著不放 / 不停煩
+Week 50,disbelieve,verb,不相信 / 不信 / 懷疑不真實 / 不予置信
+Week 50,discord,noun,不和 / 紛爭 / 意見不合 / 不協調音 / 刺耳的雜音
+Week 50,enmity,noun,敵意 / 仇恨 / 敵對 / 宿怨
+Week 50,twitchy,adjective,神經緊張的 / 焦躁不安的 / 神經兮兮的 / 抽動的 / 一驚一乍的
+Week 50,unbreakable,adjective,不易碎的 / 打不破的 / 牢不可破的 / 不可違背的

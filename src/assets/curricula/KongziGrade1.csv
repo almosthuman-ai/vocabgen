@@ -1,0 +1,564 @@
+week,word,pos,clue
+Week 1,the,determiner,這個這些 / 那個那些 / 這那 / 不必翻譯
+Week 1,be,verb,是 / 在 / 有 / 歲 / 很很的狀態 / 不必翻譯
+Week 1,to,preposition,到 / 向 / 對 / 給 / 去 / 直到 / 不定詞符號不固定翻譯
+Week 1,and,conjunction,和 / 跟 / 而且 / 並且 / 又
+Week 1,of,preposition,的 / 其中的之一 / 由組成裝著 / 不必直譯
+Week 1,it,pronoun,它 / 這件事那件事 / 這樣那樣 / 時間天氣不必直譯 / 形式主詞常不翻
+Week 1,he,pronoun,他
+Week 1,in,preposition,在裡面 / 在 / 在當中 / 用 / 在期間在之內 / 處於狀態
+Week 1,have,verb,有 / 經歷 / 得了患有 / 吃 / 喝 / 進行上 / 生養 / 必須
+Week 1,that,pronoun,那 / 那個 / 那位 / 那種 / 的那個的人 / 使常省略不譯 / 那樣那麼
+Week 1,say,verb,說 / 講 / 寫著 / 表示 / 認為主張
+Week 1,you,pronoun,你 / 你們 / 您
+Week 2,on,preposition,在上面在上 / 貼在上 / 穿在身上戴在上 / 關於 / 靠藉由 / 開著 / 在上
+Week 2,at,preposition,在 / 在點於 / 朝著對著 / 看著 / 以 / 在方面對於
+Week 2,for,preposition,為了 / 給 / 對來說 / 替為 / 達長達 / 支持 / 換取以交換 / 因為 / 為了給 / 達時間
+Week 2,she,pronoun,她
+Week 2,with,preposition,和跟 / 用 / 有 / 帶著 / 因為 / 以方式
+Week 2,but,conjunction,但是 / 可是 / 不過 / 卻 / 除了
+Week 2,her,pronoun,她 / 她的
+Week 2,my,determiner,我的
+Week 2,do,verb,做 / 辦 / 助動詞 / 真的 / 的確
+Week 2,they,pronoun,他們 / 她們 / 它們 / 他她單數的情況
+Week 2,what,pronoun,什麼 / 什麼事 / 所的事物 / 的東西 / 的事
+Week 3,we,pronoun,我們
+Week 3,out,adverb,在外面 / 出去 / 出來 / 公開地 / 洩露出來 / 熄滅 / 用完 / 賣完
+Week 3,go,verb,去 / 走 / 離開 / 進行 / 運作 / 變成 / 進入狀態
+Week 3,not,adverb,不 / 不是 / 沒有
+Week 3,up,adverb,向上 / 上去 / 起來 / 完 / 光 / 快到了 / 臨近
+Week 3,this,pronoun,這個 / 這 / 這件事
+Week 3,all,determiner,所有的 / 全部的 / 全部 / 都 / 完全
+Week 3,from,preposition,從 / 來自 / 由寄來 / 來自的人 / 由做成 / 用做成
+Week 3,get,verb,得到 / 拿到 / 收到 / 到達 / 變得 / 懂 / 叫來 / 帶來 / 去拿
+Week 3,one,number,一 / 一個 / 一個人 / 一個東西
+Week 3,look,verb,看 / 看著 / 注視 / 看起來 / 找
+Week 4,so,adverb,所以 / 很 / 這麼 / 那樣
+Week 4,know,verb,知道 / 認識 / 了解 / 熟悉
+Week 4,think,verb,想 / 認為 / 覺得 / 思考 / 想起來
+Week 4,them,pronoun,他們 / 她們 / 它們 / 牠們
+Week 4,like,verb,喜歡 / 例如
+Week 4,see,verb,看見 / 看到 / 懂 / 明白 / 見 / 看望 / 見面
+Week 4,about,preposition,關於 / 有關 / 大約 / 大概 / 四處 / 到處
+Week 4,no,interjection,不 / 不是 / 沒有 / 不行 / 不要
+Week 4,just,adverb,只是 / 只 / 剛剛 / 正好 / 就 / 正是
+Week 4,into,preposition,進入 / 到裡面 / 變成 / 成為 / 對有興趣 / 投入於沉迷於
+Week 4,an,determiner,一個 / 一位 / 一隻 / 一本
+Week 4,back,adverb,回來 / 回去 / 返回 / 後面 / 背後 / 以前
+Week 5,then,adverb,那時 / 當時 / 然後 / 接著 / 那麼
+Week 5,could,contraction,能 / 可以 / 可能 / 會 / 能夠
+Week 5,when,conjunction,什麼時候 / 何時 / 當的時候 / 在時
+Week 5,make,verb,做 / 製作 / 做出 / 使 / 讓 / 賺得 / 成為
+Week 5,time,noun,時間 / 時候 / 次 / 回 / 倍 / 乘以
+Week 5,come,verb,來 / 來到 / 發生 / 到來
+Week 5,down,adverb,向下 / 下來 / 往下 / 下降 / 沮喪的 / 低落的
+Week 5,now,adverb,現在 / 此刻 / 立刻 / 馬上
+Week 5,your,determiner,你的 / 你們的 / 您的
+Week 5,over,preposition,在上方 / 在上面 / 越過 / 過去 / 超過 / 結束了
+Week 5,don't,contraction,不 / 不要 / 別 / 沒有
+Week 6,can,verb,能 / 會 / 可以 / 可否 / 能不能 / 裝罐
+Week 6,good,adjective,好的 / 不錯的 / 善良的 / 乖的 / 在行的 / 擅長的 / 有用的 / 健康的 / 好吃的
+Week 6,tell,verb,告訴 / 說 / 吩咐 / 叫 / 分辨 / 看得出來
+Week 6,how,adverb,怎麼 / 如何 / 怎樣 / 多麼 / 多
+Week 6,ask,verb,問 / 詢問 / 請求 / 要求 / 邀請 / 請
+Week 6,want,verb,想要 / 想 / 要 / 需要 / 缺少
+Week 6,right,adjective,正確的 / 對的 / 右邊的 / 右面的 / 有權 / 權利 / 合理的
+Week 6,thing,noun,東西 / 事情 / 事 / 玩意兒 / 一點 / 特色
+Week 6,well,adverb,好 / 很好 / 順利地 / 妥善地 / 健康的 / 身體好的 / 沒事的
+Week 6,way,noun,方法 / 方式 / 路 / 路徑 / 方向 / 程度 / 作風
+Week 6,will,verb,會 / 將 / 要 / 願意 / 肯 / 意志 / 遺囑
+Week 7,off,adverb,離開 / 下來 / 關掉 / 脫掉 / 切掉 / 不工作 / 偏離 / 取消
+Week 7,too,adverb,也 / 也一樣 / 太 / 過於
+Week 7,again,adverb,再一次 / 又 / 再 / 回來 / 恢復
+Week 7,still,adverb,還 / 仍然 / 依然 / 還是 / 靜止的 / 安靜的
+Week 7,turn,verb,轉動 / 轉 / 轉身 / 翻轉 / 轉向 / 變成 / 變得 / 輪到
+Week 7,because,conjunction,因為 / 因為所以 / 由於
+Week 7,why,adverb,為什麼 / 為何 / 怎麼會 / 咦
+Week 7,sit,verb,坐 / 坐著 / 坐落於 / 位於 / 閒置 / 擱著
+Week 7,run,verb,跑 / 奔跑 / 跑步 / 經營 / 管理 / 操作 / 運行 / 流 / 延伸 / 上演
+Week 7,walk,verb,走路 / 走 / 步行 / 陪走 / 帶走 / 遛 / 牽著走
+Week 7,help,verb,幫助 / 幫 / 協助 / 幫忙 / 有幫助 / 有用
+Week 8,must,verb,必須 / 一定要 / 一定 / 想必
+Week 8,end,noun,結尾 / 末端 / 盡頭 / 最後部分 / 目的 / 目標
+Week 8,big,adjective,大的 / 大 / 巨大的 / 重要的 / 重大的 / 紅的很紅 / 嚴重的
+Week 8,always,adverb,總是 / 一直 / 永遠
+Week 8,four,number,四 / 四個 / 四歲 / 四點
+Week 8,his,pronoun,他的
+Week 8,me,pronoun,我
+Week 8,there,adverb,那裡 / 那邊 / 有
+Week 8,if,conjunction,如果 / 要是 / 是否 / 是不是
+Week 8,would,verb,會 / 願意 / 想要 / 就會 / 總是
+Week 8,by,preposition,在旁邊 / 靠近 / 藉由 / 用 / 透過 / 被 / 由 / 在之前
+Week 8,their,determiner,他們的 / 她們的 / 它們的 / 牠們的
+Week 9,or,conjunction,或者 / 或是 / 還是 / 否則
+Week 9,take,verb,拿 / 拿走 / 帶 / 帶走 / 搭 / 坐 / 花費 / 吃 / 拍 / 選 / 接受 / 需要
+Week 9,more,determiner,更多的 / 再多一些 / 更 / 比較 / 另外的
+Week 9,other,determiner,其他的 / 別的 / 另外的 / 另一個 / 其餘的
+Week 9,even,adverb,甚至 / 連 / 竟然 / 平坦的 / 平的 / 平均的均等的
+Week 9,only,adverb,只 / 只有 / 僅 / 才 / 唯一的 / 僅有的
+Week 9,very,adverb,很 / 非常 / 很的 / 十分 / 正是 / 正 / 同一個
+Week 9,some,determiner,一些 / 有些 / 某些 / 一些些 / 大約 / 差不多
+Week 9,around,preposition,在周圍 / 在附近 / 到處 / 四處 / 大約 / 差不多 / 繞著 / 轉過去轉過來
+Week 9,here,adverb,這裡 / 這兒 / 在這裡 / 喂 / 來
+Week 9,something,pronoun,某樣東西 / 某件事 / 一些東西 / 什麼東西 / 有點的東西
+Week 10,try,verb,嘗試 / 試著 / 努力 / 試 / 試試看 / 審判
+Week 10,head,noun,頭 / 頭部 / 前端 / 頂部 / 首領 / 主管 / 校長
+Week 10,where,adverb,哪裡 / 哪兒 / 在哪裡 / 的地方 / 在那裡在其中
+Week 10,than,conjunction,比 / 比起 / 比更
+Week 10,give,verb,給 / 交給 / 送給 / 提供 / 帶給 / 造成 / 做出
+Week 10,any,determiner,任何 / 任何一個 / 一些 / 什麼都不 / 隨便哪一個 / 一點也不
+Week 10,two,number,二 / 兩 / 兩個 / 兩位 / 二號
+Week 10,long,adjective,長的 / 長 / 漫長的 / 長久的 / 很久
+Week 10,little,adjective,小的 / 少的少量的 / 年幼的 / 幼小的
+Week 10,away,adverb,離開 / 不在 / 遠處 / 持續地 / 收起來
+Week 10,after,preposition,在之後 / 在後面 / 追趕
+Week 11,day,noun,一天 / 白天 / 日子
+Week 11,first,adjective,第一的 / 最先的 / 首先的
+Week 11,hear,verb,聽見 / 聽到 / 聽說 / 得知
+Week 11,door,noun,門 / 門口 / 門路 / 機會之門
+Week 11,never,adverb,從不 / 從來不 / 絕不
+Week 11,need,verb,需要 / 必須 / 缺少
+Week 11,let,verb,讓 / 准許 / 允許 / 出租
+Week 11,work,verb,工作 / 做事 / 運作 / 有效 / 起作用 / 努力處理
+Week 11,you're,contraction,你是 / 你在 / 你很你真 / 你們是
+Week 11,call,verb,打電話給 / 打給 / 叫 / 呼喊 / 召喚 / 稱作 / 叫做 / 稱為
+Week 11,start,verb,開始 / 著手 / 發動 / 啟動 / 驚得一跳 / 猛然一動
+Week 12,really,adverb,真的 / 確實 / 其實 / 很 / 非常 / 真
+Week 12,put,verb,放 / 把放在 / 擺 / 貼 / 寫上 / 表達 / 說成 / 調到
+Week 12,last,adjective,最後的 / 最終的 / 上一個的 / 上次的 / 去年的 / 上週的 / 昨天的 / 持續 / 維持 / 撐得住
+Week 12,another,determiner,另一個 / 再一個 / 另一位 / 再來一個 / 別的
+Week 12,feel,verb,摸 / 觸摸 / 感覺 / 覺得 / 感到 / 感受到 / 感覺起來 / 似乎
+Week 12,hold,verb,拿著 / 握住 / 抱住 / 扶住 / 按住 / 容納 / 裝得下 / 舉行 / 維持 / 忍住
+Week 12,anything,pronoun,任何事 / 任何東西 / 什麼都 / 隨便什麼 / 任何一樣東西
+Week 12,talk,verb,說話 / 講話 / 談話 / 談 / 交談 / 發言 / 演講
+Week 12,yes,interjection,是 / 對 / 好 / 有 / 嗯
+Week 12,three,number,三 / 三個 / 三位 / 三隻
+Week 12,oh,interjection,喔 / 哦 / 啊 / 哎呀
+Week 12,next,adjective,下一個的 / 接下來的 / 下次的 / 隔壁的 / 緊鄰的
+Week 13,book,noun,書 / 書本 / 書籍 / 課本 / 預訂 / 訂位
+Week 13,sure,adjective,確定的 / 有把握的 / 肯定的 / 可靠的 / 當然 / 好啊 / 沒問題
+Week 13,smile,verb,微笑 / 笑 / 對微笑 / 露出笑容
+Week 13,begin,verb,開始 / 著手 / 展開
+Week 13,wait,verb,等待 / 等 / 稍等 / 耽擱 / 延後
+Week 13,ever,adverb,曾經 / 在任何時候 / 有過 / 始終 / 一直
+Week 13,sound,verb,聽起來 / 聽來 / 發出聲音 / 響 / 鳴響 / 發聲作響 / 聽起來似乎
+Week 13,name,noun,名字 / 名稱 / 名聲 / 名氣
+Week 13,bad,adjective,不好的 / 壞的 / 糟糕的 / 嚴重的 / 惡劣的 / 難受的
+Week 13,remember,verb,記得 / 記住 / 想起 / 記得要 / 記得有 / 記得曾經
+Week 13,same,adjective,相同的 / 一樣的 / 同樣的
+Week 14,hard,adjective,困難的 / 堅硬的 / 費力的 / 努力地 / 用力地
+Week 14,home,noun,家 / 住家 / 家裡 / 回家
+Week 14,table,noun,桌子 / 餐桌 / 書桌 / 表格 / 表
+Week 14,friend,noun,朋友 / 好友
+Week 14,show,verb,展示 / 給看 / 顯示 / 表現出 / 證明 / 帶路 / 節目 / 表演
+Week 14,live,verb,住 / 居住 / 活著 / 生存 / 現場的 / 直播的
+Week 14,idea,noun,想法 / 主意 / 點子 / 看法 / 概念 / 了解
+Week 14,whole,adjective,整個 / 全部的 / 完整的 / 健全的 / 完好的
+Week 14,wear,verb,穿 / 戴 / 繫 / 擦 / 磨損 / 穿破 / 消磨
+Week 14,laugh,verb,笑 / 大笑 / 發笑 / 覺得好笑 / 可笑
+Week 14,soon,adverb,很快 / 不久 / 馬上 / 早
+Week 15,together,adverb,一起 / 一同 / 合在一起 / 聚在一起 / 同時
+Week 15,outside,preposition,在外面 / 在外頭 / 不在之內 / 超出範圍
+Week 15,eat,verb,吃 / 吃掉 / 侵蝕 / 腐蝕
+Week 15,today,adverb,今天 / 今日 / 現在
+Week 15,stick,verb,黏住 / 貼住 / 黏貼 / 插入 / 伸入 / 卡住 / 細棍 / 樹枝
+Week 15,happy,adjective,快樂的 / 高興的 / 開心的 / 幸福的 / 幸運的
+Week 15,him,pronoun,他
+Week 15,who,pronoun,誰 / 哪一位 / 的人 / 凡是的人
+Week 15,didn't,contraction,沒 / 沒有 / 不
+Week 15,i'm,contraction,我是 / 我 / 我在 / 我是的
+Week 15,us,pronoun,我們 / 咱們 / 我們大家
+Week 16,eye,noun,眼睛 / 眼 / 雙眼 / 目光 / 眼光 / 注意力 / 針眼
+Week 16,hand,noun,手 / 手掌 / 手部 / 幫助 / 幫忙 / 交給 / 遞給 / 指針
+Week 16,through,preposition,穿過 / 通過 / 透過 / 經由 / 直到結束 / 完成 / 結束
+Week 16,find,verb,找到 / 發現 / 覺得 / 認為 / 查出
+Week 16,person,noun,人 / 人物 / 人稱
+Week 16,our,determiner,我們的 / 本班的 / 本國的
+Week 16,before,preposition,在之前 / 先於 / 在前面 / 當著的面
+Week 16,leave,verb,離開 / 出發 / 留下 / 留給 / 讓留下 / 別碰不要移動 / 拋下
+Week 16,much,determiner,很多的 / 大量的 / 很 / 常常多
+Week 16,mean,adjective,刻薄的 / 兇的 / 壞心的 / 吝嗇的 / 表示意思 / 意思是 / 打算
+Week 16,keep,verb,保留 / 留著 / 保存 / 存放 / 保持 / 繼續
+Week 16,stand,verb,站立 / 站著 / 忍受 / 容忍 / 立場 / 處於地位
+Week 17,use,verb,使用 / 用 / 利用 / 用途 / 益處
+Week 17,voice,noun,嗓音 / 聲音 / 語氣 / 發言權 / 意見表達
+Week 17,house,noun,房子 / 住宅 / 屋子 / 家 / 議院 / 眾議院 / 上議院
+Week 17,can't,contraction,不能 / 不會 / 不行 / 無法
+Week 17,move,verb,移動 / 搬動 / 搬家 / 走 / 採取行動 / 使感動 / 提議
+Week 17,night,noun,夜晚 / 晚上 / 夜裡 / 黑夜 / 晚會 / 夜晚活動
+Week 17,happen,verb,發生 / 出事 / 碰上 / 碰巧 / 剛好
+Week 17,old,adjective,老的 / 年老的 / 舊的 / 古老的 / 以前的 / 從前的
+Week 17,behind,preposition,在後面 / 在背後 / 落後於 / 晚於 / 在背後支持
+Week 17,might,verb,可能 / 也許 / 或許 / 說不定 / 力量 / 威力 / 權勢
+Week 17,couldn't,contraction,不能 / 沒辦法 / 無法 / 不會
+Week 18,nothing,pronoun,沒有東西 / 沒什麼 / 沒有事 / 無事
+Week 18,should,verb,應該 / 最好 / 理應 / 應該會
+Week 18,course,noun,課程 / 課 / 路線 / 方向 / 進程 / 做法 / 過程
+Week 18,great,adjective,很棒的 / 很好的 / 了不起的 / 巨大的 / 重大的 / 偉大的
+Week 18,many,determiner,很多 / 許多 / 不少 / 多個
+Week 18,front,noun,前面 / 前部 / 前方 / 正面 / 門面 / 幌子
+Week 18,read,verb,閱讀 / 讀 / 朗讀 / 解讀 / 看懂 / 辨識
+Week 18,late,adjective,遲到的 / 晚的 / 接近末期的 / 已故的
+Week 18,inside,preposition,在裡面 / 在內部 / 在獄中 / 私下地
+Week 18,world,noun,世界 / 全球 / 界 / 天地
+Week 18,also,adverb,也 / 還 / 此外
+Week 19,everything,pronoun,每件事 / 所有事 / 一切 / 所有東西
+Week 19,else,adverb,其他的 / 別的 / 否則 / 不然
+Week 19,already,adverb,已經 / 早就 / 都已經
+Week 19,bed,noun,床 / 床鋪 / 花圃 / 河床 / 海床 / 底層
+Week 19,question,noun,問題 / 問句 / 題目 / 疑問 / 議題
+Week 19,pick,verb,挑選 / 選 / 拿起 / 撿起 / 採 / 摘 / 接某人
+Week 19,meet,verb,見面 / 遇見 / 認識 / 符合 / 滿足 / 迎接
+Week 19,top,noun,頂部 / 上面 / 頂端 / 最前面 / 最高位置 / 上衣
+Week 19,jump,verb,跳 / 跳躍 / 驟增 / 猛升
+Week 19,suppose,verb,認為 / 想 / 猜想 / 假設 / 如果 / 應該 / 理應
+Week 19,won't,contraction,不會 / 不肯 / 不願意
+Week 20,write,verb,寫 / 寫字 / 寫信 / 寫作 / 寫下 / 編寫
+Week 20,worry,verb,擔心 / 煩惱 / 使擔心 / 困擾
+Week 20,thank,verb,感謝 / 謝謝 / 向道謝
+Week 20,drop,verb,掉下 / 使掉下 / 放下 / 滴下 / 下降 / 停止
+Week 20,hang,verb,掛 / 吊 / 懸掛 / 絞死 / 吊死
+Week 20,guess,verb,猜 / 亂猜 / 猜想 / 估計
+Week 20,red,adjective,紅色的 / 紅的 / 赤紅的 / 左翼的 / 共產主義的
+Week 20,either,determiner,任一個 / 任何一個 / 兩者之一 / 也不
+Week 20,wish,verb,希望 / 但願 / 希望能 / 想要 / 祝願
+Week 20,cover,verb,蓋住 / 覆蓋 / 遮住 / 包住 / 涵蓋 / 談到 / 報導 / 覆蓋物 / 蓋子
+Week 20,forget,verb,忘記 / 忘了 / 忘了帶 / 忘了拿 / 忘不了
+Week 20,nice,adjective,不錯的 / 好的 / 令人愉快的 / 親切的 / 和善的 / 漂亮的
+Week 21,easy,adjective,容易的 / 簡單的 / 輕鬆的 / 自在的
+Week 21,smell,verb,聞到 / 聞 / 有味道 / 散發氣味 / 聞起來 / 發臭
+Week 21,cool,adjective,涼的 / 涼爽的 / 冷靜的 / 鎮定的 / 很酷的 / 酷的
+Week 21,which,pronoun,哪一個 / 哪一些 / 哪一種 / 的那個 / 這件事這一點
+Week 21,room,noun,房間 / 教室 / 空間 / 地方 / 餘地
+Week 21,open,verb,打開 / 開 / 張開 / 拆開 / 開始 / 開幕
+Week 21,most,determiner,大多數的 / 大部分的 / 最多的 / 最
+Week 21,watch,verb,看 / 觀看 / 注視 / 守著看 / 留意 / 小心
+Week 21,enough,determiner,足夠的 / 夠 / 充足的 / 相當
+Week 21,place,noun,地方 / 地點 / 場所 / 位置 / 放置 / 放
+Week 21,close,adjective,近的 / 靠近的 / 親近的 / 親密的 / 接近的 / 差不多的
+Week 22,star,noun,星星 / 恆星 / 明星 / 星形 / 星號
+Week 22,pull,verb,拉 / 拖 / 拔 / 扯 / 吸引力 / 影響力
+Week 22,own,verb,擁有 / 有 / 持有 / 承認 / 坦承
+Week 22,those,pronoun,那些 / 那些個
+Week 22,foot,noun,腳 / 腳掌 / 足部 / 底部 / 山腳 / 英尺
+Week 22,while,conjunction,當的時候 / 在期間 / 同時 / 雖然 / 然而
+Week 22,word,noun,字 / 單字 / 詞 / 話 / 諾言
+Week 22,each,determiner,每個 / 各個 / 每一個
+Week 22,once,adverb,一次 / 曾經 / 從前 / 一旦 / 一就
+Week 22,boy,noun,男孩 / 男生 / 小男孩
+Week 22,new,adjective,新的 / 全新的 / 新來的 / 另一個 / 新式的
+Week 23,shake,verb,搖晃 / 搖動 / 抖動 / 震動 / 握手 / 搖晃震動
+Week 23,bite,verb,咬 / 啃 / 叮 / 刺痛 / 侵蝕
+Week 23,second,number,第二 / 第二個 / 秒 / 一會兒 / 序數 / 時間單位
+Week 23,reach,verb,到達 / 抵達 / 伸手拿到 / 伸出 / 達到 / 達成
+Week 23,without,preposition,沒有 / 不帶 / 不用 / 不就 / 沒有就 / 在沒有的情況下
+Week 23,girl,noun,女孩 / 女生 / 少女 / 女孩子
+Week 23,lot,noun,很多 / 大量 / 一批 / 一群 / 地塊
+Week 23,follow,verb,跟著 / 跟隨 / 照著做 / 遵從 / 聽懂 / 理解 / 接著發生
+Week 23,both,determiner,兩者都 / 兩個都 / 都
+Week 23,step,verb,踩 / 跨步 / 走一步 / 踏 / 逐步進行 / 腳步步伐 / 台階 / 步驟
+Week 23,window,noun,窗戶 / 窗 / 時機 / 時間空檔 / 空檔時間
+Week 24,break,verb,打破 / 弄壞 / 壞掉 / 中斷 / 休息 / 違反 / 打破紀錄 / 中斷、打破
+Week 24,minute,noun,分鐘 / 片刻 / 一下 / 一會兒
+Week 24,under,preposition,在下面 / 在底下 / 低於 / 在影響下 / 在控制下 / 在之下 / 在影響控制下
+Week 24,believe,verb,相信 / 信任 / 認為 / 相信是真的 / 有信仰
+Week 24,such,determiner,這樣的 / 那樣的 / 如此 / 這麼 / 這種
+Week 24,wouldn't,contraction,不會 / 不肯 / 不會有 / 不會去不會做 / 本來會但沒有
+Week 24,kind,adjective,和善的 / 親切的 / 體貼的 / 好心的 / 種類 / 種 / 類
+Week 24,suddenly,adverb,突然 / 忽然 / 冷不防
+Week 24,water,noun,水 / 飲用水 / 水域 / 海域
+Week 24,play,verb,玩 / 打 / 踢 / 下 / 彈 / 拉 / 吹 / 演 / 扮演
+Week 24,bring,verb,帶來 / 拿來 / 帶 / 提來 / 抱來 / 背來 / 導致 / 帶來結果
+Week 24,tree,noun,樹
+Week 25,part,noun,部分 / 部份 / 片段 / 零件 / 角色 / 作用 / 職責 / 參與
+Week 25,yet,adverb,還 / 還沒 / 已經了嗎 / 至今 / 然而 / 甚至
+Week 25,sort,noun,種類 / 種 / 類 / 整理 / 分類 / 處理
+Week 25,sleep,verb,睡覺 / 睡 / 過夜 / 留宿
+Week 25,rest,verb,休息 / 歇一歇 / 倚靠 / 放置 / 其餘部分 / 剩下的
+Week 25,doesn't,contraction,不 / 沒有 / 不會
+Week 25,isn't,contraction,不是 / 沒有 / 對吧
+Week 25,finger,noun,手指 / 指頭 / 用手指觸摸 / 用手指撥弄
+Week 25,wrong,adjective,錯的 / 不對的 / 有毛病 / 不道德的 / 不對勁
+Week 25,anyone,pronoun,任何人 / 有人 / 誰都 / 任何一個人
+Week 25,sorry,adjective,抱歉 / 對不起 / 難過的 / 遺憾的
+Week 26,real,adjective,真的 / 真實的 / 真正的 / 實際的 / 真的存在的
+Week 26,build,verb,建造 / 蓋 / 建立 / 打造 / 培養
+Week 26,please,interjection,請 / 拜託 / 麻煩你 / 行行好 / 使高興 / 使滿意
+Week 26,line,noun,線 / 線條 / 排 / 隊伍 / 行 / 台詞 / 電話線 / 路線
+Week 26,hide,verb,藏起來 / 躲起來 / 隱藏 / 遮住 / 獸皮 / 皮革
+Week 26,case,noun,情況 / 例子 / 盒子 / 箱子 / 案件 / 病例
+Week 26,shoulder,noun,肩膀 / 肩頭
+Week 26,surprise,verb,使驚訝 / 讓吃驚 / 使感到意外 / 奇襲
+Week 26,lie,verb,躺 / 平放 / 位於 / 說謊
+Week 26,grow,verb,長大 / 生長 / 長高 / 增加 / 成長 / 種植 / 留 / 逐漸變得
+Week 26,sign,noun,標誌 / 牌子 / 告示 / 符號 / 手勢 / 徵兆 / 跡象
+Week 27,hope,verb,希望 / 盼望 / 希望能 / 希望會
+Week 27,glass,noun,玻璃 / 玻璃杯 / 杯子 / 鏡片 / 玻璃片
+Week 27,anyway,adverb,反正 / 不管怎樣 / 無論如何 / 儘管如此
+Week 27,wave,verb,揮手 / 揮動 / 招手 / 擺動
+Week 27,seat,noun,座位 / 位子 / 座席 / 席位
+Week 27,stuff,noun,東西 / 物品 / 材料 / 玩意兒 / 事情 / 塞進 / 填滿
+Week 27,add,verb,加 / 加上 / 添加 / 增添 / 補充說 / 接著說
+Week 27,hop,verb,單腳跳 / 跳躍 / 蹦跳 / 短程旅行 / 順道去一下 / 快速去
+Week 27,story,noun,故事 / 情節 / 樓層 / 層
+Week 27,draw,verb,畫 / 拉 / 拖 / 抽出 / 吸入 / 平手 / 抽籤抽到
+Week 27,picture,noun,圖片 / 照片 / 圖畫 / 畫像 / 景象
+Week 27,love,verb,愛 / 喜愛 / 很喜歡 / 熱愛
+Week 28,except,preposition,除了 / 除之外 / 除外 / 若不是 / 只是
+Week 28,save,verb,救 / 拯救 / 節省 / 省下 / 儲存 / 保存 / 存
+Week 28,straight,adjective,直的 / 筆直的 / 挺直的 / 坦率的 / 直接的
+Week 28,quiet,adjective,安靜的 / 平靜的 / 輕聲的 / 清靜的
+Week 28,loud,adjective,大聲的 / 吵的 / 響亮的 / 喧鬧的
+Week 28,somewhere,adverb,某個地方 / 某處 / 哪裡 / 到某處
+Week 28,tomorrow,adverb,明天 / 明日 / 未來
+Week 28,hot,adjective,熱的 / 很熱 / 燙的 / 辣的 / 很紅的 / 熱門的 / 性感的
+Week 28,lock,noun,鎖 / 門鎖 / 鎖頭 / 一綹頭髮 / 捲髮
+Week 28,mine,pronoun,我的 / 我的東西
+Week 28,fun,noun,樂趣 / 好玩 / 有趣的人事物
+Week 29,face,noun,臉 / 面孔 / 表面 / 正面 / 面對 / 朝向
+Week 29,year,noun,年 / 年度 / 年級 / 學年 / 歲
+Week 29,point,noun,點 / 地點 / 時刻 / 重點 / 要點 / 目的 / 意義 / 分數
+Week 29,felt,verb,感覺到 / 覺得 / 感受到 / 摸到
+Week 29,stop,verb,停止 / 停下來 / 阻止 / 停住 / 公車站 / 站
+Week 29,himself,pronoun,他自己 / 他本人 / 他獨自一人
+Week 29,i'll,contraction,我會 / 我要 / 我將 / 我來
+Week 29,life,noun,生命 / 生活 / 人生 / 一生 / 生活方式
+Week 29,small,adjective,小的 / 少的 / 小小的 / 年幼的 / 微不足道的
+Week 29,side,noun,邊 / 側面 / 旁邊 / 一方 / 隊 / 立場 / 面
+Week 29,i'd,contraction,我曾經 / 我已經 / 我會 / 我願意 / 我想
+Week 30,mother,noun,母親 / 媽媽 / 媽 / 像母親般照料
+Week 30,air,noun,空氣 / 氣氛 / 神態 / 樣子 / 播送 / 播放 / 氣氛神態
+Week 30,arm,noun,手臂 / 胳膊 / 臂膀 / 武裝部門 / 部門
+Week 30,across,preposition,穿過 / 橫過 / 越過 / 在對面 / 遍及 / 從這一邊到另一邊 / 在另一邊對面
+Week 30,mind,noun,心智 / 頭腦 / 腦海 / 心裡 / 留心 / 注意 / 想法 / 意見 / 思考能力 / 注意記在心上 / 想法意見
+Week 30,until,preposition,直到 / 到為止 / 要到才 / 在以前都
+Week 30,almost,adverb,幾乎 / 差不多 / 快要
+Week 30,speak,verb,說話 / 說 / 講 / 發言 / 演講
+Week 30,black,adjective,黑色的 / 黑的 / 黑人的 / 黑人
+Week 30,someone,pronoun,某人 / 有人 / 某個人
+Week 30,plan,noun,計畫 / 打算 / 方案 / 平面圖 / 設計圖
+Week 31,they're,contraction,他們是 / 她們是 / 它們是 / 他們正在 / 她們正在它們正在
+Week 31,set,verb,放 / 擺 / 放好 / 設定 / 訂下 / 使固定凝固 / 落下 / 佈置
+Week 31,since,preposition,自從 / 自以來 / 從之後 / 既然 / 既然如此
+Week 31,along,preposition,沿著 / 順著 / 沿路 / 一起 / 連同
+Week 31,finally,adverb,終於 / 最後 / 總算
+Week 31,send,verb,送 / 寄 / 派 / 打發 / 傳送 / 傳 / 發送
+Week 31,stay,verb,待著 / 待在 / 停留 / 留下來 / 保持 / 住 / 暫住 / 住宿
+Week 31,catch,verb,接住 / 抓住 / 抓到 / 捕獲 / 聽見 / 領會 / 趕上 / 染上 / 著火 / 吸引
+Week 31,lose,verb,失去 / 弄丟 / 丟掉 / 輸 / 輸掉 / 敗給
+Week 31,answer,verb,回答 / 答覆 / 回應 / 解答
+Week 31,hair,noun,頭髮 / 毛髮 / 毛 / 一根頭髮
+Week 31,wonder,verb,想知道 / 納悶 / 好奇 / 覺得驚奇 / 驚嘆
+Week 32,high,adjective,高的 / 高 / 高水準的 / 高程度的 / 高的音 / 喝醉的
+Week 32,myself,pronoun,我自己 / 我親自 / 我本人
+Week 32,fly,verb,飛 / 飛行 / 搭飛機 / 飛往 / 蒼蠅
+Week 32,figure,noun,數字 / 數據 / 圖形 / 圖表 / 人物 / 身影 / 身材
+Week 32,listen,verb,聽 / 傾聽 / 聽從 / 聽話
+Week 32,morning,noun,早上 / 早晨 / 上午
+Week 32,mouth,noun,嘴巴 / 嘴 / 出口 / 口
+Week 32,fact,noun,事實 / 真相 / 現實
+Week 32,cry,verb,哭 / 哭泣 / 大喊 / 喊叫 / 叫喊
+Week 32,lead,verb,帶領 / 領導 / 引導 / 帶路 / 導致 / 引起
+Week 32,may,contraction,五月 / 可能 / 也許 / 可以 / 能夠
+Week 33,different,adjective,不同的 / 不一樣的 / 有差別的
+Week 33,instead,adverb,改為 / 反而 / 而是 / 取而代之
+Week 33,pass,verb,經過 / 走過 / 遞給 / 傳給 / 通過 / 及格 / 過去 / 經過走過 / 遞給傳給 / 通過及格
+Week 33,raise,verb,舉起 / 抬起 / 提高 / 升高 / 撫養 / 飼養 / 種植 / 募集 / 提出
+Week 33,full,adjective,滿的 / 裝滿的 / 飽的 / 完整的 / 全部的 / 全職的
+Week 33,carry,verb,拿 / 提 / 抱 / 背 / 扛 / 搬 / 帶著 / 運送 / 支撐 / 播送 / 刊登
+Week 33,fall,verb,掉落 / 落下 / 跌倒 / 倒下 / 下降 / 減少 / 進入 / 秋天
+Week 33,five,number,五 / 五個 / 五歲 / 五點
+Week 33,learn,verb,學習 / 學會 / 了解 / 得知 / 聽說 / 記取教訓
+Week 33,paper,noun,紙 / 紙張 / 報紙 / 文章 / 報告 / 論文 / 考卷
+Week 33,explain,verb,解釋 / 說明 / 講解 / 說明的原因 / 解釋得通
+Week 34,cold,adjective,冷的 / 寒冷的 / 冰冷的 / 冷淡的 / 冷漠的 / 感冒
+Week 34,problem,noun,問題 / 難題 / 習題 / 數學題
+Week 34,decide,verb,決定 / 下定決心 / 裁定
+Week 34,heart,noun,心臟 / 心 / 內心 / 愛心 / 勇氣 / 核心 / 中心
+Week 34,family,noun,家人 / 家庭 / 家族 / 科 / 類
+Week 34,you'll,contraction,你會 / 你將會 / 你就會
+Week 34,exactly,adverb,正確地 / 精確地 / 正是 / 沒錯 / 到底
+Week 34,chair,noun,椅子 / 座椅 / 主席 / 主持人
+Week 34,corner,noun,角落 / 轉角 / 角 / 偏僻處
+Week 34,ten,number,十
+Week 34,shut,verb,關上 / 關閉 / 閉上 / 閉嘴
+Week 35,ready,adjective,準備好的 / 準備妥當的 / 願意的 / 樂意的 / 現成的
+Week 35,ago,adverb,前 / 以前
+Week 35,ear,noun,耳朵 / 耳 / 穗 / 玉米穗
+Week 35,cut,verb,切 / 割 / 剪 / 割傷 / 削減 / 減少 / 刪掉 / 剪掉
+Week 35,trouble,noun,麻煩 / 問題 / 困擾 / 打擾 / 麻煩別人
+Week 35,climb,verb,爬 / 攀爬 / 登 / 上升 / 攀升
+Week 35,early,adverb,提早 / 早早地 / 很早 / 在早期
+Week 35,hat,noun,帽子 / 草帽 / 禮帽 / 毛帽 / 鴨舌帽
+Week 35,touch,verb,碰觸 / 觸碰 / 摸 / 接觸 / 感動
+Week 35,brother,noun,哥哥 / 弟弟 / 兄弟 / 弟兄
+Week 35,secret,adjective,秘密的 / 隱密的 / 機密的 / 私下的
+Week 35,finish,verb,完成 / 做完 / 結束 / 用完
+Week 36,clothe,verb,給穿衣服 / 為穿衣 / 給衣服穿 / 覆蓋
+Week 36,middle,noun,中間 / 中央 / 中段 / 中期 / 中途
+Week 36,nose,noun,鼻子 / 鼻
+Week 36,tiny,adjective,很小的 / 微小的 / 小小的
+Week 36,yourself,pronoun,你自己 / 你本人
+Week 36,knock,verb,敲 / 敲打 / 撞到 / 打掉 / 批評
+Week 36,promise,verb,答應 / 承諾 / 保證 / 前途
+Week 36,tall,adjective,高的 / 高大的 / 修長的
+Week 36,flower,noun,花 / 花朵
+Week 36,man,noun,男人 / 男子 / 人 / 人類
+Week 36,wasn't,contraction,不是 / 沒有 / 不在 / 沒有的
+Week 37,few,determiner,少數的 / 幾個 / 不多的 / 幾乎沒有 / 寥寥無幾
+Week 37,every,determiner,每個 / 每一個 / 每
+Week 37,count,verb,數 / 計算 / 算 / 點數 / 算數 / 重要 / 算在內
+Week 37,i've,contraction,我有 / 我已經 / 我曾經 / 我一直
+Week 37,far,adverb,遠 / 很遠 / 大老遠 / 很 / 多了 / 大幅地
+Week 37,wall,noun,牆 / 牆壁 / 岩壁 / 峭壁
+Week 37,we're,contraction,我們是 / 我們在 / 我們正在 / 我們著
+Week 37,these,pronoun,這些 / 這幾個 / 這些人
+Week 37,maybe,adverb,也許 / 可能 / 大概 / 或許
+Week 37,nod,verb,點頭 / 頷首 / 打盹
+Week 37,floor,noun,地板 / 地上 / 樓層 / 層
+Week 38,everyone,pronoun,每個人 / 大家 / 所有人
+Week 38,probably,adverb,可能 / 大概 / 應該 / 十之八九
+Week 38,hour,noun,小時 / 鐘頭 / 課時 / 工時 / 時間
+Week 38,least,adjective,最少的 / 最小的 / 最不 / 至少
+Week 38,throw,verb,丟 / 扔 / 投 / 擲 / 使陷入 / 拋下
+Week 38,fire,noun,火 / 火災 / 爐火 / 開火 / 開除
+Week 38,miss,verb,想念 / 懷念 / 錯過 / 沒打中 / 沒接到 / 漏掉
+Week 38,forward,adverb,向前 / 朝前方 / 往前 / 期待
+Week 38,matter,noun,事情 / 問題 / 怎麼了 / 要緊的事 / 物質
+Week 38,push,verb,推 / 推動 / 督促 / 催 / 逼
+Week 38,become,verb,變成 / 變得 / 成為 / 適合 / 襯托
+Week 39,clear,adjective,清楚的 / 明確的 / 透明的 / 明顯的 / 暢通的 / 晴朗的 / 乾淨的
+Week 39,slowly,adverb,慢慢地 / 緩慢地 / 慢慢來 / 逐漸地
+Week 39,actually,adverb,其實 / 其實呢 / 事實上 / 實際上 / 竟然 / 真的
+Week 39,care,noun,照顧 / 照護 / 小心 / 注意 / 關心 / 在意 / 擔心 / 憂慮
+Week 39,half,noun,一半 / 半個 / 半場 / 前半部 / 後半部
+Week 39,shoot,verb,開槍 / 射擊 / 射箭 / 射出 / 拍攝 / 拍照
+Week 39,week,noun,星期 / 週 / 禮拜
+Week 39,white,adjective,白色的 / 白的 / 白皙的 / 蒼白的
+Week 39,land,noun,陸地 / 土地 / 國家 / 國土
+Week 39,drive,verb,開車 / 駕駛 / 驅趕 / 驅使 / 迫使 / 幹勁 / 動力
+Week 39,crowd,noun,人群 / 群眾 / 一大群人 / 擠滿 / 擠在周圍 / 湧入
+Week 39,pretty,adjective,漂亮的 / 美麗的 / 可愛的 / 秀麗的 / 相當 / 很
+Week 40,near,preposition,在附近 / 靠近 / 在旁邊 / 將近 / 接近
+Week 40,breath,noun,呼吸 / 一口氣 / 氣息
+Week 40,short,adjective,短的 / 矮的 / 簡短的 / 不足的 / 缺少的
+Week 40,true,adjective,真的 / 真實的 / 正確的 / 真正的 / 忠實的 / 忠誠的
+Week 40,piece,noun,片 / 塊 / 張 / 件 / 段 / 部分 / 碎片 / 枚 / 門
+Week 40,fast,adjective,快的 / 迅速的 / 牢固的 / 緊緊的 / 禁食的
+Week 40,wind,noun,風 / 風勢 / 微風
+Week 40,dress,noun,洋裝 / 連身裙 / 裙子
+Week 40,fine,adjective,好的 / 沒事的 / 不錯的 / 可以的 / 細小的 / 細微的 / 精細的
+Week 40,grab,verb,抓住 / 一把拿住 / 搶過來 / 吸引注意
+Week 40,sigh,verb,嘆氣 / 嘆息 / 發出嘆息聲
+Week 41,lean,verb,倚靠 / 靠 / 傾身 / 傾斜 / 依靠
+Week 41,fill,verb,裝滿 / 填滿 / 塞滿 / 填寫 / 充滿 / 填補 / 滿足
+Week 41,sun,noun,太陽 / 陽光
+Week 41,hurt,verb,弄痛 / 使受傷 / 傷害 / 痛 / 疼
+Week 41,sometimes,adverb,有時候 / 有時 / 偶爾
+Week 41,buy,verb,買 / 購買 / 採買 / 相信 / 接受 / 上當
+Week 41,hole,noun,洞 / 洞口 / 坑 / 破洞 / 孔 / 困境
+Week 41,box,noun,箱子 / 盒子 / 紙箱 / 方框 / 包廂
+Week 41,safe,adjective,安全的 / 平安的 / 受到保護的 / 妥當的 / 穩妥的
+Week 41,six,number,六
+Week 41,slip,verb,滑倒 / 滑了一下 / 溜走 / 悄悄放入 / 滑落脫落 / 忽略不小心說出
+Week 42,heavy,adjective,重的 / 沉重的 / 嚴重的 / 強烈的 / 濃的
+Week 42,clean,adjective,乾淨的 / 整潔的 / 純淨的 / 無毒的 / 未沾毒品的 / 清白的
+Week 42,bright,adjective,明亮的 / 耀眼的 / 鮮豔的 / 聰明的 / 有希望的
+Week 42,cross,verb,穿過 / 橫越 / 過 / 越過 / 生氣的
+Week 42,ahead,adverb,在前面 / 向前 / 提前 / 未來 / 領先
+Week 42,beat,verb,打 / 敲打 / 擊打 / 打敗 / 擊敗 / 跳動 / 拍打 / 節拍
+Week 42,ring,verb,鳴響 / 響起 / 打電話 / 打給 / 環繞
+Week 42,huge,adjective,巨大的 / 龐大的 / 很大的
+Week 42,tooth,noun,牙齒 / 牙 / 齒狀部 / 齒 / 尖齒
+Week 42,charge,verb,收費 / 索價 / 衝向 / 衝鋒 / 起訴 / 控告 / 充電 / 充滿 / 裝填
+Week 42,truth,noun,真相 / 事實 / 真話 / 誠實
+Week 43,quick,adjective,快的 / 迅速的 / 很快的 / 靈敏的 / 機靈的 / 活的
+Week 43,trip,verb,絆倒 / 絆了一下 / 使絆倒 / 誤觸
+Week 43,kick,verb,踢 / 踹 / 戒掉 / 擺脫
+Week 43,prepare,verb,準備 / 預備 / 料理 / 準備好
+Week 43,pile,noun,一堆 / 一疊 / 一摞 / 一堆東西 / 堆
+Week 43,seven,number,七
+Week 43,list,noun,清單 / 名單 / 表 / 目錄 / 傾斜
+Week 43,mistake,noun,錯誤 / 失誤 / 過失 / 誤會 / 弄錯
+Week 43,busy,adjective,忙碌的 / 很忙的 / 沒空的 / 熱鬧的 / 繁忙的
+Week 43,tire,verb,使疲倦 / 使疲勞 / 累壞 / 變疲倦 / 累了 / 厭倦
+Week 43,funny,adjective,好笑的 / 有趣的 / 滑稽的 / 奇怪的 / 古怪的 / 不對勁的
+Week 43,sudden,adjective,突然的 / 忽然的 / 驟然的
+Week 44,pretend,verb,假裝 / 裝作 / 扮作 / 佯裝
+Week 44,afternoon,noun,下午 / 午後
+Week 44,tie,verb,綁 / 繫 / 打結 / 扎 / 打成平手 / 平手
+Week 44,eight,number,八 / 八個
+Week 44,luck,noun,運氣 / 好運 / 壞運 / 幸運
+Week 44,store,noun,商店 / 店 / 店鋪 / 儲備品 / 儲藏
+Week 44,handle,verb,用手操作 / 拿 / 搬動 / 處理 / 應付 / 對付
+Week 44,lunch,noun,午餐 / 中餐 / 午飯
+Week 44,seem,verb,似乎 / 好像 / 看起來
+Week 44,though,conjunction,雖然 / 雖說 / 儘管 / 不過 / 可是 / 然而
+Week 44,moment,noun,片刻 / 一下 / 瞬間 / 時刻 / 重要性
+Week 45,light,noun,光 / 光線 / 燈 / 燈光 / 輕的 / 淡的
+Week 45,against,preposition,靠著 / 貼著 / 對著 / 反對 / 對抗 / 和比賽對上 / 接觸、倚靠 / 反對、對抗
+Week 45,child,noun,小孩 / 孩子 / 兒童 / 子女
+Week 45,dark,adjective,黑暗的 / 昏暗的 / 深色的 / 陰暗的 / 邪惡的
+Week 45,large,adjective,大的 / 大型的 / 寬鬆的 / 大號的
+Week 45,grind,verb,磨 / 磨碎 / 碾碎 / 摩擦 / 磨牙 / 苦幹 / 埋頭苦讀
+Week 45,understand,verb,了解 / 懂 / 明白 / 理解 / 體諒 / 諒解
+Week 45,between,preposition,在之間 / 介於之間 / 在當中 / 在當中做選擇 / 由共同
+Week 45,die,verb,死 / 去世 / 過世 / 枯死 / 熄滅 / 沒電
+Week 45,perhaps,adverb,也許 / 或許 / 可能
+Week 45,change,verb,改變 / 變成 / 更換 / 換 / 轉車 / 換衣服 / 兌換 / 找零 / 換開
+Week 46,notice,verb,注意到 / 察覺到 / 發現
+Week 46,quickly,adverb,快速地 / 很快地 / 趕快 / 立刻
+Week 46,whisper,verb,低聲說 / 低語 / 耳語 / 悄聲說 / 沙沙作響
+Week 46,glance,verb,瞥一眼 / 匆匆看一眼 / 掃一眼 / 看一下
+Week 46,deep,adjective,深的 / 深處的 / 深刻的 / 深沉的 / 濃厚的
+Week 46,we'll,contraction,我們會 / 我們要 / 我們將
+Week 46,rise,verb,上升 / 升起 / 起身 / 起床 / 增加 / 漲
+Week 46,reason,noun,原因 / 理由 / 道理 / 理性
+Week 46,past,adjective,過去的 / 先前的 / 上一個的 / 超過 / 經過
+Week 46,interest,noun,興趣 / 關注 / 利息 / 利益 / 權益 / 股份
+Week 46,leg,noun,腿 / 腿部 / 桌腳 / 椅腳 / 一段路程
+Week 47,fell,verb,跌倒了 / 落下了 / 倒下了 / 砍倒 / 伐倒
+Week 47,game,noun,遊戲 / 比賽 / 球賽 / 獵物
+Week 47,order,noun,命令 / 指示 / 順序 / 次序 / 訂單 / 點餐 / 點餐內容
+Week 47,letter,noun,信 / 信件 / 字母
+Week 47,roll,verb,滾動 / 翻滾 / 捲 / 捲動 / 名冊 / 麵包捲
+Week 47,less,adjective,較少的 / 更少的 / 較不 / 沒那麼
+Week 47,street,noun,街道 / 街 / 馬路 / 金融界 / 華爾街
+Week 47,food,noun,食物 / 吃的東西 / 糧食 / 食品
+Week 47,we've,contraction,我們有 / 我們已經 / 我們曾經
+Week 47,tear,verb,撕開 / 撕裂 / 扯破
+Week 47,important,adjective,重要的 / 要緊的 / 重大的
+Week 47,spend,verb,花錢 / 花費 / 度過 / 耗費 / 用時間
+Week 48,whatever,pronoun,無論什麼 / 不管什麼 / 任何的事物 / 隨便什麼 / 隨便啦
+Week 48,empty,adjective,空的 / 空無一人的 / 空洞的 / 茫然的
+Week 48,during,preposition,在期間 / 在的時候 / 在當中
+Week 48,note,noun,便條 / 紙條 / 筆記 / 註記 / 音符
+Week 48,drink,verb,喝 / 喝酒 / 飲用
+Week 48,strange,adjective,奇怪的 / 陌生的 / 古怪的 / 不尋常的
+Week 48,spot,noun,地點 / 位子 / 斑點 / 污點 / 痘痘
+Week 48,scar,noun,疤痕 / 傷疤 / 疤
+Week 48,completely,adverb,完全地 / 完全 / 徹底地 / 全都
+Week 48,pay,verb,付錢 / 付款 / 支付 / 繳 / 付
+Week 48,arrive,verb,到達 / 抵達 / 到了 / 來到
+Week 49,haven't,contraction,還沒有 / 沒有 / 沒 / 沒有過
+Week 49,agree,verb,同意 / 贊成 / 答應 / 一致
+Week 49,imagine,verb,想像 / 設想 / 以為 / 猜想
+Week 49,page,noun,頁 / 頁面 / 書頁 / 呼叫 / 傳呼
+Week 49,school,noun,學校 / 上學 / 在學校 / 上課時間 / 課業
+Week 49,nine,number,九 / 九個 / 九點 / 九月
+Week 49,yesterday,adverb,昨天
+Week 49,aren't,contraction,不是 / 不在 / 沒有
+Week 49,whose,pronoun,誰的 / 哪個人的
+Week 49,sad,adjective,傷心的 / 難過的 / 令人難過的 / 悲傷的
+Week 49,yours,pronoun,你的 / 你們的 / 您的
+Week 50,hungry,adjective,餓的 / 肚子餓 / 渴望的 / 很想要的
+Week 50,father,noun,父親 / 爸爸 / 爹 / 祖先 / 神父
+Week 50,sister,noun,姊姊 / 妹妹 / 姊妹 / 姐妹 / 修女 / 教友姊妹
+Week 50,teacher,noun,老師 / 教師 / 教練
+Week 50,sing,verb,唱歌 / 唱 / 吟唱 / 嗚鳴 / 鳴響 / 呼嘯
+Week 50,taste,noun,味道 / 滋味 / 口味 / 品味 / 喜好
+Week 50,favorite,adjective,最喜歡的 / 最喜愛的 / 心愛的 / 最看好的 / 奪標熱門 / 熱門人選
+Week 50,prefer,verb,較喜歡 / 比較喜歡 / 寧可 / 偏好
+Week 50,proud,adjective,自豪的 / 驕傲的 / 有自尊的
+Week 50,chapter,noun,章 / 回 / 篇章
+Week 50,character,noun,角色 / 人物 / 個性 / 性格 / 品格 / 字元 / 文字 / 字 / 角色人物 / 個性性格品格 / 字元文字字

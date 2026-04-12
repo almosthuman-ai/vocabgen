@@ -1,0 +1,1409 @@
+week,word,pos,clue
+Week 1,ac,noun,交流電 / 交流電源 / 空調 / 冷氣 / 冷氣機
+Week 1,accent,noun,口音 / 腔調 / 重音符號 / 變音符號 / 重音符號變音符號
+Week 1,ad,noun,廣告 / 廣告短片 / 廣告單 / 加法
+Week 1,allergy,noun,過敏 / 過敏反應 / 過敏症
+Week 1,american,adjective,美國的 / 美國人的 / 美式的 / 美式英語的
+Week 1,astronaut,noun,太空人 / 航太員
+Week 1,bacon,noun,培根 / 培根肉
+Week 1,blister,noun,水泡 / 燙傷水泡 / 起水泡 / 長水泡
+Week 1,coin,noun,硬幣 / 錢幣 / 銅板 / 創造新詞 / 杜撰詞語
+Week 1,customer,noun,顧客 / 客人 / 消費者
+Week 1,cutout,noun,剪下的圖形 / 剪影 / 紙板人形立牌 / 挖空部分 / 鏤空處 / 斷路裝置
+Week 1,determine,verb,決定 / 下定決心 / 確定 / 測定 / 查明 / 決定的結果 / 左右 / 「決定」 / 「確定、查明、測定」 / 「決定左右結果」
+Week 1,dollar,noun,美元 / 元 / 澳元 / 加幣 / 加元 / 港幣 / 港元
+Week 1,equally,adverb,同樣地 / 一樣地 / 平等地 / 平均地
+Week 1,flip-flop,noun,夾腳拖 / 人字拖 / 突然轉變 / 政策反覆 / 改口
+Week 1,fry,verb,油炸 / 炸 / 煎 / 魚苗
+Week 1,gazillion,number,天文數字 / 超多 / 數不清的 / 多到誇張
+Week 1,hamburger,noun,漢堡 / 漢堡包 / 牛肉漢堡
+Week 1,hover,verb,盤旋 / 懸停 / 徘徊 / 逗留在附近 / 籠罩
+Week 1,magnify,verb,放大 / 放大來看 / 誇大
+Week 1,manager,noun,經理 / 主管 / 店長 / 管理員
+Week 1,mandarin,noun,官員 / 中國官員 / 中文 / 華語 / 官話 / 橘子 / 柑橘
+Week 1,mayonnaise,noun,美乃滋 / 蛋黃醬
+Week 1,motel,noun,汽車旅館
+Week 1,native,adjective,本地的 / 原產於的 / 土生土長的 / 天生的 / 與生俱來的 / 母語的
+Week 1,off-limits,adjective,禁止進入的 / 不得進入的 / 禁止碰觸的 / 禁談的 / 不能碰的
+Week 1,payment,noun,付款 / 支付 / 款項 / 費用 / 分期付款
+Week 1,per,preposition,每 / 每一 / 每個 / 依照 / 按照
+Week 1,pickle,noun,醃黃瓜 / 泡菜 / 醃菜 / 困境 / 麻煩
+Week 2,plat,noun,地籍圖 / 土地分區圖 / 地界圖 / 地塊圖 / 地塊
+Week 2,pore,noun,毛孔 / 氣孔 / 仔細研讀 / 埋頭細看
+Week 2,prawn,noun,大蝦 / 明蝦 / 蝦
+Week 2,pulsate,verb,搏動 / 跳動 / 脈動 / 震動起伏
+Week 2,reed,noun,蘆葦 / 葦草 / 簧片
+Week 2,reek,verb,散發臭味 / 臭氣沖天 / 散發濃烈氣味 / 充滿 / 帶有濃厚味道
+Week 2,rent,verb,租 / 租用 / 出租 / 租借 / 撕裂 / 裂開
+Week 2,restaurant,noun,餐廳 / 飯店 / 餐館
+Week 2,salary,noun,薪水 / 月薪 / 薪資 / 待遇
+Week 2,simultaneous,adjective,同時的 / 同時發生的 / 同步的 / 齊頭並進的
+Week 2,soup,noun,湯 / 湯品 / 羹 / 濃霧 / 一團混亂的東西
+Week 2,steady,adjective,穩的 / 穩定的 / 平穩的 / 穩固的 / 持續的
+Week 2,vent,noun,通風口 / 排氣口 / 出風口
+Week 2,waitress,noun,女服務生 / 女侍者 / 服務生
+Week 2,wobble,verb,搖晃 / 搖搖晃晃 / 晃來晃去 / 動搖 / 猶豫起來
+Week 2,wok,noun,炒鍋 / 中式炒鍋 / 鍋子
+Week 2,bulletproof,adjective,防彈的 / 防彈材質的 / 萬無一失的 / 無懈可擊的 / 周全的
+Week 2,enclose,verb,附上 / 隨附 / 附入 / 圍住 / 包圍
+Week 2,extend,verb,延伸 / 伸展 / 延長 / 擴大 / 提供
+Week 2,laundry,noun,待洗衣物 / 髒衣服 / 洗好的衣物 / 洗衣 / 洗衣店 / 洗衣房 / 洗衣間
+Week 2,motion,noun,移動 / 動作 / 運動 / 動議
+Week 2,relation,noun,關係 / 關聯 / 親戚
+Week 2,stool,noun,凳子 / 板凳 / 糞便 / 糞便檢體
+Week 2,weekly,adjective,每週的 / 每星期的 / 一週一次的 / 週刊
+Week 2,zap,verb,電擊 / 迅速擊倒 / 迅速消滅 / 快速處理 / 迅速移動 / 迅速切換
+Week 2,coal,noun,煤 / 煤炭
+Week 2,cup,noun,杯子 / 杯 / 一杯的量 / 獎盃
+Week 2,employment,noun,工作 / 就業 / 受僱 / 職業 / 使用 / 運用
+Week 3,environment,noun,環境 / 生活環境 / 自然環境 / 成長環境 / 環保 / 環境保護
+Week 3,second-class,adjective,二等的 / 二級的 / 次等的 / 二流的 / 次一等的 / 低人一等的
+Week 3,sip,verb,小口喝 / 啜飲 / 抿一口
+Week 3,tea,noun,茶 / 茶水
+Week 3,anxious,adjective,焦慮的 / 擔心的 / 不安的 / 渴望的 / 急切的
+Week 3,blazer,noun,西裝外套 / 制服外套 / 厲害的人 / 衝得很快的人
+Week 3,blurt,verb,脫口說出 / 脫口而出 / 不慎說出 / 說溜嘴 / 冒失地說出
+Week 3,dale,noun,山谷 / 谷地 / 溪谷
+Week 3,gymnasium,noun,體育館 / 健身房 / 文理中學
+Week 3,intend,verb,打算 / 想要 / 意指 / 本來是要 / 供使用
+Week 3,necessarily,adverb,必然地 / 一定 / 必定 / 照理說
+Week 3,ninety,number,九十
+Week 3,thrill,verb,使興奮 / 使非常興奮 / 使激動 / 使心情激昂
+Week 3,beep,verb,發出嗶聲 / 嗶一聲 / 使發出嗶聲 / 呼叫
+Week 3,code,noun,代碼 / 密碼 / 編碼 / 法典 / 程式碼
+Week 3,stein,noun,啤酒杯 / 大啤酒杯 / 有把手的啤酒杯
+Week 3,tang,noun,濃烈味道 / 刺激味 / 酸味 / 辛辣感 / 尖頭 / 柄舌
+Week 3,tax,noun,稅 / 稅金 / 課稅 / 政府徵收的稅
+Week 3,wake-up,noun,叫醒 / 晨喚 / 醒來 / 警訊 / 警鐘
+Week 3,bulge,verb,鼓起 / 凸出 / 脹起來 / 塞滿
+Week 3,fourth-grade,adjective,四年級的 / 小學四年級的 / 低劣的 / 幼稚的
+Week 3,fume,verb,冒煙 / 冒出氣體 / 發怒 / 氣炸了 / 氣憤不已 / 怒氣沖沖
+Week 3,immigrant,noun,移民 / 移民者 / 新移民
+Week 3,protest,verb,抗議 / 反對 / 提出抗議 / 示威 / 申辯
+Week 3,cabinet,noun,櫥櫃 / 櫃子 / 置物櫃 / 藥櫃 / 內閣
+Week 3,creation,noun,創造 / 創作 / 創作物 / 產物
+Week 3,dent,noun,凹痕 / 凹陷
+Week 3,dumpster,noun,大型垃圾箱 / 垃圾子車 / 大型垃圾桶
+Week 4,index,noun,索引 / 目錄 / 指數 / 指標 / 食指
+Week 4,invitation,noun,邀請 / 邀請函 / 請帖 / 邀約 / 引誘 / 誘惑
+Week 4,perk,verb,振作 / 打起精神 / 使有精神 / 活躍起來
+Week 4,pillow,noun,枕頭 / 靠枕 / 抱枕
+Week 4,plead,verb,懇求 / 哀求 / 央求 / 答辯 / 抗辯
+Week 4,properly,adverb,正確地 / 適當地 / 好好地 / 妥善地 / 完全地
+Week 4,raw,adjective,生的 / 未煮熟的 / 未加工的 / 原始的 / 生硬的 / 強烈外露的 / 刺痛的
+Week 4,ridge,noun,山脊 / 山稜 / 隆起線條 / 脊線 / 稜脊
+Week 4,scotch,noun,蘇格蘭威士忌 / 透明膠帶 / 膠帶
+Week 4,soda,noun,汽水 / 蘇打 / 蘇打水
+Week 4,soften,verb,使變軟 / 軟化 / 緩和 / 減輕 / 柔和
+Week 4,spare,adjective,備用的 / 多餘的 / 空閒的 / 閒置的 / 瘦削的 / 簡樸的 / 省得 / 使免於 / 抽出
+Week 4,unfinished,adjective,未完成的 / 沒做完的 / 未完工的
+Week 4,urgency,noun,緊急 / 緊急性 / 急迫感
+Week 4,additional,adjective,額外的 / 另外的 / 附加的 / 更多的
+Week 4,boom,noun,轟隆聲 / 巨響 / 繁榮 / 激增
+Week 4,brace,noun,支架 / 支撐器 / 矯正器 / 護具 / 一對
+Week 4,brighten,verb,使變亮 / 變亮 / 照亮 / 使開心 / 使振作 / 露出笑容高興起來
+Week 4,cleanliness,noun,清潔 / 整潔 / 潔淨 / 衛生
+Week 4,corridor,noun,走廊 / 長廊
+Week 4,cost,noun,費用 / 價格 / 價錢 / 開銷 / 代價 / 損失
+Week 4,develop,verb,發展 / 發育 / 成長 / 培養 / 養成 / 開發 / 研發 / 形成 / 出現 / 沖洗 / 顯影 / 闡述
+Week 4,dough,noun,麵團 / 麵糰 / 生麵團 / 錢 / 鈔票 / 現金
+Week 4,electronic,adjective,電子的 / 電子式的 / 與電子有關的
+Week 4,feedback,noun,回饋 / 意見回饋 / 反應 / 回授 / 反饋
+Week 4,girlfriend,noun,女朋友 / 女性朋友 / 閨蜜 / 姐妹淘
+Week 4,grader,noun,某年級學生 / 二年級學生六年級學生 / 評分者 / 評分機 / 分級機
+Week 4,know-it-all,noun,自以為無所不知的人 / 萬事通 / 自以為是的人 / 愛賣弄學問的人
+Week 5,lane,noun,小路 / 巷道 / 車道 / 跑道 / 泳道 / 保齡球道
+Week 5,meadow,noun,草地 / 草原 / 牧草地 / 牧場
+Week 5,retriever,noun,尋回犬 / 拾獵犬 / 取回者 / 回收裝置
+Week 5,sixth,number,第六 / 六分之一
+Week 5,softness,noun,柔軟 / 柔和 / 溫柔 / 細嫩
+Week 5,staff,noun,員工 / 工作人員 / 教職員 / 長棍 / 手杖 / 五線譜 / 「全體員工工作人員」 / 「長棍、手杖」 / 「五線譜」
+Week 5,deliver,verb,遞送 / 送達 / 投遞 / 交付 / 發表 / 演出 / 生產 / 分娩
+Week 5,detergent,noun,清潔劑 / 洗衣精 / 洗衣粉 / 洗碗精
+Week 5,limit,verb,限制 / 限定 / 節制 / 控制 / 界限 / 上限
+Week 5,sympathetic,adjective,同情的 / 體諒的 / 支持的 / 共鳴的
+Week 5,tub,noun,浴盆 / 浴缸 / 大桶 / 大盆 / 桶裝盒
+Week 5,usage,noun,用法 / 慣用法 / 使用方式 / 使用
+Week 5,washer,noun,墊圈 / 華司 / 洗衣機 / 清洗器 / 清洗者
+Week 5,loan,noun,貸款 / 借款 / 借出物 / 外借
+Week 5,monopoly,noun,壟斷 / 獨占 / 獨家控制 / 地產大亨 / 《地產大亨》
+Week 5,reminisce,verb,追憶往事 / 話當年 / 回憶往事 / 緬懷 / 懷舊地談起
+Week 5,shark,noun,鯊魚 / 騙子 / 奸商 / 掠奪者 / 高利貸者
+Week 5,unexpected,adjective,出乎意料的 / 意外的 / 突如其來的 / 沒想到的
+Week 5,communicate,verb,溝通 / 傳達 / 交流 / 聯絡
+Week 5,coupon,noun,折價券 / 優惠券 / 兌換券 / 電子優惠券 / 附券 / 回條
+Week 5,deliberation,noun,審慎考量 / 深思熟慮 / 商議 / 從容慎重 / 沉著緩慢
+Week 5,distribute,verb,分發 / 分配 / 配送 / 散布 / 分送
+Week 5,horribly,adverb,可怕地 / 非常糟糕地 / 糟透地 / 非常 / 極其
+Week 5,insurance,noun,保險 / 保險金 / 保費 / 保險保障
+Week 5,keen,adjective,熱衷的 / 熱切的 / 有興趣的 / 敏銳的 / 鋒利的 / 強烈的
+Week 5,massage,noun,按摩 / 推拿 / 穴位按摩 / 輕柔揉入 / 按摩至吸收
+Week 5,medical,adjective,醫療的 / 醫學的 / 醫用的
+Week 5,nugget,noun,小塊 / 金塊 / 雞塊 / 塊狀物 / 精華 / 片段精華
+Week 6,puppy,noun,小狗 / 幼犬
+Week 6,radiator,noun,散熱器 / 水箱 / 暖氣片 / 暖氣機 / 散熱器水箱
+Week 6,shortly,adverb,不久 / 很快就 / 馬上 / 簡短地 / 簡略地 / 冷淡地 / 唐突地
+Week 6,stethoscope,noun,聽診器
+Week 6,wail,verb,哀號 / 哭喊 / 號啕大哭 / 發出尖長聲 / 呼嘯 / 警報聲大作 / 發出哀鳴般的聲音
+Week 6,yogurt,noun,優格 / 優酪乳 / 酸乳酪
+Week 6,brochure,noun,小冊子 / 宣傳手冊 / 簡介 / 摺頁
+Week 6,cop,noun,警察 / 員警 / 警官 / 抓住
+Week 6,damn,interjection,該死 / 可惡 / 真糟
+Week 6,hell,noun,地獄 / 活地獄 / 苦境悲慘處境 / 到底究竟 / 非常極其
+Week 6,rancid,adjective,酸敗的 / 油耗味的 / 變質的 / 腐臭的
+Week 6,slightly,adverb,稍微 / 有點 / 略微 / 微微
+Week 6,slur,verb,含糊地說 / 口齒不清地說 / 把話說得含混不清 / 侮辱 / 誹謗 / 連音 / 含混帶過
+Week 6,tighten,verb,拉緊 / 繫緊 / 拴緊 / 擰緊 / 變緊 / 收緊 / 變嚴格
+Week 6,channel,noun,頻道 / 管道 / 通道 / 水道 / 海峽
+Week 6,fiddle,verb,擺弄 / 亂動 / 摸來摸去 / 調整 / 拉小提琴 / 做手腳 / 竄改
+Week 6,hardworking,adjective,勤奮的 / 勤勞的 / 用功的
+Week 6,install,verb,安裝 / 裝設 / 設置 / 安裝軟體 / 裝上 / 任命 / 就任
+Week 6,installation,noun,安裝 / 裝設 / 裝置 / 設備 / 裝置藝術 / 裝置作品
+Week 6,jab,verb,戳 / 猛戳 / 刺 / 捅 / 揮拳猛擊 / 尖刻批評 / 諷刺
+Week 6,security,noun,安全 / 保全 / 保全措施 / 保障
+Week 6,twenty-five,number,二十五
+Week 6,auditorium,noun,禮堂 / 大會堂 / 觀眾席
+Week 6,burger,noun,漢堡 / 漢堡包 / 漢堡排 / 肉排
+Week 6,cashier,noun,收銀員 / 店員 / 櫃台人員 / 撤職 / 革職
+Week 6,checkout,noun,結帳 / 結帳櫃檯 / 收銀台 / 退房 / 退房手續 / 借閱手續
+Week 6,dramatic,adjective,戲劇性的 / 誇張的 / 驚人的 / 突然的、巨大的
+Week 6,fistful,noun,一把 / 一拳頭的量 / 一把的量
+Week 7,infuriate,verb,激怒 / 惹火 / 使暴怒
+Week 7,jolt,noun,猛震 / 顛簸 / 震動 / 震驚 / 驚嚇
+Week 7,lurch,verb,猛然傾斜 / 顛簸一下 / 踉蹌 / 蹣跚
+Week 7,prep,noun,準備 / 事前準備 / 預習作業 / 預習 / 功課 / 預備學校
+Week 7,quiver,verb,顫抖 / 微微顫動 / 抖動 / 發顫
+Week 7,supermarket,noun,超市 / 超級市場
+Week 7,twitch,verb,抽動 / 抽搐一下 / 抖動一下 / 一顫 / 緊張不安
+Week 7,instal,verb,安裝 / 裝設 / 設置
+Week 7,language,noun,語言 / 語文 / 話 / 措辭 / 用語 / 說法
+Week 7,ray,noun,光線 / 光芒 / 射線 / 輻射線
+Week 7,unfair,adjective,不公平的 / 不公正的 / 違規的不合規則的
+Week 7,wagon,noun,四輪馬車 / 運貨車 / 篷車 / 手推車 / 陣營 / 跟風的行列
+Week 7,ya,pronoun,你 / 你們 / 是啊 / 對啊
+Week 7,alloy,noun,合金 / 合成金屬 / 摻雜 / 使不純
+Week 7,aluminum,noun,鋁 / 鋁製的 / 鋁箔
+Week 7,convert,verb,轉換 / 轉變 / 改裝 / 兌換 / 改宗 / 皈依
+Week 7,copper,noun,銅 / 銅製的 / 警察
+Week 7,forty,number,四十
+Week 7,instance,noun,例子 / 實例 / 情況 / 案例
+Week 7,item,noun,項目 / 物品 / 一則一條新聞 / 條目
+Week 7,lookout,noun,瞭望員 / 警戒員 / 瞭望台 / 觀景台 / 留意 / 提防
+Week 7,microwave,noun,微波爐 / 微波
+Week 7,penny,noun,一分錢 / 一美分 / 便士 / 一點點錢
+Week 7,recycle,verb,回收 / 資源回收 / 再利用 / 循環利用
+Week 7,rewrap,verb,重新包起來 / 重新包裝 / 再包一次
+Week 7,steel,noun,鋼 / 鋼鐵 / 使堅強 / 使振作
+Week 7,unattended,adjective,無人看管的 / 無人照看的 / 未照料的 / 未受注意的 / 無人值守的
+Week 7,visitor,noun,訪客 / 來客 / 參觀者 / 遊客
+Week 7,cable,noun,電纜 / 纜線 / 鋼纜 / 海底電纜 / 有線電視 / 有線網路
+Week 8,dispatch,verb,派遣 / 派出 / 發送 / 寄出 / 迅速處理 / 解決掉 / 殺死幹掉 / 殺死解決掉
+Week 8,excitement,noun,興奮 / 激動 / 雀躍
+Week 8,repairman,noun,修理工 / 維修員 / 修繕工人
+Week 8,speed-dial,verb,設定快速撥號 / 設成快速撥號 / 快速撥號 / 用快速撥號撥打
+Week 8,tow,verb,拖 / 拖吊 / 牽引 / 拖在後面
+Week 8,trampoline,noun,彈簧床 / 蹦床
+Week 8,coaster,noun,杯墊 / 茶杯墊 / 雲霄飛車 / 沿海船
+Week 8,electricity,noun,電 / 電力 / 電流 / 電能
+Week 8,roller,noun,滾筒 / 滾輪 / 油漆滾筒 / 壓路滾筒 / 滑輪 / 滾軸溜冰鞋
+Week 8,boggle,verb,使吃驚 / 使困惑 / 使難以置信 / 猶豫退縮
+Week 8,calculate,verb,計算 / 估算 / 盤算 / 推算
+Week 8,cheap,adjective,便宜的 / 廉價的 / 低品質的 / 沒格調的
+Week 8,deadline,noun,截止日期 / 最後期限 / 期限
+Week 8,era,noun,時代 / 年代 / 時期 / 紀元
+Week 8,essay,noun,作文 / 短文 / 論文 / 隨筆
+Week 8,eyebrow,noun,眉毛 / 眉
+Week 8,homework,noun,回家作業 / 家庭作業 / 作業
+Week 8,hush,interjection,噓 / 安靜 / 別出聲 / 寂靜 / 靜默
+Week 8,imperial,adjective,帝國的 / 皇帝的 / 皇家的 / 威嚴的 / 宏偉的
+Week 8,inseparable,adjective,不可分割的 / 分不開的 / 形影不離的 / 密不可分的
+Week 8,ledger,noun,分類帳 / 總帳 / 帳本 / 帳冊
+Week 8,meticulous,adjective,一絲不苟的 / 很仔細的 / 細心的 / 嚴謹的
+Week 8,moron,noun,白痴 / 笨蛋 / 低智商者
+Week 8,operate,verb,操作 / 運作 / 經營 / 營運 / 動手術 / 開刀
+Week 8,pe,noun,體育 / 體育課 / 健體課
+Week 8,prompt,verb,促使 / 促成 / 提示 / 提醒
+Week 8,rate,verb,評價 / 評分 / 列為 / 有評級 / 達到速度比率
+Week 8,reference,noun,參考 / 參考資料 / 提及 / 推薦信 / 推薦人 / 證明人
+Week 9,reprimand,verb,斥責 / 責罵 / 申誡 / 訓斥 / 正式警告
+Week 9,revise,verb,修訂 / 修改 / 訂正 / 修正 / 複習
+Week 9,seventy,number,七十
+Week 9,sleeve,noun,袖子 / 衣袖 / 唱片套 / 封套
+Week 9,sweet,adjective,甜的 / 甜甜的 / 貼心的 / 體貼的 / 可愛的 / 討喜的 / 悅耳的 / 甜美的
+Week 9,topic,noun,主題 / 話題 / 題目
+Week 9,whereas,conjunction,然而 / 而 / 反之 / 卻
+Week 9,broom,noun,掃把 / 掃帚
+Week 9,disgrace,noun,恥辱 / 羞恥 / 丟臉的事 / 使蒙羞
+Week 9,divider,noun,分隔物 / 隔板 / 隔間 / 分隔線 / 除號 / 圓規兩腳規分規
+Week 9,eavesdrop,verb,偷聽 / 竊聽
+Week 9,meanness,noun,刻薄 / 惡意 / 壞心眼 / 小氣 / 吝嗇
+Week 9,financial,adjective,財務的 / 金融的 / 財政的
+Week 9,interject,verb,插話 / 打岔 / 插嘴
+Week 9,interrogate,verb,審問 / 訊問 / 盤問 / 質問
+Week 9,interview,noun,面試 / 訪談 / 採訪 / 面談
+Week 9,jot,verb,記下 / 匆匆寫下 / 草草記下 / 寫個備忘
+Week 9,logbook,noun,航海日誌 / 紀錄簿 / 日誌簿 / 航行紀錄簿
+Week 9,male,adjective,男性的 / 男的 / 雄性的 / 公的
+Week 9,proceed,verb,繼續 / 繼續進行 / 前進 / 前往 / 接著進行
+Week 9,tidy,adjective,整潔的 / 整齊的 / 利落的 / 相當多的 / 不錯的
+Week 9,dandelion,noun,蒲公英
+Week 9,nuclear,adjective,核能的 / 核子的 / 核武的 / 細胞核的
+Week 9,racist,noun,種族主義者 / 種族歧視者 / 種族偏見者
+Week 9,employer,noun,雇主 / 僱主 / 老闆
+Week 9,lagoon,noun,潟湖 / 礁湖
+Week 9,paycheck,noun,薪水 / 薪資 / 薪資支票 / 薪資單 / 薪資袋
+Week 9,rummage,verb,翻找 / 亂翻 / 翻箱倒櫃地找 / 舊貨義賣 / 二手雜物拍賣義賣
+Week 10,topaz,noun,黃玉 / 黃寶石
+Week 10,truce,noun,休戰 / 停戰協議 / 暫時和解 / 停火
+Week 10,vacancy,noun,職缺 / 空缺 / 空房 / 空位
+Week 10,dial,noun,刻度盤 / 錶盤 / 鐘面 / 旋鈕 / 轉盤
+Week 10,north,noun,北方 / 北面 / 北部 / 北邊
+Week 10,priority,noun,優先事項 / 優先考量 / 優先權
+Week 10,robbery,noun,搶劫 / 打劫 / 劫案
+Week 10,strong,adjective,強壯的 / 強的 / 有力的 / 強烈的 / 濃的 / 堅強的
+Week 10,widen,verb,加寬 / 拓寬 / 變寬 / 擴大
+Week 10,armpit,noun,腋下 / 腋窩
+Week 10,bleach,verb,漂白 / 漂淡 / 變白 / 發白
+Week 10,clipper,noun,推剪 / 理髮推剪 / 指甲剪 / 剪具 / 修剪工具 / 快帆船 / 快速帆船
+Week 10,famish,verb,使挨餓 / 使飢餓 / 餓壞了 / 快餓死了
+Week 10,glossy,adjective,光亮的 / 光滑亮澤的 / 有光澤的 / 華而不實的
+Week 10,hospitality,noun,好客 / 款待 / 殷勤招待 / 餐旅業 / 觀光餐旅業
+Week 10,lemon,noun,檸檬 / 瑕疵品 / 故障品 / 爛貨
+Week 10,manicure,noun,修指甲 / 美甲護理 / 美甲 / 修整過的指甲
+Week 10,polish,verb,擦亮 / 磨亮 / 拋光 / 潤飾 / 改進
+Week 10,reluctantly,adverb,不情願地 / 勉強地 / 無奈地
+Week 10,rough,adjective,粗糙的 / 凹凸不平的 / 大概的 / 粗略的 / 艱難的 / 難熬的 / 猛烈的 / 粗暴的 / 粗野的
+Week 10,roughness,noun,粗糙 / 粗糙感 / 粗暴 / 粗魯
+Week 10,salon,noun,沙龍 / 美髮店 / 美容沙龍 / 藝文沙龍 / 文化聚會
+Week 10,seep,verb,滲出 / 滲入 / 滲透 / 漏出
+Week 10,transform,verb,改變 / 徹底改變 / 轉變 / 變成 / 轉換 / 變形
+Week 10,well-manicured,adjective,修剪整齊的 / 修飾整潔的 / 保養得宜的
+Week 10,yankee,noun,北方人 / 北方佬 / 美國人 / 美國佬 / 洋基隊
+Week 10,extension,noun,延伸 / 延伸部分 / 擴建部分 / 延期 / 展延 / 分機 / 延長線
+Week 10,hose,noun,軟管 / 水管 / 消防水帶 / 絲襪 / 褲襪
+Week 11,ma,noun,媽 / 媽媽
+Week 11,printout,noun,列印資料 / 列印本 / 印出資料 / 紙本資料
+Week 11,proofread,verb,校對 / 校閱 / 校正文字 / 審稿
+Week 11,stash,verb,藏起來 / 偷偷存放 / 藏匿 / 私藏 / 塞起來
+Week 11,tense,adjective,緊張的 / 繃緊的 / 緊繃的 / 時態
+Week 11,compose,verb,組成 / 構成 / 創作 / 作曲 / 撰寫 / 使平靜
+Week 11,eggplant,noun,茄子 / 紫茄子
+Week 11,embarrassment,noun,尷尬 / 難堪 / 窘迫 / 令人尷尬的人或事 / 丟臉的事 / 恥辱
+Week 11,envelope,noun,信封 / 封套 / 外層 / 外殼
+Week 11,five-dollar,adjective,五美元的 / 五塊錢的 / 五元的
+Week 11,hers,pronoun,她的 / 她的東西
+Week 11,outgo,verb,外出 / 超過而去 / 花費 / 支出 / 開銷
+Week 11,registration,noun,註冊 / 登記 / 報名 / 掛號
+Week 11,rhyme,verb,押韻 / 作押韻詩 / 押韻成詩
+Week 11,explode,verb,爆炸 / 炸開 / 爆發 / 激增 / 暴增
+Week 11,floral,adjective,花的 / 花卉的 / 印花的 / 花香的
+Week 11,goodwill,noun,善意 / 友好情誼 / 好意
+Week 11,grandmother,noun,祖母 / 奶奶 / 外祖母 / 外婆
+Week 11,snicker,verb,竊笑 / 偷笑 / 暗笑 / 士力架
+Week 11,continuously,adverb,持續地 / 不停地 / 不斷地 / 連續地
+Week 11,lovely,adjective,可愛的 / 美好的 / 美麗的 / 怡人的 / 討人喜歡的 / 美麗的可愛的 / 美好的怡人的討人喜歡的
+Week 11,resident,noun,居民 / 住戶 / 居住者 / 住院醫師
+Week 11,tenant,noun,房客 / 租客 / 承租人
+Week 11,beat-up,adjective,破舊的 / 破破爛爛的 / 殘破的 / 被痛打的 / 鼻青臉腫的
+Week 11,boast,verb,吹噓 / 誇口 / 誇耀 / 以自豪
+Week 11,compact,adjective,小巧的 / 小巧實用的 / 緊湊的 / 緊密的 / 精簡的
+Week 11,discount,noun,折扣 / 優惠 / 折價
+Week 11,mock,verb,嘲笑 / 譏笑 / 取笑 / 模仿 / 仿造 / 模擬
+Week 12,teammate,noun,隊友 / 同隊隊員 / 組員
+Week 12,adorn,verb,裝飾 / 點綴 / 美化 / 佩戴
+Week 12,banana,noun,香蕉
+Week 12,faint,adjective,微弱的 / 淡淡的 / 隱約的 / 昏眩的 / 虛弱的
+Week 12,level,noun,程度 / 水平 / 高度 / 樓層 / 一層 / 平面 / 水平狀態
+Week 12,mushy,adjective,軟爛的 / 糊糊的 / 糊成一團的 / 肉麻的 / 濫情的 / 軟爛的糊糊的 / 肉麻的濫情的
+Week 12,stationery,noun,文具 / 文具用品 / 信紙信封
+Week 12,swirl,verb,打轉 / 旋轉 / 盤旋 / 翻騰 / 漩渦紋 / 旋渦狀圖案
+Week 12,accountant,noun,會計師 / 會計人員 / 會計
+Week 12,boyfriend,noun,男朋友 / 男友 / 男伴 / 男性同伴
+Week 12,decease,noun,死亡 / 身故 / 去世
+Week 12,grateful,adjective,感激的 / 感謝的 / 心存感激
+Week 12,lettuce,noun,萵苣 / 生菜
+Week 12,memorize,verb,記住 / 背起來 / 背熟 / 熟記
+Week 12,pamphlet,noun,小冊子 / 宣傳單 / 宣傳小冊
+Week 12,similar,adjective,相似的 / 類似的 / 像的 / 近似的
+Week 12,skittle,noun,瓶柱 / 九柱戲瓶 / 糖果
+Week 12,wage,noun,工資 / 薪資 / 薪水 / 時薪 / 日薪 / 發動 / 進行
+Week 12,withhold,verb,保留 / 扣留 / 拒絕給予 / 隱瞞 / 克制
+Week 12,arch,noun,拱門 / 拱形結構 / 拱形 / 足弓
+Week 12,mattress,noun,床墊 / 褥墊
+Week 12,part-time,adjective,兼職的 / 部分工時的 / 半工時的
+Week 12,drone,noun,無人機 / 空拍機 / 雄蜂 / 嗡嗡聲 / 低鳴聲
+Week 12,factory,noun,工廠 / 廠房 / 製造廠
+Week 12,passionate,adjective,充滿熱情的 / 熱衷的 / 激昂的 / 熱烈的
+Week 12,rejection,noun,拒絕 / 遭拒 / 排斥 / 否決
+Week 12,represent,verb,代表 / 作為的代表 / 象徵 / 表示 / 體現
+Week 12,thumbs-up,noun,豎起大拇指 / 比讚 / 讚 / 贊同 / 認可 / 批准
+Week 13,umbrella,noun,雨傘 / 傘 / 保護傘 / 統括類別 / 總稱
+Week 13,afford,verb,負擔得起 / 花得起 / 承受得起 / 有餘力做
+Week 13,behalf,noun,代表 / 代替 / 為了的利益
+Week 13,beyond,preposition,在之外 / 超過 / 超出 / 遠於
+Week 13,feign,verb,假裝 / 佯裝 / 裝作
+Week 13,ninety-nine,number,九十九
+Week 13,outrage,noun,憤怒 / 義憤 / 憤慨 / 暴行 / 惡行 / 令人髮指的事
+Week 13,proposal,noun,提議 / 建議 / 方案 / 提案 / 求婚
+Week 13,rightful,adjective,合法的 / 正當的 / 應有的 / 名正言順的
+Week 13,startle,verb,使嚇一跳 / 使吃驚 / 驚動
+Week 13,twirl,verb,旋轉 / 轉動 / 打轉 / 用手指轉弄 / 捻弄
+Week 13,vibrate,verb,震動 / 顫動 / 振動
+Week 13,enthuse,verb,熱情談論 / 興奮地說 / 使熱衷 / 激發熱情 / 熱衷於
+Week 13,housekeeper,noun,管家 / 幫傭 / 女管家 / 家務管理員 / 清潔主管
+Week 13,scout,noun,偵察員 / 斥候 / 童軍 / 星探 / 球探
+Week 13,basic,adjective,基本的 / 基礎的 / 簡單的 / 初步的
+Week 13,bloom,verb,開花 / 盛開 / 繁盛 / 蓬勃發展 / 綻放
+Week 13,calculator,noun,計算機 / 計算器
+Week 13,citizen,noun,公民 / 市民 / 國民
+Week 13,concussion,noun,腦震盪 / 腦部震盪傷 / 猛烈撞擊
+Week 13,crap,noun,大便 / 屎 / 爛東西 / 垃圾 / 廢話 / 胡扯
+Week 13,drug,noun,藥物 / 藥品 / 毒品 / 麻醉藥
+Week 13,eighty,number,八十
+Week 13,er,interjection,呃 / 嗯 / 這個
+Week 13,federal,adjective,聯邦的 / 聯邦政府的
+Week 13,filling,noun,內餡 / 餡料 / 夾餡 / 填料 / 填充物 / 補牙材料 / 補綴物
+Week 13,gush,verb,湧出 / 噴出 / 滔滔不絕地說 / 讚不絕口
+Week 13,health,noun,健康 / 身體狀況 / 保健 / 福祉 / 祝您健康
+Week 13,income,noun,收入 / 所得 / 收益
+Week 14,limp,verb,跛行 / 一拐一拐地走 / 蹣跚而行 / 軟弱無力的 / 軟趴趴的 / 無精打采的
+Week 14,low-income,adjective,低收入的 / 收入偏低的 / 中低收入的 / 弱勢的
+Week 14,luxurious,adjective,奢華的 / 豪華的 / 舒適奢華的
+Week 14,mild,adjective,溫和的 / 輕微的 / 淡的 / 溫柔的 / 和緩的
+Week 14,painful,adjective,疼痛的 / 痛的 / 痛苦的 / 令人難受的
+Week 14,painkiller,noun,止痛藥 / 止痛劑 / 鎮痛藥
+Week 14,poverty,noun,貧窮 / 貧困 / 窮困
+Week 14,predict,verb,預測 / 預言 / 料想
+Week 14,qualify,verb,取得資格 / 符合條件 / 具備資格
+Week 14,reappear,verb,再出現 / 重新出現 / 再度現身
+Week 14,recently,adverb,最近 / 近來 / 不久前
+Week 14,repay,verb,償還 / 還清 / 回報 / 報答 / 報復
+Week 14,sheepish,adjective,不好意思的 / 尷尬的 / 靦腆的 / 窘迫的
+Week 14,suite,noun,套房 / 一組相連的房間 / 成套家具 / 成套用品 / 軟體套件
+Week 14,supervisor,noun,主管 / 上司 / 督導 / 監督人員
+Week 14,teardrop,noun,淚珠 / 淚滴 / 淚滴形 / 水滴形
+Week 14,vial,noun,小瓶 / 小藥瓶 / 藥劑瓶 / 安瓿瓶
+Week 14,waive,verb,放棄 / 免除 / 豁免
+Week 14,x-ray,noun,光 / 光片 / 光檢查 / 照光 / 用光檢查
+Week 14,assault,verb,襲擊 / 攻擊 / 毆打 / 抨擊 / 衝擊 / 侵襲
+Week 14,deadly,adjective,致命的 / 致死的 / 極其嚴重的 / 極度危險的 / 非常厲害的
+Week 14,kiddo,noun,小朋友 / 小鬼 / 小子 / 寶貝
+Week 14,plea,noun,懇求 / 請求 / 呼籲 / 答辯 / 抗辯
+Week 14,punk,noun,龐克 / 龐克族 / 小混混 / 小流氓 / 廢物
+Week 14,theft,noun,偷竊 / 竊盜 / 失竊
+Week 14,attacker,noun,攻擊者 / 襲擊者 / 進攻球員
+Week 14,badge,noun,徽章 / 胸章 / 識別證 / 獎章 / 標誌
+Week 14,conviction,noun,堅定的信念 / 信念 / 堅信 / 定罪 / 有罪判決
+Week 15,criminal,noun,罪犯 / 犯人 / 歹徒 / 犯罪者 / 犯罪的 / 刑事的 / 犯法的
+Week 15,fully,adverb,完全地 / 充分地 / 全然地 / 足足 / 至少
+Week 15,guilty,adjective,內疚的 / 愧疚的 / 有罪的 / 犯了錯的
+Week 15,inn,noun,小旅館 / 客棧 / 旅店 / 小酒館 / 小旅館客棧
+Week 15,parole,noun,假釋 / 假釋出獄 / 諾言
+Week 15,plaza,noun,廣場 / 購物中心 / 商場
+Week 15,testify,verb,作證 / 出庭作證 / 證明 / 表明 / 證實 / 顯示
+Week 15,trial,noun,審判 / 庭審 / 試驗 / 試用 / 考驗
+Week 15,unless,conjunction,除非 / 如果不就
+Week 15,various,adjective,各種的 / 各式各樣的 / 不同的 / 多種的
+Week 15,verdict,noun,判決 / 裁決 / 裁定結果 / 定論 / 評價
+Week 15,autumn,noun,秋天 / 秋季
+Week 15,mane,noun,鬃毛 / 鬃 / 濃密長髮 / 一頭濃髮
+Week 15,rude,adjective,沒禮貌的 / 無禮的 / 粗魯的 / 粗俗的
+Week 15,bold,adjective,大膽的 / 勇敢的 / 無畏的 / 醒目的 / 粗體的
+Week 15,buttery,adjective,奶油味的 / 像奶油的 / 滑順濃郁的 / 柔滑的
+Week 15,celebrate,verb,慶祝 / 歡慶 / 慶賀 / 頌揚 / 表彰 / 紀念
+Week 15,cream,noun,鮮奶油 / 奶油 / 乳霜 / 奶精 / 乳白色 / 米白色 / 精華 / 菁英
+Week 15,tangy,adjective,酸酸的很夠味 / 帶點酸勁的 / 酸香的 / 開胃的酸味
+Week 15,thankful,adjective,感激的 / 感謝的 / 慶幸的 / 很感恩的
+Week 15,toast,noun,吐司 / 烤吐司 / 祝酒 / 祝酒詞 / 吐司烤吐司 / 祝酒祝酒詞
+Week 15,turkey,noun,火雞 / 失敗作 / 爛作品
+Week 15,excruciate,verb,使極度痛苦 / 折磨得痛苦萬分 / 使痛不欲生
+Week 15,freely,adverb,自由地 / 隨意地 / 毫無拘束地 / 暢所欲言地 / 免費地
+Week 15,id,noun,身分證件 / 證件 / 本我
+Week 15,immigration,noun,移民 / 移民事務 / 入境查驗 / 入境審查 / 移民局
+Week 15,odd,adjective,奇怪的 / 古怪的 / 不尋常的 / 奇數的
+Week 15,passport,noun,護照
+Week 16,ping,verb,傳訊息給 / 聯絡一下 / 發送訊號 / 測試連線 / 發出叮聲 / 叮的一聲響
+Week 16,roam,verb,漫遊 / 四處走動 / 遊蕩 / 漫步於徘徊於
+Week 16,slave,noun,奴隸 / 受奴役者 / 為賣命的人 / 受控制的人 / 拼命為工作
+Week 16,television,noun,電視 / 電視媒體 / 電視機
+Week 16,toil,verb,辛勤工作 / 辛苦工作 / 勞苦工作 / 苦苦奮鬥 / 艱難前行 / 吃力地走 / 奮力前進
+Week 16,vast,adjective,廣大的 / 遼闊的 / 巨大的 / 龐大的
+Week 16,virtually,adverb,幾乎 / 簡直 / 實際上等於 / 在線上
+Week 16,wink,verb,眨一隻眼 / 眨眼示意 / 使眼色
+Week 16,cancer,noun,癌症 / 癌 / 巨蟹座
+Week 16,grammatical,adjective,文法的 / 合乎文法的 / 語法的
+Week 16,hopefully,adverb,滿懷希望地 / 有希望地 / 希望 / 但願
+Week 16,immediate,adjective,立即的 / 立刻的 / 即時的 / 直接的 / 最接近的 / 當前的
+Week 16,possession,noun,擁有 / 所有權 / 財產 / 物品 / 附身狀態 / 控球權
+Week 16,punctuation,noun,標點符號 / 標點 / 標點用法
+Week 16,comp,noun,招待票 / 招待券 / 免費招待的東西 / 贈品 / 免費提供項目 / 作文 / 比賽 / 補償
+Week 16,neon,noun,霓虹燈 / 霓虹招牌 / 氖 / 霓虹光
+Week 16,personally,adverb,親自 / 本人親自 / 就我而言 / 我個人認為
+Week 16,smother,verb,使窒息 / 悶住 / 悶熄 / 厚厚蓋住 / 蓋滿 / 溺愛
+Week 16,undo,verb,解開 / 鬆開 / 打開 / 取消 / 撤銷 / 使毀滅 / 毀掉
+Week 16,accuse,verb,指控 / 指責 / 控告
+Week 16,apology,noun,道歉 / 歉意 / 辯解 / 勉強的辯解
+Week 16,colleague,noun,同事 / 同僚 / 同行
+Week 16,cultural,adjective,文化的 / 文化上的 / 人文的
+Week 16,fraud,noun,詐欺 / 詐騙 / 欺詐 / 騙局 / 騙子 / 冒牌貨
+Week 16,grandparent,noun,祖父母 / 祖父或祖母 / 阿公阿嬤 / 爺爺奶奶外公外婆
+Week 16,sweetheart,noun,情人 / 愛人 / 親愛的 / 甜心 / 寶貝 / 好心人 / 可愛的人
+Week 16,wrongly,adverb,錯誤地 / 不對地 / 冤枉地 / 不公正地
+Week 16,blame,verb,責怪 / 指責 / 怪 / 歸咎於 / 責任 / 過錯
+Week 17,convenience,noun,便利 / 方便性 / 便利設施 / 方便 / 便利商店
+Week 17,darn,verb,織補 / 縫補
+Week 17,gosh,interjection,天啊 / 哎呀 / 老天啊
+Week 17,harrumph,verb,哼了一聲 / 不滿地哼聲 / 氣呼呼地哼了一下
+Week 17,incredibly,adverb,非常 / 極其 / 很 / 令人難以置信地 / 難以置信地
+Week 17,laundromat,noun,自助洗衣店 / 投幣式洗衣店
+Week 17,liquor,noun,烈酒 / 酒類 / 含酒精飲料
+Week 17,personality,noun,個性 / 性格 / 人格特質 / 名人 / 公眾人物
+Week 17,philippine,adjective,菲律賓的 / 菲國的 / 菲律賓披索 / 菲律賓政府的
+Week 17,promptly,adverb,迅速地 / 立刻 / 立即 / 準時地 / 如期地
+Week 17,supplier,noun,供應商 / 供應者 / 供貨商
+Week 17,tick,verb,發出滴答聲 / 滴答作響 / 打勾 / 勾選
+Week 17,attorney,noun,律師 / 辯護律師 / 檢察官
+Week 17,chorus,noun,合唱團 / 合唱隊 / 副歌 / 齊聲
+Week 17,congratulate,verb,恭喜 / 向道賀 / 祝賀
+Week 17,ecstatic,adjective,欣喜若狂的 / 狂喜的 / 興奮極了的 / 喜出望外的
+Week 17,incredible,adjective,不可思議的 / 驚人的 / 了不起的 / 難以置信的
+Week 17,itchy,adjective,癢的 / 讓人發癢的 / 心癢癢的
+Week 17,modern,adjective,現代的 / 近代的 / 新式的 / 摩登的
+Week 17,snowy,adjective,下雪的 / 被雪覆蓋的 / 積雪的 / 雪白的
+Week 17,trance,noun,恍惚狀態 / 出神狀態 / 催眠狀態 / 迷幻恍惚
+Week 17,wriggly,adjective,扭來扭去的 / 蠕動的 / 動來動去的 / 扭動不停的
+Week 17,crisp,adjective,酥脆的 / 脆的 / 爽脆的 / 清新的 / 清冷的 / 清脆的 / 清晰的
+Week 17,downtown,adverb,在市中心 / 到市中心 / 在鬧區 / 到鬧區 / 市中心的 / 鬧區的
+Week 17,preoccupy,verb,使一心想著 / 使掛心 / 使分心 / 佔據心思
+Week 17,rare,adjective,罕見的 / 稀有的 / 珍稀的 / 三分熟的 / 半生不熟的
+Week 17,season,noun,季節 / 時節 / 時期 / 旺季 / 調味 / 一年中的季節 / 某活動的期間 / 調味相關概念
+Week 17,value,noun,價值 / 重要性 / 價值觀 / 實用價值 / 文化價值 / 價格價值
+Week 18,absent,adjective,缺席的 / 不在場的 / 心不在焉的 / 恍神的 / 缺乏的 / 沒有的
+Week 18,conditioner,noun,潤髮乳 / 護髮素 / 衣物柔軟精 / 調節器 / 護理劑
+Week 18,disintegrate,verb,瓦解 / 粉碎 / 崩解 / 崩潰 / 土崩瓦解
+Week 18,drip,verb,滴下 / 滴落 / 滴水 / 流下
+Week 18,intervene,verb,介入 / 干預 / 出面調停 / 發生在其間 / 介於其間
+Week 18,label,noun,標籤 / 標示 / 稱號 / 標籤化稱呼
+Week 18,overhear,verb,無意中聽到 / 偶然聽到 / 聽見 / 偷聽到
+Week 18,resume,verb,繼續 / 重新開始 / 恢復 / 重啟
+Week 18,rumor,noun,謠言 / 傳聞 / 流言 / 傳言
+Week 18,satisfaction,noun,滿足 / 滿意 / 稱心 / 履行 / 達成
+Week 18,sniffle,verb,抽鼻子 / 吸鼻子 / 啜泣著吸鼻子
+Week 18,spine,noun,脊椎 / 脊梁 / 書脊 / 書背
+Week 18,weep,verb,哭泣 / 流淚 / 啜泣 / 悲泣
+Week 18,buyer,noun,買家 / 買方 / 採購員
+Week 18,fret,verb,煩惱 / 焦急 / 發愁 / 憂心 / 磨損 / 磨蝕
+Week 18,imagining,noun,想像 / 想像的過程 / 設想
+Week 18,injection,noun,注射 / 打針 / 針劑 / 注入
+Week 18,inspection,noun,檢查 / 查驗 / 視察 / 檢驗
+Week 18,process,noun,過程 / 流程 / 程序 / 訴訟程序 / 突起
+Week 18,reality,noun,現實 / 真實情況 / 現實生活 / 真實世界
+Week 18,snort,verb,噴鼻息 / 哼鼻子 / 嗤鼻 / 哼笑 / 鼻子裡哼了一聲 / 「噴鼻息、哼鼻子」 / 「哼笑、嗤鼻」
+Week 18,tack,noun,平頭釘 / 圖釘 / 航向 / 路線 / 做法 / 策略
+Week 18,deny,verb,否認 / 不承認 / 拒絕給予 / 拒絕 / 不准 / 剝奪
+Week 18,rig,verb,架設 / 裝設 / 臨時搭起 / 做手腳 / 操縱 / 串通作弊 / 搭設設備 / 作弊操控結果
+Week 18,sweepstakes,noun,抽獎活動 / 有獎競賽 / 摸彩活動 / 鉅額獎金 / 獎金獎品
+Week 18,committee,noun,委員會 / 委員小組
+Week 18,giveaway,noun,贈品 / 免費贈送活動 / 破綻 / 洩漏線索
+Week 18,ye,pronoun,你 / 你們 / 汝等 / 古體拼寫的
+Week 19,dab,verb,輕拍 / 輕按 / 沾一下 / 點上 / 塗一點
+Week 19,emptiness,noun,空虛 / 空蕩蕩 / 空無一物 / 空缺感
+Week 19,scam,noun,詐騙 / 騙局 / 詐騙手法
+Week 19,cleaner,noun,清潔工 / 清潔人員 / 清潔劑 / 洗衣店 / 乾洗店
+Week 19,exclamation,noun,驚呼 / 感嘆 / 驚嘆號 / 感嘆詞 / 感嘆句
+Week 19,fifth-grade,adjective,五年級的 / 國小五年級的 / 適合五年級程度的
+Week 19,hut,noun,小屋 / 茅屋 / 棚屋 / 小茅屋
+Week 19,pizza,noun,披薩
+Week 19,signal,noun,訊號 / 信號 / 號誌 / 示意 / 徵兆
+Week 19,vacuum,noun,真空 / 真空狀態 / 空白狀態 / 權力真空 / 吸塵器 / 真空吸塵器
+Week 19,addressee,noun,收件人 / 受話者 / 被稱呼的人
+Week 19,department,noun,部門 / 科系 / 學系 / 專櫃 / 樓層區 / 商品區
+Week 19,fart,noun,屁 / 放屁 / 屁聲
+Week 19,galaxy,noun,星系 / 銀河系 / 銀河 / 薈萃 / 一大群
+Week 19,high-rise,noun,高樓大廈 / 高樓 / 高層建築 / 高腰款
+Week 19,mailman,noun,郵差 / 郵務士 / 郵遞員
+Week 19,outskirt,noun,市郊 / 郊區 / 邊緣地帶 / 外圍
+Week 19,passcode,noun,密碼 / 解鎖碼 / 通行碼 / 數字密碼
+Week 19,property,noun,財產 / 不動產 / 房地產 / 地產 / 所有物 / 性質 / 特性 / 屬性
+Week 19,reread,verb,重讀 / 再讀一遍 / 重看
+Week 19,sack,noun,袋子 / 麻布袋 / 大袋子
+Week 19,stiffen,verb,變硬 / 變僵 / 僵住 / 使變硬 / 使拘謹 / 使生硬
+Week 19,subside,verb,平息 / 減弱 / 消退 / 退去 / 下沉 / 沉降
+Week 19,wang,noun,王
+Week 19,hesitation,noun,猶豫 / 遲疑 / 停頓 / 猶豫不決
+Week 19,international,adjective,國際的 / 國與國之間的 / 世界性的
+Week 19,invest,verb,投資 / 投入 / 花費 / 注入資金
+Week 19,rapid-fire,adjective,連珠炮似的 / 連發的 / 快速接連的 / 接二連三的
+Week 19,resolve,verb,解決 / 化解 / 下定決心 / 決意 / 決心
+Week 20,swimmer,noun,游泳的人 / 游泳者 / 游泳選手 / 浮標
+Week 20,terrific,adjective,很棒的 / 極好的 / 了不起的 / 極大的 / 驚人的 / 非常強烈的
+Week 20,calculation,noun,計算 / 運算 / 盤算 / 算計 / 精打細算
+Week 20,contribute,verb,貢獻 / 捐獻 / 投稿 / 促成 / 導致
+Week 20,contribution,noun,貢獻 / 捐款 / 捐贈 / 投稿 / 出力
+Week 20,destine,verb,注定 / 註定 / 命定 / 指定給
+Week 20,follower,noun,追隨者 / 支持者 / 信徒 / 粉絲 / 追蹤者
+Week 20,fund,noun,資金 / 基金 / 儲備 / 根基
+Week 20,inconsolable,adjective,傷心欲絕的 / 難以安慰的 / 悲痛不已的 / 怎麼安慰都沒用的
+Week 20,investment,noun,投資 / 投資項目 / 投入 / 心血投入 / 付出
+Week 20,investor,noun,投資人 / 投資者 / 出資者
+Week 20,penthouse,noun,頂樓豪宅 / 頂樓豪華公寓 / 屋頂附屬建物
+Week 20,unjust,adjective,不公正的 / 不公平的 / 冤枉的 / 不義的
+Week 20,unkind,adjective,不和善的 / 不友善的 / 刻薄的 / 殘忍的
+Week 20,whop,verb,猛打 / 重擊 / 痛打 / 痛擊 / 狠揍
+Week 20,cooper,noun,桶匠 / 製桶工人 / 庫柏
+Week 20,discus,noun,鐵餅 / 七彩神仙魚
+Week 20,heck,interjection,哎呀 / 討厭 / 到底 / 搞什麼啊
+Week 20,nerve,noun,神經 / 神經線 / 膽量 / 勇氣 / 竟敢
+Week 20,unfortunately,adverb,不幸地 / 不幸的是 / 可惜的是 / 遺憾的是
+Week 20,amount,noun,數量 / 總量 / 份量 / 金額
+Week 20,oily,adjective,油膩的 / 油油的 / 出油的 / 油嘴滑舌的 / 諂媚的
+Week 20,ponytail,noun,馬尾 / 馬尾辮
+Week 20,stringy,adjective,纖維很多的 / 纖維多的 / 有絲狀纖維的 / 柴的 / 細長瘦削的 / 稀疏細長的
+Week 20,bluff,verb,唬弄 / 唬騙 / 虛張聲勢 / 詐唬 / 懸崖 / 斷崖
+Week 20,meaning,noun,意思 / 意義 / 含義 / 涵義
+Week 20,thank-you,interjection,謝謝 / 謝謝你 / 謝啦 / 多謝
+Week 20,agent,noun,代理人 / 仲介 / 經紀人 / 特務 / 特工 / 作用劑 / 媒介
+Week 21,boulevard,noun,林蔭大道 / 大道
+Week 21,click,verb,點擊 / 按一下 / 發出喀噠聲 / 突然明白 / 合拍
+Week 21,loser,noun,輸家 / 失敗者 / 落敗者 / 魯蛇 / 沒出息的人
+Week 21,lug,verb,拖 / 吃力地搬運 / 扛 / 提著沉重的東西走 / 拖著走
+Week 21,prayer,noun,祈禱 / 禱告 / 祈禱詞
+Week 21,scoff,verb,嘲笑 / 嗤之以鼻 / 譏笑 / 不屑地說 / 狼吞虎嚥
+Week 21,banish,verb,放逐 / 驅逐 / 趕走 / 消除 / 驅散
+Week 21,ban,verb,禁止 / 查禁 / 禁用 / 取締
+Week 21,botch,verb,搞砸 / 做壞 / 拙劣地處理 / 亂修 / 草草了事而做壞
+Week 21,briefcase,noun,公事包 / 文件包
+Week 21,brilliant,adjective,聰穎的 / 聰明絕頂的 / 燦爛的 / 明亮的 / 傑出的 / 很棒的
+Week 21,British,adjective,英國的 / 不列顛的 / 英式的
+Week 21,clerk,noun,店員 / 店員售貨員 / 辦事員 / 職員 / 櫃檯人員
+Week 21,client,noun,客戶 / 顧客 / 委託人 / 當事人
+Week 21,counsel,noun,建議 / 忠告 / 勸告 / 輔導 / 諮商 / 律師 / 法律顧問
+Week 21,database,noun,資料庫
+Week 21,delete,verb,刪除 / 刪掉 / 移除
+Week 21,desperation,noun,絕望 / 絕望的心情 / 孤注一擲的心態 / 走投無路的狀態
+Week 21,detention,noun,留校 / 留堂 / 拘留 / 羈留
+Week 21,due,adjective,到期的 / 應付的 / 預定的 / 應有的
+Week 21,duration,noun,持續時間 / 歷時 / 期間長度
+Week 21,emotion,noun,情緒 / 情感 / 感情
+Week 21,excellent,adjective,優秀的 / 極好的 / 出色的 / 卓越的
+Week 21,foster,verb,促進 / 培養 / 養育 / 寄養 / 收養代養代為照顧
+Week 21,hispanic,adjective,西語裔的 / 西班牙語文化背景的 / 西語系的 / 西班牙語世界的
+Week 21,huff,verb,氣呼呼地噴氣 / 呼哧呼哧地喘氣 / 氣沖沖地說 / 生悶氣
+Week 21,incapable,adjective,沒有能力的 / 無法的 / 不能的 / 無能的 / 不勝任的
+Week 21,indicator,noun,指示器 / 指示燈 / 指標 / 徵兆 / 訊號 / 方向燈
+Week 22,juvenile,adjective,青少年的 / 未成年的 / 少年期的 / 幼稚的
+Week 22,keyboard,noun,鍵盤 / 琴鍵 / 電子琴
+Week 22,liar,noun,說謊的人 / 騙子 / 撒謊的人 / 愛說謊的人
+Week 22,outcome,noun,結果 / 成果 / 後果 / 結局
+Week 22,portal,noun,入口 / 門戶 / 大門 / 傳送門 / 入口網站
+Week 22,preposition,noun,介系詞 / 前置詞
+Week 22,prosecutor,noun,檢察官 / 公訴人
+Week 22,retain,verb,保留 / 保持 / 記住 / 留住 / 聘請
+Week 22,rucksack,noun,背包 / 登山背包 / 旅行背包
+Week 22,sentence,noun,句子 / 判決 / 判刑 / 刑期
+Week 22,sight,noun,視力 / 視覺 / 景象 / 景色 / 看見 / 一看見 / 乍見
+Week 22,slight,adjective,輕微的 / 些微的 / 微小的 / 纖細的 / 瘦小的
+Week 22,social,adjective,社會的 / 社交的 / 善於交際的 / 合群的
+Week 22,st,noun,聖 / 街
+Week 22,substitution,noun,代替 / 替換 / 置換 / 換人 / 替補上場
+Week 22,tempt,verb,引誘 / 誘惑 / 吸引 / 慫恿
+Week 22,trust,verb,信任 / 相信 / 依賴 / 託付 / 交託
+Week 22,twelve-year-old,adjective,十二歲的
+Week 22,update,verb,更新 / 刷新 / 提供最新消息 / 告知最新進展 / 修訂
+Week 22,warmly,adverb,熱情地 / 親切地 / 溫暖地 / 暖暖地 / 溫熱地
+Week 22,affect,verb,影響 / 對有影響 / 感染 / 裝作 / 假裝
+Week 22,agreement,noun,同意 / 一致意見 / 共識 / 協議 / 協定 / 合約 / 一致
+Week 22,alternative,adjective,替代的 / 可替代的 / 另一種的 / 備用的 / 另類的 / 非傳統的
+Week 22,australian,noun,澳洲人 / 澳大利亞人
+Week 22,behavior,noun,行為 / 舉止 / 表現 / 運作方式 / 反應模式
+Week 22,bias,noun,偏見 / 偏袒 / 偏向 / 偏差 / 斜裁 / 斜紋 / 斜向
+Week 22,blackmail,noun,勒索 / 敲詐 / 恐嚇取財
+Week 22,compromise,noun,妥協 / 折衷
+Week 23,confer,verb,商議 / 商討 / 協商 / 授予 / 頒授 / 賦予
+Week 23,courthouse,noun,法院大樓 / 法院 / 法院建築
+Week 23,courtroom,noun,法庭 / 審判庭
+Week 23,critical,adjective,關鍵的 / 重要的 / 批判的 / 挑剔的 / 嚴重的 / 批判的挑剔的
+Week 23,custody,noun,監護權 / 監護 / 拘留 / 羈押看管
+Week 23,deli,noun,熟食店 / 熟食櫃 / 熟食部 / 輕食熟食店
+Week 23,discussion,noun,討論 / 商量 / 審議 / 研討
+Week 23,documentation,noun,文件資料 / 相關文件 / 說明文件 / 使用說明
+Week 23,e-mail,noun,電子郵件 / 電子信件 / 郵件 / 電子郵件系統
+Week 23,education,noun,教育 / 學校教育 / 受教育 / 教育程度 / 培育
+Week 23,eighteenth,number,第十八 / 十八分之一
+Week 23,elite,noun,菁英 / 精英 / 頂尖選手 / 菁英階層
+Week 23,facility,noun,設施 / 場所 / 機構 / 熟練能力 / 天分 / 駕馭能力
+Week 23,fictional,adjective,虛構的 / 小說中的 / 杜撰的
+Week 23,first-rate,adjective,一流的 / 頂尖的 / 極好的 / 上等的
+Week 23,foundation,noun,地基 / 基礎 / 根基 / 基金會 / 粉底 / 粉底液
+Week 23,guarantee,verb,保證 / 確保 / 擔保 / 提供保固 / 保修
+Week 23,guidance,noun,指導 / 引導 / 建議 / 導航系統 / 導引系統
+Week 23,handful,noun,一把 / 一小撮 / 少數少量 / 難搞的人 / 很難應付的人
+Week 23,headmistress,noun,女校長 / 校長
+Week 23,highly,adverb,非常 / 很 / 高度地 / 備受 / 極受
+Week 23,incline,verb,傾斜 / 使傾斜 / 斜靠 / 傾向於 / 較願意 / 有傾向
+Week 23,intelligence,noun,智力 / 智慧 / 聰明才智 / 情報 / 情資
+Week 23,judicial,adjective,司法的 / 法院的 / 審判的
+Week 23,luxury,noun,奢華 / 奢侈 / 奢侈品 / 享受
+Week 23,mission,noun,任務 / 使命 / 出任務 / 傳教 / 宣教
+Week 23,multinational,adjective,跨國的 / 多國籍的 / 多國參與的
+Week 23,negotiation,noun,談判 / 協商 / 交涉
+Week 24,ninety-one,number,九十一
+Week 24,offender,noun,犯法者 / 違規者 / 罪犯 / 冒犯者
+Week 24,one-on-one,adjective,一對一的 / 單獨的 / 個別的 / 面對面的
+Week 24,oppose,verb,反對 / 反抗 / 抵制 / 與對抗 / 與競爭
+Week 24,overlook,verb,忽略 / 疏忽 / 漏看
+Week 24,penalty,noun,處罰 / 懲罰 / 罰則 / 罰球 / 點球 / 判罰 / 罰則、判罰 / 罰球、點球
+Week 24,phony,adjective,假的 / 冒牌的 / 虛假的 / 虛偽的 / 做作的 / 騙子 / 假貨 / 冒牌貨
+Week 24,prejudice,noun,偏見 / 成見 / 歧視觀念 / 損害
+Week 24,preliminary,adjective,初步的 / 預備的 / 預先的
+Week 24,pricey,adjective,昂貴的 / 價錢偏高的 / 不便宜的 / 貴森森的
+Week 24,prosecute,verb,起訴 / 檢控 / 對提起公訴 / 貫徹 / 積極從事 / 進行
+Week 24,recruitment,noun,招募 / 招聘 / 徵募 / 徵才
+Week 24,repeatedly,adverb,反覆地 / 一再地 / 再三地 / 不停地
+Week 24,result,verb,導致 / 造成 / 結果是 / 以告終 / 起因於 / 源於
+Week 24,server,noun,伺服器 / 服務生 / 侍者
+Week 24,setup,noun,安排 / 設置 / 組態 / 設備 / 系統配置 / 栽贓 / 圈套
+Week 24,specialize,verb,專攻 / 專門研究 / 專長於 / 專門做 / 專精於
+Week 24,stagger,verb,踉蹌 / 蹣跚而行 / 搖搖晃晃地走 / 使震驚 / 使錯愕
+Week 24,supervise,verb,監督 / 指導 / 督導 / 照看
+Week 24,takeout,noun,外帶 / 外帶餐點 / 撤除 / 拆除 / 接管併購
+Week 24,taxpayer,noun,納稅人 / 納稅民眾 / 納稅者
+Week 24,twenty-seven,number,二十七 / 二十七個 / 二十七歲
+Week 24,unsatisfactory,adjective,不令人滿意的 / 不滿意的 / 不理想的 / 差強人意的
+Week 24,alpha,noun,阿爾法 / 第一個 / 領頭者 / 首領 / 測試版 / 版
+Week 24,bait,noun,誘餌 / 餌 / 誘因 / 挑釁 / 激將
+Week 24,boarder,noun,寄宿生 / 寄宿者 / 住客 / 滑板玩家 / 滑雪板玩家
+Week 24,conduct,verb,進行 / 執行 / 實施 / 指揮 / 表現 / 行為舉止
+Week 24,connection,noun,連結 / 關聯 / 關係 / 人脈 / 連線 / 轉乘
+Week 25,demonstrate,verb,展示 / 示範 / 證明 / 說明 / 示威 / 抗議
+Week 25,espionage,noun,間諜活動 / 諜報活動 / 刺探情報
+Week 25,exceptionally,adverb,特別地 / 異常地 / 格外地 / 非常地 / 特別好地
+Week 25,farm,noun,農場 / 牧場 / 農田 / 養殖場 / 耕種 / 務農 / 養殖
+Week 25,graduate,verb,畢業 / 從畢業 / 升到下一階段 / 晉升到
+Week 25,imprint,verb,印上 / 壓印 / 留下印記 / 深深印在心中 / 烙印在腦海中
+Week 25,limousine,noun,豪華轎車 / 加長型禮車 / 禮車
+Week 25,posh,adjective,高級的 / 豪華的 / 講究的 / 上流氣派的 / 時髦高級的
+Week 25,recliner,noun,躺椅 / 可躺式扶手椅 / 斜躺者
+Week 25,self-defense,noun,自衛 / 自我防衛 / 正當防衛
+Week 25,university,noun,大學
+Week 25,variable,adjective,可變的 / 多變的 / 變動的 / 不固定的
+Week 25,wardrobe,noun,衣櫃 / 衣櫥 / 全部衣物 / 服裝 / 戲服組服裝組
+Week 25,access,noun,使用權 / 權限 / 進入權 / 通道 / 取得的機會 / 管道
+Week 25,basis,noun,基礎 / 根據 / 基準 / 依據
+Week 25,cruelty,noun,殘忍 / 殘酷 / 虐待
+Week 25,currency,noun,貨幣 / 通貨 / 幣值 / 通行 / 流行性
+Week 25,defiant,adjective,反抗的 / 不服從的 / 挑釁的 / 倔強的
+Week 25,devious,adjective,狡猾的 / 奸詐的 / 不老實的 / 迂迴的 / 曲折的
+Week 25,division,noun,部門 / 分部 / 單位 / 分開 / 分割 / 除法 / 師
+Week 25,enforcement,noun,執行 / 執法 / 強制執行 / 落實 / 後援 / 增援
+Week 25,fuel,noun,燃料 / 燃油 / 油料 / 能源 / 為提供燃料 / 加燃料 / 加油 / 助長
+Week 25,greed,noun,貪婪 / 貪心 / 貪欲
+Week 25,grope,verb,摸索 / 亂摸 / 摸黑找 / 猥褻觸摸 / 性騷擾式觸摸
+Week 25,homeowner,noun,屋主 / 房主 / 房屋所有人
+Week 25,meanwhile,adverb,同時 / 與此同時 / 在此期間 / 這段時間
+Week 25,nightly,adverb,每晚 / 每夜 / 在夜間 / 夜裡
+Week 25,nightstand,noun,床頭櫃 / 床邊桌
+Week 26,nonexistent,adjective,不存在的 / 根本沒有的 / 幾乎沒有的
+Week 26,official-looking,adjective,看起來很正式的 / 看起來像官方的 / 看起來很像公文的 / 貌似正式的
+Week 26,procure,verb,取得 / 獲得 / 弄到 / 採購
+Week 26,recover,verb,恢復 / 康復 / 復原 / 取回 / 找回 / 追回
+Week 26,senior,adjective,年長的 / 資深的 / 高階的 / 高年級的 / 應屆畢業的 / 高三的 / 大四的
+Week 26,squadron,noun,中隊 / 機隊 / 艦隊分隊 / 飛行中隊
+Week 26,stoop,verb,彎腰 / 俯身 / 彎下身子 / 駝背
+Week 26,substantial,adjective,可觀的 / 大量的 / 相當大的 / 重大的 / 實質的 / 結實的 / 厚實的
+Week 26,surveillance,noun,監視 / 監控 / 監察
+Week 26,traffic,noun,交通 / 車流 / 來往車輛 / 交易 / 非法交易 / 販運
+Week 26,trapping,noun,設陷捕捉 / 誘捕 / 設陷阱捕獸 / 配件裝飾 / 排場 / 外在派頭
+Week 26,warrant,noun,令狀 / 逮捕令 / 搜索令 / 授權書 / 根據 / 依據 / 正當理由 / 官方授權文件 / 正當性根據 / 使有正當理由
+Week 26,beard,noun,鬍子 / 落腮鬍 / 鬍鬚 / 芒鬚
+Week 26,burning,noun,燃燒 / 火焰 / 灼熱感 / 強烈渴望 / 熱切的心情激情
+Week 26,clementine,noun,克萊門氏小柑橘 / 克萊門氏小橘 / 小柑橘
+Week 26,collector,noun,收藏家 / 蒐集者 / 收集器 / 集電器
+Week 26,concede,verb,承認 / 勉強承認 / 讓步 / 認輸 / 退讓
+Week 26,confront,verb,面對 / 正視 / 當面質問 / 當面對質 / 迎戰
+Week 26,cower,verb,畏縮 / 蜷縮 / 縮著身子 / 退縮
+Week 26,crate,noun,板條箱 / 大木箱 / 貨箱 / 塑膠箱
+Week 26,cutter,noun,切割工具 / 切刀 / 美工刀 / 裁切器 / 小艇
+Week 26,dealer,noun,經銷商 / 商人 / 販售商 / 發牌員 / 荷官 / 毒販
+Week 26,delivery,noun,遞送 / 交付 / 外送 / 送貨 / 分娩 / 表達方式 / 語調講法
+Week 26,dingy,adjective,陰暗骯髒的 / 昏暗骯髒的 / 髒兮兮的 / 灰暗的
+Week 26,Englishman,noun,英國男子 / 英格蘭男子 / 英國人男性
+Week 26,face-to-face,adjective,面對面的 / 當面的 / 正面交鋒的
+Week 26,gag,verb,作嘔 / 乾嘔 / 塞住嘴巴 / 使窒息
+Week 26,generous,adjective,慷慨的 / 大方的 / 寬厚的 / 大量的 / 豐厚的
+Week 26,heater,noun,暖氣機 / 加熱器 / 熱水器 / 暖爐 / 速球
+Week 27,idle,adjective,閒置的 / 空轉的 / 懶散的 / 無所事事的
+Week 27,illuminate,verb,照亮 / 照明 / 點亮 / 闡明 / 說明清楚 / 啟發
+Week 27,infiltrate,verb,潛入 / 滲透 / 打入 / 混入 / 侵入
+Week 27,knot,noun,結 / 繩結 / 結扣 / 硬塊 / 腫塊 / 疙瘩 / 心結 / 硬塊腫塊 / 疙瘩打結的感覺
+Week 27,leader,noun,領袖 / 領導者 / 隊長 / 首領
+Week 27,pique,noun,惱怒 / 不悅 / 慍怒 / 被冒犯的不快 / 激起興趣
+Week 27,pose,verb,擺姿勢 / 擺出姿態 / 佯裝成 / 冒充 / 造成 / 提出
+Week 27,priceless,adjective,無價的 / 極其寶貴的 / 寶貴無比的
+Week 27,protocol,noun,規範 / 正式程序 / 作業流程 / 禮儀 / 外交禮節 / 協定 / 通訊協定
+Week 27,react,verb,反應 / 回應 / 有反應 / 發生化學反應
+Week 27,reaction,noun,反應 / 回應 / 反作用 / 化學反應 / 過敏反應
+Week 27,rescuer,noun,救援者 / 救人者 / 救難人員 / 救生員
+Week 27,resist,verb,抵抗 / 反抗 / 抗拒 / 忍住 / 耐 / 抗
+Week 27,second-floor,adjective,二樓的 / 位於二樓的
+Week 27,shadowy,adjective,陰暗的 / 昏暗的 / 朦朧的 / 模糊的 / 可疑的 / 鬼鬼祟祟的 / 神秘的
+Week 27,strain,verb,拉緊 / 拉傷 / 使過度用力 / 使緊張 / 竭力
+Week 27,temptation,noun,誘惑 / 引誘 / 誘因 / 吸引
+Week 27,tint,noun,淡色 / 淡淡的色調 / 色澤 / 色調 / 染色 / 有色玻璃
+Week 27,underling,noun,下屬 / 手下 / 小嘍囉 / 爪牙 / 部下
+Week 27,wrinkle,noun,皺紋 / 皺褶 / 摺痕 / 小麻煩
+Week 27,approval,noun,同意 / 贊成 / 批准 / 核准 / 認可
+Week 27,cutting,noun,切割 / 切削 / 切下來的部分 / 剪報 / 插枝 / 插條 / 尖刻的話 / 刻薄的話
+Week 27,helper,noun,幫手 / 助手 / 幫忙的人
+Week 27,identify,verb,認出 / 辨認 / 確認身分 / 鑑定 / 指出
+Week 27,introduction,noun,介紹 / 引見 / 導言 / 前言 / 入門介紹
+Week 27,mate,noun,夥伴 / 朋友 / 同伴 / 配偶 / 將死
+Week 27,nick,verb,劃傷 / 劃出小缺口 / 割傷一點 / 削掉一角 / 偷 / 逮捕
+Week 27,pear-shaped,adjective,梨形的 / 像梨一樣的 / 出問題 / 搞砸 / 走樣
+Week 28,privacy,noun,隱私 / 私人空間 / 不受打擾
+Week 28,protective,adjective,保護的 / 防護的 / 保護性的 / 愛保護人的 / 護短的
+Week 28,reconnaissance,noun,偵察 / 勘察 / 探查
+Week 28,rubbish,noun,垃圾 / 廢物 / 胡說 / 廢話
+Week 28,russian,noun,俄羅斯人 / 俄國人 / 俄語
+Week 28,sky-blue,adjective,天藍色的 / 天空藍的 / 淺藍色的
+Week 28,specialty,noun,專長 / 專門項目 / 特色商品 / 招牌菜 / 特產
+Week 28,terminal,noun,終點 / 終點站 / 航廈 / 客運站巴士總站 / 終端機
+Week 28,tram,noun,電車 / 路面電車
+Week 28,tricky,adjective,棘手的 / 難辦的 / 不好對付的 / 狡猾的 / 奸詐的 / 會耍花招的
+Week 28,unfiltered,adjective,未過濾的 / 不加過濾的 / 未經修飾的 / 未經審查的
+Week 28,ace,noun,愛司 / 高手 / 強者 / 滿分 / 發球得分
+Week 28,advance,verb,前進 / 推進 / 進展 / 進步 / 預付 / 提前
+Week 28,among,preposition,在之中 / 在當中 / 在裡
+Week 28,atrium,noun,中庭 / 中央大廳 / 天井 / 心房
+Week 28,baggage,noun,行李 / 行囊 / 心理包袱 / 心結 / 情感包袱
+Week 28,coffee,noun,咖啡 / 咖啡豆 / 咖啡粉
+Week 28,communication,noun,溝通 / 交流 / 傳達 / 通訊 / 聯絡
+Week 28,confident,adjective,有自信的 / 自信的 / 確信的
+Week 28,custom,noun,習俗 / 風俗 / 慣例 / 訂製品 / 訂做訂製
+Week 28,earpiece,noun,耳機 / 耳塞式耳機 / 耳掛 / 聽筒貼耳部分 / 鏡腳
+Week 28,facial,adjective,臉部的 / 面部的 / 臉部護理 / 做臉
+Week 28,five-pound,adjective,五磅的 / 重五磅的 / 五英鎊的
+Week 28,forty-nine,number,四十九
+Week 28,furnishing,noun,家具 / 陳設 / 擺設 / 布置品 / 裝潢材料
+Week 28,kiosk,noun,販售亭 / 小亭 / 服務亭 / 資訊亭 / 自助服務機 / 自助機台
+Week 28,lapel,noun,西裝翻領 / 翻領 / 領口翻邊
+Week 28,mobile,adjective,可移動的 / 移動式的 / 機動的 / 行動的 / 手機的
+Week 29,multiple,adjective,多個的 / 多種的 / 多重的 / 倍數的
+Week 29,one-hundred-percent,adjective,百分之百的 / 完全的 / 十足的 / 毫無保留的
+Week 29,pattern,noun,圖案 / 花紋 / 樣式 / 模式 / 規律
+Week 29,plank,noun,木板 / 厚木板 / 政綱 / 政策主張 / 平板支撐
+Week 29,queue,noun,隊伍 / 排隊的人龍 / 行列 / 佇列
+Week 29,recognition,noun,辨識 / 認出 / 認可 / 肯定 / 表揚
+Week 29,reward,verb,獎賞 / 獎勵 / 酬謝 / 回報 / 報答
+Week 29,runner,noun,跑者 / 跑步者 / 賽跑選手 / 長條地毯
+Week 29,slat,noun,板條 / 木條 / 條板 / 葉片
+Week 29,software,noun,軟體 / 應用軟體 / 系統軟體 / 作業程序
+Week 29,statue,noun,雕像 / 塑像 / 雕塑
+Week 29,text,noun,文字 / 課文 / 本文 / 文本 / 簡訊 / 訊息
+Week 29,trainer,noun,教練 / 訓練員 / 培訓師 / 運動鞋
+Week 29,vantage,noun,有利位置 / 制高點 / 優勢 / 有利觀點角度
+Week 29,accomplish,verb,完成 / 達成 / 實現 / 辦到
+Week 29,airfield,noun,飛機起降場 / 機場 / 航空站
+Week 29,alter,verb,改變 / 更改 / 修改 / 改動
+Week 29,atmospheric,adjective,大氣的 / 大氣層的 / 有氣氛的 / 很有氛圍的 / 有意境的
+Week 29,badly,adverb,差勁地 / 糟糕地 / 拙劣地 / 嚴重地 / 非常 / 很 / 「差勁地、糟糕地」 / 「嚴重地」 / 「非常、很」
+Week 29,caretaker,noun,管理員 / 看守人 / 照顧者 / 照護員 / 看守內閣
+Week 29,consultant,noun,顧問 / 諮詢顧問 / 專家顧問
+Week 29,corrupt,adjective,腐敗的 / 貪污的 / 敗壞的 / 損壞的 / 腐壞的
+Week 29,double-cross,verb,背叛 / 出賣 / 設局欺騙 / 耍兩面手法
+Week 29,french,adjective,法國的 / 法語的 / 法式的
+Week 29,gallery,noun,畫廊 / 藝廊 / 展廳 / 美術館展廳 / 樓座 / 樓廳座位區
+Week 29,handler,noun,訓練員 / 馴獸員 / 操作員 / 處理人員 / 搬運員 / 經紀人 / 上線 / 聯絡員
+Week 29,ii,number,二 / 第二 / 二世
+Week 29,internally,adverb,在內部 / 內部地 / 在體內 / 在內心在心裡 / 私下地內部處理地
+Week 30,legit,adjective,合法的 / 正當的 / 真的 / 可信的 / 很棒的真不錯的
+Week 30,national,adjective,國家的 / 全國的 / 國立的 / 國家代表隊的
+Week 30,scottish,adjective,蘇格蘭的 / 蘇格蘭人的
+Week 30,surface,noun,表面 / 外層 / 水面 / 地面
+Week 30,surgery,noun,手術 / 外科手術 / 外科 / 門診時間 / 診所
+Week 30,unidentified,adjective,身分不明的 / 未確認的 / 不明的 / 來歷不明的
+Week 30,climate,noun,氣候 / 風氣 / 氛圍
+Week 30,counterpart,noun,對應的人物 / 對口人員 / 對應物 / 相對應的事物
+Week 30,covert,adjective,秘密的 / 祕密的 / 隱蔽的 / 暗中的
+Week 30,design,verb,設計 / 規劃 / 構思 / 打造
+Week 30,dormitory,noun,宿舍 / 學生宿舍
+Week 30,dresser,noun,五斗櫃 / 衣櫃抽屜櫃 / 梳妝台 / 斗櫃 / 服裝師 / 更衣員
+Week 30,engage,verb,從事 / 參與 / 吸引 / 引起興趣 / 聘用 / 僱用 / 訂婚
+Week 30,fellow,noun,傢伙 / 人 / 同伴 / 同學 / 同事 / 同胞
+Week 30,forty-eight,number,四十八
+Week 30,generation,noun,世代 / 同世代的人 / 一代 / 代
+Week 30,hire,verb,雇用 / 聘請 / 租用 / 租借
+Week 30,industrialist,noun,實業家 / 工業家 / 企業家
+Week 30,jet,noun,噴射機 / 噴射客機 / 戰鬥機 / 噴流 / 噴射流
+Week 30,lag,verb,落後 / 跟不上 / 延遲 / 卡頓 / 拖慢
+Week 30,loo,noun,廁所 / 洗手間 / 化妝室
+Week 30,padlock,noun,掛鎖 / 鎖頭
+Week 30,portray,verb,描繪 / 刻畫 / 描寫 / 飾演 / 詮釋
+Week 30,program,noun,節目 / 計畫 / 課程 / 程式 / 軟體
+Week 30,scientific,adjective,科學的 / 科學上的 / 講求科學方法的
+Week 30,small-time,adjective,小咖的 / 小角色的 / 不起眼的 / 小混混的 / 小規模的
+Week 30,twenty-third,number,第二十三 / 二十三日 / 二十三號
+Week 30,union,noun,結合 / 聯合 / 統一 / 工會 / 聯盟 / 婚姻結合
+Week 31,addition,noun,加法 / 相加 / 增加 / 新增的人物 / 附加物 / 增建部分
+Week 31,blend,verb,混合 / 攪拌 / 融合 / 調和
+Week 31,brunt,noun,最嚴重的部分 / 主要衝擊 / 首當其衝 / 衝擊主力
+Week 31,defy,verb,違抗 / 反抗 / 藐視 / 使難以置信 / 無法解釋
+Week 31,hacker,noun,駭客 / 電腦駭客 / 高手程式設計師 / 技術高手
+Week 31,hoodie,noun,連帽上衣 / 帽 / 連帽運動衫 / 穿連帽上衣的人 / 穿帽的人
+Week 31,identity,noun,身分 / 身分證明 / 特徵 / 認同 / 同一性
+Week 31,impressive,adjective,令人印象深刻的 / 了不起的 / 驚人的 / 氣派的
+Week 31,insistence,noun,堅持 / 堅決要求 / 執意 / 一再強調
+Week 31,logo,noun,標誌 / 商標圖案 / 識別標誌 / 語言
+Week 31,maker,noun,製造者 / 製作者 / 製造商 / 創造者 / 創作者
+Week 31,misinterpret,verb,誤解 / 誤會 / 曲解
+Week 31,overcoat,noun,大衣 / 外套 / 長大衣
+Week 31,pathetic,adjective,可憐的 / 可悲的 / 差勁的 / 遜斃了的
+Week 31,shampoo,noun,洗髮精 / 洗髮乳 / 洗髮
+Week 31,significant,adjective,重要的 / 顯著的 / 重大的 / 可觀的
+Week 31,slump,verb,垮下來 / 癱坐 / 頹然倒下 / 暴跌 / 下滑 / 驟降 / 垮下來癱坐 / 暴跌下滑驟降
+Week 31,unfold,verb,展開 / 攤開 / 打開 / 逐漸明朗 / 逐步展開
+Week 31,verge,noun,邊緣 / 邊界 / 瀕臨 / 臨界點
+Week 31,allegedly,adverb,據說 / 據稱 / 涉嫌 / 據指
+Week 31,bomb,noun,炸彈 / 爆裂物 / 未爆彈 / 慘敗 / 轟動的作品
+Week 31,bronze,noun,青銅 / 古銅色 / 銅牌
+Week 31,campus,noun,校園 / 校區 / 分校區 / 園區
+Week 31,chapel,noun,小教堂 / 禮拜堂 / 祈禱室
+Week 31,club,noun,社團 / 俱樂部 / 會 / 棍棒 / 木棒
+Week 31,crop,noun,作物 / 農作物 / 收成 / 莊稼
+Week 31,crown,noun,王冠 / 皇冠 / 王權 / 王位 / 王室 / 頂部 / 樹冠 / 頭頂
+Week 31,culture,noun,文化 / 風俗習慣 / 培養 / 培養物
+Week 32,decapitate,verb,斬首 / 砍頭 / 身首異處 / 切掉的頭
+Week 32,enrol,verb,註冊 / 報名 / 入學 / 加入
+Week 32,explosion,noun,爆炸 / 爆發 / 激增 / 猛增
+Week 32,fascinate,verb,使著迷 / 使入迷 / 深深吸引
+Week 32,forty-seven,number,四十七
+Week 32,founder,noun,創辦人 / 創始人
+Week 32,headless,adjective,無頭的 / 沒頭的
+Week 32,headquarter,noun,總部 / 本部 / 設立總部於 / 總部設於
+Week 32,impersonate,verb,模仿 / 扮演 / 冒充 / 假冒
+Week 32,indigenous,adjective,本土的 / 原生的 / 本地的 / 原住民的
+Week 32,intention,noun,意圖 / 打算 / 目的 / 用意 / 企圖
+Week 32,layover,noun,中途停留 / 轉機停留 / 短暫停留 / 短暫延誤
+Week 32,membership,noun,會員資格 / 會員身分 / 會籍 / 全體會員
+Week 32,midway,adverb,中途 / 在半路上 / 在中間 / 遊樂區 / 攤位遊樂區
+Week 32,mistreatment,noun,虐待 / 不當對待 / 苛待 / 凌虐
+Week 32,notify,verb,通知 / 正式通知 / 告知 / 發送通知 / 提醒
+Week 32,out-of-date,adjective,過時的 / 老式的 / 不合時宜的 / 失效的 / 過期的 / 最新資料不足的 / 已過時的
+Week 32,pacific,adjective,和平的 / 平和的 / 平靜的 / 太平洋
+Week 32,pageant,noun,盛會遊行 / 遊行表演 / 盛會 / 選美活動 / 選美比賽
+Week 32,pinstripe,noun,細條紋 / 細直條紋 / 細條紋西裝
+Week 32,plague,noun,瘟疫 / 黑死病 / 疫病 / 禍患 / 困擾 / 麻煩事
+Week 32,prominent,adjective,著名的 / 知名的 / 重要的 / 顯眼的 / 突出的
+Week 32,prospective,adjective,未來的 / 可能的 / 潛在的 / 有意申請的
+Week 32,reassemble,verb,重新組裝 / 重新裝配 / 重新拼裝 / 重新集合 / 再次聚集
+Week 32,reluctance,noun,不情願 / 勉強 / 遲疑 / 抗拒心理
+Week 32,reluctant,adjective,不情願的 / 勉強的 / 不願意的
+Week 32,robotics,noun,機器人學 / 機器人技術 / 機器人工程
+Week 32,ruby,noun,紅寶石 / 寶紅色 / 紅寶石色
+Week 32,seventeen,number,十七
+Week 33,solo,noun,獨奏 / 獨唱 / 獨奏曲 / 單人表演 / 單獨進行
+Week 33,stall,noun,攤位 / 攤子 / 隔間 / 畜欄 / 車位 / 停滯 / 拖延
+Week 33,systematic,adjective,有系統的 / 有條理的 / 系統性的
+Week 33,tribe,noun,部落 / 部族 / 族人 / 群體 / 圈子
+Week 33,unexpectedly,adverb,出乎意料地 / 沒想到地 / 意外地
+Week 33,windshield,noun,擋風玻璃 / 前擋玻璃
+Week 33,wrongdoing,noun,不法行為 / 不當行為 / 惡行 / 做壞事
+Week 33,aspect,noun,方面 / 層面 / 部分 / 外觀 / 樣貌 / 神情
+Week 33,awkward,adjective,笨拙的 / 不靈活的 / 尷尬的 / 彆扭的 / 難處理的 / 棘手的 / 難處理的棘手的
+Week 33,awkwardness,noun,笨拙 / 不靈活 / 尷尬 / 不自在 / 彆扭
+Week 33,bookcase,noun,書櫃 / 書架
+Week 33,booklet,noun,小冊子 / 手冊 / 薄冊 / 薄薄的小書
+Week 33,breaker,noun,斷路器 / 無熔絲開關 / 碎浪 / 破碎機 / 破壞者
+Week 33,compass,noun,指南針 / 羅盤 / 範圍 / 限度
+Week 33,deception,noun,欺騙 / 欺瞞 / 詐騙 / 蒙騙
+Week 33,dedicate,verb,致力於 / 奉獻給 / 獻身於 / 題獻給 / 獻給 / 為舉行落成奉獻儀式
+Week 33,despite,preposition,儘管 / 儘管如此 / 不顧 / 雖然有
+Week 33,enroll,verb,註冊 / 報名 / 入學 / 選課 / 登記加入 / 入伍 / 從軍 / 招收
+Week 33,equation,noun,方程式 / 等式 / 平衡關係 / 關係式
+Week 33,expand,verb,擴大 / 擴張 / 膨脹 / 展開 / 進一步說明 / 詳述
+Week 33,feature,noun,特色 / 特徵 / 功能 / 項目 / 五官 / 面貌特徵
+Week 33,fighter,noun,戰士 / 鬥士 / 拳手 / 戰鬥機
+Week 33,foam,noun,泡沫 / 泡泡 / 浮沫 / 泡棉 / 海綿材質
+Week 33,foolish,adjective,愚蠢的 / 傻的 / 笨的 / 不明智的
+Week 33,full-time,adjective,全職的 / 全日制的 / 專任的
+Week 33,handbook,noun,手冊 / 指南 / 使用手冊 / 員工手冊
+Week 33,high-level,adjective,高階的 / 高層級的 / 高層的 / 高水準的 / 概要性的
+Week 33,humiliate,verb,羞辱 / 使丟臉 / 使蒙羞 / 侮辱
+Week 34,invade,verb,侵略 / 入侵 / 侵入 / 侵擾 / 湧入 / 侵犯隱私權利
+Week 34,keypad,noun,數字鍵盤 / 按鍵板 / 鍵盤
+Week 34,lighten,verb,使變亮 / 照亮 / 減輕 / 使變輕 / 使輕鬆 / 使愉快
+Week 34,manipulation,noun,操控 / 操縱 / 擺布 / 操作 / 手動處理 / 拿捏
+Week 34,manual,adjective,手動的 / 人力的 / 使用手冊 / 手冊
+Week 34,navigate,verb,導航 / 找到路 / 航行 / 駕駛通過 / 瀏覽 / 應付
+Week 34,obnoxious,adjective,討人厭的 / 惹人厭的 / 令人反感的 / 無禮惱人的
+Week 34,panel,noun,面板 / 板子 / 鑲板 / 控制板 / 專家小組 / 評審團 / 分區 / 格子
+Week 34,physical,adjective,身體的 / 肉體的 / 體力上的 / 物理的 / 身體檢查 / 體檢
+Week 34,priest,noun,神父 / 司祭 / 祭司
+Week 34,quizzical,adjective,疑惑的 / 狐疑的 / 好奇又困惑的 / 帶著疑問的
+Week 34,recur,verb,再發生 / 復發 / 再次出現 / 反覆出現
+Week 34,rookie,noun,新手 / 菜鳥 / 新人 / 一年級球員 / 新進警員 / 新進成員
+Week 34,roughly,adverb,大約 / 大概 / 粗略地 / 約略地 / 粗暴地 / 粗魯地
+Week 34,schedule,noun,時間表 / 行程 / 課表 / 時刻表 / 進度表
+Week 34,sly,adjective,狡猾的 / 鬼鬼祟祟的 / 奸詐的 / 機靈風趣的 / 會心的
+Week 34,spade,noun,鏟子 / 鐵鍬 / 鍬 / 黑桃
+Week 34,spearhead,noun,矛頭 / 矛尖 / 先鋒 / 前鋒 / 主力先頭部隊
+Week 34,squabble,verb,爭吵 / 口角 / 為小事爭執 / 拌嘴
+Week 34,staircase,noun,樓梯 / 梯道 / 樓梯間
+Week 34,supercomputer,noun,超級電腦 / 高效能電腦
+Week 34,swivel,verb,旋轉 / 轉動 / 轉過去 / 以樞軸轉動
+Week 34,tension,noun,緊張 / 緊張氣氛 / 關係緊張 / 拉力 / 張力
+Week 34,theory,noun,理論 / 看法 / 推測 / 說法
+Week 34,tourist,noun,觀光客 / 遊客 / 旅客
+Week 34,translate,verb,翻譯 / 口譯 / 筆譯 / 轉換 / 轉化 / 表達成
+Week 34,trickery,noun,詭計 / 欺騙手段 / 花招 / 奸計
+Week 34,virtual,adjective,虛擬的 / 線上的 / 實質上的 / 幾乎是
+Week 35,agency,noun,機構 / 代理機構 / 代理商 / 代辦處 / 仲介 / 行動能力 / 自主性
+Week 35,artificial,adjective,人造的 / 人工的 / 假的 / 不自然的 / 做作的 / 不真誠的
+Week 35,asset,noun,資產 / 財產 / 優勢 / 有用的資源 / 長處
+Week 35,capacity,noun,容量 / 容納量 / 載量 / 能力 / 才能 / 承受能力
+Week 35,creative,adjective,有創意的 / 有創造力的 / 富有創意的
+Week 35,data,noun,資料 / 數據 / 數據資料
+Week 35,decade,noun,十年 / 十年間
+Week 35,descend,verb,下降 / 下來 / 降下 / 源自 / 出身於 / 是的後代
+Week 35,drought,noun,乾旱 / 旱災 / 缺乏 / 短缺 / 低潮期
+Week 35,ensure,verb,確保 / 保證 / 使確定
+Week 35,environmental,adjective,環境的 / 環境相關的 / 環保的 / 自然環境的
+Week 35,expense,noun,費用 / 開支 / 支出 / 代價
+Week 35,faith,noun,信仰 / 信念 / 信任 / 信心
+Week 35,famine,noun,飢荒 / 饑荒 / 大饑荒
+Week 35,fbi,noun,美國聯邦調查局 / 聯邦調查局
+Week 35,global,adjective,全球的 / 全世界的 / 整體的 / 全面的
+Week 35,grave,adjective,嚴重的 / 重大的 / 莊重的 / 嚴肅的 / 陰鬱的
+Week 35,headmaster,noun,校長 / 男校長
+Week 35,host,noun,主人 / 東道主 / 主持人 / 主辦者 / 宿主 / 大量
+Week 35,implement,verb,實施 / 執行 / 落實 / 器具 / 工具
+Week 35,individual,adjective,個別的 / 單獨的 / 個人的 / 獨特的 / 有個性的
+Week 35,institution,noun,機構 / 機關 / 學院 / 院所 / 制度 / 習俗
+Week 35,minimal,adjective,最少的 / 最低限度的 / 極少的 / 極小的
+Week 35,modification,noun,修改 / 修正 / 變更 / 改裝 / 修飾 / 修飾語
+Week 35,mug,noun,馬克杯 / 杯子 / 臉 / 面孔
+Week 35,prime,adjective,主要的 / 首要的 / 最佳的 / 全盛時期的 / 質數
+Week 35,publicity,noun,宣傳 / 曝光 / 關注 / 知名度 / 宣傳報導
+Week 35,rally,verb,集合 / 集結 / 集會聲援 / 恢復元氣 / 振作起來 / 回升
+Week 36,recent,adjective,最近的 / 近期的 / 新近的
+Week 36,representative,adjective,有代表性的 / 具代表性的 / 典型的 / 代表的 / 代表性的
+Week 36,resource,noun,資源 / 物資 / 財力 / 人力資源 / 應變能力 / 才智
+Week 36,retaliate,verb,報復 / 反擊 / 以牙還牙 / 還擊
+Week 36,scrutiny,noun,仔細審查 / 細查 / 審視 / 檢視
+Week 36,secretive,adjective,守口如瓶的 / 神祕兮兮的 / 遮遮掩掩的 / 不願透露的
+Week 36,skilled,adjective,熟練的 / 有技巧的 / 技術高超的 / 有經驗的
+Week 36,summit,noun,山頂 / 頂峰 / 高峰會
+Week 36,symposium,noun,研討會 / 學術研討會 / 論文集 / 專題文集
+Week 36,tech,noun,科技 / 技術 / 科技業 / 科技產品 / 技術員
+Week 36,technology,noun,科技 / 技術 / 科技產品
+Week 36,teenage,adjective,青少年的 / 十幾歲的 / 少年時期的
+Week 36,tenth,number,第十 / 十分之一
+Week 36,trillion,number,一兆
+Week 36,undercover,adjective,臥底的 / 喬裝的 / 秘密調查的 / 隱蔽的 / 暗中的
+Week 36,abbey,noun,修道院 / 大修道院
+Week 36,alias,noun,別名 / 化名 / 假名
+Week 36,app,noun,應用程式 / 屁 / 應用軟體 / 申請 / 申請表
+Week 36,belonging,noun,所有物 / 財物 / 隨身物品 / 行李 / 歸屬感
+Week 36,Celtic,adjective,凱爾特的 / 凱爾特文化的 / 塞爾提克隊的
+Week 36,conductor,noun,指揮 / 售票員 / 列車長 / 導體
+Week 36,head-on,adverb,正面地 / 迎面地 / 直接地 / 正面衝突地
+Week 36,implode,verb,向內爆裂 / 向內坍塌 / 內爆 / 突然崩潰 / 內部瓦解 / 自我毀滅般崩解
+Week 36,laptop,noun,筆記型電腦 / 筆電
+Week 36,mouthful,noun,一口 / 一口的量 / 滿滿一口 / 拗口的詞語 / 很長又難念的名稱
+Week 36,outlet,noun,插座 / 電源插座 / 出口 / 排放口 / 暢貨中心 / 直營暢貨店 / 宣洩管道 / 抒發管道
+Week 36,password,noun,密碼 / 口令
+Week 36,platform,noun,月台 / 站台 / 講台 / 舞台 / 平台 / 政綱
+Week 37,schoolgirl,noun,女學生 / 女學童 / 女學生兒童 / 女校生
+Week 37,self,pronoun,自己 / 自我 / 本人 / 本身
+Week 37,smartphone,noun,智慧型手機 / 手機
+Week 37,stark,adjective,冷峻的 / 荒涼的 / 鮮明的 / 簡樸的 / 十足的 / 完全的
+Week 37,unnoticed,adjective,未被注意到的 / 沒被發現的 / 未察覺的 / 不起眼的 / 不引人注意的
+Week 37,wi-fi,noun,無線網路 / 無線網路訊號
+Week 37,airtight,adjective,密不透氣的 / 密封的 / 不漏氣的 / 無懈可擊的 / 滴水不漏的
+Week 37,assassin,noun,刺客 / 暗殺者 / 殺手
+Week 37,college,noun,大學 / 學院 / 專科學校
+Week 37,computer-generated,adjective,電腦生成的 / 電腦製作的 / 電腦合成的
+Week 37,decoy,noun,誘餌 / 誘捕物 / 誘敵者 / 幌子
+Week 37,distinctive,adjective,有特色的 / 獨特的 / 與眾不同的 / 辨識度高的 / 鮮明的
+Week 37,dynamite,noun,炸藥 / 黃色炸藥 / 爆炸物 / 超棒的人 / 超棒的東西 / 精采絕倫的
+Week 37,extensive,adjective,廣泛的 / 大量的 / 大規模的 / 全面的 / 廣大的
+Week 37,highway,noun,公路 / 高速公路 / 幹道 / 途徑 / 捷徑
+Week 37,institute,noun,研究所 / 學院 / 機構 / 協會 / 制度 / 慣例
+Week 37,lethal,adjective,致命的 / 會致死的 / 奪命的 / 殺傷力很強的 / 極其危險的 / 厲害得可怕的
+Week 37,outsider,noun,外人 / 局外人 / 圈外人 / 冷門選手 / 黑馬
+Week 37,randomly,adverb,隨機地 / 隨意地 / 隨便地 / 胡亂地
+Week 37,red-and-white,adjective,紅白相間的 / 紅白色的 / 紅白條紋的
+Week 37,scruffy,adjective,邋遢的 / 不修邊幅的 / 破舊的 / 髒亂的 / 寒酸破舊的
+Week 37,specially,adverb,特地 / 專門地 / 特別地 / 特別
+Week 37,specimen,noun,樣本 / 標本 / 樣品 / 這號人物 / 典型例子 / 樣本人物
+Week 37,transport,verb,運送 / 運輸 / 載送 / 搬運 / 使心醉神迷 / 使陶醉
+Week 37,virus,noun,病毒 / 電腦病毒
+Week 37,withstand,verb,抵擋 / 承受住 / 禁得起 / 經得起
+Week 37,accommodation,noun,住宿 / 住處 / 膳宿 / 適應 / 調整 / 通融
+Week 37,airstrip,noun,簡易跑道 / 小型跑道 / 飛機起降跑道 / 狹長地帶
+Week 38,broach,verb,提出 / 提起 / 開口談到
+Week 38,co,noun,公司 / 商號
+Week 38,coincidence,noun,巧合 / 碰巧 / 湊巧
+Week 38,crunchy,adjective,脆的 / 酥脆的 / 爽脆的 / 環保另類的 / 崇尚自然生活的
+Week 38,deprive,verb,剝奪 / 奪走 / 使喪失 / 使不能享有
+Week 38,despise,verb,鄙視 / 輕蔑 / 蔑視
+Week 38,donate,verb,捐贈 / 捐 / 捐款 / 捐血 / 捐器官 / 捐出
+Week 38,express,verb,表達 / 說出 / 流露 / 快遞寄送 / 用快遞寄
+Week 38,female,adjective,女性的 / 雌性的 / 母的
+Week 38,gruff,adjective,粗聲粗氣的 / 生硬的 / 粗魯的
+Week 38,hatch,noun,艙口蓋 / 艙口 / 活門
+Week 38,marking,noun,標記 / 記號 / 斑紋 / 評分 / 批改
+Week 38,mathematician,noun,數學家 / 數學學者
+Week 38,microscope,noun,顯微鏡
+Week 38,murder,noun,謀殺 / 殺人案 / 兇殺案
+Week 38,oath,noun,誓言 / 誓約 / 宣誓 / 髒話 / 咒罵語
+Week 38,obsess,verb,使著迷 / 使痴迷 / 使一直掛心 / 困擾
+Week 38,online,adjective,線上的 / 網路上的 / 連線中的 / 已上線的 / 運作中的
+Week 38,overboard,adverb,落水 / 掉進海裡水裡 / 過火地 / 過頭地 / 太誇張地
+Week 38,pc,noun,個人電腦 / 桌上型電腦
+Week 38,radar,noun,雷達 / 雷達系統 / 雷達監測 / 雷達畫面
+Week 38,rearrange,verb,重新安排 / 重新整理 / 重新排列 / 改放位置
+Week 38,refocus,verb,重新聚焦 / 重新對焦 / 重新集中注意力 / 重新把重點放在 / 重新聚焦於
+Week 38,scrabble,noun,亂抓 / 亂扒 / 抓扒聲 / 拼字遊戲
+Week 38,soul,noun,靈魂 / 心靈 / 精髓 / 精神
+Week 38,sparse,adjective,稀疏的 / 零星的 / 稀少的
+Week 38,substandard,adjective,不合標準的 / 劣質的 / 低於標準的 / 不達標的
+Week 38,supportive,adjective,支持的 / 給予幫助的 / 體諒的 / 支撐的 / 有支撐力的 / 支持的幫助人的 / 支撐的有支撐力的
+Week 38,symbol,noun,象徵 / 符號 / 標誌
+Week 39,tile,noun,磁磚 / 地磚 / 壁磚 / 瓦片 / 牌
+Week 39,trait,noun,特質 / 性格特徵 / 特徵 / 特色
+Week 39,triplet,noun,三胞胎之一 / 三胞胎 / 三連音
+Week 39,unmarked,adjective,沒有標記的 / 未標記的 / 沒有記號的 / 未批改的
+Week 39,unprecedented,adjective,前所未有的 / 空前的 / 史無前例的
+Week 39,vista,noun,遠景 / 景致 / 景觀 / 前景 / 展望
+Week 39,whirlwind,noun,旋風 / 龍捲風般的旋風 / 忙亂的一陣 / 旋風般的人事物
+Week 39,whiz,verb,飛快移動 / 呼嘯而過 / 疾馳 / 迅速完成 / 表現出色
+Week 39,advisor,noun,顧問 / 指導老師 / 輔導老師 / 導師
+Week 39,air-condition,verb,裝空調 / 裝冷氣 / 使有空調 / 用空調調節
+Week 39,anonymity,noun,匿名 / 不具名 / 身分不公開
+Week 39,arsenal,noun,軍火庫 / 武器庫 / 一整套資源 / 各種手段的寶庫
+Week 39,available,adjective,可取得的 / 有的 / 有貨的 / 可用的 / 有空的 / 在場的
+Week 39,ballroom,noun,舞廳 / 宴會舞廳
+Week 39,blunt,adjective,鈍的 / 不鋒利的 / 直率的 / 不客氣的
+Week 39,break-in,noun,闖空門 / 非法闖入 / 破門行竊
+Week 39,buggy,noun,嬰兒車 / 輕便馬車 / 有問題的 / 很多的 / 故障很多的
+Week 39,cavernous,adjective,空曠如洞穴的 / 像洞穴般寬大的 / 空蕩蕩的 / 深而空大的
+Week 39,cleverness,noun,聰明 / 聰明才智 / 機智 / 巧妙
+Week 39,commando,noun,突擊隊員 / 特種兵 / 特戰隊員
+Week 39,concoct,verb,調製 / 調配 / 編造 / 炮製 / 想出
+Week 39,constantly,adverb,持續地 / 不斷地 / 一直 / 老是
+Week 39,crew,noun,全體工作人員 / 工作小組 / 船員 / 機組人員 / 隊員
+Week 39,defensive,adjective,防禦的 / 防守的 / 自我保護的 / 防備心強的 / 易感到被冒犯的
+Week 39,directive,noun,指示 / 指令 / 命令 / 指導方針 / 官方規定
+Week 39,educational,adjective,教育的 / 有教育意義的 / 有助學習的 / 教學用的
+Week 39,emphasize,verb,強調 / 著重 / 凸顯
+Week 39,endless,adjective,無止盡的 / 沒完沒了的 / 無窮無盡的 / 漫長無盡的 / 數不盡的 / 大量的
+Week 40,excessive,adjective,過多的 / 過度的 / 太多的 / 過分的
+Week 40,exterior,adjective,外部的 / 外面的 / 外側的 / 戶外的
+Week 40,film,noun,電影 / 影片 / 薄膜 / 膜
+Week 40,frankly,adverb,老實說 / 坦白說 / 說真的
+Week 40,ingenious,adjective,巧妙的 / 有創意的 / 機靈的 / 精巧的 / 足智多謀的
+Week 40,insert,verb,插入 / 放入 / 嵌入 / 加入 / 插頁 / 附頁
+Week 40,IV,number,羅馬數字四 / 四 / 靜脈注射 / 靜脈點滴 / 點滴
+Week 40,knife,noun,刀子 / 刀 / 小刀 / 餐刀 / 菜刀
+Week 40,laboratory,noun,實驗室 / 研究室 / 化驗室
+Week 40,legendary,adjective,傳奇的 / 傳說中的 / 極有名的 / 了不起的
+Week 40,lorry,noun,卡車 / 貨車 / 大卡車
+Week 40,mask,noun,面具 / 口罩 / 面罩 / 假面 / 掩飾 / 偽裝
+Week 40,mortar,noun,灰泥 / 砂漿 / 研缽 / 缽 / 迫擊砲 / 迫砲 / 杵臼
+Week 40,mythology,noun,神話 / 神話體系 / 神話學
+Week 40,operative,adjective,運作中的 / 生效的 / 有效的 / 關鍵的
+Week 40,pinkie,noun,小指 / 小拇指 / 淡粉色
+Week 40,precaution,noun,預防措施 / 防範措施 / 預防
+Week 40,radiate,verb,散發 / 發出 / 輻射 / 向外擴散 / 流露
+Week 40,re-create,verb,重新創造 / 重現 / 再造 / 重建
+Week 40,recite,verb,背誦 / 朗誦 / 一一列舉 / 詳述
+Week 40,reverse,verb,倒退 / 倒車 / 反轉 / 顛倒 / 逆轉 / 撤銷
+Week 40,rooftop,noun,屋頂 / 房頂 / 樓頂
+Week 40,scenario,noun,情境 / 設想的情況 / 劇本大綱 / 腳本
+Week 40,shepherd,noun,牧羊人 / 羊倌羊倌兒 / 引導者 / 守護者
+Week 40,ski,verb,滑雪 / 滑雪去 / 滑水
+Week 40,structure,noun,結構 / 構造 / 建築物 / 建築 / 組織方式
+Week 40,superior,adjective,較好的 / 較優的 / 優質的 / 較高級的 / 上級的 / 上級
+Week 40,technical,adjective,技術性的 / 專業的 / 專門的 / 嚴格依規定的
+Week 41,upcoming,adjective,即將到來的 / 即將舉行的 / 接下來的 / 即將上映的 / 即將推出的
+Week 41,vertigo,noun,暈眩 / 眩暈症 / 頭暈目眩 / 懼高眩暈感
+Week 41,vital,adjective,至關重要的 / 極重要的 / 攸關生死的 / 維持生命的 / 充滿活力的 / 有生氣的
+Week 41,ambitious,adjective,有抱負的 / 有企圖心的 / 雄心勃勃的 / 野心勃勃的 / 艱鉅的
+Week 41,article,noun,文章 / 報導 / 物品 / 物件 / 冠詞
+Week 41,bakery,noun,麵包店 / 烘焙坊 / 西點麵包店
+Week 41,disable,verb,使失去能力 / 使喪失功能 / 停用 / 停權 / 使無法運作 / 使失去能力使殘障
+Week 41,locate,verb,找到的位置 / 找出 / 定位 / 位於 / 設在
+Week 41,manufacture,verb,製造 / 生產 / 捏造 / 編造
+Week 41,mechanism,noun,機制 / 裝置 / 機械裝置 / 運作機制 / 方法
+Week 41,organization,noun,組織 / 機構 / 團體 / 組織性 / 條理 / 體制 / 編排
+Week 41,unravel,verb,解開 / 拆開線頭 / 鬆開 / 釐清 / 揭開 / 瓦解 / 崩解
+Week 41,ash,noun,灰燼 / 灰 / 菸灰 / 梣樹
+Week 41,biography,noun,傳記 / 人物傳記
+Week 41,cod,noun,鱈魚 / 真鱈
+Week 41,commit,verb,犯下 / 做出 / 投入 / 致力於 / 承諾 / 交付 / 收監 / 送入精神病院 / 機構
+Week 41,countryside,noun,鄉村地區 / 鄉下 / 農村 / 田園地帶
+Week 41,decipher,verb,破譯 / 辨認出 / 看懂 / 理解
+Week 41,furniture,noun,家具 / 傢俱
+Week 41,god,noun,神 / 神明 / 上帝 / 天主
+Week 41,identical,adjective,一模一樣的 / 完全相同的 / 同一的
+Week 41,inability,noun,無法 / 不能 / 沒有能力 / 無能為力 / 無能
+Week 41,intrigue,noun,陰謀 / 密謀 / 勾心鬥角 / 神秘感 / 好奇心
+Week 41,inventory,noun,庫存 / 存貨 / 存貨清單 / 清單 / 盤點表
+Week 41,jeopardy,noun,危險 / 風險 / 危急處境
+Week 41,mythological,adjective,神話中的 / 神話學的 / 神話體系的 / 傳說中的
+Week 41,ownership,noun,所有權 / 擁有權 / 所有 / 持有 / 負責
+Week 41,regulation,noun,規定 / 法規 / 條例 / 管理 / 調節 / 調節管理
+Week 42,similarity,noun,相似性 / 相似之處 / 類似性
+Week 42,sixteen,number,十六
+Week 42,stake,noun,木樁 / 樁子 / 賭注 / 利害關係 / 股份
+Week 42,swedish,adjective,瑞典的 / 瑞典人的 / 瑞典語的
+Week 42,tablet,noun,平板電腦 / 平板 / 藥錠 / 藥片 / 石板 / 碑版
+Week 42,vandalism,noun,故意破壞公物的行為 / 蓄意破壞行為 / 惡意毀損 / 破壞公物
+Week 42,acquaint,verb,使熟悉 / 使認識 / 告知 / 介紹給認識
+Week 42,admonish,verb,告誡 / 警告 / 責備 / 訓誡
+Week 42,ballistic,adjective,彈道的 / 彈射的 / 暴怒的 / 大發雷霆的
+Week 42,bay,noun,海灣 / 灣 / 吠叫 / 棗紅色
+Week 42,bullet,noun,子彈 / 彈頭 / 項目符號 / 條列重點
+Week 42,cane,noun,手杖 / 拐杖 / 藤條 / 藤 / 甘蔗
+Week 42,de,preposition,的 / 來自 / 不翻
+Week 42,deck,noun,甲板 / 平台 / 露台 / 一副牌 / 牌組
+Week 42,disparage,verb,貶低 / 輕視 / 貶抑 / 說壞話
+Week 42,doodle,noun,塗鴉 / 亂畫 / 隨手畫的小圖
+Week 42,encrypt,verb,加密 / 編碼加密
+Week 42,establishment,noun,機構 / 機關 / 店家 / 商家 / 企業 / 當權體制 / 既有體制 / 權勢集團
+Week 42,exhibition,noun,展覽 / 展出 / 展示 / 表露 / 流露 / 表現
+Week 42,fortify,verb,增強 / 增強體力 / 強化 / 設防 / 築防禦工事
+Week 42,instructor,noun,指導員 / 教練 / 講師 / 教官
+Week 42,linen,noun,亞麻布 / 亞麻 / 床單織品 / 寢具布品 / 桌布餐巾等布製品
+Week 42,lodge,noun,小屋 / 旅館 / 山間小屋 / 度假小屋
+Week 42,lodging,noun,住宿 / 住宿處 / 住處 / 臨時住宿 / 寄宿處
+Week 42,lone,adjective,單獨的 / 孤零零的 / 唯一的 / 獨自的
+Week 42,network,noun,網路 / 網絡 / 人脈 / 電視網 / 廣播網
+Week 42,opinion,noun,意見 / 看法 / 想法 / 主張
+Week 42,parachute,noun,降落傘 / 傘兵降落傘 / 跳傘
+Week 43,plug,noun,插頭 / 塞子 / 堵頭 / 宣傳 / 打廣告
+Week 43,princess,noun,公主
+Week 43,reg,noun,雷格 / 縮寫
+Week 43,remotely,adverb,遠端地 / 遠距地 / 從遠處 / 絲毫 / 完全談不上
+Week 43,site,noun,地點 / 場所 / 地基 / 工地位置 / 網站
+Week 43,southeast,noun,東南方 / 東南面 / 東南部
+Week 43,state-of-the-art,adjective,最先進的 / 尖端的 / 最新式的
+Week 43,stern,adjective,嚴厲的 / 嚴肅的 / 嚴格的 / 冷峻的 / 船尾
+Week 43,triangular,adjective,三角形的 / 三角的 / 三方的 / 三角關係的
+Week 43,trigger,verb,引發 / 觸發 / 引起 / 啟動 / 扣動扳機 / 扳機
+Week 43,underground,adjective,地下的 / 地底的 / 地下化的 / 秘密的 / 非主流的
+Week 43,unseen,adjective,未看見的 / 看不見的 / 未被發現的 / 未預見的
+Week 43,veteran,noun,退伍軍人 / 老兵 / 資深人士 / 老手
+Week 43,wallpaper,noun,壁紙 / 牆紙 / 桌布 / 背景圖
+Week 43,approve,verb,核准 / 批准 / 同意 / 贊成 / 認可
+Week 43,boost,verb,提升 / 提高 / 增強 / 推動 / 抬高 / 托起
+Week 43,briefly,adverb,短暫地 / 簡短地 / 簡單說 / 稍微
+Week 43,cautious,adjective,小心的 / 謹慎的 / 慎重的
+Week 43,compete,verb,競爭 / 比賽 / 角逐 / 爭取
+Week 43,competitor,noun,競爭者 / 對手 / 參賽者 / 競爭對手
+Week 43,cue,noun,提示 / 暗示 / 信號 / 暗號 / 球桿
+Week 43,debug,verb,除錯 / 排除故障 / 找出問題並修正
+Week 43,introduce,verb,介紹 / 引進 / 提出 / 使初次接觸
+Week 43,kilometer,noun,公里
+Week 43,lecture,noun,演講 / 講課 / 課堂講授 / 訓話
+Week 43,magnetic,adjective,磁性的 / 有磁力的 / 有吸引力的 / 有魅力的 / 很吸引人的
+Week 43,naturally,adverb,自然地 / 天生地 / 本來就 / 當然 / 不出所料地
+Week 43,nineteen,number,十九
+Week 44,oxygen,noun,氧氣 / 氧
+Week 44,podium,noun,講台 / 講臺 / 演講台 / 頒獎臺
+Week 44,presentation,noun,簡報 / 報告 / 展示 / 呈現方式 / 贈與儀式 / 贈品
+Week 44,rely,verb,依靠 / 依賴 / 指望
+Week 44,scanner,noun,掃描器 / 掃描機 / 條碼掃描器 / 檢測器 / 速讀者
+Week 44,script,noun,劇本 / 腳本 / 手稿 / 手寫體
+Week 44,temperature,noun,溫度 / 氣溫 / 水溫 / 室溫 / 體溫 / 燒 / 發燒
+Week 44,analysis,noun,分析 / 解析 / 化驗
+Week 44,artwork,noun,藝術作品 / 美術作品 / 插圖 / 美術圖像
+Week 44,coolly,adverb,冷靜地 / 鎮定地 / 冷淡地 / 淡淡地 / 漠然地
+Week 44,dot,noun,點 / 圓點 / 點點 / 點上 / 散布著點點
+Week 44,forgery,noun,偽造 / 偽造品 / 贗品 / 冒名簽署
+Week 44,humidity,noun,濕度 / 濕氣 / 潮濕程度
+Week 44,identification,noun,身分辨識 / 身分確認 / 辨識 / 身分證明文件 / 證件 / 身分證明
+Week 44,remarkable,adjective,非凡的 / 值得注意的 / 卓越的 / 驚人的 / 非比尋常的
+Week 44,signify,verb,表示 / 代表 / 象徵 / 意味著 / 顯示
+Week 44,catacomb,noun,地下墓穴 / 地下墓窟 / 地下陵寢通道
+Week 44,complex,adjective,複雜的 / 繁複的 / 複合的 / 綜合的
+Week 44,glass-and-steel,adjective,玻璃鋼構的 / 玻璃與鋼鐵建成的 / 玻璃帷幕鋼構的
+Week 44,intel,noun,情報 / 情資 / 線報
+Week 44,metro,noun,地鐵 / 捷運 / 捷運系統 / 都會區
+Week 44,passageway,noun,通道 / 走道 / 通路 / 走廊
+Week 44,pedestrian,noun,行人 / 步行者 / 路人
+Week 44,secondary,adjective,次要的 / 第二層的第二級的 / 中等教育的 / 中學的
+Week 44,bloodcurdling,adjective,令人毛骨悚然的 / 令人不寒而慄的 / 駭人聽聞的
+Week 44,cast-iron,adjective,鑄鐵的 / 鐵製的 / 鐵定的 / 無懈可擊的
+Week 44,cellular,adjective,細胞的 / 由細胞組成的 / 行動通訊的 / 手機的
+Week 44,cement,noun,水泥 / 洋灰 / 鞏固 / 黏合
+Week 44,face-first,adverb,臉朝下地 / 臉部先著地地 / 一頭栽下去地
+Week 45,follow-up,noun,後續行動 / 後續處理 / 追蹤 / 後續報導 / 回診 / 追問
+Week 45,grime,noun,污垢 / 油垢 / 髒污 / 污層
+Week 45,mossy,adjective,長滿苔蘚的 / 有苔蘚的 / 青苔覆蓋的
+Week 45,mound,noun,土堆 / 一堆 / 土丘 / 小丘 / 堆
+Week 45,operational,adjective,運作中的 / 可運作的 / 操作上的 / 作戰的 / 業務運作的
+Week 45,pry,verb,撬開 / 撬動 / 硬撬開 / 刺探 / 探聽 / 窺探
+Week 45,sensor,noun,感測器 / 感應器 / 偵測器
+Week 45,shaft,noun,柄 / 桿 / 軸 / 礦井坑道 / 豎井
+Week 45,spiral,noun,螺旋 / 螺旋形 / 旋渦狀 / 盤旋下降 / 螺旋式下滑
+Week 45,stairway,noun,樓梯 / 樓梯間 / 梯道
+Week 45,starry,adjective,滿天星星的 / 滿天星斗的 / 星光閃爍的 / 明星雲集的 / 眾星雲集的
+Week 45,triumphantly,adverb,勝利地 / 得意洋洋地 / 自豪地
+Week 45,urgently,adverb,緊急地 / 急迫地 / 迫切地 / 趕緊
+Week 45,wormhole,noun,蟲洞 / 時空蟲洞
+Week 45,applause,noun,掌聲 / 喝采 / 鼓掌
+Week 45,array,noun,排列 / 陣列 / 一系列 / 各式各樣的東西 / 展示 / 盛大展示 / 壯觀的陳列
+Week 45,breakthrough,noun,突破 / 重大突破 / 突破口 / 突圍
+Week 45,concept,noun,概念 / 觀念 / 理念
+Week 45,drown,verb,溺死 / 淹死 / 淹沒 / 蓋過
+Week 45,exhaustion,noun,筋疲力盡 / 精疲力竭 / 疲憊不堪 / 耗盡 / 枯竭
+Week 45,fine-tune,verb,微調 / 調整細節 / 精細調整 / 校準
+Week 45,hurricane,noun,颶風 / 強烈熱帶氣旋 / 颱風
+Week 45,inspiration,noun,靈感 / 啟發 / 鼓舞 / 激勵
+Week 45,lion,noun,獅子 / 勇士 / 名人
+Week 45,maximize,verb,使最大化 / 把提高到最大 / 充分利用 / 盡量增加
+Week 45,mold,noun,黴菌 / 霉 / 模具 / 模子 / 形狀 / 樣式
+Week 45,padre,noun,神父 / 隨軍牧師 / 軍中牧師 / 爸爸
+Week 45,rival,noun,對手 / 競爭對手 / 勁敵 / 匹敵者
+Week 46,spirit,noun,精神 / 心情 / 志氣 / 靈魂 / 鬼魂 / 烈酒
+Week 46,triple,adjective,三倍的 / 三重的 / 三人的
+Week 46,tropical,adjective,熱帶的 / 熱帶性
+Week 46,workspace,noun,工作空間 / 工作區域 / 作業空間
+Week 46,escalate,verb,升高 / 升級 / 惡化 / 加劇 / 增加升高 / 升級加劇
+Week 46,input,verb,輸入 / 鍵入 / 輸進 / 提供意見 / 提供資訊
+Week 46,submit,verb,提交 / 呈交 / 送交 / 服從 / 屈服 / 順從 / 接受
+Week 46,vie,verb,競爭 / 爭奪 / 角逐 / 爭取
+Week 46,vulnerable,adjective,脆弱的 / 易受傷害的 / 易受攻擊的 / 毫無防備的 / 弱勢的
+Week 46,appointment,noun,預約 / 約會 / 約定 / 任命 / 職位
+Week 46,bodyguard,noun,保鑣 / 隨扈 / 護衛
+Week 46,confidently,adverb,自信地 / 有自信地 / 肯定地 / 篤定地
+Week 46,corporate,adjective,公司的 / 企業的 / 集團的 / 共同的 / 團體的 / 全體共同的
+Week 46,eliminate,verb,消除 / 排除 / 去除 / 剷除 / 淘汰
+Week 46,emoji,noun,表情符號 / 表情圖示 / 繪文字
+Week 46,enterprise,noun,企業 / 事業 / 企業體 / 進取心 / 開創精神
+Week 46,Indian,adjective,印度的 / 印度人的 / 印第安人的 / 美洲原住民的
+Week 46,intimidation,noun,恐嚇 / 威嚇 / 恫嚇 / 恐嚇行為
+Week 46,launder,verb,洗 / 洗衣 / 洗滌 / 洗錢
+Week 46,ornate,adjective,華麗的 / 裝飾繁複的 / 雕飾精美的 / 繁複華美的
+Week 46,pillar,noun,柱子 / 柱 / 支柱 / 中堅 / 棟梁
+Week 46,revisit,verb,再訪 / 重訪 / 重新檢視 / 重新探討 / 再次回顧
+Week 46,safely,adverb,安全地 / 平安地 / 妥善地
+Week 46,smiley,noun,笑臉 / 笑臉符號 / 表情符號 / 笑咪咪的人 / 愛笑的人
+Week 46,black-and-white,adjective,黑白的 / 單色的
+Week 46,confidential,adjective,機密的 / 保密的 / 私密的 / 祕密的 / 受託保密的 / 心腹的
+Week 46,dexterity,noun,靈巧 / 靈活 / 熟巧 / 手巧
+Week 46,equal,adjective,相等的 / 一樣的 / 平等的 / 同等的
+Week 47,fishbowl,noun,魚缸 / 玻璃魚缸 / 眾目睽睽的處境 / 毫無隱私的環境
+Week 47,jostle,verb,推擠 / 擠來擠去 / 衝撞 / 激烈爭奪
+Week 47,port,noun,港口 / 港埠 / 連接埠 / 埠 / 端口 / 波特酒
+Week 47,reader,noun,讀者 / 閱讀者 / 讀本 / 課外讀本
+Week 47,review,verb,複習 / 審查 / 檢視 / 回顧 / 評論 / 寫評論
+Week 47,stripe,noun,條紋 / 條線 / 色帶 / 長條色塊 / 類型 / 一路人 / 那一派的人
+Week 47,usb,noun,接孔 / 線 / 隨身碟
+Week 47,wire,noun,金屬線 / 鐵絲 / 鋼絲 / 電線 / 導線 / 纜線
+Week 47,influence,verb,影響 / 左右 / 感染 / 說服
+Week 47,oversee,verb,監督 / 督導 / 管理 / 看漏 / 疏忽沒看到
+Week 47,survey,verb,環視 / 審視 / 調查 / 測量
+Week 47,dip,verb,浸一下 / 沾一下 / 把伸進去一下 / 稍微下降 / 下沉 / 低下
+Week 47,glitch,noun,小故障 / 小問題 / 突發小問題 / 異常狀況
+Week 47,holster,noun,槍套
+Week 47,holstered,adjective,插在槍套裡的 / 佩在槍套中的 / 收在槍套裡的
+Week 47,momentarily,adverb,片刻地 / 短暫地 / 馬上 / 立刻
+Week 47,nestle,verb,依偎 / 窩著 / 舒適地坐落於 / 坐落於 / 緊貼 / 嵌入 / 貼合
+Week 47,outline,noun,輪廓 / 外形輪廓 / 大綱 / 提綱
+Week 47,achievement,noun,成就 / 成績 / 成果
+Week 47,activist,noun,社會運動人士 / 行動派人士 / 運動人士 / 倡議者
+Week 47,baffle,verb,使困惑 / 使迷惑 / 難倒
+Week 47,burglary,noun,竊盜罪 / 入室竊盜 / 侵入住居竊盜 / 闖空門
+Week 47,construct,verb,建造 / 興建 / 構築 / 建構 / 構想
+Week 47,downplay,verb,淡化 / 輕描淡寫地帶過 / 低調處理 / 小看
+Week 47,faulty,adjective,有缺陷的 / 故障的 / 有毛病的 / 錯誤的 / 不正確的
+Week 47,fingerprint,noun,指紋 / 指印 / 辨識痕跡
+Week 47,injure,verb,使受傷 / 傷害 / 弄傷 / 傷到
+Week 47,link,verb,連接 / 連結 / 把連起來 / 聯繫 / 關聯 / 聯想到
+Week 48,misdirection,noun,誤導 / 引錯方向 / 聲東擊西 / 轉移注意力的手法
+Week 48,phd,noun,博士學位 / 博士 / 博士班學位
+Week 48,primarily,adverb,主要地 / 主要是 / 大多 / 首先 / 原本
+Week 48,prosthetic,adjective,義肢的 / 人工矯補的 / 義肢人工器官的 / 義肢 / 人工器官
+Week 48,retell,verb,複述 / 重講 / 轉述
+Week 48,self-proclaimed,adjective,自稱的 / 自封的 / 號稱自己的
+Week 48,shed,verb,脫落 / 脫去 / 流出 / 散發 / 去除 / 擺脫
+Week 48,terrorist,noun,恐怖分子 / 恐怖份子
+Week 48,uncover,verb,揭開 / 掀開 / 拿開覆蓋物 / 揭露 / 發現
+Week 48,wondrous,adjective,奇妙的 / 令人驚嘆的 / 神奇的 / 奇景般的
+Week 48,worrisome,adjective,令人擔心的 / 令人憂心的 / 讓人不安的
+Week 48,allot,verb,分配 / 撥給 / 配給 / 劃分給
+Week 48,average,adjective,普通的 / 一般的 / 平均的 / 平均數
+Week 48,conclusion,noun,結論 / 結尾 / 推論結果
+Week 48,constraint,noun,限制 / 制約 / 約束條件 / 拘謹 / 不自在
+Week 48,devastate,verb,摧毀 / 重創 / 毀掉 / 使痛不欲生 / 使悲痛欲絕
+Week 48,dread,verb,害怕 / 畏懼 / 懼怕 / 很怕會來
+Week 48,expose,verb,揭露 / 揭發 / 暴露 / 使暴露於 / 露出
+Week 48,figurehead,noun,名義領袖 / 傀儡領袖 / 船首雕像
+Week 48,inspirational,adjective,鼓舞人心的 / 激勵人的 / 啟發人心的
+Week 48,major,adjective,主要的 / 重大的 / 大規模的 / 重要的
+Week 48,publicly,adverb,公開地 / 當眾 / 公然 / 由政府 / 公營地
+Week 48,puppet,noun,木偶 / 傀儡 / 布偶
+Week 48,reporter,noun,記者 / 新聞記者 / 報告者 / 通報者
+Week 48,revolutionize,verb,徹底改變 / 帶來革命性改變 / 使發生革命性變化 / 革新
+Week 48,rewrite,verb,重寫 / 改寫 / 重編
+Week 48,singer,noun,歌手 / 演唱者
+Week 48,antidote,noun,解毒劑 / 解藥 / 對策 / 良方 / 解方
+Week 49,baron,noun,男爵 / 領主 / 商業大亨 / 巨頭
+Week 49,broadcast,verb,廣播 / 播送 / 播出 / 傳播 / 廣為傳播
+Week 49,infect,verb,感染 / 傳染 / 使感染 / 污染 / 影響
+Week 49,inspire,verb,啟發 / 激勵 / 鼓舞 / 賦予靈感 / 吸入 / 吸氣
+Week 49,mar,verb,損害 / 破壞 / 損及美感 / 玷污 / 損害破壞
+Week 49,pollution,noun,污染 / 公害
+Week 49,series,noun,系列 / 一連串 / 連續劇集
+Week 49,twenty-fourth,number,第二十四 / 二十四日
+Week 49,undermine,verb,削弱 / 動搖 / 暗中破壞 / 在下方挖掘 / 掏空的地基基礎
+Week 49,airborne,adjective,空中的 / 空降的 / 空運的 / 經空氣傳播的 / 懸浮在空中的
+Week 49,chief,adjective,主要的 / 首要的 / 最重要的 / 首長 / 主管 / 酋長
+Week 49,drainpipe,noun,排水管 / 落水管 / 緊身長褲 / 窄管褲
+Week 49,element,noun,要素 / 元素 / 成分 / 部分 / 自然力 / 風雨
+Week 49,extract,verb,取出 / 拔出 / 提取 / 萃取 / 摘錄 / 節錄
+Week 49,fatal,adjective,致命的 / 致死的 / 毀滅性的 / 決定性的
+Week 49,manipulate,verb,操控 / 操作 / 擺弄 / 操縱 / 控制
+Week 49,muffle,verb,悶住 / 壓低 / 減弱 / 包住 / 裹住
+Week 49,originally,adverb,原本 / 起初 / 原先 / 最初 / 原創地 / 獨創地
+Week 49,override,verb,推翻 / 否決 / 凌駕於之上 / 覆蓋 / 手動解除控制
+Week 49,procedure,noun,程序 / 步驟 / 流程 / 手術 / 醫療處置
+Week 49,professor,noun,教授 / 老師
+Week 49,regain,verb,重新獲得 / 取回 / 恢復 / 甦醒 / 重拾
+Week 49,shimmy,verb,搖晃扭動 / 扭動 / 挪動 / 慢慢挪動
+Week 49,sixty-three,number,六十三
+Week 49,spacesuit,noun,太空衣 / 航太服
+Week 49,syringe,noun,注射器 / 針筒 / 針管
+Week 49,uneven,adjective,不平的 / 不平坦的 / 不均勻的 / 參差不齊的
+Week 49,unleash,verb,釋放 / 放開 / 解開繩索 / 引發 / 爆發出 / 使爆發
+Week 50,utility,noun,效用 / 實用性 / 用途 / 公用事業 / 水電瓦斯等公用服務 / 水電費
+Week 50,worldwide,adjective,全世界的 / 全球的 / 世界各地的 / 國際性的
+Week 50,honk,verb,按喇叭 / 鳴喇叭 / 發出喇叭聲 / 雁叫 / 鵝叫
+Week 50,landing,noun,著陸 / 降落 / 梯間平台 / 樓梯平台 / 登陸處
+Week 50,layout,noun,佈局 / 配置 / 版面配置 / 格局 / 平面圖 / 配置圖
+Week 50,thickly,adverb,厚厚地 / 濃濃地 / 密密地 / 口齒不清地 / 含糊地
+Week 50,tranquilizer,noun,鎮定劑 / 安定劑 / 麻醉鏢藥劑 / 安定力量 / 安撫作用
+Week 50,bedside,noun,床邊 / 床頭邊 / 床邊態度 / 對病人的應對方式
+Week 50,comfortable,adjective,舒服的 / 舒適的 / 自在的 / 寬裕的
+Week 50,metropolitan,adjective,都會的 / 大都市的 / 大都會區的 / 都會區的
+Week 50,pan,noun,平底鍋 / 鍋子 / 烤盤 / 嚴批 / 痛批
+Week 50,residence,noun,住宅 / 住處 / 住所 / 居所 / 居住期間 / 居住
+Week 50,asthma,noun,氣喘 / 哮喘
+Week 50,compute,verb,計算 / 運算 / 估算
+Week 50,cuppa,noun,一杯茶 / 一杯熱茶 / 一杯飲料
+Week 50,decor,noun,裝潢 / 裝飾風格 / 布置 / 陳設
+Week 50,decorate,verb,裝飾 / 布置 / 點綴 / 裝點 / 授勳給 / 授予勳章
+Week 50,demolition,noun,拆除 / 拆毀 / 爆破拆除 / 拆遷
+Week 50,lighthouse,noun,燈塔
+Week 50,obsession,noun,著迷 / 癡迷 / 執念 / 迷戀 / 可譯為強烈的執著
+Week 50,pharmacy,noun,藥局 / 藥房 / 藥學
+Week 50,potential,adjective,潛在的 / 可能的 / 有潛力的
+Week 50,spike,noun,尖刺 / 刺針 / 長釘 / 驟升 / 激增
+Week 50,steadily,adverb,穩定地 / 平穩地 / 持續地 / 穩穩地
+Week 50,visual,adjective,視覺的 / 可見的 / 影像的
+Week 50,high-security,adjective,高度戒備的 / 高度保全的 / 安全防護嚴密的
+Week 50,Indonesian,adjective,印尼的 / 印度尼西亞的 / 印尼人 / 印度尼西亞人 / 印尼語的
+Week 50,outdated,adjective,過時的 / 老派的 / 陳舊的 / 過期的

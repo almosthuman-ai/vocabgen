@@ -34,10 +34,17 @@ const inferBookName = (path: string): string | null => {
     .trim();
 };
 
+const pickTranslation = (clue: string): string => {
+  if (!clue.includes(' / ')) return clue;
+  const options = clue.split(' / ');
+  return options[Math.floor(Math.random() * options.length)];
+};
+
 const joinClue = (pos: string, clue: string): string => {
-  if (pos && clue) return `${pos} : ${clue}`;
+  const picked = pickTranslation(clue);
+  if (pos && picked) return `${pos} : ${picked}`;
   if (pos) return pos;
-  return clue;
+  return picked;
 };
 
 const buildCurriculum = (): CurriculumData => {
