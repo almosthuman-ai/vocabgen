@@ -80,6 +80,14 @@ const buildCurriculum = (): CurriculumData => {
 
 export const CURRICULUM: CurriculumData = buildCurriculum();
 
-export const getCurriculumBooks = (): string[] => Object.keys(CURRICULUM);
+const naturalSort = (a: string, b: string): number =>
+  a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+
+export const getCurriculumBooks = (): string[] => {
+  const all = Object.keys(CURRICULUM);
+  const kongzi = all.filter(b => b.startsWith('Kongzi')).sort(naturalSort);
+  const rest = all.filter(b => !b.startsWith('Kongzi')).sort(naturalSort);
+  return [...kongzi, ...rest];
+};
 
 export const getCurriculum = (): CurriculumData => CURRICULUM;
