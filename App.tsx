@@ -40,6 +40,10 @@ const cloneTicTacResult = (res: TicTacResult): TicTacResult => ({
 type Tab = 'crossword' | 'dga' | 'tictac';
 
 const CURRICULUM_BOOKS = getCurriculumBooks();
+const RANDOM_WEEK_VALUE = '__random__';
+const MIN_RANDOM_WORDS = 10;
+const MAX_RANDOM_WORDS = 30;
+const DEFAULT_RANDOM_WORDS = 20;
 
 type StatusTone = 'neutral' | 'success' | 'warning' | 'error';
 
@@ -81,6 +85,20 @@ const summarizeList = (items: string[], limit = 4): string => {
 
 const buildStatus = (tone: StatusTone, en: string, zh: string): TabStatus => ({ tone, en, zh });
 
+const clampRandomWordCount = (value: number): number => {
+  if (Number.isNaN(value)) return DEFAULT_RANDOM_WORDS;
+  return Math.min(MAX_RANDOM_WORDS, Math.max(MIN_RANDOM_WORDS, value));
+};
+
+const shuffleArray = <T,>(items: T[]): T[] => {
+  const shuffled = [...items];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 
 
 const App: React.FC = () => {
@@ -91,13 +109,15 @@ const App: React.FC = () => {
   
   // Curriculum Selector State
   const [selectedBook, setSelectedBook] = useState<string>(() => CURRICULUM_BOOKS[0] ?? '');
-  const [selectedWeeks, setSelectedWeeks] = useState<string[]>(['']);
+  const [selectedWeeks, setSelectedWeeks] = useState<string[]>([RANDOM_WEEK_VALUE]);
+  const [randomWordCount, setRandomWordCount] = useState<number>(DEFAULT_RANDOM_WORDS);
 
   const availableWeeks = useMemo(() => {
     if (!selectedBook) return [];
     const bookWeeks = CURRICULUM[selectedBook];
     return bookWeeks ? Object.keys(bookWeeks) : [];
   }, [selectedBook]);
+  const isRandomCurriculum = selectedWeeks.includes(RANDOM_WEEK_VALUE);
 
   // Crossword State
   const [result, setResultState] = useState<GenerationResult | null>(null);
@@ -381,16 +401,23 @@ const App: React.FC = () => {
 
   const handleBookChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       setSelectedBook(e.target.value);
-      setSelectedWeeks(['']); // Reset selection on book change
+      setSelectedWeeks([RANDOM_WEEK_VALUE]);
   };
 
   const handleWeekChange = (index: number, value: string) => {
+      if (value === RANDOM_WEEK_VALUE) {
+          setSelectedWeeks([RANDOM_WEEK_VALUE]);
+          return;
+      }
+
       const newWeeks = [...selectedWeeks];
       newWeeks[index] = value;
       setSelectedWeeks(newWeeks);
   };
 
   const addWeekRow = () => {
+      if (isRandomCurriculum) return;
+
       const lastSelectedWeek = [...selectedWeeks].reverse().find(week => week !== '');
       const usedWeeks = new Set(selectedWeeks.filter(week => week !== ''));
       let nextWeek = '';
@@ -427,6 +454,42 @@ const App: React.FC = () => {
             alert('Selected curriculum is unavailable.');
             return;
         }
+
+      if (isRandomCurriculum) {
+          const count = clampRandomWordCount(randomWordCount);
+          setRandomWordCount(count);
+
+          const candidateMap = new Map<string, { word: string; clue: string }>();
+          Object.values(bookData).forEach(weekData => {
+              weekData.words.forEach((word, index) => {
+                  const trimmedWord = word.trim();
+                  if (!trimmedWord) return;
+
+                  const key = trimmedWord.toLowerCase();
+                  if (candidateMap.has(key)) return;
+
+                  candidateMap.set(key, {
+                      word: trimmedWord,
+                      clue: weekData.clues[index] || `Clue for ${trimmedWord}`,
+                  });
+              });
+          });
+
+          const candidates = Array.from(candidateMap.values());
+          if (candidates.length === 0) {
+              alert('This curriculum has no words available for random loading.');
+              return;
+          }
+
+          const shuffled = shuffleArray(candidates);
+          const selectedEntries = shuffled.slice(0, Math.min(count, shuffled.length));
+
+          setInputWords(selectedEntries.map(entry => entry.word).join('\n'));
+          setInputClues(selectedEntries.map(entry => entry.clue).join('\n'));
+          setPuzzleTitle(`${selectedBook} - Random ${selectedEntries.length}`);
+          return;
+      }
+
       let allWords: string[] = [];
       let allClues: string[] = [];
       let loadedCount = 0;
@@ -640,7 +703,7 @@ const App: React.FC = () => {
                         onChange={handleBookChange}
                         className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block px-3 py-2.5 outline-none"
                     >
-                        {Object.keys(CURRICULUM).map(book => (
+                        {CURRICULUM_BOOKS.map(book => (
                             <option key={book} value={book}>{book}</option>
                         ))}
                     </select>
@@ -661,6 +724,7 @@ const App: React.FC = () => {
                                     onChange={(e) => handleWeekChange(index, e.target.value)}
                                     className="w-full pl-9 bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block px-3 py-2.5 outline-none appearance-none"
                                 >
+                                    <option value={RANDOM_WEEK_VALUE}>Random</option>
                                     <option value="" disabled>Select Week...</option>
                                     {availableWeeks.map(w => (
                                         <option key={w} value={w}>{w}</option>
@@ -680,13 +744,31 @@ const App: React.FC = () => {
                         </div>
                     ))}
 
-                    <button 
-                        onClick={addWeekRow}
-                        className="w-full py-2 border-2 border-dashed border-gray-300 rounded-lg text-gray-500 font-medium text-sm hover:border-purple-400 hover:text-purple-600 hover:bg-purple-50 transition-all flex items-center justify-center gap-2"
-                    >
-                        <Plus size={16} />
-                        Add Another Week
-                    </button>
+                    {isRandomCurriculum && (
+                        <div>
+                            <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                                Random Word Count
+                            </label>
+                            <input
+                                type="number"
+                                min={MIN_RANDOM_WORDS}
+                                max={MAX_RANDOM_WORDS}
+                                value={randomWordCount}
+                                onChange={(e) => setRandomWordCount(clampRandomWordCount(e.currentTarget.valueAsNumber))}
+                                className="w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block px-3 py-2.5 outline-none"
+                            />
+                        </div>
+                    )}
+
+                    {!isRandomCurriculum && (
+                        <button 
+                            onClick={addWeekRow}
+                            className="w-full py-2 border-2 border-dashed border-gray-300 rounded-lg text-gray-500 font-medium text-sm hover:border-purple-400 hover:text-purple-600 hover:bg-purple-50 transition-all flex items-center justify-center gap-2"
+                        >
+                            <Plus size={16} />
+                            Add Another Week
+                        </button>
+                    )}
                 </div>
 
                 {/* Load Button */}

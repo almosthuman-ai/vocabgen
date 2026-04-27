@@ -229,17 +229,22 @@ const createHighResCanvas = (
     const contentHeight = contentBottom - contentTop;
     const contentWidth = WIDTH - (PADDING * 2);
     
-    // Split into Grid (Left) and Clues (Right)
-    // Adjusted ratio to 50/50 to give Clues more room
+    // Split into Grid (Left) and Clues (Right).
+    // Standard mode keeps the grid in the left half, puts two clue columns on
+    // the right, and reserves a full-width bottom band for a large word bank.
+    const STANDARD_WORD_BANK_RESERVE = mode === 'standard' ? 600 : 0;
+    const STANDARD_WORD_BANK_GAP = mode === 'standard' ? 40 : 0;
+    const primaryContentHeight = mode === 'standard'
+        ? contentHeight - STANDARD_WORD_BANK_RESERVE - STANDARD_WORD_BANK_GAP
+        : contentHeight;
     const gridAreaWidth = contentWidth * 0.50;
     
     // START OF CLUES COLUMN
-    const cluesStartX = PADDING + gridAreaWidth + (contentWidth * 0.05); // 5% gap
+    const cluesStartX = PADDING + gridAreaWidth + (contentWidth * (mode === 'standard' ? 0.02 : 0.05));
     
     // --- STRICT RIGHT MARGIN CALCULATION ---
-    // Increased buffer significantly to 200px (approx 0.66 inch)
-    // Total margin from edge = PADDING (120) + EXTRA (200) = 320px (~1 inch)
-    const EXTRA_RIGHT_BUFFER = 200; 
+    // Keep a generous print margin while giving standard clues room for larger type.
+    const EXTRA_RIGHT_BUFFER = mode === 'standard' ? 120 : 200;
     const ABSOLUTE_CLUE_RIGHT_LIMIT = WIDTH - PADDING - EXTRA_RIGHT_BUFFER;
 
     // THIS IS THE CONSTANT WIDTH USED FOR ALL TEXT WRAPPING
@@ -247,10 +252,10 @@ const createHighResCanvas = (
 
     // --- Draw Grid ---
     const maxCellWidth = gridAreaWidth / gridSize;
-    const maxCellHeight = contentHeight / gridSize;
+    const maxCellHeight = primaryContentHeight / gridSize;
     const cellSize = Math.min(maxCellWidth, maxCellHeight);
     const gridTotalHeight = cellSize * gridSize;
-    const gridStartY = contentTop + (contentHeight - gridTotalHeight) / 2;
+    const gridStartY = contentTop + (primaryContentHeight - gridTotalHeight) / 2;
 
     ctx.lineWidth = 4;
     ctx.textAlign = 'left';
@@ -476,9 +481,9 @@ const createHighResCanvas = (
     ctx.textAlign = 'left';
     ctx.textBaseline = 'top';
     
-    const availableHeight = contentHeight;
-    const MAX_FONT_SIZE = 70;
-    const MIN_FONT_SIZE = 22;
+    const availableHeight = primaryContentHeight;
+    const MAX_FONT_SIZE = mode === 'standard' ? 76 : 70;
+    const MIN_FONT_SIZE = mode === 'standard' ? 44 : 22;
 
     // --- MODE 1: STANDARD (Clues + Word Bank) ---
     if (mode === 'standard') {
@@ -494,11 +499,10 @@ const createHighResCanvas = (
         });
         const lengths = Object.keys(byLength).map(Number).sort((a, b) => a - b);
 
-        // Reserve space at bottom of right column for word bank
-        const WORD_BANK_RESERVE = 450;
-        const clueAvailableHeight = availableHeight - WORD_BANK_RESERVE;
+        const CLUE_COLUMN_GAP = 70;
+        const clueColumnWidth = (MAX_CLUE_WIDTH - CLUE_COLUMN_GAP) / 2;
+        const downColumnX = cluesStartX + clueColumnWidth + CLUE_COLUMN_GAP;
 
-        // Store optimal config
         let optimalConfig = {
             baseSize: MIN_FONT_SIZE,
             clueFont: `${MIN_FONT_SIZE}px sans-serif`,
@@ -506,59 +510,47 @@ const createHighResCanvas = (
             headerFont: `bold ${Math.floor(MIN_FONT_SIZE * 1.3)}px sans-serif`,
             lineHeight: MIN_FONT_SIZE * 1.25,
             paragraphSpacing: MIN_FONT_SIZE * 0.5,
-            sectionSpacing: MIN_FONT_SIZE * 1.5,
             headerHeight: MIN_FONT_SIZE * 2.0
         };
 
-        // Iterative Sizing
         for (let size = MAX_FONT_SIZE; size >= MIN_FONT_SIZE; size--) {
             const lineHeight = size * 1.25;
             const paragraphSpacing = size * 0.5;
-            const headerHeight = size * 2.0;
-            const sectionSpacing = size * 1.5;
+            const headerHeight = size * 1.8;
             const badgeFontSize = Math.floor(size * 0.85);
 
             ctx.font = `${size}px sans-serif`;
-            let currentH = 0;
 
-            // Measure Function (Auto-Sizer)
-            // MUST use MAX_CLUE_WIDTH exactly like the renderer
-            const measureList = (list: PlacedWord[]) => {
-                let h = 0;
-                if (list.length > 0) {
-                    h += headerHeight;
-                    for (const w of list) {
-                        const { pos, definition } = parseClue(w.clue);
+            const measureList = (list: PlacedWord[], columnWidth: number) => {
+                let h = headerHeight;
+                for (const w of list) {
+                    const { pos, definition } = parseClue(w.clue);
+                    ctx.font = `${size}px sans-serif`;
 
-                        // Estimate prefix width for sizing check
-                        const numberWidth = ctx.measureText(`${w.number}.`).width;
-                        let prefixPixels = numberWidth + 15;
+                    const numberWidth = ctx.measureText(`${w.number}.`).width;
+                    let prefixPixels = numberWidth + 15;
 
-                        if (pos) {
-                            ctx.save();
-                            ctx.font = `500 ${badgeFontSize}px sans-serif`;
-                            const badgeWidth = ctx.measureText(pos).width + 20;
-                            prefixPixels += badgeWidth + 10;
-                            ctx.restore();
-                        }
-
-                        // Strict First Line Available Width
-                        // If prefix > max width, we have 0 space (edge case)
-                        const firstLineAvailable = Math.max(0, MAX_CLUE_WIDTH - prefixPixels);
-
-                        // Wrap
-                        const lines = getWrappedLines(ctx, definition, MAX_CLUE_WIDTH, firstLineAvailable);
-                        h += (lines.length * lineHeight) + paragraphSpacing;
+                    if (pos) {
+                        ctx.save();
+                        ctx.font = `500 ${badgeFontSize}px sans-serif`;
+                        const badgeWidth = ctx.measureText(pos).width + 20;
+                        prefixPixels += badgeWidth + 10;
+                        ctx.restore();
                     }
+
+                    const firstLineAvailable = Math.max(0, columnWidth - prefixPixels);
+                    const lines = getWrappedLines(ctx, definition, columnWidth, firstLineAvailable);
+                    h += (lines.length * lineHeight) + paragraphSpacing;
                 }
                 return h;
             };
 
-            currentH += measureList(across);
-            if (across.length > 0 && down.length > 0) currentH += sectionSpacing;
-            currentH += measureList(down);
+            const requiredHeight = Math.max(
+                measureList(across, clueColumnWidth),
+                measureList(down, clueColumnWidth)
+            );
 
-            if (currentH <= clueAvailableHeight) {
+            if (requiredHeight <= availableHeight) {
                 optimalConfig = {
                     baseSize: size,
                     clueFont: `${size}px sans-serif`,
@@ -566,31 +558,32 @@ const createHighResCanvas = (
                     headerFont: `bold ${Math.floor(size * 1.3)}px sans-serif`,
                     lineHeight,
                     paragraphSpacing,
-                    sectionSpacing,
                     headerHeight
                 };
                 break;
             }
         }
 
-        // DRAW FUNCTION FOR CLUES
-        const drawClueSection = (list: PlacedWord[], startY: number) => {
-            let y = startY;
+        const drawClueSection = (title: string, list: PlacedWord[], columnX: number, columnWidth: number) => {
+            let y = contentTop;
+
+            ctx.font = optimalConfig.headerFont;
+            ctx.fillStyle = '#000000';
+            ctx.fillText(title, columnX, y);
+            y += optimalConfig.headerHeight;
 
             for (const w of list) {
                 const { pos, definition } = parseClue(w.clue);
 
-                // 2. Draw Number
                 ctx.fillStyle = '#000000';
                 ctx.font = `bold ${optimalConfig.clueFont}`;
 
                 const numberText = `${w.number}.`;
-                ctx.fillText(numberText, cluesStartX, y);
+                ctx.fillText(numberText, columnX, y);
 
                 const numberWidth = ctx.measureText(numberText).width;
-                let currentX = cluesStartX + numberWidth + 8;
+                let currentX = columnX + numberWidth + 8;
 
-                // 3. Draw Badge (Strict Logic)
                 if (pos) {
                     const badgeFontSize = Math.floor(optimalConfig.baseSize * 0.85);
                     ctx.font = `500 ${badgeFontSize}px sans-serif`;
@@ -610,115 +603,100 @@ const createHighResCanvas = (
                     currentX += badgeWidth + 10;
                 }
 
-                // 4. Draw Definition (Strictly Black)
                 ctx.fillStyle = '#000000';
                 ctx.font = optimalConfig.clueFont;
 
-                // --- STRICT RENDERER MATH ---
-                // Calculate exactly how much space is left on the first line
-                // relative to the MAX_CLUE_WIDTH
-                // We know MAX_CLUE_WIDTH ends at ABSOLUTE_CLUE_RIGHT_LIMIT
+                const usedPrefixWidth = currentX - columnX;
+                const spaceRemainingOnFirstLine = Math.max(0, columnWidth - usedPrefixWidth);
+                const lines = getWrappedLines(ctx, definition, columnWidth, spaceRemainingOnFirstLine);
 
-                const usedPrefixWidth = currentX - cluesStartX;
-                const spaceRemainingOnFirstLine = Math.max(0, MAX_CLUE_WIDTH - usedPrefixWidth);
-
-                // Wrap text.
-                // It is CRITICAL that we pass MAX_CLUE_WIDTH as the standard width
-                // and spaceRemainingOnFirstLine as the first line width.
-                const lines = getWrappedLines(ctx, definition, MAX_CLUE_WIDTH, spaceRemainingOnFirstLine);
-
-                // Draw first line
                 if (lines.length > 0) {
                     ctx.fillText(lines[0], currentX, y);
                 }
 
-                // Draw subsequent lines
                 for (let i = 1; i < lines.length; i++) {
                     y += optimalConfig.lineHeight;
-                    // Subsequent lines start at cluesStartX
-                    ctx.fillText(lines[i], cluesStartX, y);
+                    ctx.fillText(lines[i], columnX, y);
                 }
 
                 y += optimalConfig.lineHeight + optimalConfig.paragraphSpacing;
             }
+
+            if (list.length === 0) {
+                ctx.font = optimalConfig.clueFont;
+                ctx.fillStyle = '#777777';
+                ctx.fillText(`No ${title.toLowerCase()} clues`, columnX, y);
+            }
+
             return y;
         };
 
-        // Execute Drawing
-        let currentY = contentTop;
+        drawClueSection('ACROSS', across, cluesStartX, clueColumnWidth);
+        drawClueSection('DOWN', down, downColumnX, clueColumnWidth);
 
-        if (across.length > 0) {
-            ctx.font = optimalConfig.headerFont;
-            ctx.fillStyle = '#000000';
-            ctx.fillText('ACROSS', cluesStartX, currentY);
-            currentY += optimalConfig.headerHeight;
-
-            currentY = drawClueSection(across, currentY);
-        }
-
-        if (across.length > 0 && down.length > 0) {
-            currentY += optimalConfig.sectionSpacing;
-        }
-
-        if (down.length > 0) {
-            ctx.font = optimalConfig.headerFont;
-            ctx.fillStyle = '#000000';
-            ctx.fillText('DOWN', cluesStartX, currentY);
-            currentY += optimalConfig.headerHeight;
-
-            currentY = drawClueSection(down, currentY);
-        }
-
-        // --- Word Bank (bottom of right column) ---
-        const bankY = contentTop + clueAvailableHeight + 40;
-        const bankBoxY = bankY + 80;
-        const bankBoxHeight = WORD_BANK_RESERVE - 80 - 40; // remaining space minus header
-        const bankPaddingX = 50;
-        const bankContentWidth = MAX_CLUE_WIDTH - (bankPaddingX * 2);
+        // --- Word Bank (full-width bottom band) ---
+        const bankY = contentTop + availableHeight + STANDARD_WORD_BANK_GAP;
+        const bankBoxY = bankY + 72;
+        const bankBoxHeight = contentBottom - bankBoxY;
+        const bankLeftX = PADDING;
+        const bankBoxWidth = contentWidth;
+        const bankPaddingX = 44;
+        const bankPaddingY = 32;
+        const bankContentWidth = bankBoxWidth - (bankPaddingX * 2);
 
         ctx.fillStyle = '#000000';
         ctx.textAlign = 'left';
         ctx.textBaseline = 'top';
-        ctx.font = `bold ${Math.floor(MIN_FONT_SIZE * 1.3)}px sans-serif`;
-        ctx.fillText('WORD BANK', cluesStartX, bankY);
+        ctx.font = 'bold 68px sans-serif';
+        ctx.fillText('WORD BANK', bankLeftX, bankY);
 
         ctx.strokeStyle = '#000000';
         ctx.lineWidth = 4;
-        ctx.strokeRect(cluesStartX, bankBoxY, MAX_CLUE_WIDTH, bankBoxHeight);
+        ctx.strokeRect(bankLeftX, bankBoxY, bankBoxWidth, bankBoxHeight);
 
-        // Auto-size words to fit the box
-        const BANK_MAX_FONT = 55;
-        const BANK_MIN_FONT = 28;
+        const BANK_MAX_FONT = 104;
+        const BANK_MIN_FONT = 60;
         let bankFont = BANK_MIN_FONT;
+        const bankLineStartX = bankLeftX + bankPaddingX;
+        const bankLineEndX = bankLineStartX + bankContentWidth;
 
         for (let sz = BANK_MAX_FONT; sz >= BANK_MIN_FONT; sz--) {
             ctx.font = `${sz}px sans-serif`;
             const wordSpacing = sz * 1.4;
             const lineH = sz * 1.6;
-            let x = cluesStartX + bankPaddingX;
-            let y = bankBoxY + bankPaddingX;
+            let x = bankLineStartX;
+            let y = bankBoxY + bankPaddingY;
             let maxY = y;
 
             for (const len of lengths) {
-                const header = `${len} letters:`;
+                const wordsForLength = byLength[len];
+                const header = `${len}:`;
                 const headerW = ctx.measureText(header).width + wordSpacing;
-                if (x + headerW > cluesStartX + bankPaddingX + bankContentWidth) {
-                    x = cluesStartX + bankPaddingX;
+                const firstWordW = wordsForLength[0]
+                    ? ctx.measureText(wordsForLength[0]).width + wordSpacing
+                    : 0;
+                const firstEntryW = headerW + firstWordW;
+                if (
+                    (x + headerW > bankLineEndX) ||
+                    (x > bankLineStartX && firstEntryW <= bankContentWidth && x + firstEntryW > bankLineEndX)
+                ) {
+                    x = bankLineStartX;
                     y += lineH;
                 }
                 x += headerW;
-                for (const word of byLength[len]) {
+                for (const word of wordsForLength) {
                     const wordW = ctx.measureText(word).width + wordSpacing;
-                    if (x + wordW > cluesStartX + bankPaddingX + bankContentWidth) {
-                        x = cluesStartX + bankPaddingX;
+                    if (x + wordW > bankLineEndX) {
+                        x = bankLineStartX;
                         y += lineH;
                     }
                     x += wordW;
+                    maxY = Math.max(maxY, y);
                 }
-                maxY = y;
+                x += wordSpacing;
             }
 
-            if (maxY + lineH <= bankBoxY + bankBoxHeight - bankPaddingX) {
+            if (maxY + lineH <= bankBoxY + bankBoxHeight - bankPaddingY) {
                 bankFont = sz;
                 break;
             }
@@ -727,28 +705,38 @@ const createHighResCanvas = (
         ctx.font = `${bankFont}px sans-serif`;
         const wordSpacing = bankFont * 1.4;
         const lineH = bankFont * 1.6;
-        let bankX = cluesStartX + bankPaddingX;
-        let bankCurY = bankBoxY + bankPaddingX;
+        let bankX = bankLineStartX;
+        let bankCurY = bankBoxY + bankPaddingY;
 
         for (const len of lengths) {
             // Length label in bold
             ctx.font = `bold ${bankFont}px sans-serif`;
+            const wordsForLength = byLength[len];
             const header = `${len}:`;
             const headerW = ctx.measureText(header).width + wordSpacing;
-            if (bankX + headerW > cluesStartX + bankPaddingX + bankContentWidth) {
-                bankX = cluesStartX + bankPaddingX;
+            ctx.font = `${bankFont}px sans-serif`;
+            const firstWordW = wordsForLength[0]
+                ? ctx.measureText(wordsForLength[0]).width + wordSpacing
+                : 0;
+            const firstEntryW = headerW + firstWordW;
+            if (
+                (bankX + headerW > bankLineEndX) ||
+                (bankX > bankLineStartX && firstEntryW <= bankContentWidth && bankX + firstEntryW > bankLineEndX)
+            ) {
+                bankX = bankLineStartX;
                 bankCurY += lineH;
             }
             ctx.fillStyle = '#555555';
+            ctx.font = `bold ${bankFont}px sans-serif`;
             ctx.fillText(header, bankX, bankCurY);
             bankX += headerW;
 
             ctx.font = `${bankFont}px sans-serif`;
             ctx.fillStyle = '#000000';
-            for (const word of byLength[len]) {
+            for (const word of wordsForLength) {
                 const wordW = ctx.measureText(word).width + wordSpacing;
-                if (bankX + wordW > cluesStartX + bankPaddingX + bankContentWidth) {
-                    bankX = cluesStartX + bankPaddingX;
+                if (bankX + wordW > bankLineEndX) {
+                    bankX = bankLineStartX;
                     bankCurY += lineH;
                 }
                 ctx.fillText(word, bankX, bankCurY);
