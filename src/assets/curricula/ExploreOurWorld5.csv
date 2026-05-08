@@ -1,86 +1,357 @@
 week,word,pos,clue
-"Week 16","thunderstorm","n.","大雷雨"
-"Week 16","thunder","n.","雷"
-"Week 16","lightning","n.","閃電"
-"Week 16","electricity","n.","電 / 電力"
-"Week 16","tornado","n.","龍捲風"
-"Week 16","hurricane","n.","颶風"
-"Week 16","storm","n.","暴風雨"
-"Week 16","center","n.","中心"
-"Week 16","calm","adj.","冷靜的 / 平靜的"
-"Week 16","flood","n.","洪水 / 水災"
-"Week 17","evacuate","v.","撤離 / 疏散"
-"Week 17","sandstorm","n.","沙塵暴"
-"Week 17","speed","n./v.","速度"
-"Week 17","blizzard","n.","暴風雪"
-"Week 17","drought","n.","乾旱"
-"Week 17","emergency","n.","緊急情況"
-"Week 17","flashlight","n.","手電筒"
-"Week 17","run out (of)","v. ph.","用完 / 耗盡"
-"Week 17","show off","v. ph.","炫耀"
-"Week 17","show","v.","展示 / 表演"
-"Week 18","watch out","v. ph.","當心 / 注意"
-"Week 18","supply","n./v.","供應 / 補給品"
-"Week 18","plan","n./v.","計畫"
-"Week 18","spinning","adj./v.","正在旋轉"
-"Week 18","column","n.","圓柱 / 專欄"
-"Week 18","predict","v.","預言 / 預測"
-"Week 18","shelter","n.","避難所 / 遮蔽物"
-"Week 18","forecaster","n.","氣象預報員"
-"Week 18","sign up","v. ph.","報名 / 註冊"
-"Chapter 1","doctor","n.","醫生 / 博士"
-"Chapter 1","rest","v./n.","休息"
-"Chapter 1","colonel","n.","上校"
-"Chapter 1","pistol","n.","手槍"
-"Chapter 1","thief","n.","小偷 / 賊"
-"Chapter 1","clue","n.","線索"
-"Chapter 1","police","n.","警察"
-"Chapter 1","servant","n.","僕人"
-"Chapter 1","murder","n./v.","謀殺"
-"Chapter 1","shot","n.","射擊 / 槍聲"
-"Chapter 1","shoot","v./n.","射擊"
-"Chapter 2","coachman","n.","馬車夫"
-"Chapter 2","strange","adj.","奇怪的 / 陌生的"
-"Chapter 2","fight","v./n.","打架 / 戰鬥"
-"Chapter 2","lawyer","n.","律師"
-"Chapter 2","inspector","n.","探長 / 檢查員"
-"Chapter 2","scene","n.","場景 / 現場"
-"Chapter 2","crime","n.","罪行 / 犯罪"
-"Chapter 2","sir","n.","先生"
-"Chapter 2","upstairs","adv./adj.","樓上"
-"Chapter 2","downstairs","adv./adj.","樓下"
-"Chapter 2","fall","v./n.","跌倒 / 落下"
-"Chapter 2","hedge","n.","樹籬"
-"Chapter 2","pocket","n.","口袋"
-"Chapter 2","piece","n.","一塊 / 一片"
-"Chapter 2","paper","n.","紙"
-"Chapter 3","agree","v.","同意"
-"Chapter 3","post","n./v.","郵寄 / 職位"
-"Chapter 3","letter","n.","信 / 字母"
-"Chapter 3","kitchen","n.","廚房"
-"Chapter 3","towards","prep.","朝向"
-"Chapter 3","terrible","adj.","可怕的 / 糟糕的"
-"Chapter 3","ground","n.","地面"
-"Chapter 4","light","n./adj./v.","光 / 輕的"
-"Chapter 4","sure","adj.","確定的"
-"Chapter 4","reward","n./v.","獎勵 / 報酬"
-"Chapter 4","pound","n./v.","磅 / 敲打"
-"Chapter 4","sign","n./v.","標誌 / 簽名"
-"Chapter 4","correct","adj./v.","正確的 / 糾正"
-"Chapter 4","mark","n./v.","標記 / 分數"
-"Chapter 4","bar","n./v.","酒吧 / 阻攔"
-"Chapter 5","arrest","v./n.","逮捕"
-"Chapter 5","bowl","n.","碗"
-"Chapter 5","floor","n.","地板 / 樓層"
-"Chapter 5","surprise","n./v.","驚喜"
-"Chapter 5","mad","adj.","生氣的 / 瘋狂的"
-"Chapter 5","around","adv./prep.","周圍"
-"Chapter 5","neck","n.","脖子"
-"Chapter 5","pull","v./n.","拉"
-"Chapter 6","puzzle","n./v.","謎題 / 使困惑"
-"Chapter 6","strong","adj.","強壯的"
-"Chapter 6","weak","adj.","虛弱的"
-"Chapter 6","trust","v./n.","信任"
-"Chapter 6","gap","n.","間隙 / 差距"
-"Chapter 6","truth","n.","真相 / 事實"
-"Chapter 6","actor","n.","演員"
+Week 1,statement,n.,陳述 / 聲明 / 說法 / 對帳單
+Week 1,resource,n.,資源 / 物資 / 財力 / 人力資源 / 應變能力 / 才智
+Week 1,disappear,v.,消失 / 不見 / 消散
+Week 1,sunlit,adj.,陽光照射的 / 陽光充足的 / 被陽光照亮的
+Week 1,twilight,n.,黎明 / 暮光 / 黃昏 / 薄暮 / 黎明前的微光 / 末期 / 暮年
+Week 1,layer,n.,層 / 層次 / 薄層 / 覆層 / 鋪設者 / 下蛋的動物 / 下蛋雞
+Week 1,zone,n.,地區 / 區域 / 地帶 / 分區 / 禁區 / 時區 / 區域防守
+Week 1,protect,v.,保護 / 防護 / 守護 / 保障
+Week 1,important,adj.,重要的 / 要緊的 / 重大的
+Week 1,squid,n.,烏賊 / 魷魚 / 槍烏賊
+Week 2,spill,v./n.,溢出 / 灑出 / 灑了 / 打翻 / 洩露 / 說出 / 招了
+Week 2,peel,v./n.,削去…的皮 / 削皮 / 剝皮 / 剝開 / 脫落
+Week 2,tanker,n.,油輪 / 槽車 / 油罐車 / 加油機 / 槽船
+Week 2,middle,adj./n.,中間的 / 中間 / 中央 / 中段 / 中期 / 中途
+Week 2,whale,n.,鯨 / 鯨魚
+Week 2,transport,v./n.,運輸 / 運送 / 載送 / 搬運 / 使心醉神迷 / 使陶醉
+Week 2,escape,v./n.,逃脫 / 逃走 / 逃離 / 躲過
+Week 2,pollution,n.,汙染 / 污染 / 公害
+Week 2,keep,v.,保有 / 保留 / 留著 / 保存 / 存放 / 保持 / 繼續
+Week 2,chore,n.,家庭雜務 / 家事 / 雜事 / 雜務 / 例行工作
+Week 3,wonder,v./n.,想知道 / 納悶 / 好奇 / 覺得驚奇 / 驚嘆 / 奇蹟 / 奇觀
+Week 3,deed,n.,行為 / 善行 / 惡行 / 事蹟 / 契據 / 產權證明
+Week 3,motion,n.,移動 / 動作 / 運動 / 動議
+Week 3,pile,n./v.,堆 / 一堆 / 一疊 / 一摞 / 一堆……東西 / 堆積物 / 大量
+Week 3,tail,n.,尾巴 / 尾端 / 末端 / 跟蹤
+Week 3,breathe,v.,呼吸 / 吸氣 / 吐氣
+Week 3,plastic,adj./n.,塑膠的 / 塑膠 / 塑膠製品 / 信用卡
+Week 3,star,n.,星星 / 恆星 / 明星 / 星形 / 星號
+Week 3,garbage,n.,垃圾 / 廢棄物 / 廢物
+Week 3,pollute,v.,汙染 / 污染 / 弄髒 / 敗壞
+Week 4,coral,n.,珊瑚 / 珊瑚礁 / 珊瑚色
+Week 4,polyp,n.,珊瑚蟲 / 息肉 / 水螅體
+Week 4,tentacle,n.,觸角 / 觸手 / 腕足
+Week 4,algae,n.,水藻 / 藻類 / 海藻
+Week 4,exist,v.,存在 / 有 / 生存
+Week 4,million,n./adj.,百萬 / 一百萬 / 數百萬
+Week 4,save,v.,救 / 拯救 / 節省 / 省下 / 儲存 / 保存 / 存
+Week 4,source,n.,來源 / 源頭 / 根源 / 消息來源 / 資訊來源 / 水源
+Week 4,important,adj.,重要的 / 要緊的 / 重大的
+Week 4,reef,n.,礁 / 暗礁 / 珊瑚礁 / 礁石
+Week 5,transportation,n.,運輸 / 交通運輸 / 交通 / 交通工具
+Week 5,bullet,n.,子彈 / 彈頭 / 項目符號 / 條列重點
+Week 5,tourism,n.,旅遊業 / 觀光業 / 旅遊活動
+Week 5,barrier,n.,障礙物 / 屏障 / 障礙 / 阻礙
+Week 5,medicine,n.,藥 / 藥物 / 藥水
+Week 5,useful,adj.,有用的 / 實用的
+Week 5,drop,v./n.,滴 / 掉下 / 使……掉下 / 讓……掉下 / 放下 / 滴下 / 下降
+Week 5,connect,v.,連接 / 接上 / 連結 / 與……建立關係 / 產生共鳴
+Week 5,matter,n./v.,事情 / 問題 / 怎麼了 / 要緊的事 / 重要的事 / 物質 / 沒關係
+Week 5,take care of,v. ph.,照顧 / 照料 / 處理 / 負責
+Week 6,invention,n.,發明 / 發明物
+Week 6,solution,n.,解決辦法 / 解決方法 / 解答 / 答案 / 溶液
+Week 6,wheel,n.,輪子 / 車輪 / 方向盤
+Week 6,imagine,v.,想像 / 設想 / 以為 / 猜想 / 想像、設想 / 以為、猜想
+Week 6,electric,adj.,電的 / 電動的 / 帶電的 / 電氣的 / 令人興奮的 / 令人震撼的 / 氣氛火熱的
+Week 6,electricity,n.,電 / 電力 / 電流 / 電能
+Week 6,battery,n.,電池 / 電瓶 / 蓄電池 / 砲兵連 / 砲組
+Week 6,imagination,n.,想像力 / 想像 / 想像中的畫面 / 幻想
+Week 6,invent,v.,發明 / 創造 / 捏造 / 編造 / 虛構
+Week 6,succeed,v.,成功 / 成功做到 / 繼任 / 接續 / 接替
+Week 7,waist,n.,腰 / 腰部 / 腰圍 / 腰身 / 褲腰 / 裙腰
+Week 7,hoop,n.,箍 / 圈 / 環 / 呼拉圈 / 籃框
+Week 7,instruction,n.,指示 / 指令 / 說明 / 操作說明 / 教學 / 授課
+Week 7,lift,v./n.,舉起 / 抬起 / 提起 / 偷 / 讓…搭便車 / 載某人一程
+Week 7,creativity,n.,創造力 / 創意 / 想像力
+Week 7,modern,adj.,現代的 / 近代的 / 新式的 / 摩登的
+Week 7,popular,adj.,受歡迎的 / 有人氣的 / 流行的 / 普遍的
+Week 7,used to,v. ph.,過去經常 / 曾經 / 以前常常
+Week 7,useful,adj.,有用的 / 實用的
+Week 7,text,v./n.,傳簡訊 / 文字 / 課文 / 本文 / 文本 / 簡訊 / 訊息
+Week 8,wrist,n.,手腕 / 腕部 / 手腕關節
+Week 8,typical,adj.,典型的 / 一貫的 / 慣常的 / 老樣子
+Week 8,solve,v.,解決 / 解答 / 破解 / 算出
+Week 8,teenager,n.,青少年 / 十幾歲的少年 / 少年人
+Week 8,daily,adj./adv.,每日的 / 每天的 / 日常的 / 平日的 / 日常生活
+Week 8,design,n./v.,設計 / 規劃 / 構思 / 打造
+Week 8,popsicle,n.,冰棒 / 冰棍 / 水果冰棒
+Week 8,entirely,adv.,完全地 / 完全 / 全然
+Week 8,opinion,n.,意見 / 看法 / 想法 / 主張
+Week 8,curiosity,n.,好奇心 / 好奇 / 奇物 / 稀奇的東西
+Week 9,vegetable,n.,蔬菜 / 青菜 / 植物人 / 植物人狀態
+Week 9,creative,adj.,有創造力的 / 有創意的 / 富有創意的
+Week 9,alone,adj./adv.,單獨的 / 獨自的 / 單獨 / 獨自
+Week 9,avatar,n.,電腦角色 / 頭像 / 虛擬角色 / 虛擬替身 / 化身 / 頭像、虛擬角色、虛擬替身
+Week 9,compete,v.,競爭 / 比賽 / 角逐 / 爭取
+Week 9,score,n./v.,得分 / 分數 / 比數 / 樂譜 / 總譜 / 二十個
+Week 9,based on,prep. ph.,以…為依據 / 根據 / 基於
+Week 9,controller,n.,控制員 / 控制器 / 控制者 / 主管 / 主計長 / 財務主管
+Week 9,screen,n./v.,螢幕 / 銀幕 / 屏風 / 隔板 / 紗窗 / 篩選 / 放映
+Week 9,enjoy,v.,享受 / 喜歡 / 樂於
+Week 10,fossil,n.,化石 / 化石遺跡 / 古生物遺骸
+Week 10,stuff,n./v.,東西 / 物品 / 材料 / 玩意兒 / 事情
+Week 10,collect,v.,收集 / 蒐集 / 收取 / 領取 / 募捐 / 募集 / 聚集
+Week 10,dinosaur,n.,恐龍 / 老古董
+Week 10,pet,n.,寵物 / 愛寵 / 飼養的動物
+Week 10,hobby,n.,嗜好 / 興趣 / 業餘愛好
+Week 10,partner,n.,伙伴 / 夥伴 / 搭檔 / 合夥人 / 伴侶 / 另一半 / 配對的一方
+Week 10,people,n.,人們 / 人民 / 民眾
+Week 10,person,n.,人 / 人物 / 人稱
+Week 10,together,adv.,一起 / 一同 / 合在一起 / 聚在一起 / 同時 / 一起、一同 / 合在一起、聚在一起
+Week 11,rubber,n.,橡膠 / 橡皮 / 橡皮擦
+Week 11,ammonite,n.,鸚鵡螺化石 / 菊石 / 菊石化石
+Week 11,stamp,n./v.,蓋章 / 印章 / 郵票 / 印記 / 戳記 / 跺腳
+Week 11,compass,n.,羅盤 / 指南針 / 範圍 / 限度
+Week 11,press,v./n.,按 / 按下 / 壓 / 壓住 / 貼住 / 壓在…上 / 催促
+Week 11,wrap,v./n.,包裝 / 包 / 包裹 / 裹 / 纏
+Week 11,sailor,n.,船員 / 水手 / 海員 / 海軍士兵 / 海軍人員
+Week 11,sink,v./n.,下沉 / 沉下去 / 陷入 / 消沉
+Week 11,post,n./v.,張貼(公告) / 郵件 / 郵遞 / 郵政 / 柱子 / 樁 / 職位
+Week 11,clue,n.,線索 / 提示 / 跡象 / 線球
+Week 12,caption,n.,字幕 / 標題 / 圖說 / 圖片說明
+Week 12,force,n./v.,力量 / 力 / 武力 / 軍隊 / 部隊 / 警力 / 強制力
+Week 12,employ,v.,僱用 / 雇用 / 聘用 / 使用 / 運用 / 雇用、聘用 / 使用、運用
+Week 12,pull,v./n.,拉 / 拖 / 拔 / 扯
+Week 12,actually,adv.,實際上 / 其實 / 其實呢 / 事實上 / 竟然 / 真的
+Week 12,skater,n.,溜冰者 / 滑冰者 / 滑板者
+Week 12,arrive,v.,到達 / 抵達 / 到了 / 來到 / 來臨 / 到來
+Week 12,forward,adv./adj.,向前 / 朝前方 / 往前 / 期待
+Week 12,message,n.,信息 / 訊息 / 口信 / 留言 / 主旨 / 寓意
+Week 12,backward,adj./adv.,向後的 / 往後的 / 倒退的 / 落後的 / 保守過時的
+Week 13,push,v./n.,推 / 推動 / 督促 / 催 / 逼
+Week 13,spin,v./n.,旋轉 / 打轉 / 轉圈 / 紡線 / 歪曲包裝 / 扭曲說法
+Week 13,fall over,v. ph.,跌倒 / 倒下 / 翻倒
+Week 13,balance,n./v.,平衡 / 均衡 / 餘額 / 結餘 / 差額 / 尾款
+Week 13,gravity,n.,重力 / 地心引力 / 嚴重性 / 重大性
+Week 13,lean,v./adj.,傾斜 / 倚靠 / 靠 / 傾身 / 依靠
+Week 13,friction,n.,摩擦 / 摩擦力 / 衝突
+Week 13,handlebars,n.,把手 / 車把 / 自行車把手
+Week 13,groove,n.,溝 / 凹槽 / 溝槽 / 節奏感 / 律動 / 順暢狀態 / 進入狀況、進入順暢節奏
+Week 13,of course,adv. ph.,當然 / 自然 / 沒問題
+Week 14,steep,adj.,陡峭的 / 陡的 / 高得嚇人的 / 昂貴的 / 大幅的
+Week 14,suddenly,adv.,忽然 / 突然 / 冷不防
+Week 14,critically,adv.,批判性地 / 至關重要地 / 關鍵地 / 嚴重地 / 病危地 / 批判地
+Week 14,spiral,n./v./adj.,螺旋 / 螺旋形 / 旋渦狀 / 盤旋下降 / 螺旋式下滑 / 惡性循環般下跌
+Week 14,telescope,n.,望遠鏡 / 天文望遠鏡 / 單筒望遠鏡
+Week 14,centripetal,adj.,向心性的 / 向心的 / 趨向中心的
+Week 14,theoretical,adj.,理論的 / 理論上的 / 理論性的 / 純理論的 / 不切實際的 / 紙上談兵的
+Week 14,physicist,n.,物理學家 / 物理學者 / 研究物理的人
+Week 14,unexpected,adj.,想不到的 / 出乎意料的 / 意外的 / 突如其來的 / 沒想到的
+Week 14,unusual,adj.,不平常的 / 不尋常的 / 罕見的 / 奇特的 / 反常的
+Week 15,curious,adj.,好奇的 / 感到好奇 / 奇怪的 / 罕見的 / 古怪的
+Week 15,competition,n.,競爭 / 比賽 / 競賽
+Week 15,chore,n.,家庭雜務 / 家事 / 雜事 / 雜務 / 例行工作
+Week 15,solution,n.,解決辦法 / 解決方法 / 解答 / 答案 / 溶液
+Week 15,pronounce,v.,發音 / 唸作 / 讀作 / 宣告 / 宣判
+Week 15,extreme,adj./n.,極端的 / 極度的 / 非常的 / 最遠端的 / 最盡頭的
+Week 15,inventor,n.,發明家 / 創作者 / 創造者
+Week 15,opposite,adj./n.,相反的 / 對立的 / 對面的 / 另一邊的
+Week 15,biodegradable,adj.,生物能分解的 / 可自然分解的 / 可生物降解的
+Week 15,professional,adj./n.,專業的 / 職業的 / 職場的 / 專門的
+Week 16,thunderstorm,n.,大雷雨 / 雷雨 / 雷暴 / 雷雨交加的暴風雨
+Week 16,thunder,n.,雷 / 雷聲 / 轟隆聲 / 隆隆聲 / 馬蹄的轟隆聲 / 雷鳴般的掌聲 / 轟隆般的掌聲
+Week 16,lightning,n.,閃電 / 雷電
+Week 16,electricity,n.,電 / 電力 / 電流 / 電能
+Week 16,tornado,n.,龍捲風 / 龍捲
+Week 16,hurricane,n.,颶風 / （強烈）熱帶氣旋 rèdài qìxuán) / 颱風
+Week 16,storm,n.,暴風雨 / 風暴 / 暴風雪 / 猛攻 / 風波 / 猛攻、風波
+Week 16,center,n.,中心 / 中央 / 市中心
+Week 16,calm,adj.,冷靜的 / 平靜的 / 鎮定的 / 寧靜的
+Week 16,flood,n.,洪水 / 水災 / 氾濫 / 大量湧入 / 大量 / 如潮般湧來
+Week 17,evacuate,v.,撤離 / 疏散 / 撤出 / 逃離 / 騰空 / 清空
+Week 17,sandstorm,n.,沙塵暴 / 沙暴 / 大風沙
+Week 17,speed,n./v.,速度 / 速率 / 迅速 / 快速
+Week 17,blizzard,n.,暴風雪 / 大風雪 / 雪暴
+Week 17,drought,n.,乾旱 / 旱災 / 缺乏 / 短缺 / 低潮期
+Week 17,emergency,n.,緊急情況 / 緊急事件 / 急難狀況
+Week 17,flashlight,n.,手電筒 / 手電燈
+Week 17,run out (of),v. ph.,用完 / 耗盡
+Week 17,show off,v. ph.,炫耀 / 賣弄 / 顯擺
+Week 17,show up,v. ph.,出現 / 到場 / 露面
+Week 18,watch out,v. ph.,當心 / 注意
+Week 18,supply,n./v.,供應 / 補給品 / 提供 / 供給 / 配給
+Week 18,plan,n./v.,計畫 / 打算 / 方案 / 平面圖 / 設計圖
+Week 18,spinning,adj./v.,正在旋轉 / 旋轉的 / 打轉的
+Week 18,column,n.,圓柱 / 專欄 / 柱子 / 柱狀物 / 欄 / 縱隊
+Week 18,predicts,v.,預言 / 預測 / 預報
+Week 18,shelter,n.,避難所 / 遮蔽物 / 庇護所 / 遮蔽處 / 保護 / 庇護 / 躲避
+Week 18,forecaster,n.,氣象預報員 / 預報員 / 預測者
+Week 18,sign up,v. ph.,報名 / 註冊
+Week 18,take after,v. ph.,相似 / 像 / 長得像
+Week 19,trunk,n.,樹幹 / 大皮箱 / 象鼻 / 後車廂
+Week 19,funnel,n./v.,漏斗 / 漏斗狀物 / 引導通道 / 匯集管道 / 引導、匯集、集中管道
+Week 19,alley,n.,小巷 / 巷弄 / 巷子 / 保齡球球道 / 保齡球館
+Week 19,Serbia,n.,塞爾維亞 / 塞爾維亞共和國 / 歐洲國家
+Week 19,run into,v. ph.,遇到 / 偶然碰見 / 撞上
+Week 19,stand for,v. ph.,代表 / 象徵 / 支持
+Week 19,twisted,adj.,古怪的 / 扭曲的 / 彎曲的
+Week 19,stay up late,v. ph.,熬夜 / 晚睡 / 很晚不睡
+Week 19,stand out,v. ph.,突出 / 顯眼 / 出色
+Week 19,attack,n./v.,攻擊 / 襲擊 / 進攻 / 抨擊 / 批評
+Week 20,predator,n.,掠奪者 / 掠食者 / 捕食性動物
+Week 20,spot,n./v.,斑點 / 地點 / 位子 / 污點 / 污漬 / 痘痘 / 小疹子
+Week 20,prey,n./v.,捕食 / 獵物 / 被捕食的動物 / 受害者 / 下手對象 / 成為詐騙的受害者 / 淪為恐懼的俘虜
+Week 20,camouflage,n./v.,偽裝 / 掩護色 / 迷彩 / 迷彩圖案 / 迷彩、迷彩圖案
+Week 20,poisonous,adj.,有毒的 / 毒的 / 有毒性的
+Week 20,insect,n.,昆蟲 / 蟲
+Week 20,hunt,v./n.,打獵 / 獵捕 / 尋找 / 搜找 / 追捕
+Week 20,run short (of),v. ph.,缺乏 / 快用完 / 不足
+Week 20,take care of,v. ph.,照顧 / 照料 / 處理 / 負責
+Week 20,take care,v. ph.,保重 / 小心 / 照料自己
+Week 21,defend,v.,防禦 / 保護 / 防衛 / 捍衛 / 為…辯護 / 答辯 / 為……辯護
+Week 21,escape,v./n.,逃跑 / 逃脫 / 逃走 / 逃離 / 躲過
+Week 21,hide,v.,隱藏 / 藏起來 / 躲起來 / 遮住
+Week 21,survive,v.,生存 / 活下來 / 倖存 / 存活 / 繼續存在 / 留存
+Week 21,feast,n./v.,盛宴 / 大餐 / 宴席 / 大飽眼福
+Week 21,summarize,v.,總結 / 摘要說明 / 概述 / 簡述
+Week 21,stripe,n.,條紋 / 條線 / 色帶 / 長條色塊
+Week 21,take a chance,v. ph.,碰運氣 / 冒險 / 試試看
+Week 21,take advantage of,v. ph.,利用 / 善用 / 佔便宜
+Week 21,species,n.,物種 / 種類 / 生物種類
+Week 22,leafy,adj.,多葉的 / 葉子茂盛的 / 葉子茂密的 / 綠樹成蔭的 / 頁數很多的 / 厚厚的
+Week 22,weird,adj.,怪異的 / 奇怪的 / 古怪的 / 詭異的 / 怪怪的
+Week 22,floating,adj./v.,漂浮的 / 浮動的 / 飄浮中的
+Week 22,transparent,adj.,透明的 / 清澈的 / 公開透明的 / 一目了然的 / 明顯的
+Week 22,fin,n.,魚鰭 / 鰭 / 鰭狀物
+Week 22,male,adj./n.,男性的 / 男的 / 雄性的 / 公的
+Week 22,female,adj./n.,女性的 / 雌性的 / 母的
+Week 22,movement,n.,運動 / 動作 / 移動 / 活動 / 樂章
+Week 22,imitating,v.,模仿 / 仿效 / 學著做
+Week 22,tricks,n./v.,詭計 / 技巧 / 戲法
+Week 23,biodiversity,n.,生物多樣性 / 生態多樣性 / 物種多樣性
+Week 23,seaweed,n.,海草 / 海藻 / 海帶 / 海苔 / 紫菜
+Week 23,preserve,v./n.,保存 / 保護 / 維持 / 保留 / 醃製 / 保存食物
+Week 23,diversity,n.,多樣性 / 差異性 / 多元性
+Week 23,tarsier,n.,眼鏡猴 / 跗猴 / 眼鏡猴類
+Week 23,biologist,n.,生物學家 / 生物學者
+Week 23,increase,v./n.,增加 / 上升 / 增長 / 提高 / 增大
+Week 23,awareness,n.,察覺 / 認知 / 意識 / 警覺
+Week 23,disconnect,v./n.,不相連 / 斷開連接 / 切斷 / 拔掉 / 取消連線 / 脫節 / 無法理解…之間的關聯
+Week 23,reduce,v.,減少 / 降低 / 縮小 / 減輕 / 削減 / 簡化
+Week 24,instrument,n.,樂器 / 儀器 / 器具 / 工具 / 文書 / 法律文件
+Week 24,saxophone,n.,薩克斯風 / 薩克斯管 / 薩氏管
+Week 24,band,n.,樂團 / 樂隊 / 帶子 / 環帶 / 圈環
+Week 24,flute,n.,長笛 / 笛子
+Week 24,string,n.,弦 / 細繩 / 繩子 / 線 / 一連串 / 一串 / 串列
+Week 24,percussion,n.,敲打樂器 / 打擊樂器 / 敲擊聲
+Week 24,beat,n./v.,拍子 / 節奏 / 打 / 敲打 / 擊打 / 打敗 / 擊敗
+Week 24,violin,n.,小提琴 / 提琴 / 小提琴樂器
+Week 24,audience,n.,觀眾 / 聽眾 / 讀者群 / 受眾 / 晉見 / 覲見
+Week 24,concert,n.,音樂會 / 演唱會 / 演奏會 / 一致 / 協力
+Week 25,lead,v./n./adj.,帶領 / 領導 / 引導 / 帶路 / 導致 / 引起
+Week 25,singer,n.,歌手 / 演唱者
+Week 25,guitar,n.,吉他 / 六弦琴 / 吉他樂器
+Week 25,drum,n./v.,鼓 / 鼓類樂器 / 桶 / 大桶
+Week 25,opera,n.,歌劇 / 歌劇作品 / 歌劇表演
+Week 25,jumper,n.,跳躍者 / 跳高選手 / 套頭毛衣
+Week 25,classical,adj.,古典的 / 古典音樂的 / 傳統的 / 古希臘羅馬的 / 古典時代的
+Week 25,jazz,n.,爵士 / 爵士樂 / 爵士風格 / 活力 / 趣味 / 花樣
+Week 25,take one’s time,v. ph.,慢慢來 / 不急 / 從容地做
+Week 25,rock,n./v.,岩石 / 石頭 / 岩塊 / 搖滾樂 / 搖滾 / 搖晃 / 搖動
+Week 26,sound waves,n.,音波 / 聲波 / 聲音波
+Week 26,hip-hop,n.,嘻哈音樂 / 嘻哈文化 / 饒舌風格
+Week 26,volume,n.,音量 / 音量大小 / 量 / 交易量 / 體積 / 容積 / 冊
+Week 26,measured,adj./v.,測量 / 已測量的 / 慎重的
+Week 26,hertz,n.,赫茲 / 頻率單位 / 每秒週期
+Week 26,range,n./v.,範圍 / 介於……之間 / 從……到……不等 / 涵蓋 / 瞄準 / 涵蓋、包括 / 包括
+Week 26,decibels,n.,分貝 / 音量單位 / 聲音強度單位
+Week 26,pop,n./v./adj.,流行樂 / 流行音樂 / 砰的一聲 / 啪的一聲
+Week 26,take part in,v. ph.,參加 / 參與 / 加入
+Week 26,take place,v. ph.,發生 / 舉行 / 進行
+Week 27,geographic,adj.,地理學的 / 地理的 / 與地理有關的
+Week 27,ambassador,n.,大使 / 使節 / 代表 / 代言人 / 推廣大使 / 代表、代言人、推廣大使
+Week 27,output,n./v.,輸出 / 產出 / 產量
+Week 27,environment,n.,環境 / 生活環境 / 自然環境 / 成長環境 / 環境、生活環境、成長環境
+Week 27,positive,adj.,確實的 / 正面的 / 樂觀的 / 肯定的 / 確定的 / 正的 / 陽性的
+Week 27,think about,v. ph.,思索 / 思考 / 考慮
+Week 27,inspire,v.,鼓舞 / 啟發 / 激勵 / 賦予靈感 / 吸入 / 吸氣
+Week 27,maximum,n./adj.,最大值 / 最大量 / 上限 / 最高限度
+Week 27,solar system,n.,太陽系 / 太陽系統 / 行星系統
+Week 27,think over,v. ph.,仔細考慮 / 深思 / 反覆思考
+Week 28,journey,n./v.,旅行 / 旅程 / 行程 / 路程 / 歷程 / 過程
+Week 28,planet,n.,行星 / 星球
+Week 28,Milky way,n.,銀河系 / 銀河 / 天河
+Week 28,take turns,v. ph.,輪流 / 依次做 / 輪替
+Week 28,dust,n./v.,灰塵 / 塵土 / 粉塵 / 粉末
+Week 28,galaxy,n.,銀河 / 星系 / 銀河系 / 薈萃 / 一大群 / 眾多
+Week 28,universe,n.,宇宙 / 萬物 / 全世界
+Week 28,gravity,n.,重力 / 地心引力 / 嚴重性 / 重大性
+Week 28,extraterrestrial,adj./n.,外星球的 / 地球外的 / 外星的 / 來自外星的 / 外星人
+Week 28,comet,n.,彗星 / 掃帚星 / 彗星天體
+Week 29,space station,n.,太空站 / 空間站 / 軌道太空站
+Week 29,communicate,v.,溝通 / 傳達 / 交流 / 聯絡
+Week 29,opinion,n.,意見 / 看法 / 想法 / 主張
+Week 29,spacecraft,n.,太空船 / 太空飛行器 / 航天器
+Week 29,rocket,n./v.,火箭 / 火箭彈 / 飛彈
+Week 29,exist,v.,存在 / 有 / 生存
+Week 29,search,v./n.,搜尋 / 尋找 / 搜查 / 翻找
+Week 29,atmosphere,n.,氣氛 / 大氣層 / 大氣 / 氛圍
+Week 29,telescopes,n./v.,望遠鏡 / 單筒望遠鏡 / 使套疊收縮
+Week 29,signal,n./v.,信號 / 訊號 / 號誌 / 示意 / 徵兆
+Week 30,light-years,n.,光年 / 光年距離 / 天文距離單位
+Week 30,satellite,n.,衛星 / 人造衛星 / 天然衛星 / 附屬物 / 衛星城 / 附庸 / 附庸國
+Week 30,length,n.,長度 / 身長 / 時間長短 / 時長 / 篇幅
+Week 30,receive,v.,收到 / 接到 / 得到 / 接受 / 接納 / 歡迎
+Week 30,age-old,adj.,古老的 / 長久以來的 / 歷史悠久的
+Week 30,planetary,adj.,行星的 / 星球的 / 全球的
+Week 30,tool,n.,工具 / 用具
+Week 30,technology,n.,技術 / 科技 / 科技產品
+Week 30,astrobiology,n.,天體生物學 / 太空生物學 / 宇宙生物學
+Week 30,Antarctica,n.,南極洲 / 南極大陸 / 南極地區
+Chapter 1,doctor,n.,醫生 / 博士
+Chapter 1,rest,v./n.,休息
+Chapter 1,colonel,n.,上校
+Chapter 1,pistol,n.,手槍
+Chapter 1,thief,n.,小偷 / 賊
+Chapter 1,clue,n.,線索
+Chapter 1,police,n.,警察
+Chapter 1,servant,n.,僕人
+Chapter 1,murder,n./v.,謀殺
+Chapter 1,shot,n.,射擊 / 槍聲
+Chapter 1,shoot,v./n.,射擊
+Chapter 2,coachman,n.,馬車夫
+Chapter 2,strange,adj.,奇怪的 / 陌生的
+Chapter 2,fight,v./n.,打架 / 戰鬥
+Chapter 2,lawyer,n.,律師
+Chapter 2,inspector,n.,探長 / 檢查員
+Chapter 2,scene,n.,場景 / 現場
+Chapter 2,crime,n.,罪行 / 犯罪
+Chapter 2,sir,n.,先生
+Chapter 2,upstairs,adv./adj.,樓上
+Chapter 2,downstairs,adv./adj.,樓下
+Chapter 2,fall,v./n.,跌倒 / 落下
+Chapter 2,hedge,n.,樹籬
+Chapter 2,pocket,n.,口袋
+Chapter 2,piece,n.,一塊 / 一片
+Chapter 2,paper,n.,紙
+Chapter 3,agree,v.,同意
+Chapter 3,post,n./v.,郵寄 / 職位
+Chapter 3,letter,n.,信 / 字母
+Chapter 3,kitchen,n.,廚房
+Chapter 3,towards,prep.,朝向
+Chapter 3,terrible,adj.,可怕的 / 糟糕的
+Chapter 3,ground,n.,地面
+Chapter 4,light,n./adj./v.,光 / 輕的
+Chapter 4,sure,adj.,確定的
+Chapter 4,reward,n./v.,獎勵 / 報酬
+Chapter 4,pound,n./v.,磅 / 敲打
+Chapter 4,sign,n./v.,標誌 / 簽名
+Chapter 4,correct,adj./v.,正確的 / 糾正
+Chapter 4,mark,n./v.,標記 / 分數
+Chapter 4,bar,n./v.,酒吧 / 阻攔
+Chapter 5,arrest,v./n.,逮捕
+Chapter 5,bowl,n.,碗
+Chapter 5,floor,n.,地板 / 樓層
+Chapter 5,surprise,n./v.,驚喜
+Chapter 5,mad,adj.,生氣的 / 瘋狂的
+Chapter 5,around,adv./prep.,周圍
+Chapter 5,neck,n.,脖子
+Chapter 5,pull,v./n.,拉
+Chapter 6,puzzle,n./v.,謎題 / 使困惑
+Chapter 6,strong,adj.,強壯的
+Chapter 6,weak,adj.,虛弱的
+Chapter 6,trust,v./n.,信任
+Chapter 6,gap,n.,間隙 / 差距
+Chapter 6,truth,n.,真相 / 事實
+Chapter 6,actor,n.,演員
